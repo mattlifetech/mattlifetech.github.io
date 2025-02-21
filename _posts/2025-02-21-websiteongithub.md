@@ -12,7 +12,6 @@ tags: [Jekyll, Minimal Mistakes, GitHub Pages, Liquid Archive]
 
 ![Minimal Mistakes Setup](https://raw.githubusercontent.com/mattchoo2/mattchoo2.github.io/main/assets/images/minimal-mistakes-setup.webp)
 
-
 ## Step 1: Setting Up the Repository
 
 ### Step 1.1: Create a GitHub Repository
@@ -262,6 +261,10 @@ Visit `http://localhost:4000` in your browser to check if everything works as ex
 Once all the files are in place and the site is working locally, use **GitHub Desktop** to commit your changes and push them to GitHub.
 
 Your website should now be live at `https://username.github.io`!
+
+## GitHub Repo in case you need to download the files
+
+https://github.com/mattchoo2/mmistakegithub
 
 ## Credits
 
