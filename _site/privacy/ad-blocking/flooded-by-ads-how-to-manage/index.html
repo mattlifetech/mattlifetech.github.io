@@ -1,0 +1,820 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.26.2 by Michael Rose
+  Copyright 2013-2024 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en-US" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Flooded by Ads, How to Manage? - Me &amp; My Tiny Coding Journey</title>
+<meta name="description" content="A guide on managing excessive ads on platforms like YouTube, Facebook, and mobile apps using Pi-hole, VPNs, and browser extensions.">
+
+
+  <meta name="author" content="Matthew Choo">
+  
+  <meta property="article:author" content="Matthew Choo">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Me & My Tiny Coding Journey">
+<meta property="og:title" content="Flooded by Ads, How to Manage?">
+<meta property="og:url" content="http://localhost:4000/privacy/ad-blocking/flooded-by-ads-how-to-manage/">
+
+
+  <meta property="og:description" content="A guide on managing excessive ads on platforms like YouTube, Facebook, and mobile apps using Pi-hole, VPNs, and browser extensions.">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/filler.webp">
+
+
+
+
+
+  <meta property="article:published_time" content="2020-05-22T00:00:00+08:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/privacy/ad-blocking/flooded-by-ads-how-to-manage/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Me & My Tiny Coding Journey Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single wide" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/Mattlogo.png" alt="Matt Life Tech"></a>
+        
+        <a class="site-title" href="/">
+          Matt Life Tech
+          <span class="site-subtitle">where journey starts</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/"
+                
+                
+              >Quick-Start Guide</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style=" background-image: url('/assets/images/filler.webp');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          Flooded by Ads, How to Manage?
+
+        
+      </h1>
+      
+        <p class="page__lead">A guide on managing excessive ads on platforms like YouTube, Facebook, and mobile apps using Pi-hole, VPNs, and browser extensions.
+</p>
+      
+      
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+      
+    </div>
+  
+  
+</div>
+
+
+
+
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/" itemprop="item"><span itemprop="name">Home</span></a>
+
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#privacy" itemprop="item"><span itemprop="name">Privacy</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#ad-blocking" itemprop="item"><span itemprop="name">Ad blocking</span></a>
+          <meta itemprop="position" content="3" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        <li class="current">Flooded by Ads, How to Manage?</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="/assets/images/MattLifeTech.png" alt="Matthew Choo" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">Matthew Choo</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>With 20 years in market research across Telco and Media, I’ve decoded consumer behavior, optimized research, and driven data-led strategies. Now, I’m diving into coding, automation, and tech solutions—where data meets efficiency. This blog is my space to share insights, from Python scripts to research optimizations and life hacks. Join me in exploring smarter ways to work and live!</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Asia</span>
+        </li>
+      
+
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:mattckw@gmail.com" rel="me" class="u-email">
+            <meta itemprop="email" content="mattckw@gmail.com" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span>
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Flooded by Ads, How to Manage?">
+    <meta itemprop="description" content="A guide on managing excessive ads on platforms like YouTube, Facebook, and mobile apps using Pi-hole, VPNs, and browser extensions.">
+    <meta itemprop="datePublished" content="2020-05-22T00:00:00+08:00">
+    
+
+    <div class="page__inner-wrap">
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p><strong>What to define as flooded by ads?</strong></p>
+
+<ul>
+  <li>Ads is monetization approach of internet services.  I fully respect and appreciate ads as that is how internet services are funded…</li>
+  <li>
+    <p>Until:</p>
+  </li>
+  <li>
+    <p>COVID-19 stay at home period, Amount of ads surged to crazy amount</p>
+  </li>
+  <li>Facebook (2 ads in 6 posts, 33%)</li>
+  <li>YouTube (two continuous long ads &amp; then another ads &lt; 5 min - we are not talking about pop-up banner or 30 sec ads here)</li>
+  <li>My 5 years old son’s gaming phone shows gambling element and adult sexualized game ads.</li>
+  <li>
+    <p>Ads feedback on Facebook and YouTube does not change ads served even though send feedback i am not interested.</p>
+  </li>
+  <li><em>Example Kickstarter OYO NOVA which is a damn long ads. Still getting the same ads</em></li>
+</ul>
+
+<p><strong>What can be done to make experience a bit better?</strong></p>
+
+<ul>
+  <li>There is no perfect solution unless you do not use internet at all.</li>
+  <li>There is no single product solution</li>
+  <li>
+    <p>It is always cat and mouse game.  No one time, ads free for life solution.</p>
+  </li>
+  <li>YouTube and Facebook serve ads via their own content domain, blocking these domains will block content consumption too.</li>
+</ul>
+
+<p><strong>What I find helpful for my usage experience?</strong></p>
+
+<ul>
+  <li>I have tried out some and these are some tips for anyone looking for read-up info.</li>
+  <li>The context of Ads Blocking is a combination of blocking ads serve message &amp; hide from our eyes.</li>
+  <li>
+    <p><strong>Note:</strong> App like Pi-hole can use very stringent blocking list to block out all ads</p>
+  </li>
+  <li>BUT you need to have time &amp; interest to continue update the Whitelist as some website will be block as well.</li>
+  <li>
+    <p>Light version of block list is decent enough</p>
+  </li>
+  <li>Table for reference:<br />
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_UTSAQU7xu7IRMW8pQuO5x1UsX1ZPlmQrovAGtbTJAJvSLzRfDZguFT0awZ2jXm9sQecOIgQtFZyZtFpdpi_Bl7RYGr5MJJKA6mqgzCngJ0w__F9jxQ7Nymh7sZf2-JnT6H3mOir9hzs/s1600/ads+block+tool.jpg"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_UTSAQU7xu7IRMW8pQuO5x1UsX1ZPlmQrovAGtbTJAJvSLzRfDZguFT0awZ2jXm9sQecOIgQtFZyZtFpdpi_Bl7RYGr5MJJKA6mqgzCngJ0w__F9jxQ7Nymh7sZf2-JnT6H3mOir9hzs/s1600/ads+block+tool.jpg" alt="" /></a></li>
+</ul>
+
+<p><strong>What are some high level guidelines for setup?</strong></p>
+
+<ol>
+  <li>There are several ways you can setup.  <br />
+Below will be mainly my setup focus.</li>
+  <li>Router need to have capability too set DNS</li>
+</ol>
+
+<ul>
+  <li>Mine is Asus router running Asuswrt-Merlin firmware</li>
+  <li>DNS of pi-hole can be set at either WAN internet connection’s DNS or LAN DCHP server’s DNS (or both) - i set on WAN only</li>
+</ul>
+
+<ol>
+  <li>Pi-hole can run on many system, commonly:</li>
+</ol>
+
+<ul>
+  <li>Raspberry Pi (recommend at least Pi 3+)</li>
+  <li>Server supporting Portainer &amp; Docker (my setup)</li>
+</ul>
+
+<ol>
+  <li>Some files for my own documentation.</li>
+</ol>
+
+<ul>
+  <li>https://drive.google.com/open?id=1bRS2oqAWK3D5KXDB5ZlmdjCdgtwiP6i3</li>
+  <li>https://drive.google.com/open?id=1tZcNIc_mWJNJZp7eXqgbWPX_dQVML81k</li>
+</ul>
+
+<p><strong>Other information:</strong></p>
+
+<ol>
+  <li>Above setup are home wifi setup focus.</li>
+</ol>
+
+<ul>
+  <li>
+    <p>If you use mobile browser a lot while out of home (using 4G/ 5G), there are two options to leverage pi-hole:</p>
+  </li>
+  <li>PiVPN back to your pi-hole at home</li>
+  <li>
+    <p>Pi-hole on Google cloud computing (important to selected dedicated few US location to get free 1GB usage per year)</p>
+  </li>
+  <li>VPN options as such subject to some lagging and battery consumption too.</li>
+</ul>
+
+<ol>
+  <li>Tried VPN block list app i.e. Blokada.. doesnt feel effective from quick test and seems to be pay tier.</li>
+</ol>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#ad-blocker" class="page__taxonomy-item p-category" rel="tag">Ad-Blocker</a><span class="sep">, </span>
+    
+      <a href="/tags/#ads" class="page__taxonomy-item p-category" rel="tag">Ads</a><span class="sep">, </span>
+    
+      <a href="/tags/#facebook" class="page__taxonomy-item p-category" rel="tag">Facebook</a><span class="sep">, </span>
+    
+      <a href="/tags/#pi-hole" class="page__taxonomy-item p-category" rel="tag">Pi-hole</a><span class="sep">, </span>
+    
+      <a href="/tags/#vpn" class="page__taxonomy-item p-category" rel="tag">VPN</a><span class="sep">, </span>
+    
+      <a href="/tags/#youtube" class="page__taxonomy-item p-category" rel="tag">YouTube</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#ad-blocking" class="page__taxonomy-item p-category" rel="tag">Ad-Blocking</a><span class="sep">, </span>
+    
+      <a href="/categories/#privacy" class="page__taxonomy-item p-category" rel="tag">Privacy</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2020-05-22T00:00:00+08:00">May 22, 2020</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  <h4 class="page__share-title">Share on</h4>
+
+  <a href="https://twitter.com/intent/tweet?text=Flooded+by+Ads%2C+How+to+Manage%3F%20http%3A%2F%2Flocalhost%3A4000%2Fprivacy%2Fad-blocking%2Fflooded-by-ads-how-to-manage%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fprivacy%2Fad-blocking%2Fflooded-by-ads-how-to-manage%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/privacy/ad-blocking/flooded-by-ads-how-to-manage/" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/amazon%20fire/troubleshooting/missing-navigation-bar-recent-home-back-on-amazon-fire-tablet-8-hd/" class="pagination--pager" title="Missing Navigation Bar (Recent/Home/Back) on Amazon Fire Tablet 8 HD">Previous</a>
+    
+    
+      <a href="/android/troubleshooting/android-connected-to-wifi-but-no-internet-issue/" class="pagination--pager" title="Android Connected to WiFi but No Internet Issue">Next</a>
+    
+  </nav>
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    
+<div class="page__related">
+  
+  <h2 class="page__related-title">You may also enjoy</h2>
+  <div class="grid__wrapper">
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/coding/template/" rel="permalink">My First Post
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">This is my first post using the Minimal Mistakes theme!
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/tuya-power-overload.webp" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/smart%20home/troubleshooting/tuyaoverload/" rel="permalink">Tuya Power Meter Overload Alarm – Will It Shut Down the Whole House?
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">An investigation into Tuya smart power meter overload alarms, clarifying whether they affect the entire house or just the connected device.
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/python-beginner-powershell.webp" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/python/beginner/pythonbeginner/" rel="permalink">Getting Started with Python for Absolute Beginners Using PowerShell
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">A step-by-step guide for those with zero coding knowledge to set up Python and run scripts using PowerShell.
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/cgnat-remote-access.webp" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/networking/remote%20access/CGNATremotehome/" rel="permalink">Remote Home Access in Malaysia: Understanding CGNAT and Solutions
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">A guide on overcoming CGNAT limitations in Malaysia for remote home access using Tailscale and Cloudflare Tunnel.
+</p>
+  </article>
+</div>
+
+    
+  </div>
+</div>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2025 <a href="http://localhost:4000">Me & My Tiny Coding Journey</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+  </body>
+</html>

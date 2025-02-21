@@ -1,1 +1,488 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-02-21T15:27:05+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Me &amp;amp; My Tiny Coding Journey</title><subtitle>An amazing website.</subtitle><author><name>Matthew Choo</name><email>mattckw@gmail.com</email></author></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-02-21T15:59:08+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Me &amp;amp; My Tiny Coding Journey</title><subtitle>An amazing website.</subtitle><author><name>Matthew Choo</name><email>mattckw@gmail.com</email></author><entry><title type="html">My First Post</title><link href="http://localhost:4000/coding/template/" rel="alternate" type="text/html" title="My First Post" /><published>2025-02-21T00:00:00+08:00</published><updated>2025-02-21T00:00:00+08:00</updated><id>http://localhost:4000/coding/template</id><content type="html" xml:base="http://localhost:4000/coding/template/"><![CDATA[<p>This is my first post using the Minimal Mistakes theme!</p>]]></content><author><name>Your Name</name></author><category term="Coding" /><category term="jekyll" /><category term="minimal-mistakes" /><summary type="html"><![CDATA[This is my first post using the Minimal Mistakes theme!]]></summary></entry><entry><title type="html">Getting Started with Python for Absolute Beginners Using PowerShell</title><link href="http://localhost:4000/python/beginner/pythonbeginner/" rel="alternate" type="text/html" title="Getting Started with Python for Absolute Beginners Using PowerShell" /><published>2025-02-20T00:00:00+08:00</published><updated>2025-02-20T00:00:00+08:00</updated><id>http://localhost:4000/python/beginner/pythonbeginner</id><content type="html" xml:base="http://localhost:4000/python/beginner/pythonbeginner/"><![CDATA[<h2 id="introduction">Introduction</h2>
+
+<p>If you’re new to coding and want to try Python, this guide will help you set up everything step by step. We’ll use <strong>PowerShell</strong> as the main command console for running Python scripts. This guide is designed for <strong>absolute beginners</strong>, so no prior knowledge is needed!</p>
+
+<h2 id="step-1-install-powershell-if-not-already-installed">Step 1: Install PowerShell (If Not Already Installed)</h2>
+
+<p>PowerShell comes pre-installed on <strong>Windows 10 and later</strong>, but if you need the latest version, follow these steps:</p>
+
+<ol>
+  <li>Download PowerShell from the official Microsoft page: <a href="https://github.com/PowerShell/PowerShell/releases">PowerShell Releases</a></li>
+  <li>Choose the <strong>MSI package</strong> for Windows and install it.</li>
+  <li>After installation, open PowerShell by searching for <strong>“PowerShell”</strong> in the Windows Start menu.</li>
+  <li>To check if PowerShell is working, type:
+    <div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="bp">$PSVersionTable</span><span class="o">.</span><span class="nf">PSVersion</span><span class="w">
+</span></code></pre></div>    </div>
+    <p>This should display the PowerShell version installed on your system.</p>
+  </li>
+</ol>
+
+<h2 id="step-2-install-python">Step 2: Install Python</h2>
+
+<p>To install Python, follow these steps:</p>
+
+<ol>
+  <li>Download Python from the official website: <a href="https://www.python.org/downloads/">Python Downloads</a></li>
+  <li>Choose the <strong>latest stable version</strong> for Windows.</li>
+  <li>During installation, check the box <strong>“Add Python to PATH”</strong> (important!).</li>
+  <li>After installation, verify Python by running:
+    <div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">python</span><span class="w"> </span><span class="nt">--version</span><span class="w">
+</span></code></pre></div>    </div>
+    <p>or</p>
+    <div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">py</span><span class="w"> </span><span class="nt">--version</span><span class="w">
+</span></code></pre></div>    </div>
+    <p>This should display the installed Python version.</p>
+  </li>
+</ol>
+
+<h3 id="additional-recommended-tools">Additional Recommended Tools</h3>
+
+<ul>
+  <li><strong>pip</strong>: Installed with Python (used for installing additional packages).</li>
+  <li><strong>virtualenv</strong>: Helps manage Python environments.
+    <div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">pip</span><span class="w"> </span><span class="nx">install</span><span class="w"> </span><span class="nx">virtualenv</span><span class="w">
+</span></code></pre></div>    </div>
+  </li>
+  <li><strong>Git</strong> (optional but useful): Download from <a href="https://git-scm.com/">Git for Windows</a></li>
+</ul>
+
+<h2 id="step-3-understanding-python-installation-types">Step 3: Understanding Python Installation Types</h2>
+
+<p>Python installations can be system-wide or folder-specific. Here’s a breakdown:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>System-wide installation</strong></td>
+      <td>Python is installed for all users. Any script can use it.</td>
+    </tr>
+    <tr>
+      <td><strong>Virtual environment (folder-based)</strong></td>
+      <td>A self-contained Python setup inside a specific folder. Useful for project-specific dependencies.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>To create a <strong>folder-specific virtual environment</strong>:</p>
+<div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">python</span><span class="w"> </span><span class="nt">-m</span><span class="w"> </span><span class="nx">venv</span><span class="w"> </span><span class="nx">my_project_env</span><span class="w">
+</span></code></pre></div></div>
+<p>To activate it:</p>
+<div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_project_env\Scripts\Activate</span><span class="w">
+</span></code></pre></div></div>
+<p>To deactivate it:</p>
+<div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">deactivate</span><span class="w">
+</span></code></pre></div></div>
+
+<h2 id="step-4-running-python-scripts-in-powershell">Step 4: Running Python Scripts in PowerShell</h2>
+
+<ul>
+  <li><strong>Running a script in the current folder:</strong>
+    <div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">python</span><span class="w"> </span><span class="nx">script.py</span><span class="w">
+</span></code></pre></div>    </div>
+    <p>This runs <code class="language-plaintext highlighter-rouge">script.py</code> inside the current folder.</p>
+  </li>
+  <li><strong>Running a script inside a virtual environment:</strong>
+    <div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_project_env\Scripts\Activate</span><span class="w">
+</span><span class="nx">python</span><span class="w"> </span><span class="nx">script.py</span><span class="w">
+</span><span class="n">deactivate</span><span class="w">
+</span></code></pre></div>    </div>
+  </li>
+  <li><strong>Running a script from another folder:</strong>
+    <div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">python</span><span class="w"> </span><span class="nx">C:\path\to\script.py</span><span class="w">
+</span></code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="comparison-of-python-powershell-git--virtual-environment">Comparison of Python, PowerShell, Git &amp; Virtual Environment</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tool</th>
+      <th>Use Case</th>
+      <th>Why Use It?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Python</strong></td>
+      <td>General-purpose programming language for scripting, automation, web development, and more.</td>
+      <td>Essential for coding, data analysis, and automation.</td>
+    </tr>
+    <tr>
+      <td><strong>PowerShell</strong></td>
+      <td>Command-line shell and scripting language for system automation on Windows.</td>
+      <td>Helps automate system tasks and manage configurations.</td>
+    </tr>
+    <tr>
+      <td><strong>Git</strong></td>
+      <td>Version control system used for tracking code changes and collaboration.</td>
+      <td>Prevents code loss, supports teamwork, and tracks modifications.</td>
+    </tr>
+    <tr>
+      <td><strong>Virtual Environment</strong></td>
+      <td>Isolated Python environment for managing dependencies per project.</td>
+      <td>Avoids conflicts between projects with different dependencies.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>You now have Python set up and ready to use with PowerShell! Try writing your first Python script and running it with <code class="language-plaintext highlighter-rouge">python script.py</code>. Happy coding!</p>]]></content><author><name>Matthew Choo</name><email>mattckw@gmail.com</email></author><category term="Python" /><category term="Beginner" /><category term="Python" /><category term="PowerShell" /><category term="Setup" /><category term="Virtual Environment" /><category term="Git" /><summary type="html"><![CDATA[A step-by-step guide for those with zero coding knowledge to set up Python and run scripts using PowerShell.]]></summary></entry><entry><title type="html">Tuya Power Meter Overload Alarm – Will It Shut Down the Whole House?</title><link href="http://localhost:4000/smart%20home/troubleshooting/tuyaoverload/" rel="alternate" type="text/html" title="Tuya Power Meter Overload Alarm – Will It Shut Down the Whole House?" /><published>2025-02-20T00:00:00+08:00</published><updated>2025-02-20T00:00:00+08:00</updated><id>http://localhost:4000/smart%20home/troubleshooting/tuyaoverload</id><content type="html" xml:base="http://localhost:4000/smart%20home/troubleshooting/tuyaoverload/"><![CDATA[<h2 id="tuya-power-meter-overload-alarm-notification">Tuya Power Meter Overload Alarm Notification</h2>
+
+<p>Recently, I encountered an overload alarm notification on my Tuya smart power meter. This raised an immediate concern: Will the overload protection cut off power to the entire house?</p>
+
+<h2 id="quick-answer-no-it-wont">Quick Answer: No, It Won’t</h2>
+
+<p><img src="https://raw.githubusercontent.com/mattchoo2/mattchoo2.github.io/main/assets/images/tuyaiotlog.png" alt="Tuya IoT Log" /></p>
+
+<p>After investigating the issue, I confirmed that the Tuya power meter <strong>does not</strong> cut off the main power supply. Instead, it only switches off the “software” of the connected device.  Device will go offline and online again shortly based on the IOT Tuya data logging.  The rest of the electrical system remains operational.</p>
+
+<p>To illustrate this, I conducted a test comparing power and voltage before and after the overload event. The device simply turns off its software-controlled relay, while the main power supply remains stable.</p>
+
+<h2 id="mistranslation-and-firmware-limitations">Mistranslation and Firmware Limitations</h2>
+
+<p>It turns out that this overload notification is actually a mistranslation of the issue. The alarm may not indicate a true overload but rather a measurement anomaly or firmware behavior.</p>
+
+<p>Unfortunately, IOT Tuya only keep one week of data where I dont have data to confirm this is due to firmware update.
+Also, there is no way to turn off this notification or reduce the firmware’s measurement frequency, which means users will continue to see these alerts even if no real danger is present.</p>
+
+<h2 id="energy-supplier-vs-firmware-issue-comparison">Energy Supplier vs. Firmware Issue Comparison</h2>
+<p>This is Feb2025 Power vs Voltage logging chart on home assistant:
+<img src="https://raw.githubusercontent.com/mattchoo2/mattchoo2.github.io/main/assets/images/powercurrent.png" alt="Power Monitoring" /></p>
+
+<p>Below is a comparison table from my earlier analysis, summarizing the possibilities of an issue being caused by the energy supplier or a firmware malfunction:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Factor</th>
+      <th>Energy Supplier Change</th>
+      <th>Tuya Firmware Change</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Power fluctuation increase</strong></td>
+      <td>Possible, if grid quality changed</td>
+      <td>Possible, if data logging increased</td>
+    </tr>
+    <tr>
+      <td><strong>Voltage fluctuation increase</strong></td>
+      <td>Should be more severe if supply changed</td>
+      <td>Possible, but less likely</td>
+    </tr>
+    <tr>
+      <td><strong>Memory error on Tuya IoT logs</strong></td>
+      <td>Unrelated to grid</td>
+      <td>Highly relevant</td>
+    </tr>
+    <tr>
+      <td><strong>Change in data granularity</strong></td>
+      <td>No effect on logging</td>
+      <td>Could directly affect logging frequency</td>
+    </tr>
+    <tr>
+      <td><strong>Overload alarms increased</strong></td>
+      <td>Possible if grid changed</td>
+      <td>Possible if firmware became more sensitive</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>✅ <strong>Final Assessment:</strong></p>
+
+<ul>
+  <li>
+    <p><strong>The most likely cause is a Tuya firmware change.</strong></p>
+
+    <ul>
+      <li>The “out of memory” issue could have forced the device to restart.</li>
+      <li>If the logging frequency increased, power fluctuations would appear more chaotic even if actual consumption remained the same.</li>
+      <li>Overload alarms aligning with memory errors suggest an internal software issue rather than a supplier change.</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>An energy supplier change is still possible but less likely.</strong></p>
+
+    <ul>
+      <li>If this were the main cause, voltage variations should be much more erratic, and you would likely see fluctuations in <strong>other appliances</strong> too.</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<p>If you’re using a Tuya power meter and see an overload alarm, there’s no need to worry about a complete power outage—your main supply remains active, and only the connected device is turned off at software level and restart quite fast.</p>
+
+<p>Let me know if you’ve experienced similar issues in your smart home setup!</p>]]></content><author><name>Matthew Choo</name><email>mattckw@gmail.com</email></author><category term="Smart Home" /><category term="Troubleshooting" /><category term="Tuya" /><category term="Power Meter" /><category term="Smart Home" /><category term="Overload Protection" /><category term="Energy Monitoring" /><summary type="html"><![CDATA[An investigation into Tuya smart power meter overload alarms, clarifying whether they affect the entire house or just the connected device.]]></summary></entry><entry><title type="html">RightClickRunPython – Run Python Scripts with a Right-Click</title><link href="http://localhost:4000/projects/rightclick-run-python/" rel="alternate" type="text/html" title="RightClickRunPython – Run Python Scripts with a Right-Click" /><published>2025-02-19T00:00:00+08:00</published><updated>2025-02-19T00:00:00+08:00</updated><id>http://localhost:4000/projects/rightclickrunpython</id><content type="html" xml:base="http://localhost:4000/projects/rightclick-run-python/"><![CDATA[<h2 id="rightclickrunpython--run-python-scripts-with-a-right-click">RightClickRunPython – Run Python Scripts with a Right-Click</h2>
+
+<p>Tired of opening the terminal and navigating to the script location every time you want to run a Python script? <strong>RightClickRunPython</strong> makes it easy—just right-click on a <code class="language-plaintext highlighter-rouge">.py</code> file and run it instantly!</p>
+
+<h3 id="-features">🚀 Features</h3>
+<ul>
+  <li><strong>Right-Click &amp; Run</strong> – Adds a Windows context menu entry to execute Python scripts.</li>
+  <li><strong>Customizable</strong> – Choose which Python version to use.</li>
+  <li><strong>Easy Installation</strong> – Just run the script to set it up.</li>
+  <li><strong>Supports Arguments</strong> – Run scripts with command-line arguments.</li>
+</ul>
+
+<h3 id="-installation">🛠 Installation</h3>
+<ol>
+  <li>Clone the repository:
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/mattchoo2/rightclickrunpython.git
+</code></pre></div>    </div>
+  </li>
+  <li>Run the setup script:
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python install.py
+</code></pre></div>    </div>
+  </li>
+  <li>Right-click any <code class="language-plaintext highlighter-rouge">.py</code> file and select <strong>Run with Python</strong>!</li>
+</ol>
+
+<h3 id="-repository">📂 Repository</h3>
+<p>Check out the full source code and setup instructions on GitHub:<br />
+<a href="https://github.com/mattchoo2/rightclickrunpython">🔗 RightClickRunPython</a></p>
+
+<h3 id="-why-use-this">✨ Why Use This?</h3>
+<p>If you frequently run Python scripts, this tool saves you time by eliminating the need to open a terminal and type commands manually. Perfect for developers, students, and automation enthusiasts!</p>
+
+<hr />
+
+<p>Give it a try and let me know your feedback! 🚀</p>]]></content><author><name>Matthew Choo</name><email>mattckw@gmail.com</email></author><category term="Projects" /><category term="Tools" /><category term="Python" /><category term="Windows" /><category term="Automation" /><category term="Productivity" /><summary type="html"><![CDATA[A simple way to run Python scripts from the Windows context menu with a right-click.]]></summary></entry><entry><title type="html">Remote Home Access in Malaysia: Understanding CGNAT and Solutions</title><link href="http://localhost:4000/networking/remote%20access/CGNATremotehome/" rel="alternate" type="text/html" title="Remote Home Access in Malaysia: Understanding CGNAT and Solutions" /><published>2025-02-19T00:00:00+08:00</published><updated>2025-02-19T00:00:00+08:00</updated><id>http://localhost:4000/networking/remote%20access/CGNATremotehome</id><content type="html" xml:base="http://localhost:4000/networking/remote%20access/CGNATremotehome/"><![CDATA[<h1 id="remote-home-access-in-malaysia-understanding-cgnat-and-solutions">Remote Home Access in Malaysia: Understanding CGNAT and Solutions</h1>
+
+<h2 id="understanding-malaysias-cgnat-and-its-impact-on-remote-access">Understanding Malaysia’s CGNAT and Its Impact on Remote Access</h2>
+
+<p><img src="https://raw.githubusercontent.com/mattchoo2/mattchoo2.github.io/main/assets/images/cgnat-remote-access.webp" alt="CGNAT Remote Access" /></p>
+
+<h3 id="what-is-cgnat-and-why-cant-you-detect-your-homes-actual-ip">What is CGNAT, and Why Can’t You Detect Your Home’s Actual IP?</h3>
+<p>Carrier-Grade Network Address Translation (CGNAT) is widely used by Malaysian ISPs to manage IPv4 address shortages. Instead of assigning a unique public IP to each user, ISPs assign private IPs and use a shared pool of public IPs for outbound connections. This means:</p>
+
+<ul>
+  <li>Your home router gets a private IP (e.g., <code class="language-plaintext highlighter-rouge">100.64.x.x</code> to <code class="language-plaintext highlighter-rouge">100.127.x.x</code>), not a true public IP.</li>
+  <li>Websites and services see the shared public IP, not your actual home IP.</li>
+  <li>Traditional “what is my IP” checks will only reveal the CGNAT-assigned public IP, which is shared among multiple users.</li>
+</ul>
+
+<h3 id="cgnat-enhances-security-by-hiding-your-ip">CGNAT Enhances Security by Hiding Your IP</h3>
+<p>While CGNAT makes remote access challenging, it provides some security benefits:</p>
+
+<ul>
+  <li>Your actual home IP is not exposed to the internet, reducing attack surfaces.</li>
+  <li>Direct attacks from the internet (e.g., port scanning, DDoS) are mitigated.</li>
+  <li>Unauthorized remote access attempts are blocked since external connections cannot directly reach your home network.</li>
+</ul>
+
+<h2 id="why-many-remote-home-solutions-fail-under-cgnat">Why Many Remote Home Solutions Fail Under CGNAT</h2>
+<p>Due to the lack of a true public IP, many traditional remote access solutions no longer work, including:</p>
+
+<ul>
+  <li><strong>OpenVPN:</strong> Requires port forwarding, which is impossible under CGNAT.</li>
+  <li><strong>Asus DDNS / Other Dynamic DNS Services:</strong> Since your ISP does not assign you a public IP, DDNS services cannot map a reachable address to your home network.</li>
+  <li><strong>WireGuard / Any Direct VPN Setup:</strong> Without a publicly accessible IP, peers cannot establish direct connections.</li>
+</ul>
+
+<p><img src="https://raw.githubusercontent.com/mattchoo2/mattchoo2.github.io/main/assets/images/tailscale.webp" alt="Tailscale Login Steps" /></p>
+
+<h2 id="solutions-that-work-tailscale-and-cloudflare-tunnel">Solutions That Work: Tailscale and Cloudflare Tunnel</h2>
+<p>Despite CGNAT limitations, some solutions bypass these restrictions using relay-based approaches.</p>
+
+<h3 id="1-tailscale-pro-and-con">1. <strong>Tailscale (Pro and Con)</strong></h3>
+<p>Tailscale is a mesh VPN built on WireGuard that works seamlessly behind CGNAT by using NAT traversal and relays when necessary.</p>
+
+<p>✅ <strong>Pros:</strong></p>
+<ul>
+  <li>No port forwarding required.</li>
+  <li>Encrypted, peer-to-peer connections when possible.</li>
+  <li>Free for personal use with up to 20 devices.</li>
+  <li>Easy to set up with apps for multiple platforms.</li>
+</ul>
+
+<p>❌ <strong>Cons:</strong></p>
+<ul>
+  <li>Requires an account (uses OAuth-based authentication like Google, Microsoft, etc.).</li>
+  <li>Some connections may still be relayed via Tailscale servers if direct NAT traversal fails, adding minimal latency.</li>
+</ul>
+
+<h3 id="2-cloudflare-tunnel-pro-and-con">2. <strong>Cloudflare Tunnel (Pro and Con)</strong></h3>
+<p>Cloudflare Tunnel (formerly Argo Tunnel) allows you to expose services like a home server or NAS securely without a public IP.</p>
+
+<p>✅ <strong>Pros:</strong></p>
+<ul>
+  <li>No need for a static public IP.</li>
+  <li>Works with a free Cloudflare account.</li>
+  <li>No inbound ports are open on your router, improving security.</li>
+  <li>Ideal for hosting self-hosted services (e.g., Home Assistant, Plex, web apps).</li>
+</ul>
+
+<p>❌ <strong>Cons:</strong></p>
+<ul>
+  <li>More setup steps compared to Tailscale.</li>
+  <li>Requires Cloudflare DNS to manage domains/subdomains.</li>
+  <li>Free tier has limitations (e.g., no private networking like Tailscale).</li>
+</ul>
+
+<h2 id="conclusion">Conclusion</h2>
+<p>With Malaysia’s widespread use of CGNAT, traditional remote access methods no longer work for most users. Instead, solutions like Tailscale and Cloudflare Tunnel provide modern, secure, and effective alternatives for accessing home networks remotely. Depending on your use case, Tailscale is better suited for private network access, while Cloudflare Tunnel is ideal for exposing specific services securely over the web.</p>]]></content><author><name>Matthew Choo</name><email>mattckw@gmail.com</email></author><category term="Networking" /><category term="Remote Access" /><category term="CGNAT" /><category term="Remote Access" /><category term="Tailscale" /><category term="Cloudflare Tunnel" /><category term="VPN" /><category term="Malaysia" /><summary type="html"><![CDATA[A guide on overcoming CGNAT limitations in Malaysia for remote home access using Tailscale and Cloudflare Tunnel.]]></summary></entry><entry><title type="html">Tuya Presence Automation – Smart Home Motion Detection</title><link href="http://localhost:4000/projects/tuya-presence-automation/" rel="alternate" type="text/html" title="Tuya Presence Automation – Smart Home Motion Detection" /><published>2025-02-19T00:00:00+08:00</published><updated>2025-02-19T00:00:00+08:00</updated><id>http://localhost:4000/projects/tuyapresenceautomation</id><content type="html" xml:base="http://localhost:4000/projects/tuya-presence-automation/"><![CDATA[<h2 id="tuya-presence-automation--smart-home-motion-detection">Tuya Presence Automation – Smart Home Motion Detection</h2>
+
+<p>Looking to enhance your smart home with reliable presence detection? <strong>Tuya Presence Automation</strong> leverages Tuya-based sensors to automate actions based on motion detection, making your home smarter and more efficient.</p>
+
+<h3 id="-features">🚀 Features</h3>
+<ul>
+  <li><strong>Smart Presence Detection</strong> – Automate lights, alarms, and other devices based on motion.</li>
+  <li><strong>Tuya Cloud API Integration</strong> – Works with Tuya-compatible sensors.</li>
+  <li><strong>Customizable Automations</strong> – Set up actions based on detected presence or absence.</li>
+  <li><strong>Energy Efficiency</strong> – Reduce power consumption by turning off unused devices.</li>
+</ul>
+
+<h3 id="-installation">🛠 Installation</h3>
+<ol>
+  <li>Clone the repository:
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/mattchoo2/tuyapresenceautomation.git
+</code></pre></div>    </div>
+  </li>
+  <li>Install dependencies:
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install</span> <span class="nt">-r</span> requirements.txt
+</code></pre></div>    </div>
+  </li>
+  <li>Configure your Tuya API credentials in the settings file.</li>
+  <li>Run the automation script:
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python main.py
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h3 id="-repository">📂 Repository</h3>
+<p>Check out the full source code and setup guide on GitHub:<br />
+<a href="https://github.com/mattchoo2/tuyapresenceautomation">🔗 Tuya Presence Automation</a></p>
+
+<h3 id="-why-use-this">✨ Why Use This?</h3>
+<p>With Tuya-based motion detection, you can create a fully automated smart home experience—turn on lights when someone enters a room, adjust climate controls, and even enhance security by detecting unauthorized movement.</p>
+
+<hr />
+
+<p>Try it out and bring automation to the next level! 🚀</p>]]></content><author><name>Matthew Choo</name><email>mattckw@gmail.com</email></author><category term="Projects" /><category term="Home Automation" /><category term="Smart Home" /><category term="Tuya" /><category term="Home Automation" /><category term="IoT" /><summary type="html"><![CDATA[Automate presence detection using Tuya sensors for seamless smart home integration.]]></summary></entry><entry><title type="html">CreditCard2Excel – Convert Credit Card Statements to Excel</title><link href="http://localhost:4000/projects/creditcard2excel/" rel="alternate" type="text/html" title="CreditCard2Excel – Convert Credit Card Statements to Excel" /><published>2025-02-19T00:00:00+08:00</published><updated>2025-02-19T00:00:00+08:00</updated><id>http://localhost:4000/projects/creditcard2excel</id><content type="html" xml:base="http://localhost:4000/projects/creditcard2excel/"><![CDATA[<h2 id="creditcard2excel--convert-credit-card-statements-to-excel">CreditCard2Excel – Convert Credit Card Statements to Excel</h2>
+
+<p>Manually organizing credit card statements can be tedious. <strong>CreditCard2Excel</strong> automates the process by extracting transaction data and saving it neatly in an Excel file.</p>
+
+<h3 id="-features">🚀 Features</h3>
+<ul>
+  <li><strong>Automated Extraction</strong> – Convert credit card statements into structured Excel files.</li>
+  <li><strong>Supports Multiple Formats</strong> – Works with PDF and CSV statements.</li>
+  <li><strong>Data Categorization</strong> – Automatically categorizes expenses.</li>
+  <li><strong>Easy Export</strong> – Saves data in Excel for further analysis.</li>
+</ul>
+
+<h3 id="-installation">🛠 Installation</h3>
+<ol>
+  <li>Clone the repository:
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/mattchoo2/creditcard2excel.git
+</code></pre></div>    </div>
+  </li>
+  <li>Install dependencies:
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install</span> <span class="nt">-r</span> requirements.txt
+</code></pre></div>    </div>
+  </li>
+  <li>Run the script with your credit card statement:
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python main.py path/to/statement.pdf
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h3 id="-repository">📂 Repository</h3>
+<p>Check out the full source code and setup guide on GitHub:<br />
+<a href="https://github.com/mattchoo2/creditcard2excel">🔗 CreditCard2Excel</a></p>
+
+<h3 id="-why-use-this">✨ Why Use This?</h3>
+<p>If you track your spending, this tool helps automate data extraction and categorization, making financial management easier.</p>
+
+<hr />
+
+<p>Give it a try and simplify your expense tracking! 🚀</p>]]></content><author><name>Matthew Choo</name><email>mattckw@gmail.com</email></author><category term="Projects" /><category term="Finance Tools" /><category term="Finance" /><category term="Python" /><category term="Automation" /><category term="Data Processing" /><summary type="html"><![CDATA[A Python tool to extract and organize credit card statement data into an Excel file.]]></summary></entry><entry><title type="html">Toyota Corolla Cross’s Original Wireless Charger Adjustment</title><link href="http://localhost:4000/automotive/diy/toyota-corolla-crosss-original-wireless-charger-adjustment/" rel="alternate" type="text/html" title="Toyota Corolla Cross’s Original Wireless Charger Adjustment" /><published>2022-11-21T00:00:00+08:00</published><updated>2022-11-21T00:00:00+08:00</updated><id>http://localhost:4000/automotive/diy/toyota-corolla-crosss-original-wireless-charger-adjustment</id><content type="html" xml:base="http://localhost:4000/automotive/diy/toyota-corolla-crosss-original-wireless-charger-adjustment/"><![CDATA[<p>Note.  The service center will not help you to do this. <br />
+I asked today during my 1k service.</p>
+
+<p>I am making these adjustments due to the clip gap is too small for my Samsung fold 3</p>
+
+<p>The wireless charger is installed and not intended to be removed.</p>
+
+<p>There is this pin under the front part of the wireless charger.</p>
+
+<p>You can try if you can slide to the front before lifting it up.<br />
+In this process, you will tear the double-sided tape at the front and back bottom of the charger.</p>
+
+<p><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1hjGEA8Uu3z4qcWrYxUeGoIkQQ04wxrH-GufULHEUBnKu_uDitNae85UsTsHya5WHwV8q_-A6-9q_Y-p0xzc7CCXifip8e4w4U1Mou4OeRlblGUXEbJjEpUwP-kZJ-BjmO8JM2S4fwaYxDo7Olq_-27ZGLZVS7z_vFVIa0TvB0xjDx-W5kG2ijVab/s4000/20221121_122614.jpg"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1hjGEA8Uu3z4qcWrYxUeGoIkQQ04wxrH-GufULHEUBnKu_uDitNae85UsTsHya5WHwV8q_-A6-9q_Y-p0xzc7CCXifip8e4w4U1Mou4OeRlblGUXEbJjEpUwP-kZJ-BjmO8JM2S4fwaYxDo7Olq_-27ZGLZVS7z_vFVIa0TvB0xjDx-W5kG2ijVab/s320/20221121_122614.jpg" alt="" /></a><br />
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjX9tp5IzilFthtZIMyTIDVBI9sG90f9PJKMfgS_hvHOpQYq_LqWfwUHETQ3B22s_AccVLyJySorKmXSV4sEeoMykPIeWVxbnT68Vn2fIDGqQD9oJJ91O9zLLJ94lwnB8uQqVtB3Td8oJ1WlQNu5W1jL43Tj0reREjvPu_BE_PQcXcwKEbiuzzQcuTF/s4000/20221121_122624.jpg"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjX9tp5IzilFthtZIMyTIDVBI9sG90f9PJKMfgS_hvHOpQYq_LqWfwUHETQ3B22s_AccVLyJySorKmXSV4sEeoMykPIeWVxbnT68Vn2fIDGqQD9oJJ91O9zLLJ94lwnB8uQqVtB3Td8oJ1WlQNu5W1jL43Tj0reREjvPu_BE_PQcXcwKEbiuzzQcuTF/s320/20221121_122624.jpg" alt="" /></a><br />
+Steps:<br />
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7XlcQlZNxO7ylF8roCmquBNDCuFmssgkJIfNt62skFpV6KUDnI5V4qyONPklvKyqZDpD7AUIfzHKE02LCrDczpsS2mvjhw9Modv_C3DluolheL-CyzBmUhJa73FcQe5o0oYDHFJ7tcA5KpzLYoZ9DNkjTx-a7Jz4UPXnbJ_tIPYAulbejyp6PcmeJ/s703/Picture4.png"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7XlcQlZNxO7ylF8roCmquBNDCuFmssgkJIfNt62skFpV6KUDnI5V4qyONPklvKyqZDpD7AUIfzHKE02LCrDczpsS2mvjhw9Modv_C3DluolheL-CyzBmUhJa73FcQe5o0oYDHFJ7tcA5KpzLYoZ9DNkjTx-a7Jz4UPXnbJ_tIPYAulbejyp6PcmeJ/s320/Picture4.png" alt="" /></a></p>
+
+<ol>
+  <li>When you manage to lift the charger up, you can pull it out to do the rest.<br />
+REMEMBER to make sure the car break is on and Gear moves to N to get more space for work.</li>
+  <li>Unscrew the two screws on the left and right</li>
+  <li>Push up the clip, and you will see the red circle number 3 wrap around a white cable.<br />
+Use a sharp scissor to snap the grey plastic (NOT THE WHITE CABLE)</li>
+  <li>Remove the clip part as in the picture above</li>
+</ol>
+
+<p><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRhKhegQ1GdxtrUN5PWmCVNdgOEOnCi_U1k4sxSadgBKJHTS_n1z8NPjbsGDOXlDYG6inbx6abGf42Gc51yoW9cn6e551m7Crc1w4ll7WcE-ro1tDWS4T_juuDEpK5QqpiRrb7LqmFPcmIqSKaTQSBlpg29MSDfDbTAgs5oal1jyxKcM5FN1KeDjXr/s4000/20221121_122538.jpg"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRhKhegQ1GdxtrUN5PWmCVNdgOEOnCi_U1k4sxSadgBKJHTS_n1z8NPjbsGDOXlDYG6inbx6abGf42Gc51yoW9cn6e551m7Crc1w4ll7WcE-ro1tDWS4T_juuDEpK5QqpiRrb7LqmFPcmIqSKaTQSBlpg29MSDfDbTAgs5oal1jyxKcM5FN1KeDjXr/s320/20221121_122538.jpg" alt="" /></a>There is two metal piece left there as in the picture.  Lastly, push the charger and fit it into place.Now it works for my Samsung Fold 3 by just putting on it.<br />
+(As clip is no more, not sure how stable the phone will stay in place)</p>]]></content><author><name>Matthew Choo</name><email>mattckw@gmail.com</email></author><category term="Automotive" /><category term="DIY" /><category term="Toyota Corolla Cross" /><category term="Wireless Charger" /><category term="Car Accessories" /><category term="DIY" /><category term="Smartphone Charging" /><summary type="html"><![CDATA[A step-by-step guide on adjusting the Toyota Corolla Cross's original wireless charger to fit larger smartphones like the Samsung Fold 3.]]></summary></entry><entry><title type="html">Toyota Corolla Cross Car Glasses Storage Holder Box Installation</title><link href="http://localhost:4000/automotive/diy/toyota-corolla-cross-car-glasses-storage-holder-box-installation/" rel="alternate" type="text/html" title="Toyota Corolla Cross Car Glasses Storage Holder Box Installation" /><published>2022-11-21T00:00:00+08:00</published><updated>2022-11-21T00:00:00+08:00</updated><id>http://localhost:4000/automotive/diy/toyota-corolla-cross-car-glasses-storage-holder-box-installation</id><content type="html" xml:base="http://localhost:4000/automotive/diy/toyota-corolla-cross-car-glasses-storage-holder-box-installation/"><![CDATA[<p>Toyota Corolla Cross has limited storage space.</p>
+
+<p>As there is a handle on top of the driver’s seat, this can be replaced with Sunglass storage.</p>
+
+<p><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0hLN9O6Ht2ZH1DhP7DGIiGwIE0S4JVmFQovQhDzvwLI-9TP5Nlbq9eygULV40x4SuyhOdVDPjNNoiAZiJi8wPy4RRqhnJUsqSSAcE445UouW1CCdeZOM4S9RyxJybS4RfQzWLpL4JwtylTjxF17HDl_PpTQV3vIUoE5xmY51N-O3S4nucGdDJItZz/s720/Picture1.jpg"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0hLN9O6Ht2ZH1DhP7DGIiGwIE0S4JVmFQovQhDzvwLI-9TP5Nlbq9eygULV40x4SuyhOdVDPjNNoiAZiJi8wPy4RRqhnJUsqSSAcE445UouW1CCdeZOM4S9RyxJybS4RfQzWLpL4JwtylTjxF17HDl_PpTQV3vIUoE5xmY51N-O3S4nucGdDJItZz/s320/Picture1.jpg" alt="" /></a></p>
+
+<ol>
+  <li>
+    <p>Use the L-shape screwdriver on the small hole and open the case</p>
+
+    <p><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8n1EWVXAvVl7GNBpyzZ1fTIxfnUtycMdNKmlMIGdIBaQZLsbER4kJTGlUuCoD7oxjkiU9kSHW-akp3RPiuWLdL0l-algXRrPXZqOVgSRuz27FBuSAKqk99w4aC4rnMBQbhlbQmZR3NfyZFIAHQpile0-425nzw90oEXgoqKiVS4Phie6wUZSZ89py/s479/Picture1.png"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8n1EWVXAvVl7GNBpyzZ1fTIxfnUtycMdNKmlMIGdIBaQZLsbER4kJTGlUuCoD7oxjkiU9kSHW-akp3RPiuWLdL0l-algXRrPXZqOVgSRuz27FBuSAKqk99w4aC4rnMBQbhlbQmZR3NfyZFIAHQpile0-425nzw90oEXgoqKiVS4Phie6wUZSZ89py/s320/Picture1.png" alt="" /></a></p>
+  </li>
+  <li>
+    <p>After opening, pinch the silver clip to detach the handle from the car roof.</p>
+
+    <p><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3rakSC3-aorCtmaTuefA2zHt8xFOpYPUJUxuNy1tHrl9jJ7UwnlRPyRkVg0MQteXK6IzkuntSVtZcUvKHQZQhiwq-4IdV62eqlxE6PnitD5ZeCfsf93puKsS9oTLC2YF8KvxitRMGygViOogPdbAYzRqB0AXiwPAoFwLiGFEWCLOzbkCyvYCcVrSp/s1043/Picture2.png"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3rakSC3-aorCtmaTuefA2zHt8xFOpYPUJUxuNy1tHrl9jJ7UwnlRPyRkVg0MQteXK6IzkuntSVtZcUvKHQZQhiwq-4IdV62eqlxE6PnitD5ZeCfsf93puKsS9oTLC2YF8KvxitRMGygViOogPdbAYzRqB0AXiwPAoFwLiGFEWCLOzbkCyvYCcVrSp/w469-h205/Picture2.png" alt="" /></a></p>
+  </li>
+  <li>
+    <p>Pinch the silver clip to detach the clip from the car roof</p>
+
+    <p><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfHLNHvSyB6NBmYGjKIJ6UW7KM6uxFfVw1UcguGD2HA-0GCFZHBBpZ5fCbZgP4ITEclNb4cevY9e9oTpdNsk4GAITJ5KkR7qYfydoPzIWJJalZrxUsacxqj3L99cbhsG2NstMFh5RkU2ZqR8zLXfjYB75QlT47NiIeKa3HHtXWtbnadrYYzGCJVKvm/s4000/20221121_125933.jpg"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfHLNHvSyB6NBmYGjKIJ6UW7KM6uxFfVw1UcguGD2HA-0GCFZHBBpZ5fCbZgP4ITEclNb4cevY9e9oTpdNsk4GAITJ5KkR7qYfydoPzIWJJalZrxUsacxqj3L99cbhsG2NstMFh5RkU2ZqR8zLXfjYB75QlT47NiIeKa3HHtXWtbnadrYYzGCJVKvm/s320/20221121_125933.jpg" alt="" /></a></p>
+  </li>
+  <li>
+    <p>Put the glass storage in place, and push the provided pin in the holes. DONE</p>
+  </li>
+</ol>
+
+<p><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiOQAEzsJaowuaTk-4P_Or792Y_AiQKSkOxCywBsG3GTBa9AFqUOlcJnwRW0mRCvkAEZ1xzmFgGgpsGzJBZ33L6zW1DxJot2LK6sibxyohbCjZDOTLLP8SyaQoAVFraoFwyoVlakTNLeNt2QxxeV7XseMpKCOBe88bCq29WA3mtUDyP6gyj8bm5RnE/s487/Picture3.png"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiOQAEzsJaowuaTk-4P_Or792Y_AiQKSkOxCywBsG3GTBa9AFqUOlcJnwRW0mRCvkAEZ1xzmFgGgpsGzJBZ33L6zW1DxJot2LK6sibxyohbCjZDOTLLP8SyaQoAVFraoFwyoVlakTNLeNt2QxxeV7XseMpKCOBe88bCq29WA3mtUDyP6gyj8bm5RnE/s320/Picture3.png" alt="" /></a></p>
+
+<p><strong>Outcome pictures</strong>
+<br /><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlk3c0lX3YgtUvwoqzWtZaSyWj41xjcYPjk7oCWXIt0aj7zpwqFoxkvKOEZs72og0RZnINuopuVMMQ9T8sVnrFNIh2k41AttG0VcczEtSgSQ80o9dWNgxLIxKguBrDcTYEDkkg_jP1AKuLyhg8znwZn4P1MRI5eY4p2xysR9ggCpuDjpdZyNpAL3QZ/s4000/20221121_121218.jpg"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlk3c0lX3YgtUvwoqzWtZaSyWj41xjcYPjk7oCWXIt0aj7zpwqFoxkvKOEZs72og0RZnINuopuVMMQ9T8sVnrFNIh2k41AttG0VcczEtSgSQ80o9dWNgxLIxKguBrDcTYEDkkg_jP1AKuLyhg8znwZn4P1MRI5eY4p2xysR9ggCpuDjpdZyNpAL3QZ/s320/20221121_121218.jpg" alt="" /></a><br />
+<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_YH6kdzb0hutMDVEGeFHmEIkfb8A8HiHSxYkD_i5PgJyiGGSt64NfL0Mpdw7w4b9otaQDYjoKIZdAoaH8xq0HOI1abgjfvtcqWLhWny7EbQza1ohAunN-ncNvUQP5fdepkCgJ8oBr9HDeGBbcjMKDv4B9IZ7ZK5hvK0sM2WnYC_ZAEDCrHTt0s7O1/s4000/20221121_121230.jpg"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_YH6kdzb0hutMDVEGeFHmEIkfb8A8HiHSxYkD_i5PgJyiGGSt64NfL0Mpdw7w4b9otaQDYjoKIZdAoaH8xq0HOI1abgjfvtcqWLhWny7EbQza1ohAunN-ncNvUQP5fdepkCgJ8oBr9HDeGBbcjMKDv4B9IZ7ZK5hvK0sM2WnYC_ZAEDCrHTt0s7O1/s320/20221121_121230.jpg" alt="" /></a></p>]]></content><author><name>Matthew Choo</name><email>mattckw@gmail.com</email></author><category term="Automotive" /><category term="DIY" /><category term="Toyota Corolla Cross" /><category term="Car Accessories" /><category term="DIY Installation" /><category term="Storage" /><category term="Car Modifications" /><summary type="html"><![CDATA[A step-by-step guide on installing a glasses storage holder box in a Toyota Corolla Cross by replacing the driver’s seat handle.]]></summary></entry><entry><title type="html">Android Connected to WiFi but No Internet Issue</title><link href="http://localhost:4000/android/troubleshooting/android-connected-to-wifi-but-no-internet-issue/" rel="alternate" type="text/html" title="Android Connected to WiFi but No Internet Issue" /><published>2021-12-02T00:00:00+08:00</published><updated>2021-12-02T00:00:00+08:00</updated><id>http://localhost:4000/android/troubleshooting/android-connected-to-wifi-but-no-internet-issue</id><content type="html" xml:base="http://localhost:4000/android/troubleshooting/android-connected-to-wifi-but-no-internet-issue/"><![CDATA[<p>Suspected cause for my case:</p>
+
+<ul>
+  <li>Vivo android phone use “randomized MAC address” when connected to WiFi</li>
+  <li>My house have main router + mesh router</li>
+  <li>I do IP Binding with Mac address</li>
+  <li>Combination above caused the issue.</li>
+</ul>
+
+<p>Solution:</p>
+
+<ol>
+  <li>
+    <p>On android, in respective connected WiFi setting, change Privacy to “Use device MAC” </p>
+
+    <p><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJ6o83julL8SM78pzNbKRLrz76tECzivg0C-XUqRv03zQiglA4PesEhJEyN_ByGzUskWjyBc65RMaWAzJzAUVi1CsfZqEG4D39aNavYD-827QlukgmwPH2gO5tNTEbW28ldGjJb6Ze8zk/s924/WhatsApp+Image+2021-12-02+at+18.08.26.jpeg"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJ6o83julL8SM78pzNbKRLrz76tECzivg0C-XUqRv03zQiglA4PesEhJEyN_ByGzUskWjyBc65RMaWAzJzAUVi1CsfZqEG4D39aNavYD-827QlukgmwPH2gO5tNTEbW28ldGjJb6Ze8zk/s320/WhatsApp+Image+2021-12-02+at+18.08.26.jpeg" alt="" /></a></p>
+  </li>
+  <li>Go to router &gt; LAN &gt; DCHP and remove any previous binding with your phone name</li>
+  <li>Off Wifi on phone, go to another router, on wifi on phone, connect to it</li>
+  <li>Fixed</li>
+</ol>
+
+<p>RegardsMatthew</p>]]></content><author><name>Matthew Choo</name><email>mattckw@gmail.com</email></author><category term="Android" /><category term="Troubleshooting" /><category term="WiFi" /><category term="Android" /><category term="No Internet" /><category term="MAC Address" /><category term="Router Settings" /><summary type="html"><![CDATA[A troubleshooting guide for fixing the 'connected to WiFi but no internet' issue on Android devices, particularly when using randomized MAC addresses.]]></summary></entry></feed>

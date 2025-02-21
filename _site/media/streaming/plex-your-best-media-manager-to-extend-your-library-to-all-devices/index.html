@@ -1,0 +1,871 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.26.2 by Michael Rose
+  Copyright 2013-2024 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en-US" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Plex ~ Your Best Media Manager to Extend Your Library to All Devices - Me &amp; My Tiny Coding Journey</title>
+<meta name="description" content="A guide on using Plex to manage and stream your media library across multiple devices effortlessly.">
+
+
+  <meta name="author" content="Matthew Choo">
+  
+  <meta property="article:author" content="Matthew Choo">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Me & My Tiny Coding Journey">
+<meta property="og:title" content="Plex ~ Your Best Media Manager to Extend Your Library to All Devices">
+<meta property="og:url" content="http://localhost:4000/media/streaming/plex-your-best-media-manager-to-extend-your-library-to-all-devices/">
+
+
+  <meta property="og:description" content="A guide on using Plex to manage and stream your media library across multiple devices effortlessly.">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/filler.webp">
+
+
+
+
+
+  <meta property="article:published_time" content="2014-06-29T00:00:00+08:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/media/streaming/plex-your-best-media-manager-to-extend-your-library-to-all-devices/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Me & My Tiny Coding Journey Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single wide" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/Mattlogo.png" alt="Matt Life Tech"></a>
+        
+        <a class="site-title" href="/">
+          Matt Life Tech
+          <span class="site-subtitle">where journey starts</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/"
+                
+                
+              >Quick-Start Guide</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style=" background-image: url('/assets/images/filler.webp');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          Plex ~ Your Best Media Manager to Extend Your Library to All Devices
+
+        
+      </h1>
+      
+        <p class="page__lead">A guide on using Plex to manage and stream your media library across multiple devices effortlessly.
+</p>
+      
+      
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+      
+    </div>
+  
+  
+</div>
+
+
+
+
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/" itemprop="item"><span itemprop="name">Home</span></a>
+
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#media" itemprop="item"><span itemprop="name">Media</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#streaming" itemprop="item"><span itemprop="name">Streaming</span></a>
+          <meta itemprop="position" content="3" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        <li class="current">Plex ~ Your Best Media Manager to Extend Your Library to All Devices</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="/assets/images/MattLifeTech.png" alt="Matthew Choo" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">Matthew Choo</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>With 20 years in market research across Telco and Media, I’ve decoded consumer behavior, optimized research, and driven data-led strategies. Now, I’m diving into coding, automation, and tech solutions—where data meets efficiency. This blog is my space to share insights, from Python scripts to research optimizations and life hacks. Join me in exploring smarter ways to work and live!</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Asia</span>
+        </li>
+      
+
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:mattckw@gmail.com" rel="me" class="u-email">
+            <meta itemprop="email" content="mattckw@gmail.com" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span>
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Plex ~ Your Best Media Manager to Extend Your Library to All Devices">
+    <meta itemprop="description" content="A guide on using Plex to manage and stream your media library across multiple devices effortlessly.">
+    <meta itemprop="datePublished" content="2014-06-29T00:00:00+08:00">
+    
+
+    <div class="page__inner-wrap">
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6L5cA7PmnFwKoFgtBC6Bp2vVOaHwffLXNH3bpz1DGY9p_XhTYQLGzwAuL-sLJrMP52raV61Ilmjk0_OUty4UBrG17KUsy_8nB5yIxtl2PncGOhNbiGv75SDvwv6TdVBucGsXqJhsNFiQ/s1600/Screen+Shot+2014-06-29+at+1.33.30+PM.png"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6L5cA7PmnFwKoFgtBC6Bp2vVOaHwffLXNH3bpz1DGY9p_XhTYQLGzwAuL-sLJrMP52raV61Ilmjk0_OUty4UBrG17KUsy_8nB5yIxtl2PncGOhNbiGv75SDvwv6TdVBucGsXqJhsNFiQ/s1600/Screen+Shot+2014-06-29+at+1.33.30+PM.png" alt="" /></a>
+Plex is just so cool!</p>
+
+<p>One line… The End…</p>
+
+<p>Nah… There are more.</p>
+
+<p><strong>Before Plex</strong>, these are what I need to go through to manage my media across all my devices:</p>
+
+<ol>
+  <li>Find the videos file and download it</li>
+  <li>Ensure the format is correct.  Else, need to convert it to the right format</li>
+</ol>
+
+<ul>
+  <li>Note: Many of the formats do not work across platforms e.g. Mac, Window, iOS, Android</li>
+  <li>Shall I keep Two format copies for all videos?</li>
+</ul>
+
+<ol>
+  <li>Rename, Sort, Keep it in the right order in my computer or storage</li>
+  <li>Whenever I wish to watch it other than the storage device, I need to:</li>
+</ol>
+
+<ul>
+  <li>Connect my phone or tablet to computer via USB cable</li>
+  <li>Load the selected movies into my phone or tablet</li>
+  <li>Delete it after watch</li>
+</ul>
+
+<p>Mmm… Not so fun</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  
+
+**Now with Plex**...
+
+1. Find the videos file and download it
+
+* Automatic Naming &amp; Sorting
+* Automatic Cover Art &amp; Info download (description, actors etc)
+
+3. Watch it on Any Device directly *(No format conversion ever required)*
+4. Tap a button in app to sync (download) content to phone or tablet Wirelessly
+
+* Videos watched are automatically marked as "watched"
+* Note: Sync is a PAID feature
+
+
+
+**Where?**
+
+You can actually watch IN HOME &amp; OUT OF HOME even you are FREE account:
+
+1. FREE account
+
+* In Home -- Stream over local WiFi network
+* Out of Home -- Stream over WiFi or 3G network
+
+3. PAID account
+
+* In Home -- Stream over local WiFi network
+* Out of Home
+
++ Stream over WiFi or 3G network
++ Sync (download) on to smartphone/ tablet (PAID feature)
+
+
+
+**What devices Plex support?** A LOTS..
+[![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKn9B1QVu9qvvjjoa9DcDNLfktZgcKkHLtlP5pa12aZhUZ6jRTGv60kgKDaaeqkSb2Xm7bVbfI6WwV-GGpC3XDuJNjIrcaEbOyMR5PL0lDIXkdmHEChmGXbae4za0X28p7JmyoAW89uAM/s1600/Screen+Shot+2014-06-29+at+1.39.04+PM.png)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKn9B1QVu9qvvjjoa9DcDNLfktZgcKkHLtlP5pa12aZhUZ6jRTGv60kgKDaaeqkSb2Xm7bVbfI6WwV-GGpC3XDuJNjIrcaEbOyMR5PL0lDIXkdmHEChmGXbae4za0X28p7JmyoAW89uAM/s1600/Screen+Shot+2014-06-29+at+1.39.04+PM.png)
+  
+
+  
+
+  
+
+</code></pre></div></div>
+
+<p>Requirements:</p>
+
+<ol>
+  <li>A file servers to store all video files (recommend to have minimum 1TB)</li>
+  <li>A computer (Mac/ Window) to manage the video casting to your device</li>
+</ol>
+
+<ul>
+  <li>This is recommended as the computer needs capacity to manage the video format and quality streaming from the server to your devices</li>
+  <li>Other options are to use servers with built-in processor capacity</li>
+</ul>
+
+<ol>
+  <li>LAN cables to connect Server–Router–Computer for best streaming experience</li>
+</ol>
+
+<p>How to Setup:
+Basic</p>
+
+<ol>
+  <li>Register for Free on <a href="http://www.plexapp.com/">Plex website</a></li>
+  <li>Download “Plex Media Server” for your computer managing the media</li>
+</ol>
+
+<ul>
+  <li>Login</li>
+  <li>
+    <p>Select the folder where you store your videos</p>
+  </li>
+  <li>Recommend to store your Series and Movies in different folders</li>
+</ul>
+
+<ol>
+  <li>Download Apps for the devices you needs</li>
+</ol>
+
+<ul>
+  <li>Login on Plex Media Server and Apps</li>
+</ul>
+
+<ol>
+  <li>Walaah… you are ready to go!!!</li>
+</ol>
+
+<p>Advance</p>
+
+<ol>
+  <li>If you wish to sync (download) videos into your devices, you need to purchase a premium service (recommend one time fee of USD$75)</li>
+</ol>
+
+<p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+
+<p>Areas of improvements:</p>
+
+<ol>
+  <li>Cloud Sync – Redundant</li>
+</ol>
+
+<ul>
+  <li>I find Cloud Sync to be cool but less practical as using Cloud Sync is similar to use streaming from home computer</li>
+</ul>
+
+<ol>
+  <li>Plex Media Server + Bit Torrent – Crashed</li>
+</ol>
+
+<ul>
+  <li>As the latest version enable instantaneous library update, it will crashed my computer whenever I have both bit torrent and Plex Media Server on at the same time</li>
+  <li>I would recommend to at least have the option for Manual library update only</li>
+</ul>
+
+<p>If you have any queries not covered above,  just comment below and I will response.</p>
+
+<p>Cheers</p>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#home-entertainment" class="page__taxonomy-item p-category" rel="tag">Home Entertainment</a><span class="sep">, </span>
+    
+      <a href="/tags/#media-server" class="page__taxonomy-item p-category" rel="tag">Media Server</a><span class="sep">, </span>
+    
+      <a href="/tags/#plex" class="page__taxonomy-item p-category" rel="tag">Plex</a><span class="sep">, </span>
+    
+      <a href="/tags/#streaming" class="page__taxonomy-item p-category" rel="tag">Streaming</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#media" class="page__taxonomy-item p-category" rel="tag">Media</a><span class="sep">, </span>
+    
+      <a href="/categories/#streaming" class="page__taxonomy-item p-category" rel="tag">Streaming</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2014-06-29T00:00:00+08:00">June 29, 2014</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  <h4 class="page__share-title">Share on</h4>
+
+  <a href="https://twitter.com/intent/tweet?text=Plex+~+Your+Best+Media+Manager+to+Extend+Your+Library+to+All+Devices%20http%3A%2F%2Flocalhost%3A4000%2Fmedia%2Fstreaming%2Fplex-your-best-media-manager-to-extend-your-library-to-all-devices%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fmedia%2Fstreaming%2Fplex-your-best-media-manager-to-extend-your-library-to-all-devices%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/media/streaming/plex-your-best-media-manager-to-extend-your-library-to-all-devices/" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/mac/gaming/mac-os-x-keyboard-enable-f1-f12-as-default-for-gaming/" class="pagination--pager" title="Mac OS X Keyboard - Enable F1-F12 as Default for Gaming">Previous</a>
+    
+    
+      <a href="/security/cars/car-remote-the-best-anti-theft-alarm-you-may-not-aware/" class="pagination--pager" title="Car Remote - The Best Anti-theft Alarm You May Not Be Aware Of">Next</a>
+    
+  </nav>
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    
+<div class="page__related">
+  
+  <h2 class="page__related-title">You may also enjoy</h2>
+  <div class="grid__wrapper">
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/coding/template/" rel="permalink">My First Post
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">This is my first post using the Minimal Mistakes theme!
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/tuya-power-overload.webp" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/smart%20home/troubleshooting/tuyaoverload/" rel="permalink">Tuya Power Meter Overload Alarm – Will It Shut Down the Whole House?
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">An investigation into Tuya smart power meter overload alarms, clarifying whether they affect the entire house or just the connected device.
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/python-beginner-powershell.webp" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/python/beginner/pythonbeginner/" rel="permalink">Getting Started with Python for Absolute Beginners Using PowerShell
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">A step-by-step guide for those with zero coding knowledge to set up Python and run scripts using PowerShell.
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/cgnat-remote-access.webp" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/networking/remote%20access/CGNATremotehome/" rel="permalink">Remote Home Access in Malaysia: Understanding CGNAT and Solutions
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">A guide on overcoming CGNAT limitations in Malaysia for remote home access using Tailscale and Cloudflare Tunnel.
+</p>
+  </article>
+</div>
+
+    
+  </div>
+</div>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2025 <a href="http://localhost:4000">Me & My Tiny Coding Journey</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+  </body>
+</html>
