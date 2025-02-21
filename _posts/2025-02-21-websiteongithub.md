@@ -129,18 +129,6 @@ tag_archive:
   path: /tags/
 ```
 
-### Step 2.3: Enable Liquid Archive Method in `_config.yml`
-
-Ensure these lines exist in `_config.yml`:
-
-```
-category_archive:
- type: liquid
- path: /categories/
-tag_archive:
- type: liquid
- path: /tags/```
-```
 
 ### Step 2.4: Set Up Navigation
 
