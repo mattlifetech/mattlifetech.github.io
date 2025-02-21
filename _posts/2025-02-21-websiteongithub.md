@@ -10,6 +10,9 @@ categories: [Web Development, Jekyll]
 tags: [Jekyll, Minimal Mistakes, GitHub Pages, Liquid Archive]
 ---
 
+![Minimal Mistakes Setup](https://raw.githubusercontent.com/mattchoo2/mattchoo2.github.io/main/assets/images/minimal-mistakes-setup.webp)
+
+
 ## Step 1: Setting Up the Repository
 
 ### Step 1.1: Create a GitHub Repository
@@ -127,8 +130,6 @@ tag_archive:
   path: /tags/
 ```
 
-
-
 ### ### Step 2.3: Enable Liquid Archive Method in `_config.yml`
 
 Ensure these lines exist in `_config.yml`:
@@ -141,8 +142,6 @@ tag_archive:
  type: liquid
  path: /tags/```
 ```
-
- 
 
 ### Step 2.4: Set Up Navigation
 
@@ -247,8 +246,6 @@ Welcome to my first blog post!
 ```
 
 ### Important - “teaser: ” is the thumbnail picture
-
-
 
 ## Step 3: Test the Site Locally
 
