@@ -10,7 +10,6 @@ categories: [Smart Home, Troubleshooting]
 tags: [Tuya, Power Meter, Smart Home, Overload Protection, Energy Monitoring]
 ---
 
-
 ## Tuya Power Meter Overload Alarm Notification
 
 Recently, I encountered an overload alarm notification on my Tuya smart power meter. This raised an immediate concern: Will the overload protection cut off power to the entire house?
@@ -31,31 +30,36 @@ Unfortunately, IOT Tuya only keep one week of data where I dont have data to con
 Also, there is no way to turn off this notification or reduce the firmware's measurement frequency, which means users will continue to see these alerts even if no real danger is present.
 
 ## Energy Supplier vs. Firmware Issue Comparison
+
 This is Feb2025 Power vs Voltage logging chart on home assistant:
 ![Power Monitoring](https://raw.githubusercontent.com/mattchoo2/mattchoo2.github.io/main/assets/images/powercurrent.png)
 
-
-
 Below is a comparison table from my earlier analysis, summarizing the possibilities of an issue being caused by the energy supplier or a firmware malfunction:
 
-| Factor                         | Energy Supplier Change | Tuya Firmware Change |
-|--------------------------------|------------------------|----------------------|
-| **Power fluctuation increase** | Possible, if grid quality changed | Possible, if data logging increased |
-| **Voltage fluctuation increase** | Should be more severe if supply changed | Possible, but less likely |
-| **Memory error on Tuya IoT logs** | Unrelated to grid | Highly relevant |
-| **Change in data granularity** | No effect on logging | Could directly affect logging frequency |
-| **Overload alarms increased** | Possible if grid changed | Possible if firmware became more sensitive |
+| Factor                            | Energy Supplier Change                  | Tuya Firmware Change                       |
+| --------------------------------- | --------------------------------------- | ------------------------------------------ |
+| **Power fluctuation increase**    | Possible, if grid quality changed       | Possible, if data logging increased        |
+| **Voltage fluctuation increase**  | Should be more severe if supply changed | Possible, but less likely                  |
+| **Memory error on Tuya IoT logs** | Unrelated to grid                       | Highly relevant                            |
+| **Change in data granularity**    | No effect on logging                    | Could directly affect logging frequency    |
+| **Overload alarms increased**     | Possible if grid changed                | Possible if firmware became more sensitive |
 
 ✅ **Final Assessment:**
 
--   **The most likely cause is a Tuya firmware change.**
-    
-    -   The "out of memory" issue could have forced the device to restart.
-    -   If the logging frequency increased, power fluctuations would appear more chaotic even if actual consumption remained the same.
-    -   Overload alarms aligning with memory errors suggest an internal software issue rather than a supplier change.
--   **An energy supplier change is still possible but less likely.**
-    
-    -   If this were the main cause, voltage variations should be much more erratic, and you would likely see fluctuations in **other appliances** too.
+- **The most likely cause is a Tuya firmware change.**
+  
+  - The "out of memory" issue could have forced the device to restart.
+  - If the logging frequency increased, power fluctuations would appear more chaotic even if actual consumption remained the same.
+  - Overload alarms aligning with memory errors suggest an internal software issue rather than a supplier change.
+
+- **An energy supplier change is still possible but less likely.**
+  
+  - If this were the main cause, voltage variations should be much more erratic, and you would likely see fluctuations in **other appliances** too.
+
+- **UPDATE: shutdown the power meter for 5 minuts and restart** 
+  
+  - Notification of overload stopped appearing for 5days now.
+  - Will update if have new observation
 
 ---
 
