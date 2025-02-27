@@ -4,8 +4,8 @@ layout: single
 excerpt: "A guide to cleaning up story text files by removing unwanted random characters using a Python script."
 date: 2025-02-21
 header:
-  overlay_image: /assets/images/text-cleaning.webp
-  teaser: /assets/images/text-cleaning-teaser.webp
+  overlay_image: /assets/images/filler.webp
+  teaser: /assets/images/text-cleaning.webp
 categories: [Text Processing, Python]
 tags: [Python, Text Cleaning, Automation, Regex]
 ---
