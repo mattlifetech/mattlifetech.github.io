@@ -42,11 +42,12 @@ When working with **Excel automation**, the two most popular tools are **VBA (Vi
 
 ## 🖥️ **Platform Availability: Mac vs Windows**
 
-| Platform | **VBA** | **Python** |
-|----------|--------|------------|
-| **Windows** | Fully supported ✅ | Fully supported ✅ |
-| **Mac** | Limited support (no ActiveX, COM) ❌ | Fully supported ✅ |
-| **Linux** | ❌ Not supported | ✅ Fully supported |
+| Platform   | **VBA**                                      | **Python**            |
+|------------|---------------------------------------------|------------------------|
+| **Windows** | ✅ Fully supported                         | ✅ Fully supported     |
+| **Mac**     | ❌ Limited support (no ActiveX, COM)       | ✅ Fully supported     |
+| **Linux**   | ❌ Not supported                           | ✅ Fully supported     |
+
 
 ### **Using VBA on Mac**
 - **Mac VBA is limited** compared to Windows (no ActiveX, COM objects).  
@@ -93,16 +94,16 @@ When working with **Excel automation**, the two most popular tools are **VBA (Vi
 
 ---
 
-## **🔍 Conclusion: VBA or Python?**
+## 🔍 Conclusion: VBA or Python?
 
-| **If You Need...** | **Use VBA** ✅ | **Use Python** ✅ |
-|------------------|---------------|----------------|
-| Basic Excel Macros | ✅ | ❌ |
-| Fast Large Data Processing | ❌ | ✅ |
-| Machine Learning / AI | ❌ | ✅ |
-| Web Scraping | ❌ | ✅ |
-| Full Mac Support | ❌ | ✅ |
-| API & Database Integration | ❌ | ✅ |
+| **If You Need...**              | **Use VBA** ✅ | **Use Python** ✅ |
+|---------------------------------|--------------|----------------|
+| Basic Excel Macros              | ✅            | ❌              |
+| Fast Large Data Processing      | ❌            | ✅              |
+| Machine Learning / AI           | ❌            | ✅              |
+| Web Scraping                    | ❌            | ✅              |
+| Full Mac Support                | ❌            | ✅              |
+| API & Database Integration      | ❌            | ✅              |
 
 **🚀 Final Takeaway:**  
 If you're an **Excel power user** who needs **simple automation**, **VBA** is great.  
