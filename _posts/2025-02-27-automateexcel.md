@@ -41,6 +41,7 @@ When working with **Excel automation**, the two most popular tools are **VBA (Vi
 ---
 
 ## 🖥️ **Platform Availability: Mac vs Windows**
+
 | Platform | **VBA** | **Python** |
 |----------|--------|------------|
 | **Windows** | Fully supported ✅ | Fully supported ✅ |
@@ -93,6 +94,7 @@ When working with **Excel automation**, the two most popular tools are **VBA (Vi
 ---
 
 ## **🔍 Conclusion: VBA or Python?**
+
 | **If You Need...** | **Use VBA** ✅ | **Use Python** ✅ |
 |------------------|---------------|----------------|
 | Basic Excel Macros | ✅ | ❌ |
