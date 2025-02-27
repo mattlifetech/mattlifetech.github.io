@@ -2,7 +2,7 @@
 title: "Batch Removing Random Characters in Story Text Files"
 layout: single
 excerpt: "A guide to cleaning up story text files by removing unwanted random characters using a Python script."
-date: 2025-02-21
+date: 2025-02-27
 header:
   overlay_image: /assets/images/filler.webp
   teaser: /assets/images/text-cleaning.webp
