@@ -10,6 +10,9 @@ categories: [Text Processing, Python]
 tags: [Python, Text Cleaning, Automation, Regex]
 ---
 
+![remove random](https://raw.githubusercontent.com/mattchoo2/mattchoo2.github.io/main/assets/images/text-cleaning.webp)
+
+
 ## Removing Random Characters in Story Text Files
 
 When processing large text files, especially those converted from different formats, unwanted random characters can appear. These can include symbols, numbers, and inconsistent letter sequences. 

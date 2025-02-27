@@ -10,6 +10,9 @@ categories: [Automation, Python]
 tags: [Python, File Management, Automation]
 ---
 
+![delempty](https://raw.githubusercontent.com/mattchoo2/mattchoo2.github.io/main/assets/images/folder-cleaning-thumb.webp)
+
+
 ## Scan and Delete Empty Folders Automatically
 
 When managing large directories, empty folders often accumulate due to file deletions or restructuring. Instead of manually checking and removing them, we can automate the process with a simple Python script.

@@ -10,6 +10,9 @@ categories: [File Management, Python]
 tags: [Python, File Analysis, Automation, Data Processing]
 ---
 
+![counttype](https://raw.githubusercontent.com/mattchoo2/mattchoo2.github.io/main/assets/images/file-counting.webp)
+
+
 ## Counting Files by Type in Folders and Subfolders
 
 When managing large collections of files, it can be helpful to analyze and count the different file types within a directory, including its subfolders. This Python script automates the process and exports the results to an Excel file.
