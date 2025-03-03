@@ -86,7 +86,7 @@ This is a guide on my experience with a few Tuya Presence sensor variants & Auto
 2. You can use the "And if" rule to set the boundry where OFF trigger will not take action.
 
 ### Product Link
-[![Shop on AliExpress](https://example.com/aliexpress-banner.jpg)](https://s.click.aliexpress.com/e/_onpaCmW)
+[![Shop on AliExpress](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Aliexpress_logo.svg/220px-Aliexpress_logo.svg.png)](https://s.click.aliexpress.com/e/_onpaCmW)
 
 
 ## Support Me 💖
