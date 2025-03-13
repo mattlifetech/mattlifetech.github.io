@@ -10,7 +10,7 @@ categories: [File Management, Python]
 tags: [Python, File Analysis, Automation, Data Processing]
 ---
 
-![counttype](https://raw.githubusercontent.com/mattchoo2/mattchoo2.github.io/main/assets/images/file-counting.webp)
+![counttype](https://raw.githubusercontent.com/mattlifetech/mattlifetech.github.io/main/assets/images/file-counting.webp)
 
 
 ## Counting Files by Type in Folders and Subfolders

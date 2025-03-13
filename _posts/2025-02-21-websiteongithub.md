@@ -10,7 +10,7 @@ categories: [Web Development, Jekyll]
 tags: [Jekyll, Minimal Mistakes, GitHub Pages, Liquid Archive]
 ---
 
-![Minimal Mistakes Setup](https://raw.githubusercontent.com/mattchoo2/mattchoo2.github.io/main/assets/images/minimal-mistakes-setup.webp)
+![Minimal Mistakes Setup](https://raw.githubusercontent.com/mattlifetech/mattlifetech.github.io/main/assets/images/minimal-mistakes-setup.webp)
 
 ## Step 1: Setting Up the Repository
 
@@ -252,7 +252,7 @@ Your website should now be live at `https://username.github.io`!
 
 ## GitHub Repo in case you need to download the files
 
-https://github.com/mattchoo2/mmistakegithub
+https://github.com/mattlifetech/mmistakegithub
 
 ## Credits
 

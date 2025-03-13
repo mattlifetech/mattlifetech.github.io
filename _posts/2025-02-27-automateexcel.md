@@ -10,7 +10,7 @@ categories: [Excel Automation, Python, VBA]
 tags: [Excel, VBA, Python, Automation, Data Processing]
 ---
 
-![VBA vs Python](https://raw.githubusercontent.com/mattchoo2/mattchoo2.github.io/main/assets/images/vba-vs-python.webp)
+![VBA vs Python](https://raw.githubusercontent.com/mattlifetech/mattlifetech.github.io/main/assets/images/vba-vs-python.webp)
 
 ## VBA vs Python for Excel: Which One Should You Use?  
 

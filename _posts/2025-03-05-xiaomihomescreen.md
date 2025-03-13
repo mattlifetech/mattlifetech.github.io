@@ -10,7 +10,7 @@ categories: [Tech, Smart Home, Xiaomi, home screen+]
 tags: [Xiaomi, Smart Home, Interconnectivity, Screen Mirroring, home screen+]
 ---
 
-![intercon](https://raw.githubusercontent.com/mattchoo2/mattchoo2.github.io/main/assets/images/interconnectivity.png)
+![intercon](https://raw.githubusercontent.com/mattlifetech/mattlifetech.github.io/main/assets/images/interconnectivity.png)
 
 # How Exactly Xiaomi Interconnectivity Home Screen+ Works?
 

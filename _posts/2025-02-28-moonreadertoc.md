@@ -10,7 +10,7 @@ categories: [E-Readers, Chinese Stories, Android]
 tags: [Moon+ Reader, Chinese, Android, TOC]
 ---
 
-![moon](https://raw.githubusercontent.com/mattchoo2/mattchoo2.github.io/main/assets/images/moon-reader.webp)
+![moon](https://raw.githubusercontent.com/mattlifetech/mattlifetech.github.io/main/assets/images/moon-reader.webp)
 
 If you enjoy reading Chinese story text files on your Android device using **Moon+ Reader**, you may have noticed that the **Table of Contents (TOC)** does not always display correctly. This can be frustrating, especially when navigating lengthy novels with multiple chapters. Fortunately, there’s a simple fix for this issue.
 
@@ -19,7 +19,7 @@ Moon+ Reader automatically detects chapter titles based on recognizable patterns
 
 ## How to Fix It
 
-![menuimage](https://raw.githubusercontent.com/mattchoo2/mattchoo2.github.io/main/assets/images/moon-reader-toc.png)
+![menuimage](https://raw.githubusercontent.com/mattlifetech/mattlifetech.github.io/main/assets/images/moon-reader-toc.png)
 
 The issue is likely due to the system language settings. Follow these steps to resolve it:
 

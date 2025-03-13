@@ -60,7 +60,7 @@ This is a guide on my experience with a few Tuya Presence sensor variants & Auto
 3. Adjust **Hours to show** based on your lifestyle
 4. This will give you a quick view of presence/ door open close in your house
 
-![sensorhistory](https://raw.githubusercontent.com/mattchoo2/mattchoo2.github.io/main/assets/images/sensor.png)
+![sensorhistory](https://raw.githubusercontent.com/mattlifetech/mattlifetech.github.io/main/assets/images/sensor.png)
 
 
 ## Automation ON/ OFF

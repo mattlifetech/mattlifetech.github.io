@@ -10,7 +10,7 @@ categories: [Python, Image Processing, EXE]
 tags: [Python, Tkinter, Pillow, PyInstaller, Image Editing]
 ---
 
-![tptapp](https://raw.githubusercontent.com/mattchoo2/mattchoo2.github.io/main/assets/images/transparent_app.webp)
+![tptapp](https://raw.githubusercontent.com/mattlifetech/mattlifetech.github.io/main/assets/images/transparent_app.webp)
 
 # Make Image Background Transparent - EXE App
 
@@ -155,7 +155,7 @@ This guide showed how to build a **simple GUI app to remove image backgrounds**,
 
 You can download the **Offline Background Transparent App** as an `.exe` from GitHub:
 
-[➡ Download v1.0.0](https://github.com/mattchoo2/offlinebackgroundtransparent/releases/tag/v1.0.0)
+[➡ Download v1.0.0](https://github.com/mattlifetech/offlinebackgroundtransparent/releases/tag/v1.0.0)
 
 
 ## Support Me 💖

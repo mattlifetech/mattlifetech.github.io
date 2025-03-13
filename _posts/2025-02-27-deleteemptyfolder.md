@@ -10,7 +10,7 @@ categories: [Automation, Python]
 tags: [Python, File Management, Automation]
 ---
 
-![delempty](https://raw.githubusercontent.com/mattchoo2/mattchoo2.github.io/main/assets/images/folder-cleaning-thumb.webp)
+![delempty](https://raw.githubusercontent.com/mattlifetech/mattlifetech.github.io/main/assets/images/folder-cleaning-thumb.webp)
 
 
 ## Scan and Delete Empty Folders Automatically

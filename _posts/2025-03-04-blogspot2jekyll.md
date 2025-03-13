@@ -11,7 +11,7 @@ tags: [Blogger, Jekyll, Website Migration]
 ---
 
 
-![blogtojek](https://raw.githubusercontent.com/mattchoo2/mattchoo2.github.io/main/assets/images/blogger_teaser.webp)
+![blogtojek](https://raw.githubusercontent.com/mattlifetech/mattlifetech.github.io/main/assets/images/blogger_teaser.webp)
 
 # Migrate Blogspot Posts to Your Own Jekyll Website
 

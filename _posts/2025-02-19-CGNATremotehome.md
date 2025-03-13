@@ -15,7 +15,7 @@ tags: [CGNAT, Remote Access, Tailscale, Cloudflare Tunnel, VPN, Malaysia]
 ## Understanding Malaysia's CGNAT and Its Impact on Remote Access
 
 
-![CGNAT Remote Access](https://raw.githubusercontent.com/mattchoo2/mattchoo2.github.io/main/assets/images/cgnat-remote-access.webp)
+![CGNAT Remote Access](https://raw.githubusercontent.com/mattlifetech/mattlifetech.github.io/main/assets/images/cgnat-remote-access.webp)
 
 
 
@@ -42,7 +42,7 @@ Due to the lack of a true public IP, many traditional remote access solutions no
 
 
 
-![Tailscale Login Steps](https://raw.githubusercontent.com/mattchoo2/mattchoo2.github.io/main/assets/images/tailscale.webp)
+![Tailscale Login Steps](https://raw.githubusercontent.com/mattlifetech/mattlifetech.github.io/main/assets/images/tailscale.webp)
 
 
 ## Solutions That Work: Tailscale and Cloudflare Tunnel

@@ -16,7 +16,7 @@ Recently, I encountered an overload alarm notification on my Tuya smart power me
 
 ## Quick Answer: No, It Won't
 
-![Tuya IoT Log](https://raw.githubusercontent.com/mattchoo2/mattchoo2.github.io/main/assets/images/tuyaiotlog.png)
+![Tuya IoT Log](https://raw.githubusercontent.com/mattlifetech/mattlifetech.github.io/main/assets/images/tuyaiotlog.png)
 
 After investigating the issue, I confirmed that the Tuya power meter **does not** cut off the main power supply. Instead, it only switches off the "software" of the connected device.  Device will go offline and online again shortly based on the IOT Tuya data logging.  The rest of the electrical system remains operational.
 
@@ -32,7 +32,7 @@ Also, there is no way to turn off this notification or reduce the firmware's mea
 ## Energy Supplier vs. Firmware Issue Comparison
 
 This is Feb2025 Power vs Voltage logging chart on home assistant:
-![Power Monitoring](https://raw.githubusercontent.com/mattchoo2/mattchoo2.github.io/main/assets/images/powercurrent.png)
+![Power Monitoring](https://raw.githubusercontent.com/mattlifetech/mattlifetech.github.io/main/assets/images/powercurrent.png)
 
 Below is a comparison table from my earlier analysis, summarizing the possibilities of an issue being caused by the energy supplier or a firmware malfunction:
 

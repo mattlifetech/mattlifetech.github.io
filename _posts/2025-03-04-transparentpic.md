@@ -11,7 +11,7 @@ tags: [Python, Automation, Image Editing]
 ---
 
 
-![tpr](https://raw.githubusercontent.com/mattchoo2/mattchoo2.github.io/main/assets/images/transparent.webp)
+![tpr](https://raw.githubusercontent.com/mattlifetech/mattlifetech.github.io/main/assets/images/transparent.webp)
 
 # Make Image Background Transparent Without Any App
 
