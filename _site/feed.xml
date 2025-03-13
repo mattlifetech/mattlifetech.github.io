@@ -1,488 +1,1122 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-02-21T16:41:59+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Me &amp;amp; My Tiny Coding Journey</title><subtitle>An amazing website.</subtitle><author><name>Matthew Choo</name><email>mattckw@gmail.com</email></author><entry><title type="html">My First Post</title><link href="http://localhost:4000/coding/template/" rel="alternate" type="text/html" title="My First Post" /><published>2025-02-21T00:00:00+08:00</published><updated>2025-02-21T00:00:00+08:00</updated><id>http://localhost:4000/coding/template</id><content type="html" xml:base="http://localhost:4000/coding/template/"><![CDATA[<p>This is my first post using the Minimal Mistakes theme!</p>]]></content><author><name>Your Name</name></author><category term="Coding" /><category term="jekyll" /><category term="minimal-mistakes" /><summary type="html"><![CDATA[This is my first post using the Minimal Mistakes theme!]]></summary></entry><entry><title type="html">Getting Started with Python for Absolute Beginners Using PowerShell</title><link href="http://localhost:4000/python/beginner/pythonbeginner/" rel="alternate" type="text/html" title="Getting Started with Python for Absolute Beginners Using PowerShell" /><published>2025-02-20T00:00:00+08:00</published><updated>2025-02-20T00:00:00+08:00</updated><id>http://localhost:4000/python/beginner/pythonbeginner</id><content type="html" xml:base="http://localhost:4000/python/beginner/pythonbeginner/"><![CDATA[<h2 id="introduction">Introduction</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://mattlifetech.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://mattlifetech.github.io/" rel="alternate" type="text/html" /><updated>2025-03-13T16:00:16+08:00</updated><id>https://mattlifetech.github.io/feed.xml</id><title type="html">MattLifeTech</title><subtitle>An amazing website.</subtitle><author><name>Matthew Choo</name><email>mattckw@gmail.com</email></author><entry><title type="html">How Exactly Xiaomi Interconnectivity Home Screen+ Works?</title><link href="https://mattlifetech.github.io/tech/smart%20home/xiaomi/home%20screen+/xiaomihomescreen/" rel="alternate" type="text/html" title="How Exactly Xiaomi Interconnectivity Home Screen+ Works?" /><published>2025-03-05T00:00:00+08:00</published><updated>2025-03-05T00:00:00+08:00</updated><id>https://mattlifetech.github.io/tech/smart%20home/xiaomi/home%20screen+/xiaomihomescreen</id><content type="html" xml:base="https://mattlifetech.github.io/tech/smart%20home/xiaomi/home%20screen+/xiaomihomescreen/"><![CDATA[<p><img src="https://raw.githubusercontent.com/mattchoo2/mattchoo2.github.io/main/assets/images/interconnectivity.png" alt="intercon" /></p>
 
-<p>If you’re new to coding and want to try Python, this guide will help you set up everything step by step. We’ll use <strong>PowerShell</strong> as the main command console for running Python scripts. This guide is designed for <strong>absolute beginners</strong>, so no prior knowledge is needed!</p>
+<h1 id="how-exactly-xiaomi-interconnectivity-home-screen-works">How Exactly Xiaomi Interconnectivity Home Screen+ Works?</h1>
 
-<h2 id="step-1-install-powershell-if-not-already-installed">Step 1: Install PowerShell (If Not Already Installed)</h2>
+<p>Xiaomi has done an amazing job with its <strong>xiaomi interconnectivity</strong> feature, allowing seamless device integration. Whether you’re mirroring your phone to a tablet (Home Screen+), controlling a second screen, or transferring apps across devices, Xiaomi’s ecosystem is proving to be one of the most innovative in the smart home space.</p>
 
-<p>PowerShell comes pre-installed on <strong>Windows 10 and later</strong>, but if you need the latest version, follow these steps:</p>
+<h2 id="watch-the-video-guide-">Watch the Video Guide 🎥</h2>
+<p>For a detailed demonstration, watch this video:</p>
 
-<ol>
-  <li>Download PowerShell from the official Microsoft page: <a href="https://github.com/PowerShell/PowerShell/releases">PowerShell Releases</a></li>
-  <li>Choose the <strong>MSI package</strong> for Windows and install it.</li>
-  <li>After installation, open PowerShell by searching for <strong>“PowerShell”</strong> in the Windows Start menu.</li>
-  <li>To check if PowerShell is working, type:
-    <div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="bp">$PSVersionTable</span><span class="o">.</span><span class="nf">PSVersion</span><span class="w">
-</span></code></pre></div>    </div>
-    <p>This should display the PowerShell version installed on your system.</p>
-  </li>
-</ol>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/W_G2iqWWEqM" frameborder="0" allowfullscreen=""></iframe>
 
-<h2 id="step-2-install-python">Step 2: Install Python</h2>
-
-<p>To install Python, follow these steps:</p>
-
-<ol>
-  <li>Download Python from the official website: <a href="https://www.python.org/downloads/">Python Downloads</a></li>
-  <li>Choose the <strong>latest stable version</strong> for Windows.</li>
-  <li>During installation, check the box <strong>“Add Python to PATH”</strong> (important!).</li>
-  <li>After installation, verify Python by running:
-    <div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">python</span><span class="w"> </span><span class="nt">--version</span><span class="w">
-</span></code></pre></div>    </div>
-    <p>or</p>
-    <div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">py</span><span class="w"> </span><span class="nt">--version</span><span class="w">
-</span></code></pre></div>    </div>
-    <p>This should display the installed Python version.</p>
-  </li>
-</ol>
-
-<h3 id="additional-recommended-tools">Additional Recommended Tools</h3>
-
+<h2 id="1-setting-up-home-screen">1. Setting Up Home Screen+</h2>
+<p>Before using Home Screen+, ensure:</p>
 <ul>
-  <li><strong>pip</strong>: Installed with Python (used for installing additional packages).</li>
-  <li><strong>virtualenv</strong>: Helps manage Python environments.
-    <div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">pip</span><span class="w"> </span><span class="nx">install</span><span class="w"> </span><span class="nx">virtualenv</span><span class="w">
-</span></code></pre></div>    </div>
-  </li>
-  <li><strong>Git</strong> (optional but useful): Download from <a href="https://git-scm.com/">Git for Windows</a></li>
+  <li>All Xiaomi devices are logged into the same Xiaomi account.</li>
+  <li>Wi-Fi, Bluetooth &amp; NFC are turned on.</li>
+  <li>Devices are placed close together for initial detection.</li>
 </ul>
 
-<h2 id="step-3-understanding-python-installation-types">Step 3: Understanding Python Installation Types</h2>
+<p>Once set up, a Home Screen+ icon will appear, indicating a successful connection.</p>
 
-<p>Python installations can be system-wide or folder-specific. Here’s a breakdown:</p>
+<h2 id="2-first-connection-process">2. First Connection Process</h2>
+<p>To initiate the connection:</p>
+<ol>
+  <li>Bring your phone near the tablet.</li>
+  <li>NFC will trigger a vibration and detect the device.</li>
+  <li>Confirm pairing to enable interconnectivity.</li>
+</ol>
+
+<h2 id="3-home-screen-vs-normal-mirroring">3. Home Screen+ vs Normal Mirroring</h2>
+<p>Unlike standard screen mirroring, Home Screen+:</p>
+<ul>
+  <li>Allows <strong>app continuity</strong> across devices.</li>
+  <li>Provides a <strong>tablet-optimized view</strong> rather than a duplicated phone screen (for some apps).</li>
+  <li>Enables <strong>drag-and-drop interactions</strong> between devices.</li>
+</ul>
+
+<h2 id="4-detecting-device-control-status">4. Detecting Device Control Status</h2>
+<p>To check if another device is controlling your screen:</p>
+<ul>
+  <li>A notification icon will appear on the tablet.</li>
+  <li>You can manually stop it from the tablet.</li>
+  <li>If you want to stop it from the phone, probably turn off <strong>interconnectivity</strong> in setting temporary</li>
+</ul>
+
+<h2 id="5-transferring-a-phone-app-to-tablet-in-full-screen-mode">5. Transferring a Phone App to Tablet in Full-Screen Mode</h2>
+<p>Home Screen+ allows apps to move between devices effortlessly:</p>
+<ol>
+  <li>Open an app on your phone.</li>
+  <li>Tap the 3 dots on middle top to send it to the tablet.</li>
+  <li>The app can be opens in full-screen mode, adapting to the tablet UI.</li>
+</ol>
+
+<h2 id="6-shrinking-phone-mirror-to-side">6. Shrinking Phone Mirror to Side</h2>
+<ul>
+  <li>You can resize the phone mirror window by tap and hold the left border, dragging it to the edge when it shows a zoom in animation</li>
+  <li>This allows multitasking with other apps.</li>
+</ul>
+
+<h2 id="7-adding-phone-apps-to-tablet-home-screen">7. Adding Phone Apps to Tablet Home Screen</h2>
+<p>For quick access:</p>
+<ol>
+  <li>Find the mirrored phone app at bottom app bar.</li>
+  <li>Tap &amp; hold to  “Add to Home Screen.”</li>
+  <li>The app will be saved as a shortcut for future use (even not in mirror mode).</li>
+</ol>
+
+<h2 id="8-exiting-home-screen-mode">8. Exiting Home Screen+ Mode</h2>
+<p>To exit:</p>
+<ul>
+  <li>Tap the <strong>home screen+</strong> icon.</li>
+  <li>Tap and hold, select “Exit home screen+”.</li>
+</ul>
+
+<h2 id="9-one-click-hotspot-from-tablet">9. One-Click Hotspot from Tablet</h2>
+<p>If your phone lacks WiFi, the tablet can activate a one-click hotspot, ensuring a quick hotspot connection with your phone.</p>
+
+<h2 id="10-does-screen-mirroring-work-without-wifi">10. Does Screen Mirroring Work Without WiFi?</h2>
+<ul>
+  <li>Yes! If no WiFi is available, Xiaomi devices can still do phone mirroring (home screen+).</li>
+  <li>But there is no internet access</li>
+</ul>
+
+<h2 id="11-does-screen-mirroring-work-without-wifi-and-connected-to-phone-hotspot">11. Does Screen Mirroring Work Without WiFi and connected to phone hotspot?</h2>
+<ul>
+  <li>No screen mirrorring stop working when phone hotspot is turn on.</li>
+</ul>
 
 <table>
   <thead>
     <tr>
-      <th>Type</th>
-      <th>Description</th>
+      <th>Home WiFi</th>
+      <th>Phone Hotspot</th>
+      <th>Screen Mirroring</th>
+      <th>Tablet Internet</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><strong>System-wide installation</strong></td>
-      <td>Python is installed for all users. Any script can use it.</td>
+      <td>Have WiFi</td>
+      <td>No Hotspot</td>
+      <td>✓ Mirror</td>
+      <td>✓ Tablet Internet</td>
     </tr>
     <tr>
-      <td><strong>Virtual environment (folder-based)</strong></td>
-      <td>A self-contained Python setup inside a specific folder. Useful for project-specific dependencies.</td>
+      <td>Have WiFi</td>
+      <td>Turn on Hotspot</td>
+      <td>✗ Mirror</td>
+      <td>✓ Tablet Internet</td>
+    </tr>
+    <tr>
+      <td>No WiFi</td>
+      <td>No Hotspot</td>
+      <td>✓ Mirror</td>
+      <td>✗ Tablet Internet</td>
+    </tr>
+    <tr>
+      <td>No WiFi</td>
+      <td>Turn on Hotspot</td>
+      <td>✗ Mirror</td>
+      <td>✓ Tablet Internet</td>
     </tr>
   </tbody>
 </table>
 
-<p>To create a <strong>folder-specific virtual environment</strong>:</p>
-<div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">python</span><span class="w"> </span><span class="nt">-m</span><span class="w"> </span><span class="nx">venv</span><span class="w"> </span><span class="nx">my_project_env</span><span class="w">
-</span></code></pre></div></div>
-<p>To activate it:</p>
-<div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_project_env\Scripts\Activate</span><span class="w">
-</span></code></pre></div></div>
-<p>To deactivate it:</p>
-<div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">deactivate</span><span class="w">
-</span></code></pre></div></div>
-
-<h2 id="step-4-running-python-scripts-in-powershell">Step 4: Running Python Scripts in PowerShell</h2>
-
+<h2 id="12-ease-of-app-continuity-from-phone-to-tablet">12. Ease of App Continuity from Phone to Tablet</h2>
+<p>Home Screen+ makes app continuity effortless:</p>
 <ul>
-  <li><strong>Running a script in the current folder:</strong>
-    <div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">python</span><span class="w"> </span><span class="nx">script.py</span><span class="w">
-</span></code></pre></div>    </div>
-    <p>This runs <code class="language-plaintext highlighter-rouge">script.py</code> inside the current folder.</p>
-  </li>
-  <li><strong>Running a script inside a virtual environment:</strong>
-    <div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">my_project_env\Scripts\Activate</span><span class="w">
-</span><span class="nx">python</span><span class="w"> </span><span class="nx">script.py</span><span class="w">
-</span><span class="n">deactivate</span><span class="w">
-</span></code></pre></div>    </div>
-  </li>
-  <li><strong>Running a script from another folder:</strong>
-    <div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">python</span><span class="w"> </span><span class="nx">C:\path\to\script.py</span><span class="w">
-</span></code></pre></div>    </div>
-  </li>
+  <li>When using a <strong>transferable</strong> app on your phone, it appears on the tablet’s app bar (bottom right corner).</li>
+  <li>You can <strong>click and continue</strong> the app on the tablet seamlessly.</li>
+  <li>If the app is playing media, the playback will <strong>continue from the tablet</strong>, including audio and video output.</li>
+  <li>Apps like <strong>WhatsApp and Discord</strong> work flawlessly with this feature.</li>
 </ul>
 
-<h2 id="comparison-of-python-powershell-git--virtual-environment">Comparison of Python, PowerShell, Git &amp; Virtual Environment</h2>
+<h2 id="13-phone-mirroring-to-mac--unsupported">13. Phone Mirroring to Mac – Unsupported</h2>
+<p>Currently, Home Screen+ does not support mirroring to macOS while their documentation say can do.</p>
 
-<table>
-  <thead>
-    <tr>
-      <th>Tool</th>
-      <th>Use Case</th>
-      <th>Why Use It?</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>Python</strong></td>
-      <td>General-purpose programming language for scripting, automation, web development, and more.</td>
-      <td>Essential for coding, data analysis, and automation.</td>
-    </tr>
-    <tr>
-      <td><strong>PowerShell</strong></td>
-      <td>Command-line shell and scripting language for system automation on Windows.</td>
-      <td>Helps automate system tasks and manage configurations.</td>
-    </tr>
-    <tr>
-      <td><strong>Git</strong></td>
-      <td>Version control system used for tracking code changes and collaboration.</td>
-      <td>Prevents code loss, supports teamwork, and tracks modifications.</td>
-    </tr>
-    <tr>
-      <td><strong>Virtual Environment</strong></td>
-      <td>Isolated Python environment for managing dependencies per project.</td>
-      <td>Avoids conflicts between projects with different dependencies.</td>
-    </tr>
-  </tbody>
-</table>
+<h2 id="14-using-tablet-as-a-second-screen">14. Using Tablet as a Second Screen</h2>
+<p>Xiaomi tablets come with <strong>built-in second screen support</strong>, allowing them to act as extended displays for compatible devices.
+This works with both Mac and PC/ Window 11</p>
+
+<h2 id="final-thoughts">Final Thoughts</h2>
+<p>Xiaomi’s Home Screen+ is a game-changer for multi-device users. With seamless app transfers, second-screen functionality, and enhanced mirroring, it’s a must-try feature for anyone in the Xiaomi ecosystem.</p>
+
+<p>Do you use Home Screen+? Share your experience in the comments!</p>
+
+<h3 id="product-link">Product Link</h3>
+
+<ul>
+  <li><a href="https://s.lazada.com.my/s.LhBRN">Lazada Xiaomi Official Store</a></li>
+  <li><a href="https://shopee.com.my/product/698003580/27826446251">Shopee Xiaomi Official Store</a>
+<strong>UPDATE 4March2025</strong> - xiaomi official replied, buy 256GB will get free keyboard (without trackpad version) and pen while its not clearly stated</li>
+</ul>
+
+<hr />
+<p>🚀 Stay tuned for more smart home tech insights!</p>
+
+<h2 id="support-me-">Support Me 💖</h2>
+<p><a href="https://paypal.me/mattchoo2"><img src="https://img.shields.io/badge/Donate-PayPal-blue.svg" alt="Donate" /></a></p>]]></content><author><name>Matthew Choo</name><email>mattckw@gmail.com</email></author><category term="Tech" /><category term="Smart Home" /><category term="Xiaomi" /><category term="home screen+" /><category term="Xiaomi" /><category term="Smart Home" /><category term="Interconnectivity" /><category term="Screen Mirroring" /><category term="home screen+" /><summary type="html"><![CDATA[A deep dive into Xiaomi's Home Screen+ feature, showcasing its seamless device integration.]]></summary></entry><entry><title type="html">Migrate Blogspot Posts to Your Own Jekyll Website</title><link href="https://mattlifetech.github.io/jekyll/blogging/blogspot2jekyll/" rel="alternate" type="text/html" title="Migrate Blogspot Posts to Your Own Jekyll Website" /><published>2025-03-04T00:00:00+08:00</published><updated>2025-03-04T00:00:00+08:00</updated><id>https://mattlifetech.github.io/jekyll/blogging/blogspot2jekyll</id><content type="html" xml:base="https://mattlifetech.github.io/jekyll/blogging/blogspot2jekyll/"><![CDATA[<p><img src="https://raw.githubusercontent.com/mattchoo2/mattchoo2.github.io/main/assets/images/blogger_teaser.webp" alt="blogtojek" /></p>
+
+<h1 id="migrate-blogspot-posts-to-your-own-jekyll-website">Migrate Blogspot Posts to Your Own Jekyll Website</h1>
+
+<p>If you’re moving from <strong>Blogger (Blogspot)</strong> to a self-hosted <strong>Jekyll website</strong>, this guide will walk you through the entire process.</p>
+
+<hr />
+
+<h2 id="step-1-export-your-blogspot-posts">Step 1: Export Your Blogspot Posts</h2>
+
+<ol>
+  <li>Log in to your <strong>Blogger Dashboard</strong>.</li>
+  <li>Navigate to <strong>Settings &gt; Manage Blog</strong>.</li>
+  <li>Under “Download Content,” click <strong>Download</strong>.</li>
+  <li>This will generate an <code class="language-plaintext highlighter-rouge">XML</code> file containing all your blog posts.</li>
+</ol>
+
+<p>Save this file as <code class="language-plaintext highlighter-rouge">blog-export.xml</code>.</p>
+
+<hr />
+
+<h2 id="step-2-install-requirements">Step 2: Install Requirements</h2>
+
+<p>You’ll need <strong>Python</strong> installed on your system. Then, install the required dependencies:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>lxml
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="step-3-convert-blogger-posts-to-jekyll-format">Step 3: Convert Blogger Posts to Jekyll Format</h2>
+
+<p>Use the following <code class="language-plaintext highlighter-rouge">blogger_to_jekyll.py</code> script to convert the exported XML file into Jekyll-compatible Markdown files.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">re</span>
+<span class="kn">import</span> <span class="nn">html</span>
+<span class="kn">import</span> <span class="nn">xml.etree.ElementTree</span> <span class="k">as</span> <span class="n">ET</span>
+
+<span class="k">def</span> <span class="nf">clean_filename</span><span class="p">(</span><span class="n">title</span><span class="p">):</span>
+    <span class="s">"""Convert title to a valid filename"""</span>
+    <span class="n">title</span> <span class="o">=</span> <span class="n">re</span><span class="p">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s">'[^\w\s-]'</span><span class="p">,</span> <span class="s">''</span><span class="p">,</span> <span class="n">title</span><span class="p">).</span><span class="n">strip</span><span class="p">().</span><span class="n">lower</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">re</span><span class="p">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s">'[\s]+'</span><span class="p">,</span> <span class="s">'-'</span><span class="p">,</span> <span class="n">title</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">blogger_to_jekyll</span><span class="p">(</span><span class="n">xml_file</span><span class="p">,</span> <span class="n">output_dir</span><span class="o">=</span><span class="s">"_posts"</span><span class="p">):</span>
+    <span class="n">tree</span> <span class="o">=</span> <span class="n">ET</span><span class="p">.</span><span class="n">parse</span><span class="p">(</span><span class="n">xml_file</span><span class="p">)</span>
+    <span class="n">root</span> <span class="o">=</span> <span class="n">tree</span><span class="p">.</span><span class="n">getroot</span><span class="p">()</span>
+    
+    <span class="n">ns</span> <span class="o">=</span> <span class="p">{</span><span class="s">'default'</span><span class="p">:</span> <span class="s">'http://www.w3.org/2005/Atom'</span><span class="p">}</span>
+    <span class="n">entries</span> <span class="o">=</span> <span class="n">root</span><span class="p">.</span><span class="n">findall</span><span class="p">(</span><span class="s">"default:entry"</span><span class="p">,</span> <span class="n">ns</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">exists</span><span class="p">(</span><span class="n">output_dir</span><span class="p">):</span>
+        <span class="n">os</span><span class="p">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">output_dir</span><span class="p">)</span>
+
+    <span class="k">for</span> <span class="n">entry</span> <span class="ow">in</span> <span class="n">entries</span><span class="p">:</span>
+        <span class="n">title</span> <span class="o">=</span> <span class="n">entry</span><span class="p">.</span><span class="n">find</span><span class="p">(</span><span class="s">"default:title"</span><span class="p">,</span> <span class="n">ns</span><span class="p">).</span><span class="n">text</span>
+        <span class="n">content</span> <span class="o">=</span> <span class="n">entry</span><span class="p">.</span><span class="n">find</span><span class="p">(</span><span class="s">"default:content"</span><span class="p">,</span> <span class="n">ns</span><span class="p">).</span><span class="n">text</span>
+        <span class="n">date</span> <span class="o">=</span> <span class="n">entry</span><span class="p">.</span><span class="n">find</span><span class="p">(</span><span class="s">"default:published"</span><span class="p">,</span> <span class="n">ns</span><span class="p">).</span><span class="n">text</span><span class="p">[:</span><span class="mi">10</span><span class="p">]</span>  <span class="c1"># Extract YYYY-MM-DD
+</span>        
+        <span class="k">if</span> <span class="n">title</span> <span class="ow">and</span> <span class="n">content</span><span class="p">:</span>
+            <span class="n">filename</span> <span class="o">=</span> <span class="sa">f</span><span class="s">"</span><span class="si">{</span><span class="n">date</span><span class="si">}</span><span class="s">-</span><span class="si">{</span><span class="n">clean_filename</span><span class="p">(</span><span class="n">title</span><span class="p">)</span><span class="si">}</span><span class="s">.md"</span>
+            <span class="n">filepath</span> <span class="o">=</span> <span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="n">output_dir</span><span class="p">,</span> <span class="n">filename</span><span class="p">)</span>
+
+            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filepath</span><span class="p">,</span> <span class="s">"w"</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s">"utf-8"</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+                <span class="n">f</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s">"---</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
+                <span class="n">f</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s">"title: </span><span class="se">\"</span><span class="si">{</span><span class="n">html</span><span class="p">.</span><span class="n">unescape</span><span class="p">(</span><span class="n">title</span><span class="p">)</span><span class="si">}</span><span class="se">\"\n</span><span class="s">"</span><span class="p">)</span>
+                <span class="n">f</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s">"date: </span><span class="si">{</span><span class="n">date</span><span class="si">}</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
+                <span class="n">f</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s">"layout: post</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
+                <span class="n">f</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s">"---</span><span class="se">\n\n</span><span class="s">"</span><span class="p">)</span>
+                <span class="n">f</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">html</span><span class="p">.</span><span class="n">unescape</span><span class="p">(</span><span class="n">content</span><span class="p">))</span>
+
+    <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"Converted </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">entries</span><span class="p">)</span><span class="si">}</span><span class="s"> posts to Jekyll format!"</span><span class="p">)</span>
+
+<span class="c1"># Example usage
+</span><span class="n">blogger_to_jekyll</span><span class="p">(</span><span class="s">"blog-export.xml"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="what-this-script-does">What This Script Does:</h3>
+<ul>
+  <li>Reads the <strong>Blogger XML export</strong>.</li>
+  <li>Extracts <strong>title, content, and publication date</strong>.</li>
+  <li>Saves posts in Jekyll’s <code class="language-plaintext highlighter-rouge">_posts</code> folder with <strong>YYYY-MM-DD-title.md</strong> format.</li>
+  <li>Preserves post content and converts it into Markdown format.</li>
+</ul>
+
+<p>Run the script:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python blogger_to_jekyll.py
+</code></pre></div></div>
+
+<p>This will generate <code class="language-plaintext highlighter-rouge">.md</code> files in the <code class="language-plaintext highlighter-rouge">_posts</code> directory.</p>
+
+<hr />
+
+<h2 id="step-4-upload-posts-to-jekyll-website">Step 4: Upload Posts to Jekyll Website</h2>
+
+<ol>
+  <li>Move the generated <code class="language-plaintext highlighter-rouge">.md</code> files to your <strong>Jekyll project’s <code class="language-plaintext highlighter-rouge">_posts</code></strong> folder.</li>
+  <li>Commit and push changes to your GitHub repository:</li>
+</ol>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add _posts/<span class="k">*</span>
+git commit <span class="nt">-m</span> <span class="s2">"Migrated Blogger posts to Jekyll"</span>
+git push origin main
+</code></pre></div></div>
+
+<ol>
+  <li>Deploy your site:
+    <ul>
+      <li>If using <strong>GitHub Pages</strong>, the changes will be reflected automatically.</li>
+      <li>If self-hosting, rebuild the site using:</li>
+    </ul>
+
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle <span class="nb">exec </span>jekyll build
+bundle <span class="nb">exec </span>jekyll serve
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p>Your Blogger posts are now successfully migrated to your Jekyll website!</p>
+
+<hr />
+
+<p>By following this guide, you can seamlessly transition from Blogger to Jekyll, keeping full control over your content. 🚀</p>]]></content><author><name>Matthew Choo</name><email>mattckw@gmail.com</email></author><category term="Jekyll" /><category term="Blogging" /><category term="Blogger" /><category term="Jekyll" /><category term="Website Migration" /><summary type="html"><![CDATA[Step-by-step guide to exporting your Blogger posts and converting them to Jekyll format.]]></summary></entry><entry><title type="html">Make Image Background Transparent - EXE App</title><link href="https://mattlifetech.github.io/python/image%20processing/exe/transparentapp/" rel="alternate" type="text/html" title="Make Image Background Transparent - EXE App" /><published>2025-03-04T00:00:00+08:00</published><updated>2025-03-04T00:00:00+08:00</updated><id>https://mattlifetech.github.io/python/image%20processing/exe/transparentapp</id><content type="html" xml:base="https://mattlifetech.github.io/python/image%20processing/exe/transparentapp/"><![CDATA[<p><img src="https://raw.githubusercontent.com/mattchoo2/mattchoo2.github.io/main/assets/images/transparent_app.webp" alt="tptapp" /></p>
+
+<h1 id="make-image-background-transparent---exe-app">Make Image Background Transparent - EXE App</h1>
+
+<p>Removing image backgrounds can be useful for various design and editing tasks. In this guide, we’ll walk through how to create a simple <strong>Python application</strong> that allows users to select an image, click on the background color to remove it, and save it as a <strong>transparent PNG</strong>. Finally, we’ll show how to convert this script into an <strong>EXE application</strong> so it can run on any Windows computer without needing Python installed.</p>
+
+<h2 id="what-the-python-script-does">What the Python Script Does</h2>
+
+<p>Our Python script provides a <strong>graphical interface (GUI)</strong> for users to:</p>
+
+<ol>
+  <li><strong>Select an image</strong> to process.</li>
+  <li><strong>Click on the background color</strong> in the image to remove it.</li>
+  <li><strong>Save the processed image</strong> as a new transparent PNG file.</li>
+</ol>
+
+<p>It uses:</p>
+<ul>
+  <li><strong>Pillow</strong> (PIL) for image processing</li>
+  <li><strong>Tkinter</strong> for the user interface</li>
+</ul>
+
+<h3 id="key-features">Key Features</h3>
+<p>✅ <strong>Click-based background color selection</strong> (no manual RGB input needed).<br />
+✅ <strong>No external dependencies</strong> required after conversion to EXE.<br />
+✅ <strong>Simple and lightweight</strong> GUI.</p>
+
+<h2 id="python-code-to-create-the-app">Python Code to Create the App</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">tkinter</span> <span class="k">as</span> <span class="n">tk</span>
+<span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="n">filedialog</span>
+<span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span><span class="p">,</span> <span class="n">ImageTk</span>
+
+<span class="k">def</span> <span class="nf">select_image</span><span class="p">():</span>
+    <span class="n">file_path</span> <span class="o">=</span> <span class="n">filedialog</span><span class="p">.</span><span class="n">askopenfilename</span><span class="p">(</span><span class="n">filetypes</span><span class="o">=</span><span class="p">[(</span><span class="s">"Image Files"</span><span class="p">,</span> <span class="s">"*.png;*.jpg;*.jpeg"</span><span class="p">)])</span>
+    <span class="k">if</span> <span class="n">file_path</span><span class="p">:</span>
+        <span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="p">.</span><span class="nb">open</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span>
+        <span class="n">img</span><span class="p">.</span><span class="n">thumbnail</span><span class="p">((</span><span class="mi">300</span><span class="p">,</span> <span class="mi">300</span><span class="p">))</span>  <span class="c1"># Resize for preview
+</span>        <span class="n">img_tk</span> <span class="o">=</span> <span class="n">ImageTk</span><span class="p">.</span><span class="n">PhotoImage</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
+        
+        <span class="n">label_image</span><span class="p">.</span><span class="n">config</span><span class="p">(</span><span class="n">image</span><span class="o">=</span><span class="n">img_tk</span><span class="p">)</span>
+        <span class="n">label_image</span><span class="p">.</span><span class="n">image</span> <span class="o">=</span> <span class="n">img_tk</span>
+        <span class="n">label_image</span><span class="p">.</span><span class="n">file_path</span> <span class="o">=</span> <span class="n">file_path</span>  <span class="c1"># Store path for processing
+</span>        <span class="n">label_image</span><span class="p">.</span><span class="n">img</span> <span class="o">=</span> <span class="n">img</span>  <span class="c1"># Store original image for pixel selection
+</span>
+<span class="k">def</span> <span class="nf">pick_color</span><span class="p">(</span><span class="n">event</span><span class="p">):</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">label_image</span><span class="p">,</span> <span class="s">"img"</span><span class="p">):</span>
+        <span class="k">return</span>
+    
+    <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">event</span><span class="p">.</span><span class="n">x</span><span class="p">,</span> <span class="n">event</span><span class="p">.</span><span class="n">y</span>
+    <span class="n">img_resized</span> <span class="o">=</span> <span class="n">label_image</span><span class="p">.</span><span class="n">img</span><span class="p">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="n">img_resized</span><span class="p">.</span><span class="n">thumbnail</span><span class="p">((</span><span class="mi">300</span><span class="p">,</span> <span class="mi">300</span><span class="p">))</span>  <span class="c1"># Match displayed image size
+</span>
+    <span class="n">x_ratio</span> <span class="o">=</span> <span class="n">label_image</span><span class="p">.</span><span class="n">img</span><span class="p">.</span><span class="n">width</span> <span class="o">/</span> <span class="n">img_resized</span><span class="p">.</span><span class="n">width</span>
+    <span class="n">y_ratio</span> <span class="o">=</span> <span class="n">label_image</span><span class="p">.</span><span class="n">img</span><span class="p">.</span><span class="n">height</span> <span class="o">/</span> <span class="n">img_resized</span><span class="p">.</span><span class="n">height</span>
+    <span class="n">orig_x</span><span class="p">,</span> <span class="n">orig_y</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">x</span> <span class="o">*</span> <span class="n">x_ratio</span><span class="p">),</span> <span class="nb">int</span><span class="p">(</span><span class="n">y</span> <span class="o">*</span> <span class="n">y_ratio</span><span class="p">)</span>
+
+    <span class="n">selected_color</span> <span class="o">=</span> <span class="n">label_image</span><span class="p">.</span><span class="n">img</span><span class="p">.</span><span class="n">convert</span><span class="p">(</span><span class="s">"RGB"</span><span class="p">).</span><span class="n">getpixel</span><span class="p">((</span><span class="n">orig_x</span><span class="p">,</span> <span class="n">orig_y</span><span class="p">))</span>
+    <span class="n">label_color</span><span class="p">.</span><span class="n">config</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="sa">f</span><span class="s">"Selected Color: </span><span class="si">{</span><span class="n">selected_color</span><span class="si">}</span><span class="s">"</span><span class="p">,</span> <span class="n">fg</span><span class="o">=</span><span class="s">"black"</span><span class="p">)</span>
+    <span class="n">label_color</span><span class="p">.</span><span class="n">color</span> <span class="o">=</span> <span class="n">selected_color</span>  <span class="c1"># Store selected color
+</span>
+<span class="k">def</span> <span class="nf">make_transparent</span><span class="p">():</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">label_image</span><span class="p">,</span> <span class="s">"file_path"</span><span class="p">):</span>
+        <span class="n">result_label</span><span class="p">.</span><span class="n">config</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="s">"Please select an image first."</span><span class="p">)</span>
+        <span class="k">return</span>
+
+    <span class="n">image</span> <span class="o">=</span> <span class="n">Image</span><span class="p">.</span><span class="nb">open</span><span class="p">(</span><span class="n">label_image</span><span class="p">.</span><span class="n">file_path</span><span class="p">).</span><span class="n">convert</span><span class="p">(</span><span class="s">"RGBA"</span><span class="p">)</span>
+    <span class="n">datas</span> <span class="o">=</span> <span class="n">image</span><span class="p">.</span><span class="n">getdata</span><span class="p">()</span>
+
+    <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">label_color</span><span class="p">,</span> <span class="s">"color"</span><span class="p">):</span>
+        <span class="n">r_bg</span><span class="p">,</span> <span class="n">g_bg</span><span class="p">,</span> <span class="n">b_bg</span> <span class="o">=</span> <span class="n">label_color</span><span class="p">.</span><span class="n">color</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">result_label</span><span class="p">.</span><span class="n">config</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="s">"Please select a background color first."</span><span class="p">)</span>
+        <span class="k">return</span>
+
+    <span class="n">new_data</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="k">if</span> <span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">r</span> <span class="o">-</span> <span class="n">r_bg</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">50</span> <span class="ow">and</span> <span class="nb">abs</span><span class="p">(</span><span class="n">g</span> <span class="o">-</span> <span class="n">g_bg</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">50</span> <span class="ow">and</span> <span class="nb">abs</span><span class="p">(</span><span class="n">b</span> <span class="o">-</span> <span class="n">b_bg</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">50</span><span class="p">)</span> <span class="k">else</span> <span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+        <span class="k">for</span> <span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span> <span class="ow">in</span> <span class="n">datas</span>
+    <span class="p">]</span>
+
+    <span class="n">image</span><span class="p">.</span><span class="n">putdata</span><span class="p">(</span><span class="n">new_data</span><span class="p">)</span>
+    
+    <span class="n">save_path</span> <span class="o">=</span> <span class="n">filedialog</span><span class="p">.</span><span class="n">asksaveasfilename</span><span class="p">(</span><span class="n">defaultextension</span><span class="o">=</span><span class="s">".png"</span><span class="p">,</span> <span class="n">filetypes</span><span class="o">=</span><span class="p">[(</span><span class="s">"PNG Files"</span><span class="p">,</span> <span class="s">"*.png"</span><span class="p">)])</span>
+    <span class="k">if</span> <span class="n">save_path</span><span class="p">:</span>
+        <span class="n">image</span><span class="p">.</span><span class="n">save</span><span class="p">(</span><span class="n">save_path</span><span class="p">)</span>
+        <span class="n">result_label</span><span class="p">.</span><span class="n">config</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="sa">f</span><span class="s">"Saved to: </span><span class="si">{</span><span class="n">save_path</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+
+<span class="c1"># GUI Setup
+</span><span class="n">root</span> <span class="o">=</span> <span class="n">tk</span><span class="p">.</span><span class="n">Tk</span><span class="p">()</span>
+<span class="n">root</span><span class="p">.</span><span class="n">title</span><span class="p">(</span><span class="s">"Transparent PNG Maker"</span><span class="p">)</span>
+
+<span class="n">label_instructions</span> <span class="o">=</span> <span class="n">tk</span><span class="p">.</span><span class="n">Label</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s">"""Steps:</span><span class="se">\n</span><span class="s">1. Click </span><span class="se">\"</span><span class="s">Select Image</span><span class="se">\"</span><span class="s"> to choose an image.</span><span class="se">\n</span><span class="s">2. Click on the background color you wish to remove.</span><span class="se">\n</span><span class="s">3. Click </span><span class="se">\"</span><span class="s">Make Transparent &amp; Save</span><span class="se">\"</span><span class="s"> to save the result."""</span><span class="p">,</span> <span class="n">justify</span><span class="o">=</span><span class="s">"left"</span><span class="p">,</span> <span class="n">padx</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">pady</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">label_instructions</span><span class="p">.</span><span class="n">pack</span><span class="p">()</span>
+
+<span class="n">btn_select</span> <span class="o">=</span> <span class="n">tk</span><span class="p">.</span><span class="n">Button</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s">"Select Image"</span><span class="p">,</span> <span class="n">command</span><span class="o">=</span><span class="n">select_image</span><span class="p">)</span>
+<span class="n">btn_select</span><span class="p">.</span><span class="n">pack</span><span class="p">()</span>
+
+<span class="n">label_image</span> <span class="o">=</span> <span class="n">tk</span><span class="p">.</span><span class="n">Label</span><span class="p">(</span><span class="n">root</span><span class="p">)</span>
+<span class="n">label_image</span><span class="p">.</span><span class="n">pack</span><span class="p">()</span>
+<span class="n">label_image</span><span class="p">.</span><span class="n">bind</span><span class="p">(</span><span class="s">"&lt;Button-1&gt;"</span><span class="p">,</span> <span class="n">pick_color</span><span class="p">)</span>
+
+<span class="n">label_color</span> <span class="o">=</span> <span class="n">tk</span><span class="p">.</span><span class="n">Label</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s">"Click image to select background color"</span><span class="p">)</span>
+<span class="n">label_color</span><span class="p">.</span><span class="n">pack</span><span class="p">()</span>
+
+<span class="n">btn_process</span> <span class="o">=</span> <span class="n">tk</span><span class="p">.</span><span class="n">Button</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s">"Make Transparent &amp; Save"</span><span class="p">,</span> <span class="n">command</span><span class="o">=</span><span class="n">make_transparent</span><span class="p">)</span>
+<span class="n">btn_process</span><span class="p">.</span><span class="n">pack</span><span class="p">()</span>
+
+<span class="n">result_label</span> <span class="o">=</span> <span class="n">tk</span><span class="p">.</span><span class="n">Label</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s">""</span><span class="p">,</span> <span class="n">fg</span><span class="o">=</span><span class="s">"blue"</span><span class="p">)</span>
+<span class="n">result_label</span><span class="p">.</span><span class="n">pack</span><span class="p">()</span>
+
+<span class="n">root</span><span class="p">.</span><span class="n">mainloop</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h2 id="convert-python-script-to-exe">Convert Python Script to EXE</h2>
+<p>To allow non-Python users to run the app, we can <strong>convert it into an EXE file</strong> using <strong>PyInstaller</strong>.</p>
+
+<h3 id="steps">Steps:</h3>
+<ol>
+  <li>Install PyInstaller:
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>pyinstaller
+</code></pre></div>    </div>
+  </li>
+  <li>Convert script to EXE:
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pyinstaller <span class="nt">--onefile</span> <span class="nt">--windowed</span> transparent_app.py
+</code></pre></div>    </div>
+  </li>
+  <li>The <code class="language-plaintext highlighter-rouge">dist/transparent_app.exe</code> file is now ready for distribution!</li>
+</ol>
+
+<h3 id="optional-add-an-icon">Optional: Add an Icon</h3>
+<p>To add an app icon:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pyinstaller <span class="nt">--onefile</span> <span class="nt">--windowed</span> <span class="nt">--icon</span><span class="o">=</span>app_icon.ico transparent_app.py
+</code></pre></div></div>
+
+<h2 id="troubleshooting-tips">Troubleshooting Tips</h2>
+<p>✅ <strong>If the EXE file is missing dependencies</strong>, try adding:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   pyinstaller <span class="nt">--onefile</span> <span class="nt">--windowed</span> <span class="nt">--hidden-import</span><span class="o">=</span>PIL <span class="nt">--hidden-import</span><span class="o">=</span>tkinter transparent_app.py
+</code></pre></div></div>
+<p>✅ <strong>EXE file too large?</strong> PyInstaller packs everything—use <code class="language-plaintext highlighter-rouge">UPX</code> compression.
+✅ <strong>Some users report missing DLLs?</strong> Ensure a clean environment before packaging.</p>
 
 <h2 id="conclusion">Conclusion</h2>
+<p>This guide showed how to build a <strong>simple GUI app to remove image backgrounds</strong>, convert it into a <strong>Windows EXE</strong>, and package it for easy distribution. 🚀</p>
 
-<p>You now have Python set up and ready to use with PowerShell! Try writing your first Python script and running it with <code class="language-plaintext highlighter-rouge">python script.py</code>. Happy coding!</p>]]></content><author><name>Matthew Choo</name><email>mattckw@gmail.com</email></author><category term="Python" /><category term="Beginner" /><category term="Python" /><category term="PowerShell" /><category term="Setup" /><category term="Virtual Environment" /><category term="Git" /><summary type="html"><![CDATA[A step-by-step guide for those with zero coding knowledge to set up Python and run scripts using PowerShell.]]></summary></entry><entry><title type="html">Tuya Power Meter Overload Alarm – Will It Shut Down the Whole House?</title><link href="http://localhost:4000/smart%20home/troubleshooting/tuyaoverload/" rel="alternate" type="text/html" title="Tuya Power Meter Overload Alarm – Will It Shut Down the Whole House?" /><published>2025-02-20T00:00:00+08:00</published><updated>2025-02-20T00:00:00+08:00</updated><id>http://localhost:4000/smart%20home/troubleshooting/tuyaoverload</id><content type="html" xml:base="http://localhost:4000/smart%20home/troubleshooting/tuyaoverload/"><![CDATA[<h2 id="tuya-power-meter-overload-alarm-notification">Tuya Power Meter Overload Alarm Notification</h2>
+<h2 id="-download-the-app">📥 Download the App</h2>
 
-<p>Recently, I encountered an overload alarm notification on my Tuya smart power meter. This raised an immediate concern: Will the overload protection cut off power to the entire house?</p>
+<p>You can download the <strong>Offline Background Transparent App</strong> as an <code class="language-plaintext highlighter-rouge">.exe</code> from GitHub:</p>
 
-<h2 id="quick-answer-no-it-wont">Quick Answer: No, It Won’t</h2>
+<p><a href="https://github.com/mattchoo2/offlinebackgroundtransparent/releases/tag/v1.0.0">➡ Download v1.0.0</a></p>
 
-<p><img src="https://raw.githubusercontent.com/mattchoo2/mattchoo2.github.io/main/assets/images/tuyaiotlog.png" alt="Tuya IoT Log" /></p>
+<h2 id="support-me-">Support Me 💖</h2>
+<p><a href="https://paypal.me/mattchoo2"><img src="https://img.shields.io/badge/Donate-PayPal-blue.svg" alt="Donate" /></a></p>]]></content><author><name>Matthew Choo</name><email>mattckw@gmail.com</email></author><category term="Python" /><category term="Image Processing" /><category term="EXE" /><category term="Python" /><category term="Tkinter" /><category term="Pillow" /><category term="PyInstaller" /><category term="Image Editing" /><summary type="html"><![CDATA[Learn how to create a simple Python app to remove image backgrounds and convert it into an EXE file for easy use.]]></summary></entry><entry><title type="html">Make Image Background Transparent Without Any App</title><link href="https://mattlifetech.github.io/tech/coding/image%20processing/transparentpic/" rel="alternate" type="text/html" title="Make Image Background Transparent Without Any App" /><published>2025-03-04T00:00:00+08:00</published><updated>2025-03-04T00:00:00+08:00</updated><id>https://mattlifetech.github.io/tech/coding/image%20processing/transparentpic</id><content type="html" xml:base="https://mattlifetech.github.io/tech/coding/image%20processing/transparentpic/"><![CDATA[<p><img src="https://raw.githubusercontent.com/mattchoo2/mattchoo2.github.io/main/assets/images/transparent.webp" alt="tpr" /></p>
 
-<p>After investigating the issue, I confirmed that the Tuya power meter <strong>does not</strong> cut off the main power supply. Instead, it only switches off the “software” of the connected device.  Device will go offline and online again shortly based on the IOT Tuya data logging.  The rest of the electrical system remains operational.</p>
+<h1 id="make-image-background-transparent-without-any-app">Make Image Background Transparent Without Any App</h1>
 
-<p>To illustrate this, I conducted a test comparing power and voltage before and after the overload event. The device simply turns off its software-controlled relay, while the main power supply remains stable.</p>
+<p>Removing an image background usually requires Photoshop or online tools, but you can do it easily with Python—no extra apps needed!</p>
 
-<h2 id="mistranslation-and-firmware-limitations">Mistranslation and Firmware Limitations</h2>
+<h2 id="why-use-python">Why Use Python?</h2>
 
-<p>It turns out that this overload notification is actually a mistranslation of the issue. The alarm may not indicate a true overload but rather a measurement anomaly or firmware behavior.</p>
+<ul>
+  <li><strong>No third-party software</strong> – Everything runs locally.</li>
+  <li><strong>Fast and efficient</strong> – Process multiple images with automation.</li>
+  <li><strong>Full control</strong> – Customize transparency settings.</li>
+</ul>
 
-<p>Unfortunately, IOT Tuya only keep one week of data where I dont have data to confirm this is due to firmware update.
-Also, there is no way to turn off this notification or reduce the firmware’s measurement frequency, which means users will continue to see these alerts even if no real danger is present.</p>
+<h2 id="how-it-works">How It Works</h2>
 
-<h2 id="energy-supplier-vs-firmware-issue-comparison">Energy Supplier vs. Firmware Issue Comparison</h2>
-<p>This is Feb2025 Power vs Voltage logging chart on home assistant:
-<img src="https://raw.githubusercontent.com/mattchoo2/mattchoo2.github.io/main/assets/images/powercurrent.png" alt="Power Monitoring" /></p>
+<p>This script scans every pixel in the image and makes any nearly white background (RGB &gt; 200, 200, 200) fully transparent.</p>
 
-<p>Below is a comparison table from my earlier analysis, summarizing the possibilities of an issue being caused by the energy supplier or a firmware malfunction:</p>
+<h2 id="python-script">Python Script</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+
+<span class="c1"># Update these paths
+</span><span class="n">image_path</span> <span class="o">=</span> <span class="sa">r</span><span class="s">"C:\path\to\your\input_image.png"</span>
+<span class="n">output_path</span> <span class="o">=</span> <span class="sa">r</span><span class="s">"C:\path\to\your\output_image.png"</span>
+
+<span class="c1"># Load image
+</span><span class="n">image</span> <span class="o">=</span> <span class="n">Image</span><span class="p">.</span><span class="nb">open</span><span class="p">(</span><span class="n">image_path</span><span class="p">).</span><span class="n">convert</span><span class="p">(</span><span class="s">"RGBA"</span><span class="p">)</span>
+
+<span class="c1"># Process pixels
+</span><span class="n">datas</span> <span class="o">=</span> <span class="n">image</span><span class="p">.</span><span class="n">getdata</span><span class="p">()</span>
+<span class="n">new_data</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="k">if</span> <span class="p">(</span><span class="n">r</span> <span class="o">&gt;</span> <span class="mi">200</span> <span class="ow">and</span> <span class="n">g</span> <span class="o">&gt;</span> <span class="mi">200</span> <span class="ow">and</span> <span class="n">b</span> <span class="o">&gt;</span> <span class="mi">200</span><span class="p">)</span> <span class="k">else</span> <span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+    <span class="k">for</span> <span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span> <span class="ow">in</span> <span class="n">datas</span>
+<span class="p">]</span>
+
+<span class="c1"># Apply changes
+</span><span class="n">image</span><span class="p">.</span><span class="n">putdata</span><span class="p">(</span><span class="n">new_data</span><span class="p">)</span>
+<span class="n">image</span><span class="p">.</span><span class="n">save</span><span class="p">(</span><span class="n">output_path</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"Transparent image saved as: </span><span class="si">{</span><span class="n">output_path</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="how-to-use">How to Use</h2>
+
+<ol>
+  <li>Install <code class="language-plaintext highlighter-rouge">Pillow</code> if you haven’t already:
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>pillow
+</code></pre></div>    </div>
+  </li>
+  <li>Update <code class="language-plaintext highlighter-rouge">image_path</code> and <code class="language-plaintext highlighter-rouge">output_path</code> with your file locations.</li>
+  <li>Run the script:
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python script.py
+</code></pre></div>    </div>
+  </li>
+  <li>Your image will be saved with a transparent background!</li>
+</ol>
+
+<h2 id="final-thoughts">Final Thoughts</h2>
+
+<p>This method is ideal for quick background removal, especially for white or light-colored backgrounds. You can fine-tune the script by adjusting the RGB threshold.</p>
+
+<p>Want more automation tips? Follow my blog for more tech hacks! 🚀</p>
+
+<h2 id="support-me-">Support Me 💖</h2>
+<p><a href="https://paypal.me/mattchoo2"><img src="https://img.shields.io/badge/Donate-PayPal-blue.svg" alt="Donate" /></a></p>]]></content><author><name>Matthew Choo</name><email>mattckw@gmail.com</email></author><category term="Tech" /><category term="Coding" /><category term="Image Processing" /><category term="Python" /><category term="Automation" /><category term="Image Editing" /><summary type="html"><![CDATA[A simple Python script to remove image backgrounds without using any third-party apps or online tools.]]></summary></entry><entry><title type="html">Chinese Text Extraction from Images Using Python and Tesseract OCR</title><link href="https://mattlifetech.github.io/image%20processing/ocr/python/image2txt/" rel="alternate" type="text/html" title="Chinese Text Extraction from Images Using Python and Tesseract OCR" /><published>2025-03-04T00:00:00+08:00</published><updated>2025-03-04T00:00:00+08:00</updated><id>https://mattlifetech.github.io/image%20processing/ocr/python/image2txt</id><content type="html" xml:base="https://mattlifetech.github.io/image%20processing/ocr/python/image2txt/"><![CDATA[<p><img src="https://raw.githubusercontent.com/mattchoo2/mattchoo2.github.io/main/assets/images/text-extraction.webp" alt="image2txt" /></p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>Extracting text from images is a common task in document digitization, automated translations, and data processing. In this guide, we’ll walk through setting up <strong>Tesseract OCR</strong> to extract Chinese text from images using Python.</p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<p>Before we begin, ensure you have the following installed:</p>
+
+<h3 id="1-install-tesseract-ocr">1. Install Tesseract OCR</h3>
+
+<p>Download and install <strong>Tesseract OCR</strong> from the <a href="https://github.com/UB-Mannheim/tesseract/wiki">official repository</a>:</p>
+
+<ul>
+  <li>Windows users: Download the latest <strong>Windows installer</strong>.</li>
+  <li>Linux/macOS users: Install via package manager:
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>tesseract-ocr   <span class="c"># Ubuntu/Debian</span>
+brew <span class="nb">install </span>tesseract           <span class="c"># macOS (Homebrew)</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="2-add-tesseract-to-system-path-windows">2. Add Tesseract to System PATH (Windows)</h3>
+
+<p>After installation, add Tesseract to your <strong>system PATH</strong>:</p>
+
+<ol>
+  <li>Go to <strong>Settings &gt; Environment Variables</strong>.</li>
+  <li>Find and edit the <code class="language-plaintext highlighter-rouge">Path</code> variable under <strong>System Variables</strong>.</li>
+  <li>Click <strong>New</strong>, then add:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>C:\Program Files\Tesseract-OCR\
+</code></pre></div>    </div>
+  </li>
+  <li>Click <strong>OK</strong> and <strong>restart your system</strong>.</li>
+</ol>
+
+<h3 id="3-verify-tesseract-installation">3. Verify Tesseract Installation</h3>
+
+<p>Run the following command to check available languages:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tesseract <span class="nt">--list-langs</span>
+</code></pre></div></div>
+
+<p>Expected output (if Chinese is installed):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>List of available languages (8):
+chi_sim
+chi_sim_vert
+chi_tra
+chi_tra_vert
+eng
+jpn
+jpn_vert
+osd
+</code></pre></div></div>
+
+<p>If <code class="language-plaintext highlighter-rouge">chi_sim</code> is missing, download it manually from <a href="https://github.com/tesseract-ocr/tessdata">Tesseract OCR tessdata</a> and place it in:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>C:\Program Files\Tesseract-OCR\tessdata\
+</code></pre></div></div>
+
+<h3 id="4-install-required-python-libraries">4. Install Required Python Libraries</h3>
+
+<p>Ensure you have <strong>pytesseract</strong> and <strong>Pillow</strong> installed:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>pytesseract pillow
+</code></pre></div></div>
+
+<h2 id="the-python-script">The Python Script</h2>
+
+<p>The script scans a folder for images (<code class="language-plaintext highlighter-rouge">.png</code>, <code class="language-plaintext highlighter-rouge">.jpg</code>, <code class="language-plaintext highlighter-rouge">.jpeg</code>, <code class="language-plaintext highlighter-rouge">.webp</code>), extracts text using <strong>Tesseract OCR</strong>, and saves the output as a <code class="language-plaintext highlighter-rouge">.txt</code> file with the same name as the folder.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">pytesseract</span>
+<span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+
+<span class="c1"># Set Tesseract-OCR path for Windows
+</span><span class="n">pytesseract</span><span class="p">.</span><span class="n">pytesseract</span><span class="p">.</span><span class="n">tesseract_cmd</span> <span class="o">=</span> <span class="sa">r</span><span class="s">"C:\\Program Files\\Tesseract-OCR\\tesseract.exe"</span>
+
+<span class="c1"># Ensure TESSDATA_PREFIX is set correctly
+</span><span class="n">os</span><span class="p">.</span><span class="n">environ</span><span class="p">[</span><span class="s">"TESSDATA_PREFIX"</span><span class="p">]</span> <span class="o">=</span> <span class="sa">r</span><span class="s">"C:\\Program Files\\Tesseract-OCR"</span>
+
+<span class="k">def</span> <span class="nf">extract_text_from_images</span><span class="p">():</span>
+    <span class="c1"># Get current script directory
+</span>    <span class="n">script_dir</span> <span class="o">=</span> <span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">__file__</span><span class="p">))</span>
+    <span class="n">folder_name</span> <span class="o">=</span> <span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">basename</span><span class="p">(</span><span class="n">script_dir</span><span class="p">)</span>  <span class="c1"># Use folder name for output file
+</span>    <span class="n">output_file</span> <span class="o">=</span> <span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="n">script_dir</span><span class="p">,</span> <span class="sa">f</span><span class="s">"</span><span class="si">{</span><span class="n">folder_name</span><span class="si">}</span><span class="s">.txt"</span><span class="p">)</span>
+    
+    <span class="c1"># Supported image formats
+</span>    <span class="n">image_extensions</span> <span class="o">=</span> <span class="p">{</span><span class="s">".png"</span><span class="p">,</span> <span class="s">".jpg"</span><span class="p">,</span> <span class="s">".jpeg"</span><span class="p">,</span> <span class="s">".webp"</span><span class="p">}</span>
+    
+    <span class="c1"># Get all valid image files sorted in numeric order
+</span>    <span class="n">image_files</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span>
+        <span class="p">[</span><span class="n">f</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">os</span><span class="p">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">script_dir</span><span class="p">)</span> <span class="k">if</span> <span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">splitext</span><span class="p">(</span><span class="n">f</span><span class="p">)[</span><span class="mi">1</span><span class="p">].</span><span class="n">lower</span><span class="p">()</span> <span class="ow">in</span> <span class="n">image_extensions</span><span class="p">],</span>
+        <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">splitext</span><span class="p">(</span><span class="n">x</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span>  <span class="c1"># Sort by numeric filename
+</span>    <span class="p">)</span>
+    
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">image_files</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"No image files found."</span><span class="p">)</span>
+        <span class="k">return</span>
+    
+    <span class="n">extracted_texts</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">image_file</span> <span class="ow">in</span> <span class="n">image_files</span><span class="p">:</span>
+        <span class="n">image_path</span> <span class="o">=</span> <span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="n">script_dir</span><span class="p">,</span> <span class="n">image_file</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="p">.</span><span class="nb">open</span><span class="p">(</span><span class="n">image_path</span><span class="p">)</span>
+            <span class="n">text</span> <span class="o">=</span> <span class="n">pytesseract</span><span class="p">.</span><span class="n">image_to_string</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">lang</span><span class="o">=</span><span class="s">"chi_sim"</span><span class="p">)</span>  <span class="c1"># Extract Chinese text
+</span>            <span class="n">extracted_texts</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+        <span class="k">except</span> <span class="nb">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"Error processing </span><span class="si">{</span><span class="n">image_file</span><span class="si">}</span><span class="s">: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+    
+    <span class="c1"># Write extracted text to output file
+</span>    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">output_file</span><span class="p">,</span> <span class="s">"w"</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s">"utf-8"</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">f</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="s">"</span><span class="se">\n\n</span><span class="s">"</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="n">extracted_texts</span><span class="p">))</span>
+    
+    <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"Text extraction complete. Output saved as: </span><span class="si">{</span><span class="n">output_file</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span>
+    <span class="n">extract_text_from_images</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h2 id="how-the-script-works">How the Script Works</h2>
+
+<p><strong>Note:</strong> The folder path must only contain English letters (A-Z) to avoid issues with Tesseract OCR.</p>
+
+<ol>
+  <li>The script <strong>automatically detects</strong> the folder where it’s placed.</li>
+  <li>It scans for <strong>image files</strong> (<code class="language-plaintext highlighter-rouge">.png</code>, <code class="language-plaintext highlighter-rouge">.jpg</code>, <code class="language-plaintext highlighter-rouge">.jpeg</code>, <code class="language-plaintext highlighter-rouge">.webp</code>) named in a numeric sequence (e.g., <code class="language-plaintext highlighter-rouge">001.jpg</code>, <code class="language-plaintext highlighter-rouge">002.png</code>).</li>
+  <li>It <strong>extracts text</strong> from each image while preserving formatting.</li>
+  <li>The extracted text is <strong>compiled</strong> into a single <code class="language-plaintext highlighter-rouge">.txt</code> file named after the folder.</li>
+</ol>
+
+<h2 id="summary">Summary</h2>
+
+<p>This guide walks through setting up Tesseract OCR, configuring paths, installing required languages, and using a Python script to extract Chinese text from images. This automation can be useful for document digitization, subtitle extraction, or archiving printed materials into searchable text.</p>
+
+<p>Give it a try, and let me know if you have any questions! 🚀</p>
+
+<h2 id="support-me-">Support Me 💖</h2>
+<p><a href="https://paypal.me/mattchoo2"><img src="https://img.shields.io/badge/Donate-PayPal-blue.svg" alt="Donate" /></a></p>]]></content><author><name>Matthew Choo</name><email>mattckw@gmail.com</email></author><category term="Image Processing" /><category term="OCR" /><category term="Python" /><category term="OCR" /><category term="Tesseract" /><category term="Image Processing" /><category term="Python" /><summary type="html"><![CDATA[A step-by-step guide on extracting Chinese text from images using Python and Tesseract OCR.]]></summary></entry><entry><title type="html">Xiaomi Pad 7 Free Keyboard &amp;amp; Pen (Limited Deal)</title><link href="https://mattlifetech.github.io/tablets/android/xiaomi/mipad7/" rel="alternate" type="text/html" title="Xiaomi Pad 7 Free Keyboard &amp;amp; Pen (Limited Deal)" /><published>2025-03-03T00:00:00+08:00</published><updated>2025-03-03T00:00:00+08:00</updated><id>https://mattlifetech.github.io/tablets/android/xiaomi/mipad7</id><content type="html" xml:base="https://mattlifetech.github.io/tablets/android/xiaomi/mipad7/"><![CDATA[<h1 id="xiaomi-pad-7-free-keyboard--pen-limited-deal">Xiaomi Pad 7 Free Keyboard &amp; Pen (Limited Deal)</h1>
+
+<p><img src="https://raw.githubusercontent.com/mattchoo2/mattchoo2.github.io/main/assets/images/ecompad7.png" alt="ecom7" /></p>
+
+<p>If you’re looking for the <strong>free keyboard and pen</strong> deal for the <strong>Xiaomi Pad 7</strong>, you may have noticed that you <strong>cannot select it for free</strong> from the official <strong>Lazada</strong> and <strong>Shopee</strong> Xiaomi stores.</p>
+
+<ul>
+  <li><a href="https://s.lazada.com.my/s.LhBRN">Lazada Xiaomi Official Store</a></li>
+  <li><a href="https://shopee.com.my/product/698003580/27826446251">Shopee Xiaomi Official Store</a>
+<strong>UPDATE 4March2025</strong> - xiaomi official replied, buy 256GB will get free keyboard and pen while its not clearly stated</li>
+</ul>
+
+<h2 id="why-cant-you-get-the-free-keyboard--pen">Why Can’t You Get the Free Keyboard &amp; Pen?</h2>
+
+<p>The reason is that this free keyboard and pen deal is <strong>“online exclusive”</strong>, which means you can <strong>only</strong> get it from the official <strong>Xiaomi Malaysia website</strong>.</p>
+
+<p><img src="https://raw.githubusercontent.com/mattchoo2/mattchoo2.github.io/main/assets/images/micom7.png" alt="micom7" /></p>
+
+<h3 id="where-to-buy">Where to Buy</h3>
+
+<ul>
+  <li><a href="https://www.mi.com/my/">Xiaomi Official Website</a></li>
+</ul>
+
+<h3 id="product-link">Product Link</h3>
+
+<ul>
+  <li><a href="https://www.mi.com/my/product/xiaomi-pad-7/?skupanel=1">Xiaomi Pad 7 Product Page</a></li>
+</ul>
+
+<p>If you’re interested in this deal, make sure to purchase it <strong>directly from Xiaomi’s official website</strong> to claim your free accessories!</p>
+
+<h2 id="comparison-of-budget-to-mid-range-android-tablets">Comparison of Budget to Mid-Range Android Tablets</h2>
+
+<p>When considering a new tablet, it’s essential to compare various options to ensure you get the best value for your money. Below is a comparison of some popular budget to mid-range Android tablets, including the Xiaomi Pad 7.</p>
 
 <table>
   <thead>
     <tr>
-      <th>Factor</th>
-      <th>Energy Supplier Change</th>
-      <th>Tuya Firmware Change</th>
+      <th>Feature</th>
+      <th>Xiaomi Pad 7</th>
+      <th>Samsung Galaxy Tab S9</th>
+      <th>Xiaomi Redmi Pad SE 8.7</th>
+      <th>Samsung Galaxy Tab A9</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><strong>Power fluctuation increase</strong></td>
-      <td>Possible, if grid quality changed</td>
-      <td>Possible, if data logging increased</td>
+      <td><strong>CPU</strong></td>
+      <td>Qualcomm Snapdragon 7+ Gen 3</td>
+      <td>Qualcomm Snapdragon 8 Gen 2 OC</td>
+      <td>MediaTek Helio G85</td>
+      <td>MediaTek Helio G99</td>
     </tr>
     <tr>
-      <td><strong>Voltage fluctuation increase</strong></td>
-      <td>Should be more severe if supply changed</td>
-      <td>Possible, but less likely</td>
+      <td><strong>AnTuTu Score</strong></td>
+      <td>1,314,778</td>
+      <td>1,570,944</td>
+      <td>225,691</td>
+      <td>350,000</td>
     </tr>
     <tr>
-      <td><strong>Memory error on Tuya IoT logs</strong></td>
-      <td>Unrelated to grid</td>
-      <td>Highly relevant</td>
+      <td><strong>Storage</strong></td>
+      <td>256GB</td>
+      <td>128GB / 256GB</td>
+      <td>64GB</td>
+      <td>64GB</td>
     </tr>
     <tr>
-      <td><strong>Change in data granularity</strong></td>
-      <td>No effect on logging</td>
-      <td>Could directly affect logging frequency</td>
+      <td><strong>RAM</strong></td>
+      <td>8GB</td>
+      <td>12GB</td>
+      <td>4GB</td>
+      <td>4GB</td>
     </tr>
     <tr>
-      <td><strong>Overload alarms increased</strong></td>
-      <td>Possible if grid changed</td>
-      <td>Possible if firmware became more sensitive</td>
+      <td><strong>Screen Size</strong></td>
+      <td>11.2 inches</td>
+      <td>11.0 inches</td>
+      <td>8.7 inches</td>
+      <td>8.7 inches</td>
+    </tr>
+    <tr>
+      <td><strong>Screen Quality</strong></td>
+      <td>IPS LCD, 144Hz, HDR10, Dolby Vision, 800 nits</td>
+      <td>Dynamic AMOLED 2X, 120Hz</td>
+      <td>HD+</td>
+      <td>HD+</td>
+    </tr>
+    <tr>
+      <td><strong>Desktop Mode</strong></td>
+      <td>No specific UI, applications can open in window(s)</td>
+      <td>Samsung DeX</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><strong>USB Display Alt Mode</strong></td>
+      <td>No (can use adapter)</td>
+      <td>Yes</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><strong>Fast Charging Watt</strong></td>
+      <td>45W</td>
+      <td>45W</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><strong>Fast Charging Time</strong></td>
+      <td>100% in 1h 20 min (advertised)</td>
+      <td>100% in 80 min (advertised)</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td><strong>Price in RM</strong></td>
+      <td>RM1199+</td>
+      <td>RM1750+</td>
+      <td>RM499+</td>
+      <td>RM459+</td>
     </tr>
   </tbody>
 </table>
 
-<p>✅ <strong>Final Assessment:</strong></p>
+<p><em>Note: Some information is not available due to limited data on certain models.</em></p>
+
+<h2 id="why-xiaomi-pad-7-is-a-value-buy">Why Xiaomi Pad 7 is a Value Buy</h2>
+
+<p>The <strong>Xiaomi Pad 7</strong> stands out as a value buy for several reasons:</p>
 
 <ul>
   <li>
-    <p><strong>The most likely cause is a Tuya firmware change.</strong></p>
-
-    <ul>
-      <li>The “out of memory” issue could have forced the device to restart.</li>
-      <li>If the logging frequency increased, power fluctuations would appear more chaotic even if actual consumption remained the same.</li>
-      <li>Overload alarms aligning with memory errors suggest an internal software issue rather than a supplier change.</li>
-    </ul>
+    <p><strong>High-Quality Display</strong>: It features an 11.2-inch IPS LCD with a 144Hz refresh rate, HDR10, and Dolby Vision support, providing a smooth and vibrant viewing experience.</p>
   </li>
   <li>
-    <p><strong>An energy supplier change is still possible but less likely.</strong></p>
-
-    <ul>
-      <li>If this were the main cause, voltage variations should be much more erratic, and you would likely see fluctuations in <strong>other appliances</strong> too.</li>
-    </ul>
+    <p><strong>Powerful Performance</strong>: Equipped with the Qualcomm Snapdragon 7+ Gen 3 processor and 8GB of RAM, it ensures efficient multitasking and performance. Its AnTuTu score of 1,314,778 reflects robust capabilities.</p>
+  </li>
+  <li>
+    <p><strong>Ample Storage</strong>: With 256GB of internal storage, users have plenty of space for apps, media, and documents.</p>
+  </li>
+  <li>
+    <p><strong>Fast Charging</strong>: The 8,850 mAh battery supports 45W fast charging, reaching 100% in approximately 1 hour and 20 minutes.</p>
+  </li>
+  <li>
+    <p><strong>Competitive Pricing</strong>: Starting from RM1199, it offers premium features at a more affordable price point compared to competitors like the Samsung Galaxy Tab S9.</p>
+  </li>
+  <li>
+    <p><strong>Exclusive Deal</strong>: Purchasing directly from the <a href="https://www.mi.com/my/">Xiaomi Official Website</a> allows customers to receive a free keyboard and pen, enhancing productivity and value.</p>
   </li>
 </ul>
 
-<hr />
+<p>In conclusion, the Xiaomi Pad 7 offers a compelling mix of performance, display quality, and value-added accessories, making it a strong contender in the budget to mid-range tablet market.</p>
 
-<p>If you’re using a Tuya power meter and see an overload alarm, there’s no need to worry about a complete power outage—your main supply remains active, and only the connected device is turned off at software level and restart quite fast.</p>
+<p><em>Note: The information provided is based on available data as of March 3, 2025. Prices and specifications are subject to change.</em></p>]]></content><author><name>Matthew Choo</name><email>mattckw@gmail.com</email></author><category term="Tablets" /><category term="Android" /><category term="Xiaomi" /><category term="Xiaomi Pad 7" /><category term="Android Tablets" /><category term="Budget Tablets" /><summary type="html"><![CDATA[A comparison of budget to mid-range Android tablets, highlighting the Xiaomi Pad 7's value and its exclusive free keyboard & pen deal.]]></summary></entry><entry><title type="html">Fixing Missing Table of Contents in Moon+ Reader for Chinese Story Text Files</title><link href="https://mattlifetech.github.io/e-readers/chinese%20stories/android/moonreadertoc/" rel="alternate" type="text/html" title="Fixing Missing Table of Contents in Moon+ Reader for Chinese Story Text Files" /><published>2025-02-28T00:00:00+08:00</published><updated>2025-02-28T00:00:00+08:00</updated><id>https://mattlifetech.github.io/e-readers/chinese%20stories/android/moonreadertoc</id><content type="html" xml:base="https://mattlifetech.github.io/e-readers/chinese%20stories/android/moonreadertoc/"><![CDATA[<p><img src="https://raw.githubusercontent.com/mattchoo2/mattchoo2.github.io/main/assets/images/moon-reader.webp" alt="moon" /></p>
 
-<p>Let me know if you’ve experienced similar issues in your smart home setup!</p>]]></content><author><name>Matthew Choo</name><email>mattckw@gmail.com</email></author><category term="Smart Home" /><category term="Troubleshooting" /><category term="Tuya" /><category term="Power Meter" /><category term="Smart Home" /><category term="Overload Protection" /><category term="Energy Monitoring" /><summary type="html"><![CDATA[An investigation into Tuya smart power meter overload alarms, clarifying whether they affect the entire house or just the connected device.]]></summary></entry><entry><title type="html">RightClickRunPython – Run Python Scripts with a Right-Click</title><link href="http://localhost:4000/projects/rightclick-run-python/" rel="alternate" type="text/html" title="RightClickRunPython – Run Python Scripts with a Right-Click" /><published>2025-02-19T00:00:00+08:00</published><updated>2025-02-19T00:00:00+08:00</updated><id>http://localhost:4000/projects/rightclickrunpython</id><content type="html" xml:base="http://localhost:4000/projects/rightclick-run-python/"><![CDATA[<h2 id="rightclickrunpython--run-python-scripts-with-a-right-click">RightClickRunPython – Run Python Scripts with a Right-Click</h2>
+<p>If you enjoy reading Chinese story text files on your Android device using <strong>Moon+ Reader</strong>, you may have noticed that the <strong>Table of Contents (TOC)</strong> does not always display correctly. This can be frustrating, especially when navigating lengthy novels with multiple chapters. Fortunately, there’s a simple fix for this issue.</p>
 
-<p>Tired of opening the terminal and navigating to the script location every time you want to run a Python script? <strong>RightClickRunPython</strong> makes it easy—just right-click on a <code class="language-plaintext highlighter-rouge">.py</code> file and run it instantly!</p>
+<h2 id="why-is-the-table-of-contents-missing">Why Is the Table of Contents Missing?</h2>
+<p>Moon+ Reader automatically detects chapter titles based on recognizable patterns in the text file. As long as your text file contains structured chapter headings (e.g., <code class="language-plaintext highlighter-rouge">第1章</code> or <code class="language-plaintext highlighter-rouge">Chapter 1</code>), the app should be able to generate a TOC. However, if your <strong>Android system language is not set to Chinese</strong>, the TOC might not appear as expected.</p>
 
-<h3 id="-features">🚀 Features</h3>
-<ul>
-  <li><strong>Right-Click &amp; Run</strong> – Adds a Windows context menu entry to execute Python scripts.</li>
-  <li><strong>Customizable</strong> – Choose which Python version to use.</li>
-  <li><strong>Easy Installation</strong> – Just run the script to set it up.</li>
-  <li><strong>Supports Arguments</strong> – Run scripts with command-line arguments.</li>
-</ul>
+<h2 id="how-to-fix-it">How to Fix It</h2>
 
-<h3 id="-installation">🛠 Installation</h3>
+<p><img src="https://raw.githubusercontent.com/mattchoo2/mattchoo2.github.io/main/assets/images/moon-reader-toc.png" alt="menuimage" /></p>
+
+<p>The issue is likely due to the system language settings. Follow these steps to resolve it:</p>
+
 <ol>
-  <li>Clone the repository:
-    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/mattchoo2/rightclickrunpython.git
-</code></pre></div>    </div>
-  </li>
-  <li>Run the setup script:
-    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python install.py
-</code></pre></div>    </div>
-  </li>
-  <li>Right-click any <code class="language-plaintext highlighter-rouge">.py</code> file and select <strong>Run with Python</strong>!</li>
+  <li>Open <strong>Moon+ Reader</strong> &amp; Go left tab (click top left 3 lines) then <strong>Options</strong> (gear icon at bottom left corner).</li>
+  <li>Change the language setting to <strong>Simplified Chinese (简体中文)</strong>.</li>
+  <li>Close and reopen your text file.</li>
 </ol>
 
-<h3 id="-repository">📂 Repository</h3>
-<p>Check out the full source code and setup instructions on GitHub:<br />
-<a href="https://github.com/mattchoo2/rightclickrunpython">🔗 RightClickRunPython</a></p>
-
-<h3 id="-why-use-this">✨ Why Use This?</h3>
-<p>If you frequently run Python scripts, this tool saves you time by eliminating the need to open a terminal and type commands manually. Perfect for developers, students, and automation enthusiasts!</p>
-
-<hr />
-
-<p>Give it a try and let me know your feedback! 🚀</p>]]></content><author><name>Matthew Choo</name><email>mattckw@gmail.com</email></author><category term="Projects" /><category term="Tools" /><category term="Python" /><category term="Windows" /><category term="Automation" /><category term="Productivity" /><summary type="html"><![CDATA[A simple way to run Python scripts from the Windows context menu with a right-click.]]></summary></entry><entry><title type="html">Remote Home Access in Malaysia: Understanding CGNAT and Solutions</title><link href="http://localhost:4000/networking/remote%20access/CGNATremotehome/" rel="alternate" type="text/html" title="Remote Home Access in Malaysia: Understanding CGNAT and Solutions" /><published>2025-02-19T00:00:00+08:00</published><updated>2025-02-19T00:00:00+08:00</updated><id>http://localhost:4000/networking/remote%20access/CGNATremotehome</id><content type="html" xml:base="http://localhost:4000/networking/remote%20access/CGNATremotehome/"><![CDATA[<h1 id="remote-home-access-in-malaysia-understanding-cgnat-and-solutions">Remote Home Access in Malaysia: Understanding CGNAT and Solutions</h1>
-
-<h2 id="understanding-malaysias-cgnat-and-its-impact-on-remote-access">Understanding Malaysia’s CGNAT and Its Impact on Remote Access</h2>
-
-<p><img src="https://raw.githubusercontent.com/mattchoo2/mattchoo2.github.io/main/assets/images/cgnat-remote-access.webp" alt="CGNAT Remote Access" /></p>
-
-<h3 id="what-is-cgnat-and-why-cant-you-detect-your-homes-actual-ip">What is CGNAT, and Why Can’t You Detect Your Home’s Actual IP?</h3>
-<p>Carrier-Grade Network Address Translation (CGNAT) is widely used by Malaysian ISPs to manage IPv4 address shortages. Instead of assigning a unique public IP to each user, ISPs assign private IPs and use a shared pool of public IPs for outbound connections. This means:</p>
-
-<ul>
-  <li>Your home router gets a private IP (e.g., <code class="language-plaintext highlighter-rouge">100.64.x.x</code> to <code class="language-plaintext highlighter-rouge">100.127.x.x</code>), not a true public IP.</li>
-  <li>Websites and services see the shared public IP, not your actual home IP.</li>
-  <li>Traditional “what is my IP” checks will only reveal the CGNAT-assigned public IP, which is shared among multiple users.</li>
-</ul>
-
-<h3 id="cgnat-enhances-security-by-hiding-your-ip">CGNAT Enhances Security by Hiding Your IP</h3>
-<p>While CGNAT makes remote access challenging, it provides some security benefits:</p>
-
-<ul>
-  <li>Your actual home IP is not exposed to the internet, reducing attack surfaces.</li>
-  <li>Direct attacks from the internet (e.g., port scanning, DDoS) are mitigated.</li>
-  <li>Unauthorized remote access attempts are blocked since external connections cannot directly reach your home network.</li>
-</ul>
-
-<h2 id="why-many-remote-home-solutions-fail-under-cgnat">Why Many Remote Home Solutions Fail Under CGNAT</h2>
-<p>Due to the lack of a true public IP, many traditional remote access solutions no longer work, including:</p>
-
-<ul>
-  <li><strong>OpenVPN:</strong> Requires port forwarding, which is impossible under CGNAT.</li>
-  <li><strong>Asus DDNS / Other Dynamic DNS Services:</strong> Since your ISP does not assign you a public IP, DDNS services cannot map a reachable address to your home network.</li>
-  <li><strong>WireGuard / Any Direct VPN Setup:</strong> Without a publicly accessible IP, peers cannot establish direct connections.</li>
-</ul>
-
-<p><img src="https://raw.githubusercontent.com/mattchoo2/mattchoo2.github.io/main/assets/images/tailscale.webp" alt="Tailscale Login Steps" /></p>
-
-<h2 id="solutions-that-work-tailscale-and-cloudflare-tunnel">Solutions That Work: Tailscale and Cloudflare Tunnel</h2>
-<p>Despite CGNAT limitations, some solutions bypass these restrictions using relay-based approaches.</p>
-
-<h3 id="1-tailscale-pro-and-con">1. <strong>Tailscale (Pro and Con)</strong></h3>
-<p>Tailscale is a mesh VPN built on WireGuard that works seamlessly behind CGNAT by using NAT traversal and relays when necessary.</p>
-
-<p>✅ <strong>Pros:</strong></p>
-<ul>
-  <li>No port forwarding required.</li>
-  <li>Encrypted, peer-to-peer connections when possible.</li>
-  <li>Free for personal use with up to 20 devices.</li>
-  <li>Easy to set up with apps for multiple platforms.</li>
-</ul>
-
-<p>❌ <strong>Cons:</strong></p>
-<ul>
-  <li>Requires an account (uses OAuth-based authentication like Google, Microsoft, etc.).</li>
-  <li>Some connections may still be relayed via Tailscale servers if direct NAT traversal fails, adding minimal latency.</li>
-</ul>
-
-<h3 id="2-cloudflare-tunnel-pro-and-con">2. <strong>Cloudflare Tunnel (Pro and Con)</strong></h3>
-<p>Cloudflare Tunnel (formerly Argo Tunnel) allows you to expose services like a home server or NAS securely without a public IP.</p>
-
-<p>✅ <strong>Pros:</strong></p>
-<ul>
-  <li>No need for a static public IP.</li>
-  <li>Works with a free Cloudflare account.</li>
-  <li>No inbound ports are open on your router, improving security.</li>
-  <li>Ideal for hosting self-hosted services (e.g., Home Assistant, Plex, web apps).</li>
-</ul>
-
-<p>❌ <strong>Cons:</strong></p>
-<ul>
-  <li>More setup steps compared to Tailscale.</li>
-  <li>Requires Cloudflare DNS to manage domains/subdomains.</li>
-  <li>Free tier has limitations (e.g., no private networking like Tailscale).</li>
-</ul>
+<p>Now, the Table of Contents should automatically appear and function properly.</p>
 
 <h2 id="conclusion">Conclusion</h2>
-<p>With Malaysia’s widespread use of CGNAT, traditional remote access methods no longer work for most users. Instead, solutions like Tailscale and Cloudflare Tunnel provide modern, secure, and effective alternatives for accessing home networks remotely. Depending on your use case, Tailscale is better suited for private network access, while Cloudflare Tunnel is ideal for exposing specific services securely over the web.</p>]]></content><author><name>Matthew Choo</name><email>mattckw@gmail.com</email></author><category term="Networking" /><category term="Remote Access" /><category term="CGNAT" /><category term="Remote Access" /><category term="Tailscale" /><category term="Cloudflare Tunnel" /><category term="VPN" /><category term="Malaysia" /><summary type="html"><![CDATA[A guide on overcoming CGNAT limitations in Malaysia for remote home access using Tailscale and Cloudflare Tunnel.]]></summary></entry><entry><title type="html">Tuya Presence Automation – Smart Home Motion Detection</title><link href="http://localhost:4000/projects/tuya-presence-automation/" rel="alternate" type="text/html" title="Tuya Presence Automation – Smart Home Motion Detection" /><published>2025-02-19T00:00:00+08:00</published><updated>2025-02-19T00:00:00+08:00</updated><id>http://localhost:4000/projects/tuyapresenceautomation</id><content type="html" xml:base="http://localhost:4000/projects/tuya-presence-automation/"><![CDATA[<h2 id="tuya-presence-automation--smart-home-motion-detection">Tuya Presence Automation – Smart Home Motion Detection</h2>
+<p>If your Chinese story text files contain proper chapter markers but the TOC is not showing up in <strong>Moon+ Reader</strong>, simply switching the app language to <strong>Simplified Chinese</strong> can resolve the problem. This small tweak makes navigating your favorite novels much easier!</p>
 
-<p>Looking to enhance your smart home with reliable presence detection? <strong>Tuya Presence Automation</strong> leverages Tuya-based sensors to automate actions based on motion detection, making your home smarter and more efficient.</p>
+<p>Happy reading!</p>]]></content><author><name>Matthew Choo</name><email>mattckw@gmail.com</email></author><category term="E-Readers" /><category term="Chinese Stories" /><category term="Android" /><category term="Moon+ Reader" /><category term="Chinese" /><category term="Android" /><category term="TOC" /><summary type="html"><![CDATA[A simple fix for missing Table of Contents in Moon+ Reader when reading Chinese story text files.]]></summary></entry><entry><title type="html">VBA vs Python for Excel: Which One Should You Use?</title><link href="https://mattlifetech.github.io/excel%20automation/python/vba/automateexcel/" rel="alternate" type="text/html" title="VBA vs Python for Excel: Which One Should You Use?" /><published>2025-02-27T00:00:00+08:00</published><updated>2025-02-27T00:00:00+08:00</updated><id>https://mattlifetech.github.io/excel%20automation/python/vba/automateexcel</id><content type="html" xml:base="https://mattlifetech.github.io/excel%20automation/python/vba/automateexcel/"><![CDATA[<p><img src="https://raw.githubusercontent.com/mattchoo2/mattchoo2.github.io/main/assets/images/vba-vs-python.webp" alt="VBA vs Python" /></p>
 
-<h3 id="-features">🚀 Features</h3>
-<ul>
-  <li><strong>Smart Presence Detection</strong> – Automate lights, alarms, and other devices based on motion.</li>
-  <li><strong>Tuya Cloud API Integration</strong> – Works with Tuya-compatible sensors.</li>
-  <li><strong>Customizable Automations</strong> – Set up actions based on detected presence or absence.</li>
-  <li><strong>Energy Efficiency</strong> – Reduce power consumption by turning off unused devices.</li>
-</ul>
+<h2 id="vba-vs-python-for-excel-which-one-should-you-use">VBA vs Python for Excel: Which One Should You Use?</h2>
 
-<h3 id="-installation">🛠 Installation</h3>
-<ol>
-  <li>Clone the repository:
-    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/mattchoo2/tuyapresenceautomation.git
-</code></pre></div>    </div>
-  </li>
-  <li>Install dependencies:
-    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install</span> <span class="nt">-r</span> requirements.txt
-</code></pre></div>    </div>
-  </li>
-  <li>Configure your Tuya API credentials in the settings file.</li>
-  <li>Run the automation script:
-    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python main.py
-</code></pre></div>    </div>
-  </li>
-</ol>
-
-<h3 id="-repository">📂 Repository</h3>
-<p>Check out the full source code and setup guide on GitHub:<br />
-<a href="https://github.com/mattchoo2/tuyapresenceautomation">🔗 Tuya Presence Automation</a></p>
-
-<h3 id="-why-use-this">✨ Why Use This?</h3>
-<p>With Tuya-based motion detection, you can create a fully automated smart home experience—turn on lights when someone enters a room, adjust climate controls, and even enhance security by detecting unauthorized movement.</p>
+<p>When working with <strong>Excel automation</strong>, the two most popular tools are <strong>VBA (Visual Basic for Applications)</strong> and <strong>Python</strong>. Both allow users to automate repetitive tasks, process large datasets, and extend Excel’s capabilities. But which one should you choose?</p>
 
 <hr />
 
-<p>Try it out and bring automation to the next level! 🚀</p>]]></content><author><name>Matthew Choo</name><email>mattckw@gmail.com</email></author><category term="Projects" /><category term="Home Automation" /><category term="Smart Home" /><category term="Tuya" /><category term="Home Automation" /><category term="IoT" /><summary type="html"><![CDATA[Automate presence detection using Tuya sensors for seamless smart home integration.]]></summary></entry><entry><title type="html">CreditCard2Excel – Convert Credit Card Statements to Excel</title><link href="http://localhost:4000/projects/creditcard2excel/" rel="alternate" type="text/html" title="CreditCard2Excel – Convert Credit Card Statements to Excel" /><published>2025-02-19T00:00:00+08:00</published><updated>2025-02-19T00:00:00+08:00</updated><id>http://localhost:4000/projects/creditcard2excel</id><content type="html" xml:base="http://localhost:4000/projects/creditcard2excel/"><![CDATA[<h2 id="creditcard2excel--convert-credit-card-statements-to-excel">CreditCard2Excel – Convert Credit Card Statements to Excel</h2>
+<h2 id="️-vba-vs-python-key-differences">🛠️ <strong>VBA vs Python: Key Differences</strong></h2>
 
-<p>Manually organizing credit card statements can be tedious. <strong>CreditCard2Excel</strong> automates the process by extracting transaction data and saving it neatly in an Excel file.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th><strong>VBA</strong> 🏆 (Excel-Native)</th>
+      <th><strong>Python</strong> 🏆 (More Powerful)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Best for</strong></td>
+      <td>Automating Excel macros</td>
+      <td>Advanced data analysis, AI, &amp; external automation</td>
+    </tr>
+    <tr>
+      <td><strong>Ease of Use</strong></td>
+      <td>Easy for Excel users ✅</td>
+      <td>Requires installation &amp; setup ❌</td>
+    </tr>
+    <tr>
+      <td><strong>Speed</strong></td>
+      <td>Slower for large datasets ❌</td>
+      <td>Faster processing ✅</td>
+    </tr>
+    <tr>
+      <td><strong>Integration</strong></td>
+      <td>Limited to Excel ❌</td>
+      <td>Works with databases, APIs, and more ✅</td>
+    </tr>
+    <tr>
+      <td><strong>Cross-Platform</strong></td>
+      <td>Windows-only (Limited Mac support) ❌</td>
+      <td>Fully cross-platform (Mac, Windows, Linux) ✅</td>
+    </tr>
+  </tbody>
+</table>
 
-<h3 id="-features">🚀 Features</h3>
-<ul>
-  <li><strong>Automated Extraction</strong> – Convert credit card statements into structured Excel files.</li>
-  <li><strong>Supports Multiple Formats</strong> – Works with PDF and CSV statements.</li>
-  <li><strong>Data Categorization</strong> – Automatically categorizes expenses.</li>
-  <li><strong>Easy Export</strong> – Saves data in Excel for further analysis.</li>
-</ul>
+<h3 id="-when-to-use-vba"><strong>📌 When to Use VBA</strong></h3>
+<p>✅ <strong>Best for Excel users</strong> who want quick, built-in automation.<br />
+✅ <strong>If you need simple macros</strong> like formatting, calculations, or form controls.<br />
+✅ <strong>Works well for small data sets</strong> and single-file automation.</p>
 
-<h3 id="-installation">🛠 Installation</h3>
-<ol>
-  <li>Clone the repository:
-    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/mattchoo2/creditcard2excel.git
-</code></pre></div>    </div>
-  </li>
-  <li>Install dependencies:
-    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install</span> <span class="nt">-r</span> requirements.txt
-</code></pre></div>    </div>
-  </li>
-  <li>Run the script with your credit card statement:
-    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python main.py path/to/statement.pdf
-</code></pre></div>    </div>
-  </li>
-</ol>
-
-<h3 id="-repository">📂 Repository</h3>
-<p>Check out the full source code and setup guide on GitHub:<br />
-<a href="https://github.com/mattchoo2/creditcard2excel">🔗 CreditCard2Excel</a></p>
-
-<h3 id="-why-use-this">✨ Why Use This?</h3>
-<p>If you track your spending, this tool helps automate data extraction and categorization, making financial management easier.</p>
+<h3 id="-when-to-use-python"><strong>📌 When to Use Python</strong></h3>
+<p>✅ <strong>If you need high-speed processing</strong> for large datasets.<br />
+✅ <strong>For complex tasks</strong> like web scraping, machine learning, and external APIs.<br />
+✅ <strong>If you need cross-platform compatibility</strong> (Mac, Windows, Linux).</p>
 
 <hr />
 
-<p>Give it a try and simplify your expense tracking! 🚀</p>]]></content><author><name>Matthew Choo</name><email>mattckw@gmail.com</email></author><category term="Projects" /><category term="Finance Tools" /><category term="Finance" /><category term="Python" /><category term="Automation" /><category term="Data Processing" /><summary type="html"><![CDATA[A Python tool to extract and organize credit card statement data into an Excel file.]]></summary></entry><entry><title type="html">Toyota Corolla Cross’s Original Wireless Charger Adjustment</title><link href="http://localhost:4000/automotive/diy/toyota-corolla-crosss-original-wireless-charger-adjustment/" rel="alternate" type="text/html" title="Toyota Corolla Cross’s Original Wireless Charger Adjustment" /><published>2022-11-21T00:00:00+08:00</published><updated>2022-11-21T00:00:00+08:00</updated><id>http://localhost:4000/automotive/diy/toyota-corolla-crosss-original-wireless-charger-adjustment</id><content type="html" xml:base="http://localhost:4000/automotive/diy/toyota-corolla-crosss-original-wireless-charger-adjustment/"><![CDATA[<p>Note.  The service center will not help you to do this. <br />
-I asked today during my 1k service.</p>
+<h2 id="️-platform-availability-mac-vs-windows">🖥️ <strong>Platform Availability: Mac vs Windows</strong></h2>
 
-<p>I am making these adjustments due to the clip gap is too small for my Samsung fold 3</p>
+<table>
+  <thead>
+    <tr>
+      <th>Platform</th>
+      <th><strong>VBA</strong></th>
+      <th><strong>Python</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Windows</strong></td>
+      <td>✅ Fully supported</td>
+      <td>✅ Fully supported</td>
+    </tr>
+    <tr>
+      <td><strong>Mac</strong></td>
+      <td>❌ Limited support (no ActiveX, COM)</td>
+      <td>✅ Fully supported</td>
+    </tr>
+    <tr>
+      <td><strong>Linux</strong></td>
+      <td>❌ Not supported</td>
+      <td>✅ Fully supported</td>
+    </tr>
+  </tbody>
+</table>
 
-<p>The wireless charger is installed and not intended to be removed.</p>
-
-<p>There is this pin under the front part of the wireless charger.</p>
-
-<p>You can try if you can slide to the front before lifting it up.<br />
-In this process, you will tear the double-sided tape at the front and back bottom of the charger.</p>
-
-<p><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1hjGEA8Uu3z4qcWrYxUeGoIkQQ04wxrH-GufULHEUBnKu_uDitNae85UsTsHya5WHwV8q_-A6-9q_Y-p0xzc7CCXifip8e4w4U1Mou4OeRlblGUXEbJjEpUwP-kZJ-BjmO8JM2S4fwaYxDo7Olq_-27ZGLZVS7z_vFVIa0TvB0xjDx-W5kG2ijVab/s4000/20221121_122614.jpg"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1hjGEA8Uu3z4qcWrYxUeGoIkQQ04wxrH-GufULHEUBnKu_uDitNae85UsTsHya5WHwV8q_-A6-9q_Y-p0xzc7CCXifip8e4w4U1Mou4OeRlblGUXEbJjEpUwP-kZJ-BjmO8JM2S4fwaYxDo7Olq_-27ZGLZVS7z_vFVIa0TvB0xjDx-W5kG2ijVab/s320/20221121_122614.jpg" alt="" /></a><br />
-<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjX9tp5IzilFthtZIMyTIDVBI9sG90f9PJKMfgS_hvHOpQYq_LqWfwUHETQ3B22s_AccVLyJySorKmXSV4sEeoMykPIeWVxbnT68Vn2fIDGqQD9oJJ91O9zLLJ94lwnB8uQqVtB3Td8oJ1WlQNu5W1jL43Tj0reREjvPu_BE_PQcXcwKEbiuzzQcuTF/s4000/20221121_122624.jpg"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjX9tp5IzilFthtZIMyTIDVBI9sG90f9PJKMfgS_hvHOpQYq_LqWfwUHETQ3B22s_AccVLyJySorKmXSV4sEeoMykPIeWVxbnT68Vn2fIDGqQD9oJJ91O9zLLJ94lwnB8uQqVtB3Td8oJ1WlQNu5W1jL43Tj0reREjvPu_BE_PQcXcwKEbiuzzQcuTF/s320/20221121_122624.jpg" alt="" /></a><br />
-Steps:<br />
-<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7XlcQlZNxO7ylF8roCmquBNDCuFmssgkJIfNt62skFpV6KUDnI5V4qyONPklvKyqZDpD7AUIfzHKE02LCrDczpsS2mvjhw9Modv_C3DluolheL-CyzBmUhJa73FcQe5o0oYDHFJ7tcA5KpzLYoZ9DNkjTx-a7Jz4UPXnbJ_tIPYAulbejyp6PcmeJ/s703/Picture4.png"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7XlcQlZNxO7ylF8roCmquBNDCuFmssgkJIfNt62skFpV6KUDnI5V4qyONPklvKyqZDpD7AUIfzHKE02LCrDczpsS2mvjhw9Modv_C3DluolheL-CyzBmUhJa73FcQe5o0oYDHFJ7tcA5KpzLYoZ9DNkjTx-a7Jz4UPXnbJ_tIPYAulbejyp6PcmeJ/s320/Picture4.png" alt="" /></a></p>
-
-<ol>
-  <li>When you manage to lift the charger up, you can pull it out to do the rest.<br />
-REMEMBER to make sure the car break is on and Gear moves to N to get more space for work.</li>
-  <li>Unscrew the two screws on the left and right</li>
-  <li>Push up the clip, and you will see the red circle number 3 wrap around a white cable.<br />
-Use a sharp scissor to snap the grey plastic (NOT THE WHITE CABLE)</li>
-  <li>Remove the clip part as in the picture above</li>
-</ol>
-
-<p><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRhKhegQ1GdxtrUN5PWmCVNdgOEOnCi_U1k4sxSadgBKJHTS_n1z8NPjbsGDOXlDYG6inbx6abGf42Gc51yoW9cn6e551m7Crc1w4ll7WcE-ro1tDWS4T_juuDEpK5QqpiRrb7LqmFPcmIqSKaTQSBlpg29MSDfDbTAgs5oal1jyxKcM5FN1KeDjXr/s4000/20221121_122538.jpg"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRhKhegQ1GdxtrUN5PWmCVNdgOEOnCi_U1k4sxSadgBKJHTS_n1z8NPjbsGDOXlDYG6inbx6abGf42Gc51yoW9cn6e551m7Crc1w4ll7WcE-ro1tDWS4T_juuDEpK5QqpiRrb7LqmFPcmIqSKaTQSBlpg29MSDfDbTAgs5oal1jyxKcM5FN1KeDjXr/s320/20221121_122538.jpg" alt="" /></a>There is two metal piece left there as in the picture.  Lastly, push the charger and fit it into place.Now it works for my Samsung Fold 3 by just putting on it.<br />
-(As clip is no more, not sure how stable the phone will stay in place)</p>]]></content><author><name>Matthew Choo</name><email>mattckw@gmail.com</email></author><category term="Automotive" /><category term="DIY" /><category term="Toyota Corolla Cross" /><category term="Wireless Charger" /><category term="Car Accessories" /><category term="DIY" /><category term="Smartphone Charging" /><summary type="html"><![CDATA[A step-by-step guide on adjusting the Toyota Corolla Cross's original wireless charger to fit larger smartphones like the Samsung Fold 3.]]></summary></entry><entry><title type="html">Toyota Corolla Cross Car Glasses Storage Holder Box Installation</title><link href="http://localhost:4000/automotive/diy/toyota-corolla-cross-car-glasses-storage-holder-box-installation/" rel="alternate" type="text/html" title="Toyota Corolla Cross Car Glasses Storage Holder Box Installation" /><published>2022-11-21T00:00:00+08:00</published><updated>2022-11-21T00:00:00+08:00</updated><id>http://localhost:4000/automotive/diy/toyota-corolla-cross-car-glasses-storage-holder-box-installation</id><content type="html" xml:base="http://localhost:4000/automotive/diy/toyota-corolla-cross-car-glasses-storage-holder-box-installation/"><![CDATA[<p>Toyota Corolla Cross has limited storage space.</p>
-
-<p>As there is a handle on top of the driver’s seat, this can be replaced with Sunglass storage.</p>
-
-<p><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0hLN9O6Ht2ZH1DhP7DGIiGwIE0S4JVmFQovQhDzvwLI-9TP5Nlbq9eygULV40x4SuyhOdVDPjNNoiAZiJi8wPy4RRqhnJUsqSSAcE445UouW1CCdeZOM4S9RyxJybS4RfQzWLpL4JwtylTjxF17HDl_PpTQV3vIUoE5xmY51N-O3S4nucGdDJItZz/s720/Picture1.jpg"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0hLN9O6Ht2ZH1DhP7DGIiGwIE0S4JVmFQovQhDzvwLI-9TP5Nlbq9eygULV40x4SuyhOdVDPjNNoiAZiJi8wPy4RRqhnJUsqSSAcE445UouW1CCdeZOM4S9RyxJybS4RfQzWLpL4JwtylTjxF17HDl_PpTQV3vIUoE5xmY51N-O3S4nucGdDJItZz/s320/Picture1.jpg" alt="" /></a></p>
-
-<ol>
-  <li>
-    <p>Use the L-shape screwdriver on the small hole and open the case</p>
-
-    <p><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8n1EWVXAvVl7GNBpyzZ1fTIxfnUtycMdNKmlMIGdIBaQZLsbER4kJTGlUuCoD7oxjkiU9kSHW-akp3RPiuWLdL0l-algXRrPXZqOVgSRuz27FBuSAKqk99w4aC4rnMBQbhlbQmZR3NfyZFIAHQpile0-425nzw90oEXgoqKiVS4Phie6wUZSZ89py/s479/Picture1.png"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg8n1EWVXAvVl7GNBpyzZ1fTIxfnUtycMdNKmlMIGdIBaQZLsbER4kJTGlUuCoD7oxjkiU9kSHW-akp3RPiuWLdL0l-algXRrPXZqOVgSRuz27FBuSAKqk99w4aC4rnMBQbhlbQmZR3NfyZFIAHQpile0-425nzw90oEXgoqKiVS4Phie6wUZSZ89py/s320/Picture1.png" alt="" /></a></p>
-  </li>
-  <li>
-    <p>After opening, pinch the silver clip to detach the handle from the car roof.</p>
-
-    <p><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3rakSC3-aorCtmaTuefA2zHt8xFOpYPUJUxuNy1tHrl9jJ7UwnlRPyRkVg0MQteXK6IzkuntSVtZcUvKHQZQhiwq-4IdV62eqlxE6PnitD5ZeCfsf93puKsS9oTLC2YF8KvxitRMGygViOogPdbAYzRqB0AXiwPAoFwLiGFEWCLOzbkCyvYCcVrSp/s1043/Picture2.png"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3rakSC3-aorCtmaTuefA2zHt8xFOpYPUJUxuNy1tHrl9jJ7UwnlRPyRkVg0MQteXK6IzkuntSVtZcUvKHQZQhiwq-4IdV62eqlxE6PnitD5ZeCfsf93puKsS9oTLC2YF8KvxitRMGygViOogPdbAYzRqB0AXiwPAoFwLiGFEWCLOzbkCyvYCcVrSp/w469-h205/Picture2.png" alt="" /></a></p>
-  </li>
-  <li>
-    <p>Pinch the silver clip to detach the clip from the car roof</p>
-
-    <p><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfHLNHvSyB6NBmYGjKIJ6UW7KM6uxFfVw1UcguGD2HA-0GCFZHBBpZ5fCbZgP4ITEclNb4cevY9e9oTpdNsk4GAITJ5KkR7qYfydoPzIWJJalZrxUsacxqj3L99cbhsG2NstMFh5RkU2ZqR8zLXfjYB75QlT47NiIeKa3HHtXWtbnadrYYzGCJVKvm/s4000/20221121_125933.jpg"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfHLNHvSyB6NBmYGjKIJ6UW7KM6uxFfVw1UcguGD2HA-0GCFZHBBpZ5fCbZgP4ITEclNb4cevY9e9oTpdNsk4GAITJ5KkR7qYfydoPzIWJJalZrxUsacxqj3L99cbhsG2NstMFh5RkU2ZqR8zLXfjYB75QlT47NiIeKa3HHtXWtbnadrYYzGCJVKvm/s320/20221121_125933.jpg" alt="" /></a></p>
-  </li>
-  <li>
-    <p>Put the glass storage in place, and push the provided pin in the holes. DONE</p>
-  </li>
-</ol>
-
-<p><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiOQAEzsJaowuaTk-4P_Or792Y_AiQKSkOxCywBsG3GTBa9AFqUOlcJnwRW0mRCvkAEZ1xzmFgGgpsGzJBZ33L6zW1DxJot2LK6sibxyohbCjZDOTLLP8SyaQoAVFraoFwyoVlakTNLeNt2QxxeV7XseMpKCOBe88bCq29WA3mtUDyP6gyj8bm5RnE/s487/Picture3.png"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiOQAEzsJaowuaTk-4P_Or792Y_AiQKSkOxCywBsG3GTBa9AFqUOlcJnwRW0mRCvkAEZ1xzmFgGgpsGzJBZ33L6zW1DxJot2LK6sibxyohbCjZDOTLLP8SyaQoAVFraoFwyoVlakTNLeNt2QxxeV7XseMpKCOBe88bCq29WA3mtUDyP6gyj8bm5RnE/s320/Picture3.png" alt="" /></a></p>
-
-<p><strong>Outcome pictures</strong>
-<br /><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlk3c0lX3YgtUvwoqzWtZaSyWj41xjcYPjk7oCWXIt0aj7zpwqFoxkvKOEZs72og0RZnINuopuVMMQ9T8sVnrFNIh2k41AttG0VcczEtSgSQ80o9dWNgxLIxKguBrDcTYEDkkg_jP1AKuLyhg8znwZn4P1MRI5eY4p2xysR9ggCpuDjpdZyNpAL3QZ/s4000/20221121_121218.jpg"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlk3c0lX3YgtUvwoqzWtZaSyWj41xjcYPjk7oCWXIt0aj7zpwqFoxkvKOEZs72og0RZnINuopuVMMQ9T8sVnrFNIh2k41AttG0VcczEtSgSQ80o9dWNgxLIxKguBrDcTYEDkkg_jP1AKuLyhg8znwZn4P1MRI5eY4p2xysR9ggCpuDjpdZyNpAL3QZ/s320/20221121_121218.jpg" alt="" /></a><br />
-<a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_YH6kdzb0hutMDVEGeFHmEIkfb8A8HiHSxYkD_i5PgJyiGGSt64NfL0Mpdw7w4b9otaQDYjoKIZdAoaH8xq0HOI1abgjfvtcqWLhWny7EbQza1ohAunN-ncNvUQP5fdepkCgJ8oBr9HDeGBbcjMKDv4B9IZ7ZK5hvK0sM2WnYC_ZAEDCrHTt0s7O1/s4000/20221121_121230.jpg"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_YH6kdzb0hutMDVEGeFHmEIkfb8A8HiHSxYkD_i5PgJyiGGSt64NfL0Mpdw7w4b9otaQDYjoKIZdAoaH8xq0HOI1abgjfvtcqWLhWny7EbQza1ohAunN-ncNvUQP5fdepkCgJ8oBr9HDeGBbcjMKDv4B9IZ7ZK5hvK0sM2WnYC_ZAEDCrHTt0s7O1/s320/20221121_121230.jpg" alt="" /></a></p>]]></content><author><name>Matthew Choo</name><email>mattckw@gmail.com</email></author><category term="Automotive" /><category term="DIY" /><category term="Toyota Corolla Cross" /><category term="Car Accessories" /><category term="DIY Installation" /><category term="Storage" /><category term="Car Modifications" /><summary type="html"><![CDATA[A step-by-step guide on installing a glasses storage holder box in a Toyota Corolla Cross by replacing the driver’s seat handle.]]></summary></entry><entry><title type="html">Android Connected to WiFi but No Internet Issue</title><link href="http://localhost:4000/android/troubleshooting/android-connected-to-wifi-but-no-internet-issue/" rel="alternate" type="text/html" title="Android Connected to WiFi but No Internet Issue" /><published>2021-12-02T00:00:00+08:00</published><updated>2021-12-02T00:00:00+08:00</updated><id>http://localhost:4000/android/troubleshooting/android-connected-to-wifi-but-no-internet-issue</id><content type="html" xml:base="http://localhost:4000/android/troubleshooting/android-connected-to-wifi-but-no-internet-issue/"><![CDATA[<p>Suspected cause for my case:</p>
-
+<h3 id="using-vba-on-mac"><strong>Using VBA on Mac</strong></h3>
 <ul>
-  <li>Vivo android phone use “randomized MAC address” when connected to WiFi</li>
-  <li>My house have main router + mesh router</li>
-  <li>I do IP Binding with Mac address</li>
-  <li>Combination above caused the issue.</li>
+  <li><strong>Mac VBA is limited</strong> compared to Windows (no ActiveX, COM objects).</li>
+  <li><strong>Cannot directly call external scripts</strong> like Python.</li>
+  <li><strong>Workaround</strong>: Use AppleScript or Automator for additional automation.</li>
 </ul>
 
-<p>Solution:</p>
+<h3 id="using-python-for-excel-on-mac--windows"><strong>Using Python for Excel on Mac &amp; Windows</strong></h3>
+<ul>
+  <li>Works <strong>natively on both platforms</strong> using libraries like <code class="language-plaintext highlighter-rouge">pandas</code>, <code class="language-plaintext highlighter-rouge">openpyxl</code>, and <code class="language-plaintext highlighter-rouge">xlwings</code>.</li>
+  <li>No VBA limitations—can integrate with APIs, databases, and web scraping tools.</li>
+</ul>
 
+<hr />
+
+<h2 id="-how-to-use-vba-and-python-in-excel">🚀 <strong>How to Use VBA and Python in Excel</strong></h2>
+<h3 id="-running-vba-in-excel"><strong>✅ Running VBA in Excel</strong></h3>
 <ol>
-  <li>
-    <p>On android, in respective connected WiFi setting, change Privacy to “Use device MAC” </p>
-
-    <p><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJ6o83julL8SM78pzNbKRLrz76tECzivg0C-XUqRv03zQiglA4PesEhJEyN_ByGzUskWjyBc65RMaWAzJzAUVi1CsfZqEG4D39aNavYD-827QlukgmwPH2gO5tNTEbW28ldGjJb6Ze8zk/s924/WhatsApp+Image+2021-12-02+at+18.08.26.jpeg"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJ6o83julL8SM78pzNbKRLrz76tECzivg0C-XUqRv03zQiglA4PesEhJEyN_ByGzUskWjyBc65RMaWAzJzAUVi1CsfZqEG4D39aNavYD-827QlukgmwPH2gO5tNTEbW28ldGjJb6Ze8zk/s320/WhatsApp+Image+2021-12-02+at+18.08.26.jpeg" alt="" /></a></p>
+  <li>Open <strong>Excel → Developer Tab → Visual Basic</strong> (Enable macros if needed).</li>
+  <li>Write a simple VBA script:
+    <pre><code class="language-vba">Sub HelloWorld()
+    MsgBox "Hello, VBA!"
+End Sub
+</code></pre>
   </li>
-  <li>Go to router &gt; LAN &gt; DCHP and remove any previous binding with your phone name</li>
-  <li>Off Wifi on phone, go to another router, on wifi on phone, connect to it</li>
-  <li>Fixed</li>
+  <li>Run the macro from <strong>Excel → Macros</strong>.</li>
 </ol>
 
-<p>RegardsMatthew</p>]]></content><author><name>Matthew Choo</name><email>mattckw@gmail.com</email></author><category term="Android" /><category term="Troubleshooting" /><category term="WiFi" /><category term="Android" /><category term="No Internet" /><category term="MAC Address" /><category term="Router Settings" /><summary type="html"><![CDATA[A troubleshooting guide for fixing the 'connected to WiFi but no internet' issue on Android devices, particularly when using randomized MAC addresses.]]></summary></entry></feed>
+<h3 id="-running-python-in-excel"><strong>✅ Running Python in Excel</strong></h3>
+<ul>
+  <li><strong>Option 1 (Using Pandas)</strong>:
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s">"data.xlsx"</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s">"New Column"</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s">"Old Column"</span><span class="p">]</span> <span class="o">*</span> <span class="mi">2</span>
+<span class="n">df</span><span class="p">.</span><span class="n">to_excel</span><span class="p">(</span><span class="s">"updated.xlsx"</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Option 2 (Using <code class="language-plaintext highlighter-rouge">xlwings</code> for live interaction with Excel)</strong>:
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">xlwings</span> <span class="k">as</span> <span class="n">xw</span>
+<span class="n">wb</span> <span class="o">=</span> <span class="n">xw</span><span class="p">.</span><span class="n">Book</span><span class="p">(</span><span class="s">"data.xlsx"</span><span class="p">)</span>
+<span class="n">sheet</span> <span class="o">=</span> <span class="n">wb</span><span class="p">.</span><span class="n">sheets</span><span class="p">[</span><span class="s">"Sheet1"</span><span class="p">]</span>
+<span class="n">sheet</span><span class="p">.</span><span class="nb">range</span><span class="p">(</span><span class="s">"A1"</span><span class="p">).</span><span class="n">value</span> <span class="o">=</span> <span class="s">"Hello, Python!"</span>
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Option 3 (New Python in Excel feature - Windows only)</strong>:
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">=</span><span class="n">PY</span><span class="p">(</span><span class="s">"sum([1,2,3,4,5])"</span><span class="p">)</span>
+</code></pre></div>    </div>
+    <p>(<em>Currently in preview for Microsoft 365 on Windows</em>)</p>
+  </li>
+</ul>
+
+<hr />
+
+<h2 id="-conclusion-vba-or-python">🔍 Conclusion: VBA or Python?</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>If You Need…</strong></th>
+      <th><strong>Use VBA</strong> ✅</th>
+      <th><strong>Use Python</strong> ✅</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Basic Excel Macros</td>
+      <td>✅</td>
+      <td>❌</td>
+    </tr>
+    <tr>
+      <td>Fast Large Data Processing</td>
+      <td>❌</td>
+      <td>✅</td>
+    </tr>
+    <tr>
+      <td>Machine Learning / AI</td>
+      <td>❌</td>
+      <td>✅</td>
+    </tr>
+    <tr>
+      <td>Web Scraping</td>
+      <td>❌</td>
+      <td>✅</td>
+    </tr>
+    <tr>
+      <td>Full Mac Support</td>
+      <td>❌</td>
+      <td>✅</td>
+    </tr>
+    <tr>
+      <td>API &amp; Database Integration</td>
+      <td>❌</td>
+      <td>✅</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>🚀 Final Takeaway:</strong><br />
+If you’re an <strong>Excel power user</strong> who needs <strong>simple automation</strong>, <strong>VBA</strong> is great.<br />
+If you need <strong>advanced data processing, AI, or cross-platform support</strong>, <strong>Python</strong> is the way to go.</p>
+
+<p>Want to learn more? Comment below! 🚀<br />
+```</p>
+
+<hr />
+
+<h3 id="-key-improvements-over-the-original-summary"><strong>🔥 Key Improvements Over the Original Summary</strong></h3>
+<p>✅ <strong>No file counting discussion—focuses only on VBA vs Python.</strong><br />
+✅ <strong>Structured comparison of features, use cases, and platforms.</strong><br />
+✅ <strong>Explains how to use VBA and Python in Excel on both Mac and Windows.</strong><br />
+✅ <strong>Easy-to-read tables and code snippets.</strong></p>
+
+<p>Would you like <strong>any additional edits</strong> or refinements? 🚀😊</p>]]></content><author><name>Matthew Choo</name><email>mattckw@gmail.com</email></author><category term="Excel Automation" /><category term="Python" /><category term="VBA" /><category term="Excel" /><category term="VBA" /><category term="Python" /><category term="Automation" /><category term="Data Processing" /><summary type="html"><![CDATA[A detailed comparison of VBA and Python for Excel automation, covering use cases, platform availability, and usage methods.]]></summary></entry><entry><title type="html">Batch Removing Random Characters in Story Text Files</title><link href="https://mattlifetech.github.io/text%20processing/python/removerandom/" rel="alternate" type="text/html" title="Batch Removing Random Characters in Story Text Files" /><published>2025-02-27T00:00:00+08:00</published><updated>2025-02-27T00:00:00+08:00</updated><id>https://mattlifetech.github.io/text%20processing/python/removerandom</id><content type="html" xml:base="https://mattlifetech.github.io/text%20processing/python/removerandom/"><![CDATA[<p><img src="https://raw.githubusercontent.com/mattchoo2/mattchoo2.github.io/main/assets/images/text-cleaning.webp" alt="remove random" /></p>
+
+<h2 id="removing-random-characters-in-story-text-files">Removing Random Characters in Story Text Files</h2>
+
+<p>When processing large text files, especially those converted from different formats, unwanted random characters can appear. These can include symbols, numbers, and inconsistent letter sequences.</p>
+
+<h3 id="problem-analysis">Problem Analysis</h3>
+
+<p>The Python script below is designed to clean text files by removing unwanted random character sequences. It scans all <code class="language-plaintext highlighter-rouge">.txt</code> files within a specified folder, applies a regex-based cleaning function, and saves the modified text back to the file.</p>
+
+<h3 id="example-of-unwanted-text">Example of Unwanted Text</h3>
+
+<p>The script will remove text patterns like:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>h2 ?# _% j2 k. C( Y, v
+</code></pre></div></div>
+
+<p>These random sequences do not contribute to meaningful content and can disrupt readability.</p>
+
+<h3 id="python-script-for-cleaning-text">Python Script for Cleaning Text</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">re</span>
+
+<span class="k">def</span> <span class="nf">clean_text</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+    <span class="c1"># Define a regex pattern to remove sequences matching 'SPACE-XX' where XX is not both A-Z
+</span>    <span class="n">pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s">'\s+[A-Za-z!@#$%^&amp;*()_+\-=\[\]{};:\'",.&lt;&gt;?/\\|`~0-9][^A-Za-z](?:\s+[A-Za-z!@#$%^&amp;*()_+\-=\[\]{};:\'",.&lt;&gt;?/\\|`~0-9][^A-Za-z])+'</span>
+    
+    <span class="c1"># Remove matching sequences from the text
+</span>    <span class="n">cleaned_text</span> <span class="o">=</span> <span class="n">re</span><span class="p">.</span><span class="n">sub</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="s">''</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">cleaned_text</span>
+
+<span class="k">def</span> <span class="nf">process_files</span><span class="p">(</span><span class="n">folder</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">root</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">files</span> <span class="ow">in</span> <span class="n">os</span><span class="p">.</span><span class="n">walk</span><span class="p">(</span><span class="n">folder</span><span class="p">):</span>
+        <span class="k">for</span> <span class="nb">file</span> <span class="ow">in</span> <span class="n">files</span><span class="p">:</span>
+            <span class="k">if</span> <span class="nb">file</span><span class="p">.</span><span class="n">endswith</span><span class="p">(</span><span class="s">".txt"</span><span class="p">):</span>
+                <span class="n">file_path</span> <span class="o">=</span> <span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="nb">file</span><span class="p">)</span>
+                <span class="k">try</span><span class="p">:</span>
+                    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="s">'r'</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s">'utf-8'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+                        <span class="n">text</span> <span class="o">=</span> <span class="n">f</span><span class="p">.</span><span class="n">read</span><span class="p">()</span>
+                    
+                    <span class="n">cleaned_text</span> <span class="o">=</span> <span class="n">clean_text</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+                    
+                    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="s">'w'</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s">'utf-8'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+                        <span class="n">f</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">cleaned_text</span><span class="p">)</span>
+                    <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"Processed: </span><span class="si">{</span><span class="n">file_path</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+                <span class="k">except</span> <span class="nb">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+                    <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"Error processing </span><span class="si">{</span><span class="n">file_path</span><span class="si">}</span><span class="s">: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span>
+    <span class="n">folder_path</span> <span class="o">=</span> <span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">__file__</span><span class="p">))</span>
+    <span class="n">process_files</span><span class="p">(</span><span class="n">folder_path</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Processing complete!"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="how-it-works">How It Works</h3>
+<ol>
+  <li>The <code class="language-plaintext highlighter-rouge">clean_text()</code> function uses a regex pattern to find and remove unwanted sequences.</li>
+  <li>The <code class="language-plaintext highlighter-rouge">process_files()</code> function scans all <code class="language-plaintext highlighter-rouge">.txt</code> files in the folder and applies the cleaning function.</li>
+  <li>The script processes each file and overwrites it with cleaned text.</li>
+  <li>Simply place the script in the respective folder and run it—no need to edit anything, as it will automatically detect the folder path.</li>
+</ol>
+
+<p>This script ensures your story text files remain free from clutter and enhances readability.</p>]]></content><author><name>Matthew Choo</name><email>mattckw@gmail.com</email></author><category term="Text Processing" /><category term="Python" /><category term="Python" /><category term="Text Cleaning" /><category term="Automation" /><category term="Regex" /><summary type="html"><![CDATA[A guide to cleaning up story text files by removing unwanted random characters using a Python script.]]></summary></entry><entry><title type="html">Scan and Delete Empty Folders Automatically</title><link href="https://mattlifetech.github.io/automation/python/deleteemptyfolder/" rel="alternate" type="text/html" title="Scan and Delete Empty Folders Automatically" /><published>2025-02-27T00:00:00+08:00</published><updated>2025-02-27T00:00:00+08:00</updated><id>https://mattlifetech.github.io/automation/python/deleteemptyfolder</id><content type="html" xml:base="https://mattlifetech.github.io/automation/python/deleteemptyfolder/"><![CDATA[<p><img src="https://raw.githubusercontent.com/mattchoo2/mattchoo2.github.io/main/assets/images/folder-cleaning-thumb.webp" alt="delempty" /></p>
+
+<h2 id="scan-and-delete-empty-folders-automatically">Scan and Delete Empty Folders Automatically</h2>
+
+<p>When managing large directories, empty folders often accumulate due to file deletions or restructuring. Instead of manually checking and removing them, we can automate the process with a simple Python script.</p>
+
+<h3 id="problem-analysis">Problem Analysis</h3>
+
+<p>This script scans a given directory and removes any empty folders. Originally, it was hardcoded to a specific path (<code class="language-plaintext highlighter-rouge">V:\\Book\\txt</code>), but we have modified it to work dynamically with the root folder where the script is placed.</p>
+
+<h3 id="python-script-to-remove-empty-folders">Python Script to Remove Empty Folders</h3>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">os</span>
+
+<span class="k">def</span> <span class="nf">delete_empty_folders</span><span class="p">(</span><span class="n">folder</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">root</span><span class="p">,</span> <span class="n">dirs</span><span class="p">,</span> <span class="n">files</span> <span class="ow">in</span> <span class="n">os</span><span class="p">.</span><span class="n">walk</span><span class="p">(</span><span class="n">folder</span><span class="p">,</span> <span class="n">topdown</span><span class="o">=</span><span class="bp">False</span><span class="p">):</span>  <span class="c1"># Traverse from bottom to top
+</span>        <span class="k">for</span> <span class="n">dir_name</span> <span class="ow">in</span> <span class="n">dirs</span><span class="p">:</span>
+            <span class="n">dir_path</span> <span class="o">=</span> <span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">dir_name</span><span class="p">)</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="p">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">dir_path</span><span class="p">):</span>  <span class="c1"># Check if the directory is empty
+</span>                <span class="n">os</span><span class="p">.</span><span class="n">rmdir</span><span class="p">(</span><span class="n">dir_path</span><span class="p">)</span>
+                <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"Deleted empty folder: </span><span class="si">{</span><span class="n">dir_path</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span>
+    <span class="n">target_folder</span> <span class="o">=</span> <span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">__file__</span><span class="p">))</span>  <span class="c1"># Automatically set the folder
+</span>    <span class="n">delete_empty_folders</span><span class="p">(</span><span class="n">target_folder</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="how-it-works">How It Works</h3>
+<ol>
+  <li>The script recursively scans the directory from bottom to top using <code class="language-plaintext highlighter-rouge">os.walk()</code>.</li>
+  <li>It checks if any folder is empty and deletes it.</li>
+  <li>Instead of a fixed folder path, it now detects the directory where the script is placed and runs automatically.</li>
+</ol>
+
+<h3 id="usage">Usage</h3>
+<ol>
+  <li>Save the script as <code class="language-plaintext highlighter-rouge">delempfol.py</code>.</li>
+  <li>Place it in the folder you want to clean.</li>
+  <li>Run the script, and all empty folders inside will be removed.</li>
+</ol>
+
+<p>This small yet powerful script ensures your directories remain clutter-free without manual intervention!</p>]]></content><author><name>Matthew Choo</name><email>mattckw@gmail.com</email></author><category term="Automation" /><category term="Python" /><category term="Python" /><category term="File Management" /><category term="Automation" /><summary type="html"><![CDATA[A Python script to scan directories and remove empty folders dynamically.]]></summary></entry></feed>

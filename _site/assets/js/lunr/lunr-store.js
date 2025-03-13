@@ -162,19 +162,19 @@ var store = [{
         "teaser": "/assets/images/toyota-wireless-charger.webp"
       },{
         "title": "RightClickRunPython – Run Python Scripts with a Right-Click",
-        "excerpt":"RightClickRunPython – Run Python Scripts with a Right-Click Tired of opening the terminal and navigating to the script location every time you want to run a Python script? RightClickRunPython makes it easy—just right-click on a .py file and run it instantly! 🚀 Features Right-Click &amp; Run – Adds a Windows...","categories": ["Projects","Tools"],
+        "excerpt":"GUI right click run python in Window 11 For those who not used to type in command prompt or power shell, this enable you to right click and run python script straight. It will: open power shell on the respective folder and run the script in this folder To add...","categories": ["Projects","Tools"],
         "tags": ["Python","Windows","Automation","Productivity"],
         "url": "/projects/rightclick-run-python/",
         "teaser": "/assets/images/rightpython.webp"
       },{
         "title": "CreditCard2Excel – Convert Credit Card Statements to Excel",
-        "excerpt":"CreditCard2Excel – Convert Credit Card Statements to Excel Manually organizing credit card statements can be tedious. CreditCard2Excel automates the process by extracting transaction data and saving it neatly in an Excel file. 🚀 Features Automated Extraction – Convert credit card statements into structured Excel files. Supports Multiple Formats – Works...","categories": ["Projects","Finance Tools"],
+        "excerpt":"How to Batch Convert Credit Card Statement PDF to Excel Note: due to pdfplumber imperfection in detecting blank cells. You do need to cut and align the date and value columns with the text labels. Prerequisites Before proceeding, ensure you have the following installed on your system: Python (latest version)...","categories": ["Projects","Finance Tools"],
         "tags": ["Finance","Python","Automation","Data Processing"],
         "url": "/projects/creditcard2excel/",
         "teaser": "/assets/images/cred2excel.webp"
       },{
         "title": "Tuya Presence Automation – Smart Home Motion Detection",
-        "excerpt":"Tuya Presence Automation – Smart Home Motion Detection Looking to enhance your smart home with reliable presence detection? Tuya Presence Automation leverages Tuya-based sensors to automate actions based on motion detection, making your home smarter and more efficient. 🚀 Features Smart Presence Detection – Automate lights, alarms, and other devices...","categories": ["Projects","Home Automation"],
+        "excerpt":"Tuya Presence Automation with HomeAssistant This is a guide on my experience with a few Tuya Presence sensor variants &amp; Automation setup guide with HomeAssistant. Tuya Presence Sensor Variants 24G Presence sensor - WiFi version (✓ Tested) 24G Presence sensor - Zigbee version 5.8G Presence sensor - WiFi version 5.8G...","categories": ["Projects","Home Automation"],
         "tags": ["Smart Home","Tuya","Home Automation","IoT"],
         "url": "/projects/tuya-presence-automation/",
         "teaser": "/assets/images/tuyapres.webp"
@@ -202,4 +202,76 @@ var store = [{
         "tags": ["jekyll","minimal-mistakes"],
         "url": "/coding/template/",
         "teaser": null
+      },{
+        "title": "Minimal Mistakes Jekyll Theme: Hosting on GitHub & Using Liquid Archive Method",
+        "excerpt":"Step 1: Setting Up the Repository Step 1.1: Create a GitHub Repository Go to GitHub and set up a new repository with the format username.github.io (e.g., mattlifetech.github.io). Step 1.2: Clone the Repository to Your PC On your PC, download and install GitHub Desktop. Open GitHub Desktop and clone your newly...","categories": ["Web Development","Jekyll"],
+        "tags": ["Jekyll","Minimal Mistakes","GitHub Pages","Liquid Archive"],
+        "url": "/web%20development/jekyll/websiteongithub/",
+        "teaser": "/assets/images/minimal-mistakes-setup.webp"
+      },{
+        "title": "VBA vs Python for Excel: Which One Should You Use?",
+        "excerpt":"VBA vs Python for Excel: Which One Should You Use? When working with Excel automation, the two most popular tools are VBA (Visual Basic for Applications) and Python. Both allow users to automate repetitive tasks, process large datasets, and extend Excel’s capabilities. But which one should you choose? 🛠️ VBA...","categories": ["Excel Automation","Python","VBA"],
+        "tags": ["Excel","VBA","Python","Automation","Data Processing"],
+        "url": "/excel%20automation/python/vba/automateexcel/",
+        "teaser": "/assets/images/vba-vs-python.webp"
+      },{
+        "title": "Counting Files by Type in Folders and Subfolders",
+        "excerpt":"Counting Files by Type in Folders and Subfolders When managing large collections of files, it can be helpful to analyze and count the different file types within a directory, including its subfolders. This Python script automates the process and exports the results to an Excel file. How the Script Works...","categories": ["File Management","Python"],
+        "tags": ["Python","File Analysis","Automation","Data Processing"],
+        "url": "/file%20management/python/countfiletype/",
+        "teaser": "/assets/images/file-counting.webp"
+      },{
+        "title": "Scan and Delete Empty Folders Automatically",
+        "excerpt":"Scan and Delete Empty Folders Automatically When managing large directories, empty folders often accumulate due to file deletions or restructuring. Instead of manually checking and removing them, we can automate the process with a simple Python script. Problem Analysis This script scans a given directory and removes any empty folders....","categories": ["Automation","Python"],
+        "tags": ["Python","File Management","Automation"],
+        "url": "/automation/python/deleteemptyfolder/",
+        "teaser": "/assets/images/folder-cleaning-thumb.webp"
+      },{
+        "title": "Batch Removing Random Characters in Story Text Files",
+        "excerpt":"Removing Random Characters in Story Text Files When processing large text files, especially those converted from different formats, unwanted random characters can appear. These can include symbols, numbers, and inconsistent letter sequences. Problem Analysis The Python script below is designed to clean text files by removing unwanted random character sequences....","categories": ["Text Processing","Python"],
+        "tags": ["Python","Text Cleaning","Automation","Regex"],
+        "url": "/text%20processing/python/removerandom/",
+        "teaser": "/assets/images/text-cleaning.webp"
+      },{
+        "title": "Fixing Missing Table of Contents in Moon+ Reader for Chinese Story Text Files",
+        "excerpt":"If you enjoy reading Chinese story text files on your Android device using Moon+ Reader, you may have noticed that the Table of Contents (TOC) does not always display correctly. This can be frustrating, especially when navigating lengthy novels with multiple chapters. Fortunately, there’s a simple fix for this issue....","categories": ["E-Readers","Chinese Stories","Android"],
+        "tags": ["Moon+ Reader","Chinese","Android","TOC"],
+        "url": "/e-readers/chinese%20stories/android/moonreadertoc/",
+        "teaser": "/assets/images/moon-reader.webp"
+      },{
+        "title": "Xiaomi Pad 7 Free Keyboard & Pen (Limited Deal)",
+        "excerpt":"Xiaomi Pad 7 Free Keyboard &amp; Pen (Limited Deal) If you’re looking for the free keyboard and pen deal for the Xiaomi Pad 7, you may have noticed that you cannot select it for free from the official Lazada and Shopee Xiaomi stores. Lazada Xiaomi Official Store Shopee Xiaomi Official...","categories": ["Tablets","Android","Xiaomi"],
+        "tags": ["Xiaomi Pad 7","Android Tablets","Budget Tablets"],
+        "url": "/tablets/android/xiaomi/mipad7/",
+        "teaser": "/assets/images/ecompad7.png"
+      },{
+        "title": "Migrate Blogspot Posts to Your Own Jekyll Website",
+        "excerpt":"Migrate Blogspot Posts to Your Own Jekyll Website If you’re moving from Blogger (Blogspot) to a self-hosted Jekyll website, this guide will walk you through the entire process. Step 1: Export Your Blogspot Posts Log in to your Blogger Dashboard. Navigate to Settings &gt; Manage Blog. Under “Download Content,” click...","categories": ["Jekyll","Blogging"],
+        "tags": ["Blogger","Jekyll","Website Migration"],
+        "url": "/jekyll/blogging/blogspot2jekyll/",
+        "teaser": "/assets/images/blogger_teaser.webp"
+      },{
+        "title": "Chinese Text Extraction from Images Using Python and Tesseract OCR",
+        "excerpt":"Introduction Extracting text from images is a common task in document digitization, automated translations, and data processing. In this guide, we’ll walk through setting up Tesseract OCR to extract Chinese text from images using Python. Prerequisites Before we begin, ensure you have the following installed: 1. Install Tesseract OCR Download...","categories": ["Image Processing","OCR","Python"],
+        "tags": ["OCR","Tesseract","Image Processing","Python"],
+        "url": "/image%20processing/ocr/python/image2txt/",
+        "teaser": "/assets/images/text-extraction.webp"
+      },{
+        "title": "Make Image Background Transparent Without Any App",
+        "excerpt":"Make Image Background Transparent Without Any App Removing an image background usually requires Photoshop or online tools, but you can do it easily with Python—no extra apps needed! Why Use Python? No third-party software – Everything runs locally. Fast and efficient – Process multiple images with automation. Full control –...","categories": ["Tech","Coding","Image Processing"],
+        "tags": ["Python","Automation","Image Editing"],
+        "url": "/tech/coding/image%20processing/transparentpic/",
+        "teaser": "/assets/images/transparent.webp"
+      },{
+        "title": "Make Image Background Transparent - EXE App",
+        "excerpt":"Make Image Background Transparent - EXE App Removing image backgrounds can be useful for various design and editing tasks. In this guide, we’ll walk through how to create a simple Python application that allows users to select an image, click on the background color to remove it, and save it...","categories": ["Python","Image Processing","EXE"],
+        "tags": ["Python","Tkinter","Pillow","PyInstaller","Image Editing"],
+        "url": "/python/image%20processing/exe/transparentapp/",
+        "teaser": "/assets/images/transparent_app.webp"
+      },{
+        "title": "How Exactly Xiaomi Interconnectivity Home Screen+ Works?",
+        "excerpt":"How Exactly Xiaomi Interconnectivity Home Screen+ Works? Xiaomi has done an amazing job with its xiaomi interconnectivity feature, allowing seamless device integration. Whether you’re mirroring your phone to a tablet (Home Screen+), controlling a second screen, or transferring apps across devices, Xiaomi’s ecosystem is proving to be one of the...","categories": ["Tech","Smart Home","Xiaomi","home screen+"],
+        "tags": ["Xiaomi","Smart Home","Interconnectivity","Screen Mirroring","home screen+"],
+        "url": "/tech/smart%20home/xiaomi/home%20screen+/xiaomihomescreen/",
+        "teaser": "/assets/images/interconnectivity.png"
       }]

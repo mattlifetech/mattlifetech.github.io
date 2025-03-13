@@ -10,7 +10,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>CreditCard2Excel – Convert Credit Card Statements to Excel - Me &amp; My Tiny Coding Journey</title>
+<!-- begin _includes/seo.html --><title>CreditCard2Excel – Convert Credit Card Statements to Excel - MattLifeTech</title>
 <meta name="description" content="A Python tool to extract and organize credit card statement data into an Excel file.">
 
 
@@ -22,16 +22,16 @@
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
-<meta property="og:site_name" content="Me & My Tiny Coding Journey">
+<meta property="og:site_name" content="MattLifeTech">
 <meta property="og:title" content="CreditCard2Excel – Convert Credit Card Statements to Excel">
-<meta property="og:url" content="http://localhost:4000/projects/creditcard2excel/">
+<meta property="og:url" content="https://mattlifetech.github.io/projects/creditcard2excel/">
 
 
   <meta property="og:description" content="A Python tool to extract and organize credit card statement data into an Excel file.">
 
 
 
-  <meta property="og:image" content="http://localhost:4000/assets/images/filler.webp">
+  <meta property="og:image" content="https://mattlifetech.github.io/assets/images/filler.webp">
 
 
 
@@ -48,7 +48,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/projects/creditcard2excel/">
+<link rel="canonical" href="https://mattlifetech.github.io/projects/creditcard2excel/">
 
 
 
@@ -65,8 +65,12 @@
 
 
 
-  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Me & My Tiny Coding Journey Feed">
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="MattLifeTech Feed">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Add this section for the favicon -->
+<link rel="icon" type="image/png" href="/assets/images/favicon.png">
+<link rel="shortcut icon" href="/assets/images/favicon.ico">
 
 <script>
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
@@ -197,7 +201,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          less than 1 minute read
+          3 minute read
         
       </span>
     
@@ -263,7 +267,7 @@
 
   
     <div class="author__avatar">
-      <a href="http://localhost:4000/">
+      <a href="https://mattlifetech.github.io/">
         <img src="/assets/images/MattLifeTech.png" alt="Matthew Choo" itemprop="image" class="u-photo">
       </a>
     </div>
@@ -271,7 +275,7 @@
 
   <div class="author__content">
     <h3 class="author__name p-name" itemprop="name">
-      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">Matthew Choo</a>
+      <a class="u-url" rel="me" href="https://mattlifetech.github.io/" itemprop="url">Matthew Choo</a>
     </h3>
     
       <div class="author__bio p-note" itemprop="description">
@@ -297,11 +301,17 @@
           
         
           
-        
+            <li><a href="https://x.com/mattlifetech" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
           
         
           
         
+          
+            <li><a href="https://github.com/mattlifetech" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://www.instagram.com/mattlifetech/" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i><span class="label">Instagram</span></a></li>
           
         
       
@@ -388,44 +398,197 @@
 
       <section class="page__content" itemprop="text">
         
-        <h2 id="creditcard2excel--convert-credit-card-statements-to-excel">CreditCard2Excel – Convert Credit Card Statements to Excel</h2>
+        <h1 id="how-to-batch-convert-credit-card-statement-pdf-to-excel">How to Batch Convert Credit Card Statement PDF to Excel</h1>
+<p>Note: due to <code class="language-plaintext highlighter-rouge">pdfplumber</code> imperfection in detecting blank cells. You do need to cut and align the date and value columns with the text labels.</p>
 
-<p>Manually organizing credit card statements can be tedious. <strong>CreditCard2Excel</strong> automates the process by extracting transaction data and saving it neatly in an Excel file.</p>
-
-<h3 id="-features">🚀 Features</h3>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Before proceeding, ensure you have the following installed on your system:</p>
 <ul>
-  <li><strong>Automated Extraction</strong> – Convert credit card statements into structured Excel files.</li>
-  <li><strong>Supports Multiple Formats</strong> – Works with PDF and CSV statements.</li>
-  <li><strong>Data Categorization</strong> – Automatically categorizes expenses.</li>
-  <li><strong>Easy Export</strong> – Saves data in Excel for further analysis.</li>
+  <li>Python (latest version)</li>
+  <li><code class="language-plaintext highlighter-rouge">pdfplumber</code> Python library</li>
+  <li>PowerShell or Command Prompt</li>
 </ul>
 
-<h3 id="-installation">🛠 Installation</h3>
+<h2 id="step-1-install-python">Step 1: Install Python</h2>
 <ol>
-  <li>Clone the repository:
-    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/mattchoo2/creditcard2excel.git
-</code></pre></div>    </div>
+  <li>Open PowerShell or Command Prompt.</li>
+  <li>Download and install Python:
+    <ul>
+      <li>Visit <a href="https://www.python.org/downloads/">Python’s official website</a> and download the latest version.</li>
+      <li>Run the installer and ensure you select <strong>“Add Python to PATH”</strong> before clicking <strong>Install Now</strong>.</li>
+    </ul>
   </li>
-  <li>Install dependencies:
-    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install</span> <span class="nt">-r</span> requirements.txt
-</code></pre></div>    </div>
-  </li>
-  <li>Run the script with your credit card statement:
-    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python main.py path/to/statement.pdf
+  <li>Verify installation by running:
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python <span class="nt">--version</span>
 </code></pre></div>    </div>
   </li>
 </ol>
 
-<h3 id="-repository">📂 Repository</h3>
-<p>Check out the full source code and setup guide on GitHub:<br />
-<a href="https://github.com/mattchoo2/creditcard2excel">🔗 CreditCard2Excel</a></p>
+<h2 id="step-2-install-pdfplumber">Step 2: Install <code class="language-plaintext highlighter-rouge">pdfplumber</code></h2>
+<ol>
+  <li>Open PowerShell or Command Prompt.</li>
+  <li>Install <code class="language-plaintext highlighter-rouge">pdfplumber</code> using pip:
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>pdfplumber pandas openpyxl
+</code></pre></div>    </div>
+  </li>
+</ol>
 
-<h3 id="-why-use-this">✨ Why Use This?</h3>
-<p>If you track your spending, this tool helps automate data extraction and categorization, making financial management easier.</p>
+<h2 id="step-3-prepare-pdf-files">Step 3: Prepare PDF Files</h2>
+<ol>
+  <li>Place the PDF files you want to convert in the <code class="language-plaintext highlighter-rouge">Downloads</code> folder.
+    <ul>
+      <li>Example path: <code class="language-plaintext highlighter-rouge">C:\Users\YourUsername\Downloads\A</code></li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="step-4-run-the-script-to-convert-pdf-to-excel">Step 4: Run the Script to Convert PDF to Excel</h2>
+<ol>
+  <li>
+    <p>Open Notepad and paste the following Python script:
+<strong><em>(Remember update folder path &amp; password if any)</em></strong>
+```import pdfplumber
+   import pandas as pd
+   import os</p>
+
+    <p># Folder containing PDFs &amp; file password if any
+   pdf_folder = r”C:\Users\YourUsername\Downloads\A”
+   password = “xxxx”</p>
+
+    <p># Get all PDF files in the folder
+   pdf_files = [f for f in os.listdir(pdf_folder) if f.lower().endswith(“.pdf”)]</p>
+
+    <p>for pdf_file in pdf_files:
+       pdf_path = os.path.join(pdf_folder, pdf_file)
+       output_file = os.path.join(pdf_folder, pdf_file.replace(“.pdf”, “.xlsx”))</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   data = []
+   max_columns = 0  # Track max columns for consistency
+  
+   try:
+       with pdfplumber.open(pdf_path, password=password) as pdf:
+           print(f"✅ Opened PDF: {pdf_path} ({len(pdf.pages)} pages detected)")
+  
+           for page_number, page in enumerate(pdf.pages, start=1):
+               print(f"🔹 Processing Page {page_number}")
+  
+               tables = page.extract_tables()
+               if not tables:
+                   print(f"⚠️ No structured table found on Page {page_number}, trying text extraction...")
+                   page_text = page.extract_text()
+                   if page_text:
+                       tables = [page_text.split("\n")]  # Treat raw text lines as table rows
+  
+               if tables:
+                   print(f"✅ {len(tables)} table(s) found on Page {page_number}")
+                   for table in tables:
+                       for row in table:
+                           if row is None:
+                               empty_row = [""] * max_columns if max_columns &gt; 0 else [""]
+                               data.append(empty_row)
+                               continue
+  
+                           while len(row) &lt; max_columns:
+                               row.append("")
+  
+                           split_rows = []
+                           row_max_lines = 1
+  
+                           for cell in row:
+                               if cell:
+                                   lines = cell.strip().split("\n")
+                                   split_rows.append(lines)
+                                   row_max_lines = max(row_max_lines, len(lines))
+                               else:
+                                   split_rows.append([""])
+  
+                           for i in range(row_max_lines):
+                               new_row = [col[i] if i &lt; len(col) else "" for col in split_rows]
+                               data.append(new_row)
+  
+                           max_columns = max(max_columns, len(row))
+  
+   except Exception as e:
+       print(f"❌ Failed to process {pdf_file}: {e}")
+       continue
+  
+   for i in range(len(data)):
+       while len(data[i]) &lt; max_columns:
+           data[i].append("")
+  
+   df = pd.DataFrame(data)
+   df.columns = [f"Column {i+1}" for i in range(max_columns)]
+   df.to_excel(output_file, index=False)
+   print(f"✅ Conversion done! Excel file saved at: {output_file}") ```
+</code></pre></div>    </div>
+  </li>
+  <li>Save the file as <code class="language-plaintext highlighter-rouge">convert_pdf_to_excel.py</code> in the <code class="language-plaintext highlighter-rouge">Downloads\A</code> folder.</li>
+  <li>Open PowerShell or Command Prompt and navigate to <code class="language-plaintext highlighter-rouge">Downloads\A</code>:
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> %USERPROFILE%<span class="se">\D</span>ownloads<span class="se">\A</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Run the script:
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python convert_pdf_to_excel.py
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="step-5-check-the-output">Step 5: Check the Output</h2>
+<ul>
+  <li>The converted Excel files will be saved in the <code class="language-plaintext highlighter-rouge">Downloads</code> folder.</li>
+  <li>Open the <code class="language-plaintext highlighter-rouge">.xlsx</code> file using Excel to verify the extracted data.</li>
+</ul>
+
+<h2 id="troubleshooting">Troubleshooting</h2>
+<ul>
+  <li>If Python is not recognized, restart your computer or reinstall Python ensuring <strong>“Add Python to PATH”</strong> is selected.</li>
+  <li>If <code class="language-plaintext highlighter-rouge">pdfplumber</code> is missing, try reinstalling it with:
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install</span> <span class="nt">--upgrade</span> pdfplumber pandas openpyxl
+</code></pre></div>    </div>
+  </li>
+  <li>If the script doesn’t work for your PDFs, some documents may have embedded images instead of selectable text.</li>
+</ul>
+
+<p>By following these steps, you can efficiently extract tables from PDFs into Excel using PowerShell or Command Prompt with Python.</p>
+
+<h2 id="step-6-combine-all-excels-into-a-single-excel-file">Step 6: Combine all excels into a single excel file</h2>
+<ol>
+  <li>Open Notepad and paste the following Python script:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import pandas as pd
+import os
+   
+input_folder = os.path.expanduser("~/Downloads/A")
+output_file = os.path.join(input_folder, "combined.xlsx")
+   
+all_data = []
+for file in os.listdir(input_folder):
+    if file.endswith(".xlsx") and file != "combined.xlsx":
+        file_path = os.path.join(input_folder, file)
+        df = pd.read_excel(file_path, sheet_name=0)
+        all_data.append(df)
+   
+combined_df = pd.concat(all_data, ignore_index=True)
+combined_df.to_excel(output_file, index=False)
+print(f"All Excel files combined into {output_file} successfully!")
+</code></pre></div>    </div>
+  </li>
+  <li>Save the file as <code class="language-plaintext highlighter-rouge">combine_excels.py</code> in the <code class="language-plaintext highlighter-rouge">Downloads</code> folder.</li>
+  <li>Open PowerShell or Command Prompt and navigate to <code class="language-plaintext highlighter-rouge">Downloads</code>:
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> %USERPROFILE%<span class="se">\D</span>ownloads<span class="se">\A</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Run the script:
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python combine_excels.py
+</code></pre></div>    </div>
+  </li>
+</ol>
 
 <hr />
 
 <p>Give it a try and simplify your expense tracking! 🚀</p>
+
+<h2 id="support-me-">Support Me 💖</h2>
+<p><a href="https://paypal.me/mattchoo2"><img src="https://img.shields.io/badge/Donate-PayPal-blue.svg" alt="Donate" /></a></p>
 
         
       </section>
@@ -482,11 +645,11 @@
       <section class="page__share">
   <h4 class="page__share-title">Share on</h4>
 
-  <a href="https://twitter.com/intent/tweet?text=CreditCard2Excel+%E2%80%93+Convert+Credit+Card+Statements+to+Excel%20http%3A%2F%2Flocalhost%3A4000%2Fprojects%2Fcreditcard2excel%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=CreditCard2Excel+%E2%80%93+Convert+Credit+Card+Statements+to+Excel%20https%3A%2F%2Fmattlifetech.github.io%2Fprojects%2Fcreditcard2excel%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fprojects%2Fcreditcard2excel%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmattlifetech.github.io%2Fprojects%2Fcreditcard2excel%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/projects/creditcard2excel/" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://mattlifetech.github.io/projects/creditcard2excel/" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
@@ -525,8 +688,8 @@
     <div class="archive__item-container">
       
         <div class="archive__item-teaser">
-          <a href="/smart%20home/troubleshooting/tuyaoverload/">
-            <img src="/assets/images/tuya-power-overload.webp" alt="Tuya Power Meter Overload Alarm – Will It Shut Down the Whole House?
+          <a href="/tech/smart%20home/xiaomi/home%20screen+/xiaomihomescreen/">
+            <img src="/assets/images/interconnectivity.png" alt="How Exactly Xiaomi Interconnectivity Home Screen+ Works?
 ">
           </a>
         </div>
@@ -535,7 +698,66 @@
       <div class="archive__item-content">
         <h2 class="archive__item-title no_toc" itemprop="headline">
           
-            <a href="/smart%20home/troubleshooting/tuyaoverload/" rel="permalink">Tuya Power Meter Overload Alarm – Will It Shut Down the Whole House?
+            <a href="/tech/smart%20home/xiaomi/home%20screen+/xiaomihomescreen/" rel="permalink">How Exactly Xiaomi Interconnectivity Home Screen+ Works?
+</a>
+          
+        </h2>
+        
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+        
+          <p class="archive__item-excerpt" itemprop="description">
+            A deep dive into Xiaomi’s Home Screen+ feature, showcasing its seamless device integration.
+
+          </p>
+        
+      </div>
+    </div>
+
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+
+    <div class="archive__item-container">
+      
+        <div class="archive__item-teaser">
+          <a href="/python/image%20processing/exe/transparentapp/">
+            <img src="/assets/images/transparent_app.webp" alt="Make Image Background Transparent - EXE App
+">
+          </a>
+        </div>
+      
+
+      <div class="archive__item-content">
+        <h2 class="archive__item-title no_toc" itemprop="headline">
+          
+            <a href="/python/image%20processing/exe/transparentapp/" rel="permalink">Make Image Background Transparent - EXE App
 </a>
           
         </h2>
@@ -562,7 +784,7 @@
 
         
           <p class="archive__item-excerpt" itemprop="description">
-            An investigation into Tuya smart power meter overload alarms, clarifying whether they affect the entire house or just the connected device.
+            Learn how to create a simple Python app to remove image backgrounds and convert it into an EXE file for easy use.
 
           </p>
         
@@ -584,8 +806,8 @@
     <div class="archive__item-container">
       
         <div class="archive__item-teaser">
-          <a href="/python/beginner/pythonbeginner/">
-            <img src="/assets/images/python-beginner-powershell.webp" alt="Getting Started with Python for Absolute Beginners Using PowerShell
+          <a href="/tech/coding/image%20processing/transparentpic/">
+            <img src="/assets/images/transparent.webp" alt="Make Image Background Transparent Without Any App
 ">
           </a>
         </div>
@@ -594,7 +816,66 @@
       <div class="archive__item-content">
         <h2 class="archive__item-title no_toc" itemprop="headline">
           
-            <a href="/python/beginner/pythonbeginner/" rel="permalink">Getting Started with Python for Absolute Beginners Using PowerShell
+            <a href="/tech/coding/image%20processing/transparentpic/" rel="permalink">Make Image Background Transparent Without Any App
+</a>
+          
+        </h2>
+        
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+        
+          <p class="archive__item-excerpt" itemprop="description">
+            A simple Python script to remove image backgrounds without using any third-party apps or online tools.
+
+          </p>
+        
+      </div>
+    </div>
+
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+
+    <div class="archive__item-container">
+      
+        <div class="archive__item-teaser">
+          <a href="/image%20processing/ocr/python/image2txt/">
+            <img src="/assets/images/text-extraction.webp" alt="Chinese Text Extraction from Images Using Python and Tesseract OCR
+">
+          </a>
+        </div>
+      
+
+      <div class="archive__item-content">
+        <h2 class="archive__item-title no_toc" itemprop="headline">
+          
+            <a href="/image%20processing/ocr/python/image2txt/" rel="permalink">Chinese Text Extraction from Images Using Python and Tesseract OCR
 </a>
           
         </h2>
@@ -621,125 +902,7 @@
 
         
           <p class="archive__item-excerpt" itemprop="description">
-            A step-by-step guide for those with zero coding knowledge to set up Python and run scripts using PowerShell.
-
-          </p>
-        
-      </div>
-    </div>
-
-  </article>
-</div>
-
-    
-      
-      
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-
-    <div class="archive__item-container">
-      
-        <div class="archive__item-teaser">
-          <a href="/networking/remote%20access/CGNATremotehome/">
-            <img src="/assets/images/cgnat-remote-access.webp" alt="Remote Home Access in Malaysia: Understanding CGNAT and Solutions
-">
-          </a>
-        </div>
-      
-
-      <div class="archive__item-content">
-        <h2 class="archive__item-title no_toc" itemprop="headline">
-          
-            <a href="/networking/remote%20access/CGNATremotehome/" rel="permalink">Remote Home Access in Malaysia: Understanding CGNAT and Solutions
-</a>
-          
-        </h2>
-        
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          2 minute read
-        
-      </span>
-    
-  </p>
-
-
-        
-          <p class="archive__item-excerpt" itemprop="description">
-            A guide on overcoming CGNAT limitations in Malaysia for remote home access using Tailscale and Cloudflare Tunnel.
-
-          </p>
-        
-      </div>
-    </div>
-
-  </article>
-</div>
-
-    
-      
-      
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-
-    <div class="archive__item-container">
-      
-        <div class="archive__item-teaser">
-          <a href="/projects/tuya-presence-automation/">
-            <img src="/assets/images/tuyapres.webp" alt="Tuya Presence Automation – Smart Home Motion Detection
-">
-          </a>
-        </div>
-      
-
-      <div class="archive__item-content">
-        <h2 class="archive__item-title no_toc" itemprop="headline">
-          
-            <a href="/projects/tuya-presence-automation/" rel="permalink">Tuya Presence Automation – Smart Home Motion Detection
-</a>
-          
-        </h2>
-        
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          less than 1 minute read
-        
-      </span>
-    
-  </p>
-
-
-        
-          <p class="archive__item-excerpt" itemprop="description">
-            help + fix for tuya presence automation
+            A step-by-step guide on extracting Chinese text from images using Python and Tesseract OCR.
 
           </p>
         
@@ -787,6 +950,10 @@
     
       
         
+          <li><a href="https://paypal.me/mattchoo2" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-heart" aria-hidden="true"></i> Donate</a></li>
+        
+      
+        
       
         
       
@@ -806,7 +973,7 @@
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2025 <a href="http://localhost:4000">Me & My Tiny Coding Journey</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2025 <a href="https://mattlifetech.github.io">MattLifeTech</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>

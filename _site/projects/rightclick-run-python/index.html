@@ -10,7 +10,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>RightClickRunPython – Run Python Scripts with a Right-Click - Me &amp; My Tiny Coding Journey</title>
+<!-- begin _includes/seo.html --><title>RightClickRunPython – Run Python Scripts with a Right-Click - MattLifeTech</title>
 <meta name="description" content="A simple way to run Python scripts from the Windows context menu with a right-click.">
 
 
@@ -22,16 +22,16 @@
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
-<meta property="og:site_name" content="Me & My Tiny Coding Journey">
+<meta property="og:site_name" content="MattLifeTech">
 <meta property="og:title" content="RightClickRunPython – Run Python Scripts with a Right-Click">
-<meta property="og:url" content="http://localhost:4000/projects/rightclick-run-python/">
+<meta property="og:url" content="https://mattlifetech.github.io/projects/rightclick-run-python/">
 
 
   <meta property="og:description" content="A simple way to run Python scripts from the Windows context menu with a right-click.">
 
 
 
-  <meta property="og:image" content="http://localhost:4000/assets/images/filler.webp">
+  <meta property="og:image" content="https://mattlifetech.github.io/assets/images/filler.webp">
 
 
 
@@ -48,7 +48,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/projects/rightclick-run-python/">
+<link rel="canonical" href="https://mattlifetech.github.io/projects/rightclick-run-python/">
 
 
 
@@ -65,8 +65,12 @@
 
 
 
-  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Me & My Tiny Coding Journey Feed">
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="MattLifeTech Feed">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Add this section for the favicon -->
+<link rel="icon" type="image/png" href="/assets/images/favicon.png">
+<link rel="shortcut icon" href="/assets/images/favicon.ico">
 
 <script>
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
@@ -197,7 +201,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          less than 1 minute read
+          2 minute read
         
       </span>
     
@@ -263,7 +267,7 @@
 
   
     <div class="author__avatar">
-      <a href="http://localhost:4000/">
+      <a href="https://mattlifetech.github.io/">
         <img src="/assets/images/MattLifeTech.png" alt="Matthew Choo" itemprop="image" class="u-photo">
       </a>
     </div>
@@ -271,7 +275,7 @@
 
   <div class="author__content">
     <h3 class="author__name p-name" itemprop="name">
-      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">Matthew Choo</a>
+      <a class="u-url" rel="me" href="https://mattlifetech.github.io/" itemprop="url">Matthew Choo</a>
     </h3>
     
       <div class="author__bio p-note" itemprop="description">
@@ -297,11 +301,17 @@
           
         
           
-        
+            <li><a href="https://x.com/mattlifetech" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
           
         
           
         
+          
+            <li><a href="https://github.com/mattlifetech" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://www.instagram.com/mattlifetech/" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i><span class="label">Instagram</span></a></li>
           
         
       
@@ -388,41 +398,138 @@
 
       <section class="page__content" itemprop="text">
         
-        <h2 id="rightclickrunpython--run-python-scripts-with-a-right-click">RightClickRunPython – Run Python Scripts with a Right-Click</h2>
-
-<p>Tired of opening the terminal and navigating to the script location every time you want to run a Python script? <strong>RightClickRunPython</strong> makes it easy—just right-click on a <code class="language-plaintext highlighter-rouge">.py</code> file and run it instantly!</p>
-
-<h3 id="-features">🚀 Features</h3>
+        <h1 id="gui-right-click-run-python-in-window-11">GUI right click run python in Window 11</h1>
+<p>For those who not used to type in command prompt or power shell, this enable you to right click and run python script straight. 
+<br /><br />It will:</p>
 <ul>
-  <li><strong>Right-Click &amp; Run</strong> – Adds a Windows context menu entry to execute Python scripts.</li>
-  <li><strong>Customizable</strong> – Choose which Python version to use.</li>
-  <li><strong>Easy Installation</strong> – Just run the script to set it up.</li>
-  <li><strong>Supports Arguments</strong> – Run scripts with command-line arguments.</li>
+  <li>open power shell on the respective folder and</li>
+  <li>run the script in this folder</li>
 </ul>
 
-<h3 id="-installation">🛠 Installation</h3>
+<p>To add a right-click context menu option in Windows 11 that opens PowerShell and runs a selected Python script, follow these steps:</p>
+
+<h3 id="step-1-create-a-powershell-script">Step 1: Create a PowerShell Script</h3>
+
+<p>First, create a PowerShell script that will handle running the Python script. Save this script in a known location, for example, <code class="language-plaintext highlighter-rouge">C:\Scripts\RunPythonScript.ps1</code>.</p>
+
+<div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># RunPythonScript.ps1</span><span class="w">
+</span><span class="kr">param</span><span class="w"> </span><span class="p">(</span><span class="w">
+    </span><span class="p">[</span><span class="n">string</span><span class="p">]</span><span class="nv">$FilePath</span><span class="w">
+</span><span class="p">)</span><span class="w">
+
+</span><span class="kr">if</span><span class="w"> </span><span class="p">(</span><span class="o">-Not</span><span class="w"> </span><span class="p">(</span><span class="n">Test-Path</span><span class="w"> </span><span class="nv">$FilePath</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="n">Write-Host</span><span class="w"> </span><span class="s2">"File does not exist: </span><span class="nv">$FilePath</span><span class="s2">"</span><span class="w">
+    </span><span class="kr">exit</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span><span class="c"># Get the directory of the selected file</span><span class="w">
+</span><span class="nv">$dir</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Split-Path</span><span class="w"> </span><span class="nt">-Parent</span><span class="w"> </span><span class="nv">$FilePath</span><span class="w">
+
+</span><span class="c"># Change to the directory</span><span class="w">
+</span><span class="n">Set-Location</span><span class="w"> </span><span class="nt">-Path</span><span class="w"> </span><span class="nv">$dir</span><span class="w">
+
+</span><span class="c"># Run the Python script</span><span class="w">
+</span><span class="n">python</span><span class="w"> </span><span class="nv">$FilePath</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="step-2-modify-the-windows-registry">Step 2: Modify the Windows Registry</h3>
+
+<p>Next, you need to modify the Windows Registry to add a new context menu entry.</p>
+
 <ol>
-  <li>Clone the repository:
-    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/mattchoo2/rightclickrunpython.git
-</code></pre></div>    </div>
+  <li>
+    <p><strong>Open the Registry Editor:</strong></p>
+
+    <ul>
+      <li>Press <code class="language-plaintext highlighter-rouge">Win + R</code>, type <code class="language-plaintext highlighter-rouge">regedit</code>, and press <code class="language-plaintext highlighter-rouge">Enter</code>.</li>
+    </ul>
   </li>
-  <li>Run the setup script:
-    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python install.py
-</code></pre></div>    </div>
+  <li>
+    <p><strong>Navigate to the Context Menu Key:</strong></p>
+
+    <ul>
+      <li>
+        <p>Go to the following path:</p>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        
+HKEY\_CLASSES\_ROOT\\\*\\shell
+</code></pre></div>        </div>
+      </li>
+    </ul>
   </li>
-  <li>Right-click any <code class="language-plaintext highlighter-rouge">.py</code> file and select <strong>Run with Python</strong>!</li>
+  <li>
+    <p><strong>Create a New Key for the Context Menu:</strong></p>
+
+    <ul>
+      <li>Right-click on <code class="language-plaintext highlighter-rouge">shell</code>, select <code class="language-plaintext highlighter-rouge">New &gt; Key</code>, and name it something like <code class="language-plaintext highlighter-rouge">RunPythonScript</code>.</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Set the Menu Label:</strong></p>
+
+    <ul>
+      <li>In the <code class="language-plaintext highlighter-rouge">RunPythonScript</code> key, double-click on the <code class="language-plaintext highlighter-rouge">(Default)</code> value and set it to <code class="language-plaintext highlighter-rouge">Run Python Script</code>.</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Create a Command Key:</strong></p>
+
+    <ul>
+      <li>Right-click on the <code class="language-plaintext highlighter-rouge">RunPythonScript</code> key, select <code class="language-plaintext highlighter-rouge">New &gt; Key</code>, and name it <code class="language-plaintext highlighter-rouge">command</code>.</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Set the Command to Run the PowerShell Script:</strong></p>
+
+    <ul>
+      <li>
+        <p>In the <code class="language-plaintext highlighter-rouge">command</code> key, double-click on the <code class="language-plaintext highlighter-rouge">(Default)</code> value and set it to:</p>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        
+powershell.exe -ExecutionPolicy Bypass -File "C:\\Scripts\\RunPythonScript.ps1" "%1"
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
 </ol>
 
-<h3 id="-repository">📂 Repository</h3>
-<p>Check out the full source code and setup instructions on GitHub:<br />
-<a href="https://github.com/mattchoo2/rightclickrunpython">🔗 RightClickRunPython</a></p>
+<h3 id="step-3-test-the-context-menu">Step 3: Test the Context Menu</h3>
 
-<h3 id="-why-use-this">✨ Why Use This?</h3>
-<p>If you frequently run Python scripts, this tool saves you time by eliminating the need to open a terminal and type commands manually. Perfect for developers, students, and automation enthusiasts!</p>
+<ol>
+  <li>
+    <p>Right-click on any <code class="language-plaintext highlighter-rouge">.py</code> file in File Explorer.</p>
+  </li>
+  <li>
+    <p>You should see a new option called <code class="language-plaintext highlighter-rouge">Run Python Script</code>.</p>
+  </li>
+  <li>
+    <p>Clicking it will open PowerShell, navigate to the directory of the script, and run the selected Python script.</p>
+  </li>
+</ol>
+
+<h3 id="notes">Notes:</h3>
+
+<ul>
+  <li>
+    <p><strong>Execution Policy:</strong> The <code class="language-plaintext highlighter-rouge">-ExecutionPolicy Bypass</code> flag is used to allow the script to run without changing the system’s execution policy permanently. If you trust the script, you can change the execution policy globally.</p>
+  </li>
+  <li>
+    <p><strong>Python Path:</strong> Ensure that Python is added to your system’s PATH environment variable so that the <code class="language-plaintext highlighter-rouge">python</code> command works in PowerShell.</p>
+  </li>
+</ul>
+
+<p>This setup will allow you to run any Python script directly from the context menu in Windows 11.</p>
+
+<h3 id="regedit-via-below-not-working">REGEDIT via below not working:</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HKEY_CLASSES_ROOT\Python.File\shell
+</code></pre></div></div>
 
 <hr />
 
 <p>Give it a try and let me know your feedback! 🚀</p>
+
+<h2 id="support-me-">Support Me 💖</h2>
+<p><a href="https://paypal.me/mattchoo2"><img src="https://img.shields.io/badge/Donate-PayPal-blue.svg" alt="Donate" /></a></p>
 
         
       </section>
@@ -479,11 +586,11 @@
       <section class="page__share">
   <h4 class="page__share-title">Share on</h4>
 
-  <a href="https://twitter.com/intent/tweet?text=RightClickRunPython+%E2%80%93+Run+Python+Scripts+with+a+Right-Click%20http%3A%2F%2Flocalhost%3A4000%2Fprojects%2Frightclick-run-python%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=RightClickRunPython+%E2%80%93+Run+Python+Scripts+with+a+Right-Click%20https%3A%2F%2Fmattlifetech.github.io%2Fprojects%2Frightclick-run-python%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fprojects%2Frightclick-run-python%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmattlifetech.github.io%2Fprojects%2Frightclick-run-python%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/projects/rightclick-run-python/" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://mattlifetech.github.io/projects/rightclick-run-python/" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
@@ -522,8 +629,8 @@
     <div class="archive__item-container">
       
         <div class="archive__item-teaser">
-          <a href="/smart%20home/troubleshooting/tuyaoverload/">
-            <img src="/assets/images/tuya-power-overload.webp" alt="Tuya Power Meter Overload Alarm – Will It Shut Down the Whole House?
+          <a href="/tech/smart%20home/xiaomi/home%20screen+/xiaomihomescreen/">
+            <img src="/assets/images/interconnectivity.png" alt="How Exactly Xiaomi Interconnectivity Home Screen+ Works?
 ">
           </a>
         </div>
@@ -532,7 +639,66 @@
       <div class="archive__item-content">
         <h2 class="archive__item-title no_toc" itemprop="headline">
           
-            <a href="/smart%20home/troubleshooting/tuyaoverload/" rel="permalink">Tuya Power Meter Overload Alarm – Will It Shut Down the Whole House?
+            <a href="/tech/smart%20home/xiaomi/home%20screen+/xiaomihomescreen/" rel="permalink">How Exactly Xiaomi Interconnectivity Home Screen+ Works?
+</a>
+          
+        </h2>
+        
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+        
+          <p class="archive__item-excerpt" itemprop="description">
+            A deep dive into Xiaomi’s Home Screen+ feature, showcasing its seamless device integration.
+
+          </p>
+        
+      </div>
+    </div>
+
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+
+    <div class="archive__item-container">
+      
+        <div class="archive__item-teaser">
+          <a href="/python/image%20processing/exe/transparentapp/">
+            <img src="/assets/images/transparent_app.webp" alt="Make Image Background Transparent - EXE App
+">
+          </a>
+        </div>
+      
+
+      <div class="archive__item-content">
+        <h2 class="archive__item-title no_toc" itemprop="headline">
+          
+            <a href="/python/image%20processing/exe/transparentapp/" rel="permalink">Make Image Background Transparent - EXE App
 </a>
           
         </h2>
@@ -559,7 +725,7 @@
 
         
           <p class="archive__item-excerpt" itemprop="description">
-            An investigation into Tuya smart power meter overload alarms, clarifying whether they affect the entire house or just the connected device.
+            Learn how to create a simple Python app to remove image backgrounds and convert it into an EXE file for easy use.
 
           </p>
         
@@ -581,8 +747,8 @@
     <div class="archive__item-container">
       
         <div class="archive__item-teaser">
-          <a href="/python/beginner/pythonbeginner/">
-            <img src="/assets/images/python-beginner-powershell.webp" alt="Getting Started with Python for Absolute Beginners Using PowerShell
+          <a href="/tech/coding/image%20processing/transparentpic/">
+            <img src="/assets/images/transparent.webp" alt="Make Image Background Transparent Without Any App
 ">
           </a>
         </div>
@@ -591,7 +757,66 @@
       <div class="archive__item-content">
         <h2 class="archive__item-title no_toc" itemprop="headline">
           
-            <a href="/python/beginner/pythonbeginner/" rel="permalink">Getting Started with Python for Absolute Beginners Using PowerShell
+            <a href="/tech/coding/image%20processing/transparentpic/" rel="permalink">Make Image Background Transparent Without Any App
+</a>
+          
+        </h2>
+        
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+        
+          <p class="archive__item-excerpt" itemprop="description">
+            A simple Python script to remove image backgrounds without using any third-party apps or online tools.
+
+          </p>
+        
+      </div>
+    </div>
+
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+
+    <div class="archive__item-container">
+      
+        <div class="archive__item-teaser">
+          <a href="/image%20processing/ocr/python/image2txt/">
+            <img src="/assets/images/text-extraction.webp" alt="Chinese Text Extraction from Images Using Python and Tesseract OCR
+">
+          </a>
+        </div>
+      
+
+      <div class="archive__item-content">
+        <h2 class="archive__item-title no_toc" itemprop="headline">
+          
+            <a href="/image%20processing/ocr/python/image2txt/" rel="permalink">Chinese Text Extraction from Images Using Python and Tesseract OCR
 </a>
           
         </h2>
@@ -618,125 +843,7 @@
 
         
           <p class="archive__item-excerpt" itemprop="description">
-            A step-by-step guide for those with zero coding knowledge to set up Python and run scripts using PowerShell.
-
-          </p>
-        
-      </div>
-    </div>
-
-  </article>
-</div>
-
-    
-      
-      
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-
-    <div class="archive__item-container">
-      
-        <div class="archive__item-teaser">
-          <a href="/networking/remote%20access/CGNATremotehome/">
-            <img src="/assets/images/cgnat-remote-access.webp" alt="Remote Home Access in Malaysia: Understanding CGNAT and Solutions
-">
-          </a>
-        </div>
-      
-
-      <div class="archive__item-content">
-        <h2 class="archive__item-title no_toc" itemprop="headline">
-          
-            <a href="/networking/remote%20access/CGNATremotehome/" rel="permalink">Remote Home Access in Malaysia: Understanding CGNAT and Solutions
-</a>
-          
-        </h2>
-        
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          2 minute read
-        
-      </span>
-    
-  </p>
-
-
-        
-          <p class="archive__item-excerpt" itemprop="description">
-            A guide on overcoming CGNAT limitations in Malaysia for remote home access using Tailscale and Cloudflare Tunnel.
-
-          </p>
-        
-      </div>
-    </div>
-
-  </article>
-</div>
-
-    
-      
-      
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-
-    <div class="archive__item-container">
-      
-        <div class="archive__item-teaser">
-          <a href="/projects/tuya-presence-automation/">
-            <img src="/assets/images/tuyapres.webp" alt="Tuya Presence Automation – Smart Home Motion Detection
-">
-          </a>
-        </div>
-      
-
-      <div class="archive__item-content">
-        <h2 class="archive__item-title no_toc" itemprop="headline">
-          
-            <a href="/projects/tuya-presence-automation/" rel="permalink">Tuya Presence Automation – Smart Home Motion Detection
-</a>
-          
-        </h2>
-        
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          less than 1 minute read
-        
-      </span>
-    
-  </p>
-
-
-        
-          <p class="archive__item-excerpt" itemprop="description">
-            help + fix for tuya presence automation
+            A step-by-step guide on extracting Chinese text from images using Python and Tesseract OCR.
 
           </p>
         
@@ -784,6 +891,10 @@
     
       
         
+          <li><a href="https://paypal.me/mattchoo2" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-heart" aria-hidden="true"></i> Donate</a></li>
+        
+      
+        
       
         
       
@@ -803,7 +914,7 @@
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2025 <a href="http://localhost:4000">Me & My Tiny Coding Journey</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2025 <a href="https://mattlifetech.github.io">MattLifeTech</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>

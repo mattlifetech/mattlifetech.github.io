@@ -1,0 +1,946 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.26.2 by Michael Rose
+  Copyright 2013-2024 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en-US" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Chinese Text Extraction from Images Using Python and Tesseract OCR - MattLifeTech</title>
+<meta name="description" content="A step-by-step guide on extracting Chinese text from images using Python and Tesseract OCR.">
+
+
+  <meta name="author" content="Matthew Choo">
+  
+  <meta property="article:author" content="Matthew Choo">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="MattLifeTech">
+<meta property="og:title" content="Chinese Text Extraction from Images Using Python and Tesseract OCR">
+<meta property="og:url" content="https://mattlifetech.github.io/image%20processing/ocr/python/image2txt/">
+
+
+  <meta property="og:description" content="A step-by-step guide on extracting Chinese text from images using Python and Tesseract OCR.">
+
+
+
+  <meta property="og:image" content="https://mattlifetech.github.io/assets/images/text-extraction.webp">
+
+
+
+
+
+  <meta property="article:published_time" content="2025-03-04T00:00:00+08:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://mattlifetech.github.io/image%20processing/ocr/python/image2txt/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="MattLifeTech Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Add this section for the favicon -->
+<link rel="icon" type="image/png" href="/assets/images/favicon.png">
+<link rel="shortcut icon" href="/assets/images/favicon.ico">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single wide" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/Mattlogo.png" alt="Matt Life Tech"></a>
+        
+        <a class="site-title" href="/">
+          Matt Life Tech
+          <span class="site-subtitle">where journey starts</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/"
+                
+                
+              >Home</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/about/"
+                
+                
+              >About</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/categories/"
+                
+                
+              >Categories</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/tags/"
+                
+                
+              >Tags</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/year-archive/"
+                
+                
+              >Archive</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/" itemprop="item"><span itemprop="name">Home</span></a>
+
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#image-processing" itemprop="item"><span itemprop="name">Image processing</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#ocr" itemprop="item"><span itemprop="name">Ocr</span></a>
+          <meta itemprop="position" content="3" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#python" itemprop="item"><span itemprop="name">Python</span></a>
+          <meta itemprop="position" content="4" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        <li class="current">Chinese Text Extraction from Images Using Python and Tesseract OCR</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="https://mattlifetech.github.io/">
+        <img src="/assets/images/MattLifeTech.png" alt="Matthew Choo" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="https://mattlifetech.github.io/" itemprop="url">Matthew Choo</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>With 20 years in market research across Telco and Media, I’ve decoded consumer behavior, optimized research, and driven data-led strategies. Now, I’m diving into coding, automation, and tech solutions—where data meets efficiency. This blog is my space to share insights, from Python scripts to research optimizations and life hacks. Join me in exploring smarter ways to work and live!</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Asia</span>
+        </li>
+      
+
+      
+        
+          
+        
+          
+        
+          
+            <li><a href="https://x.com/mattlifetech" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+        
+          
+            <li><a href="https://github.com/mattlifetech" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://www.instagram.com/mattlifetech/" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i><span class="label">Instagram</span></a></li>
+          
+        
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:mattckw@gmail.com" rel="me" class="u-email">
+            <meta itemprop="email" content="mattckw@gmail.com" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span>
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Chinese Text Extraction from Images Using Python and Tesseract OCR">
+    <meta itemprop="description" content="A step-by-step guide on extracting Chinese text from images using Python and Tesseract OCR.">
+    <meta itemprop="datePublished" content="2025-03-04T00:00:00+08:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">
+            <a href="https://mattlifetech.github.io/image%20processing/ocr/python/image2txt/" itemprop="url">Chinese Text Extraction from Images Using Python and Tesseract OCR
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p><img src="https://raw.githubusercontent.com/mattchoo2/mattchoo2.github.io/main/assets/images/text-extraction.webp" alt="image2txt" /></p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>Extracting text from images is a common task in document digitization, automated translations, and data processing. In this guide, we’ll walk through setting up <strong>Tesseract OCR</strong> to extract Chinese text from images using Python.</p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<p>Before we begin, ensure you have the following installed:</p>
+
+<h3 id="1-install-tesseract-ocr">1. Install Tesseract OCR</h3>
+
+<p>Download and install <strong>Tesseract OCR</strong> from the <a href="https://github.com/UB-Mannheim/tesseract/wiki">official repository</a>:</p>
+
+<ul>
+  <li>Windows users: Download the latest <strong>Windows installer</strong>.</li>
+  <li>Linux/macOS users: Install via package manager:
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>tesseract-ocr   <span class="c"># Ubuntu/Debian</span>
+brew <span class="nb">install </span>tesseract           <span class="c"># macOS (Homebrew)</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="2-add-tesseract-to-system-path-windows">2. Add Tesseract to System PATH (Windows)</h3>
+
+<p>After installation, add Tesseract to your <strong>system PATH</strong>:</p>
+
+<ol>
+  <li>Go to <strong>Settings &gt; Environment Variables</strong>.</li>
+  <li>Find and edit the <code class="language-plaintext highlighter-rouge">Path</code> variable under <strong>System Variables</strong>.</li>
+  <li>Click <strong>New</strong>, then add:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>C:\Program Files\Tesseract-OCR\
+</code></pre></div>    </div>
+  </li>
+  <li>Click <strong>OK</strong> and <strong>restart your system</strong>.</li>
+</ol>
+
+<h3 id="3-verify-tesseract-installation">3. Verify Tesseract Installation</h3>
+
+<p>Run the following command to check available languages:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tesseract <span class="nt">--list-langs</span>
+</code></pre></div></div>
+
+<p>Expected output (if Chinese is installed):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>List of available languages (8):
+chi_sim
+chi_sim_vert
+chi_tra
+chi_tra_vert
+eng
+jpn
+jpn_vert
+osd
+</code></pre></div></div>
+
+<p>If <code class="language-plaintext highlighter-rouge">chi_sim</code> is missing, download it manually from <a href="https://github.com/tesseract-ocr/tessdata">Tesseract OCR tessdata</a> and place it in:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>C:\Program Files\Tesseract-OCR\tessdata\
+</code></pre></div></div>
+
+<h3 id="4-install-required-python-libraries">4. Install Required Python Libraries</h3>
+
+<p>Ensure you have <strong>pytesseract</strong> and <strong>Pillow</strong> installed:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>pytesseract pillow
+</code></pre></div></div>
+
+<h2 id="the-python-script">The Python Script</h2>
+
+<p>The script scans a folder for images (<code class="language-plaintext highlighter-rouge">.png</code>, <code class="language-plaintext highlighter-rouge">.jpg</code>, <code class="language-plaintext highlighter-rouge">.jpeg</code>, <code class="language-plaintext highlighter-rouge">.webp</code>), extracts text using <strong>Tesseract OCR</strong>, and saves the output as a <code class="language-plaintext highlighter-rouge">.txt</code> file with the same name as the folder.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">pytesseract</span>
+<span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+
+<span class="c1"># Set Tesseract-OCR path for Windows
+</span><span class="n">pytesseract</span><span class="p">.</span><span class="n">pytesseract</span><span class="p">.</span><span class="n">tesseract_cmd</span> <span class="o">=</span> <span class="sa">r</span><span class="s">"C:\\Program Files\\Tesseract-OCR\\tesseract.exe"</span>
+
+<span class="c1"># Ensure TESSDATA_PREFIX is set correctly
+</span><span class="n">os</span><span class="p">.</span><span class="n">environ</span><span class="p">[</span><span class="s">"TESSDATA_PREFIX"</span><span class="p">]</span> <span class="o">=</span> <span class="sa">r</span><span class="s">"C:\\Program Files\\Tesseract-OCR"</span>
+
+<span class="k">def</span> <span class="nf">extract_text_from_images</span><span class="p">():</span>
+    <span class="c1"># Get current script directory
+</span>    <span class="n">script_dir</span> <span class="o">=</span> <span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">__file__</span><span class="p">))</span>
+    <span class="n">folder_name</span> <span class="o">=</span> <span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">basename</span><span class="p">(</span><span class="n">script_dir</span><span class="p">)</span>  <span class="c1"># Use folder name for output file
+</span>    <span class="n">output_file</span> <span class="o">=</span> <span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="n">script_dir</span><span class="p">,</span> <span class="sa">f</span><span class="s">"</span><span class="si">{</span><span class="n">folder_name</span><span class="si">}</span><span class="s">.txt"</span><span class="p">)</span>
+    
+    <span class="c1"># Supported image formats
+</span>    <span class="n">image_extensions</span> <span class="o">=</span> <span class="p">{</span><span class="s">".png"</span><span class="p">,</span> <span class="s">".jpg"</span><span class="p">,</span> <span class="s">".jpeg"</span><span class="p">,</span> <span class="s">".webp"</span><span class="p">}</span>
+    
+    <span class="c1"># Get all valid image files sorted in numeric order
+</span>    <span class="n">image_files</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span>
+        <span class="p">[</span><span class="n">f</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">os</span><span class="p">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">script_dir</span><span class="p">)</span> <span class="k">if</span> <span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">splitext</span><span class="p">(</span><span class="n">f</span><span class="p">)[</span><span class="mi">1</span><span class="p">].</span><span class="n">lower</span><span class="p">()</span> <span class="ow">in</span> <span class="n">image_extensions</span><span class="p">],</span>
+        <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">splitext</span><span class="p">(</span><span class="n">x</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span>  <span class="c1"># Sort by numeric filename
+</span>    <span class="p">)</span>
+    
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">image_files</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"No image files found."</span><span class="p">)</span>
+        <span class="k">return</span>
+    
+    <span class="n">extracted_texts</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">image_file</span> <span class="ow">in</span> <span class="n">image_files</span><span class="p">:</span>
+        <span class="n">image_path</span> <span class="o">=</span> <span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="n">script_dir</span><span class="p">,</span> <span class="n">image_file</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="p">.</span><span class="nb">open</span><span class="p">(</span><span class="n">image_path</span><span class="p">)</span>
+            <span class="n">text</span> <span class="o">=</span> <span class="n">pytesseract</span><span class="p">.</span><span class="n">image_to_string</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">lang</span><span class="o">=</span><span class="s">"chi_sim"</span><span class="p">)</span>  <span class="c1"># Extract Chinese text
+</span>            <span class="n">extracted_texts</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+        <span class="k">except</span> <span class="nb">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"Error processing </span><span class="si">{</span><span class="n">image_file</span><span class="si">}</span><span class="s">: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+    
+    <span class="c1"># Write extracted text to output file
+</span>    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">output_file</span><span class="p">,</span> <span class="s">"w"</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s">"utf-8"</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">f</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="s">"</span><span class="se">\n\n</span><span class="s">"</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="n">extracted_texts</span><span class="p">))</span>
+    
+    <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"Text extraction complete. Output saved as: </span><span class="si">{</span><span class="n">output_file</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span>
+    <span class="n">extract_text_from_images</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h2 id="how-the-script-works">How the Script Works</h2>
+
+<p><strong>Note:</strong> The folder path must only contain English letters (A-Z) to avoid issues with Tesseract OCR.</p>
+
+<ol>
+  <li>The script <strong>automatically detects</strong> the folder where it’s placed.</li>
+  <li>It scans for <strong>image files</strong> (<code class="language-plaintext highlighter-rouge">.png</code>, <code class="language-plaintext highlighter-rouge">.jpg</code>, <code class="language-plaintext highlighter-rouge">.jpeg</code>, <code class="language-plaintext highlighter-rouge">.webp</code>) named in a numeric sequence (e.g., <code class="language-plaintext highlighter-rouge">001.jpg</code>, <code class="language-plaintext highlighter-rouge">002.png</code>).</li>
+  <li>It <strong>extracts text</strong> from each image while preserving formatting.</li>
+  <li>The extracted text is <strong>compiled</strong> into a single <code class="language-plaintext highlighter-rouge">.txt</code> file named after the folder.</li>
+</ol>
+
+<h2 id="summary">Summary</h2>
+
+<p>This guide walks through setting up Tesseract OCR, configuring paths, installing required languages, and using a Python script to extract Chinese text from images. This automation can be useful for document digitization, subtitle extraction, or archiving printed materials into searchable text.</p>
+
+<p>Give it a try, and let me know if you have any questions! 🚀</p>
+
+<h2 id="support-me-">Support Me 💖</h2>
+<p><a href="https://paypal.me/mattchoo2"><img src="https://img.shields.io/badge/Donate-PayPal-blue.svg" alt="Donate" /></a></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#image-processing" class="page__taxonomy-item p-category" rel="tag">Image Processing</a><span class="sep">, </span>
+    
+      <a href="/tags/#ocr" class="page__taxonomy-item p-category" rel="tag">OCR</a><span class="sep">, </span>
+    
+      <a href="/tags/#python" class="page__taxonomy-item p-category" rel="tag">Python</a><span class="sep">, </span>
+    
+      <a href="/tags/#tesseract" class="page__taxonomy-item p-category" rel="tag">Tesseract</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#image-processing" class="page__taxonomy-item p-category" rel="tag">Image Processing</a><span class="sep">, </span>
+    
+      <a href="/categories/#ocr" class="page__taxonomy-item p-category" rel="tag">OCR</a><span class="sep">, </span>
+    
+      <a href="/categories/#python" class="page__taxonomy-item p-category" rel="tag">Python</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2025-03-04T00:00:00+08:00">March 4, 2025</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  <h4 class="page__share-title">Share on</h4>
+
+  <a href="https://twitter.com/intent/tweet?text=Chinese+Text+Extraction+from+Images+Using+Python+and+Tesseract+OCR%20https%3A%2F%2Fmattlifetech.github.io%2Fimage%2520processing%2Focr%2Fpython%2Fimage2txt%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmattlifetech.github.io%2Fimage%2520processing%2Focr%2Fpython%2Fimage2txt%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://mattlifetech.github.io/image%20processing/ocr/python/image2txt/" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/jekyll/blogging/blogspot2jekyll/" class="pagination--pager" title="Migrate Blogspot Posts to Your Own Jekyll Website">Previous</a>
+    
+    
+      <a href="/tech/coding/image%20processing/transparentpic/" class="pagination--pager" title="Make Image Background Transparent Without Any App">Next</a>
+    
+  </nav>
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    
+<div class="page__related">
+  
+  <h2 class="page__related-title">You may also enjoy</h2>
+  <div class="grid__wrapper">
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+
+    <div class="archive__item-container">
+      
+        <div class="archive__item-teaser">
+          <a href="/tech/smart%20home/xiaomi/home%20screen+/xiaomihomescreen/">
+            <img src="/assets/images/interconnectivity.png" alt="How Exactly Xiaomi Interconnectivity Home Screen+ Works?
+">
+          </a>
+        </div>
+      
+
+      <div class="archive__item-content">
+        <h2 class="archive__item-title no_toc" itemprop="headline">
+          
+            <a href="/tech/smart%20home/xiaomi/home%20screen+/xiaomihomescreen/" rel="permalink">How Exactly Xiaomi Interconnectivity Home Screen+ Works?
+</a>
+          
+        </h2>
+        
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+        
+          <p class="archive__item-excerpt" itemprop="description">
+            A deep dive into Xiaomi’s Home Screen+ feature, showcasing its seamless device integration.
+
+          </p>
+        
+      </div>
+    </div>
+
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+
+    <div class="archive__item-container">
+      
+        <div class="archive__item-teaser">
+          <a href="/python/image%20processing/exe/transparentapp/">
+            <img src="/assets/images/transparent_app.webp" alt="Make Image Background Transparent - EXE App
+">
+          </a>
+        </div>
+      
+
+      <div class="archive__item-content">
+        <h2 class="archive__item-title no_toc" itemprop="headline">
+          
+            <a href="/python/image%20processing/exe/transparentapp/" rel="permalink">Make Image Background Transparent - EXE App
+</a>
+          
+        </h2>
+        
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+        
+          <p class="archive__item-excerpt" itemprop="description">
+            Learn how to create a simple Python app to remove image backgrounds and convert it into an EXE file for easy use.
+
+          </p>
+        
+      </div>
+    </div>
+
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+
+    <div class="archive__item-container">
+      
+        <div class="archive__item-teaser">
+          <a href="/tech/coding/image%20processing/transparentpic/">
+            <img src="/assets/images/transparent.webp" alt="Make Image Background Transparent Without Any App
+">
+          </a>
+        </div>
+      
+
+      <div class="archive__item-content">
+        <h2 class="archive__item-title no_toc" itemprop="headline">
+          
+            <a href="/tech/coding/image%20processing/transparentpic/" rel="permalink">Make Image Background Transparent Without Any App
+</a>
+          
+        </h2>
+        
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+        
+          <p class="archive__item-excerpt" itemprop="description">
+            A simple Python script to remove image backgrounds without using any third-party apps or online tools.
+
+          </p>
+        
+      </div>
+    </div>
+
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+
+    <div class="archive__item-container">
+      
+        <div class="archive__item-teaser">
+          <a href="/jekyll/blogging/blogspot2jekyll/">
+            <img src="/assets/images/blogger_teaser.webp" alt="Migrate Blogspot Posts to Your Own Jekyll Website
+">
+          </a>
+        </div>
+      
+
+      <div class="archive__item-content">
+        <h2 class="archive__item-title no_toc" itemprop="headline">
+          
+            <a href="/jekyll/blogging/blogspot2jekyll/" rel="permalink">Migrate Blogspot Posts to Your Own Jekyll Website
+</a>
+          
+        </h2>
+        
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+        
+          <p class="archive__item-excerpt" itemprop="description">
+            Step-by-step guide to exporting your Blogger posts and converting them to Jekyll format.
+
+          </p>
+        
+      </div>
+    </div>
+
+  </article>
+</div>
+
+    
+  </div>
+</div>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://paypal.me/mattchoo2" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-heart" aria-hidden="true"></i> Donate</a></li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2025 <a href="https://mattlifetech.github.io">MattLifeTech</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+  </body>
+</html>

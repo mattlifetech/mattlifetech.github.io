@@ -1,0 +1,893 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.26.2 by Michael Rose
+  Copyright 2013-2024 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en-US" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Make Image Background Transparent Without Any App - MattLifeTech</title>
+<meta name="description" content="A simple Python script to remove image backgrounds without using any third-party apps or online tools.">
+
+
+  <meta name="author" content="Matthew Choo">
+  
+  <meta property="article:author" content="Matthew Choo">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="MattLifeTech">
+<meta property="og:title" content="Make Image Background Transparent Without Any App">
+<meta property="og:url" content="https://mattlifetech.github.io/tech/coding/image%20processing/transparentpic/">
+
+
+  <meta property="og:description" content="A simple Python script to remove image backgrounds without using any third-party apps or online tools.">
+
+
+
+  <meta property="og:image" content="https://mattlifetech.github.io/assets/images/filler.webp">
+
+
+
+
+
+  <meta property="article:published_time" content="2025-03-04T00:00:00+08:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://mattlifetech.github.io/tech/coding/image%20processing/transparentpic/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="MattLifeTech Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Add this section for the favicon -->
+<link rel="icon" type="image/png" href="/assets/images/favicon.png">
+<link rel="shortcut icon" href="/assets/images/favicon.ico">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single wide" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/Mattlogo.png" alt="Matt Life Tech"></a>
+        
+        <a class="site-title" href="/">
+          Matt Life Tech
+          <span class="site-subtitle">where journey starts</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/"
+                
+                
+              >Home</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/about/"
+                
+                
+              >About</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/categories/"
+                
+                
+              >Categories</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/tags/"
+                
+                
+              >Tags</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/year-archive/"
+                
+                
+              >Archive</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style=" background-image: url('/assets/images/filler.webp');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          Make Image Background Transparent Without Any App
+
+        
+      </h1>
+      
+        <p class="page__lead">A simple Python script to remove image backgrounds without using any third-party apps or online tools.
+</p>
+      
+      
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+      
+    </div>
+  
+  
+</div>
+
+
+
+
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/" itemprop="item"><span itemprop="name">Home</span></a>
+
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#tech" itemprop="item"><span itemprop="name">Tech</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#coding" itemprop="item"><span itemprop="name">Coding</span></a>
+          <meta itemprop="position" content="3" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#image-processing" itemprop="item"><span itemprop="name">Image processing</span></a>
+          <meta itemprop="position" content="4" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        <li class="current">Make Image Background Transparent Without Any App</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="https://mattlifetech.github.io/">
+        <img src="/assets/images/MattLifeTech.png" alt="Matthew Choo" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="https://mattlifetech.github.io/" itemprop="url">Matthew Choo</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>With 20 years in market research across Telco and Media, I’ve decoded consumer behavior, optimized research, and driven data-led strategies. Now, I’m diving into coding, automation, and tech solutions—where data meets efficiency. This blog is my space to share insights, from Python scripts to research optimizations and life hacks. Join me in exploring smarter ways to work and live!</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Asia</span>
+        </li>
+      
+
+      
+        
+          
+        
+          
+        
+          
+            <li><a href="https://x.com/mattlifetech" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+        
+          
+            <li><a href="https://github.com/mattlifetech" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://www.instagram.com/mattlifetech/" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i><span class="label">Instagram</span></a></li>
+          
+        
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:mattckw@gmail.com" rel="me" class="u-email">
+            <meta itemprop="email" content="mattckw@gmail.com" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span>
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Make Image Background Transparent Without Any App">
+    <meta itemprop="description" content="A simple Python script to remove image backgrounds without using any third-party apps or online tools.">
+    <meta itemprop="datePublished" content="2025-03-04T00:00:00+08:00">
+    
+
+    <div class="page__inner-wrap">
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p><img src="https://raw.githubusercontent.com/mattchoo2/mattchoo2.github.io/main/assets/images/transparent.webp" alt="tpr" /></p>
+
+<h1 id="make-image-background-transparent-without-any-app">Make Image Background Transparent Without Any App</h1>
+
+<p>Removing an image background usually requires Photoshop or online tools, but you can do it easily with Python—no extra apps needed!</p>
+
+<h2 id="why-use-python">Why Use Python?</h2>
+
+<ul>
+  <li><strong>No third-party software</strong> – Everything runs locally.</li>
+  <li><strong>Fast and efficient</strong> – Process multiple images with automation.</li>
+  <li><strong>Full control</strong> – Customize transparency settings.</li>
+</ul>
+
+<h2 id="how-it-works">How It Works</h2>
+
+<p>This script scans every pixel in the image and makes any nearly white background (RGB &gt; 200, 200, 200) fully transparent.</p>
+
+<h2 id="python-script">Python Script</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+
+<span class="c1"># Update these paths
+</span><span class="n">image_path</span> <span class="o">=</span> <span class="sa">r</span><span class="s">"C:\path\to\your\input_image.png"</span>
+<span class="n">output_path</span> <span class="o">=</span> <span class="sa">r</span><span class="s">"C:\path\to\your\output_image.png"</span>
+
+<span class="c1"># Load image
+</span><span class="n">image</span> <span class="o">=</span> <span class="n">Image</span><span class="p">.</span><span class="nb">open</span><span class="p">(</span><span class="n">image_path</span><span class="p">).</span><span class="n">convert</span><span class="p">(</span><span class="s">"RGBA"</span><span class="p">)</span>
+
+<span class="c1"># Process pixels
+</span><span class="n">datas</span> <span class="o">=</span> <span class="n">image</span><span class="p">.</span><span class="n">getdata</span><span class="p">()</span>
+<span class="n">new_data</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="k">if</span> <span class="p">(</span><span class="n">r</span> <span class="o">&gt;</span> <span class="mi">200</span> <span class="ow">and</span> <span class="n">g</span> <span class="o">&gt;</span> <span class="mi">200</span> <span class="ow">and</span> <span class="n">b</span> <span class="o">&gt;</span> <span class="mi">200</span><span class="p">)</span> <span class="k">else</span> <span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+    <span class="k">for</span> <span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span> <span class="ow">in</span> <span class="n">datas</span>
+<span class="p">]</span>
+
+<span class="c1"># Apply changes
+</span><span class="n">image</span><span class="p">.</span><span class="n">putdata</span><span class="p">(</span><span class="n">new_data</span><span class="p">)</span>
+<span class="n">image</span><span class="p">.</span><span class="n">save</span><span class="p">(</span><span class="n">output_path</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"Transparent image saved as: </span><span class="si">{</span><span class="n">output_path</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="how-to-use">How to Use</h2>
+
+<ol>
+  <li>Install <code class="language-plaintext highlighter-rouge">Pillow</code> if you haven’t already:
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>pillow
+</code></pre></div>    </div>
+  </li>
+  <li>Update <code class="language-plaintext highlighter-rouge">image_path</code> and <code class="language-plaintext highlighter-rouge">output_path</code> with your file locations.</li>
+  <li>Run the script:
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python script.py
+</code></pre></div>    </div>
+  </li>
+  <li>Your image will be saved with a transparent background!</li>
+</ol>
+
+<h2 id="final-thoughts">Final Thoughts</h2>
+
+<p>This method is ideal for quick background removal, especially for white or light-colored backgrounds. You can fine-tune the script by adjusting the RGB threshold.</p>
+
+<p>Want more automation tips? Follow my blog for more tech hacks! 🚀</p>
+
+<h2 id="support-me-">Support Me 💖</h2>
+<p><a href="https://paypal.me/mattchoo2"><img src="https://img.shields.io/badge/Donate-PayPal-blue.svg" alt="Donate" /></a></p>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#automation" class="page__taxonomy-item p-category" rel="tag">Automation</a><span class="sep">, </span>
+    
+      <a href="/tags/#image-editing" class="page__taxonomy-item p-category" rel="tag">Image Editing</a><span class="sep">, </span>
+    
+      <a href="/tags/#python" class="page__taxonomy-item p-category" rel="tag">Python</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#coding" class="page__taxonomy-item p-category" rel="tag">Coding</a><span class="sep">, </span>
+    
+      <a href="/categories/#image-processing" class="page__taxonomy-item p-category" rel="tag">Image Processing</a><span class="sep">, </span>
+    
+      <a href="/categories/#tech" class="page__taxonomy-item p-category" rel="tag">Tech</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2025-03-04T00:00:00+08:00">March 4, 2025</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  <h4 class="page__share-title">Share on</h4>
+
+  <a href="https://twitter.com/intent/tweet?text=Make+Image+Background+Transparent+Without+Any+App%20https%3A%2F%2Fmattlifetech.github.io%2Ftech%2Fcoding%2Fimage%2520processing%2Ftransparentpic%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmattlifetech.github.io%2Ftech%2Fcoding%2Fimage%2520processing%2Ftransparentpic%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://mattlifetech.github.io/tech/coding/image%20processing/transparentpic/" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/image%20processing/ocr/python/image2txt/" class="pagination--pager" title="Chinese Text Extraction from Images Using Python and Tesseract OCR">Previous</a>
+    
+    
+      <a href="/python/image%20processing/exe/transparentapp/" class="pagination--pager" title="Make Image Background Transparent - EXE App">Next</a>
+    
+  </nav>
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    
+<div class="page__related">
+  
+  <h2 class="page__related-title">You may also enjoy</h2>
+  <div class="grid__wrapper">
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+
+    <div class="archive__item-container">
+      
+        <div class="archive__item-teaser">
+          <a href="/tech/smart%20home/xiaomi/home%20screen+/xiaomihomescreen/">
+            <img src="/assets/images/interconnectivity.png" alt="How Exactly Xiaomi Interconnectivity Home Screen+ Works?
+">
+          </a>
+        </div>
+      
+
+      <div class="archive__item-content">
+        <h2 class="archive__item-title no_toc" itemprop="headline">
+          
+            <a href="/tech/smart%20home/xiaomi/home%20screen+/xiaomihomescreen/" rel="permalink">How Exactly Xiaomi Interconnectivity Home Screen+ Works?
+</a>
+          
+        </h2>
+        
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+        
+          <p class="archive__item-excerpt" itemprop="description">
+            A deep dive into Xiaomi’s Home Screen+ feature, showcasing its seamless device integration.
+
+          </p>
+        
+      </div>
+    </div>
+
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+
+    <div class="archive__item-container">
+      
+        <div class="archive__item-teaser">
+          <a href="/python/image%20processing/exe/transparentapp/">
+            <img src="/assets/images/transparent_app.webp" alt="Make Image Background Transparent - EXE App
+">
+          </a>
+        </div>
+      
+
+      <div class="archive__item-content">
+        <h2 class="archive__item-title no_toc" itemprop="headline">
+          
+            <a href="/python/image%20processing/exe/transparentapp/" rel="permalink">Make Image Background Transparent - EXE App
+</a>
+          
+        </h2>
+        
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+        
+          <p class="archive__item-excerpt" itemprop="description">
+            Learn how to create a simple Python app to remove image backgrounds and convert it into an EXE file for easy use.
+
+          </p>
+        
+      </div>
+    </div>
+
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+
+    <div class="archive__item-container">
+      
+        <div class="archive__item-teaser">
+          <a href="/image%20processing/ocr/python/image2txt/">
+            <img src="/assets/images/text-extraction.webp" alt="Chinese Text Extraction from Images Using Python and Tesseract OCR
+">
+          </a>
+        </div>
+      
+
+      <div class="archive__item-content">
+        <h2 class="archive__item-title no_toc" itemprop="headline">
+          
+            <a href="/image%20processing/ocr/python/image2txt/" rel="permalink">Chinese Text Extraction from Images Using Python and Tesseract OCR
+</a>
+          
+        </h2>
+        
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+        
+          <p class="archive__item-excerpt" itemprop="description">
+            A step-by-step guide on extracting Chinese text from images using Python and Tesseract OCR.
+
+          </p>
+        
+      </div>
+    </div>
+
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+
+    <div class="archive__item-container">
+      
+        <div class="archive__item-teaser">
+          <a href="/jekyll/blogging/blogspot2jekyll/">
+            <img src="/assets/images/blogger_teaser.webp" alt="Migrate Blogspot Posts to Your Own Jekyll Website
+">
+          </a>
+        </div>
+      
+
+      <div class="archive__item-content">
+        <h2 class="archive__item-title no_toc" itemprop="headline">
+          
+            <a href="/jekyll/blogging/blogspot2jekyll/" rel="permalink">Migrate Blogspot Posts to Your Own Jekyll Website
+</a>
+          
+        </h2>
+        
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+        
+          <p class="archive__item-excerpt" itemprop="description">
+            Step-by-step guide to exporting your Blogger posts and converting them to Jekyll format.
+
+          </p>
+        
+      </div>
+    </div>
+
+  </article>
+</div>
+
+    
+  </div>
+</div>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://paypal.me/mattchoo2" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-heart" aria-hidden="true"></i> Donate</a></li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2025 <a href="https://mattlifetech.github.io">MattLifeTech</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+  </body>
+</html>

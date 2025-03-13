@@ -1,0 +1,1031 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.26.2 by Michael Rose
+  Copyright 2013-2024 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en-US" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>VBA vs Python for Excel: Which One Should You Use? - MattLifeTech</title>
+<meta name="description" content="A detailed comparison of VBA and Python for Excel automation, covering use cases, platform availability, and usage methods.">
+
+
+  <meta name="author" content="Matthew Choo">
+  
+  <meta property="article:author" content="Matthew Choo">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="MattLifeTech">
+<meta property="og:title" content="VBA vs Python for Excel: Which One Should You Use?">
+<meta property="og:url" content="https://mattlifetech.github.io/excel%20automation/python/vba/automateexcel/">
+
+
+  <meta property="og:description" content="A detailed comparison of VBA and Python for Excel automation, covering use cases, platform availability, and usage methods.">
+
+
+
+  <meta property="og:image" content="https://mattlifetech.github.io/assets/images/filler.webp">
+
+
+
+
+
+  <meta property="article:published_time" content="2025-02-27T00:00:00+08:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://mattlifetech.github.io/excel%20automation/python/vba/automateexcel/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="MattLifeTech Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Add this section for the favicon -->
+<link rel="icon" type="image/png" href="/assets/images/favicon.png">
+<link rel="shortcut icon" href="/assets/images/favicon.ico">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single wide" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/Mattlogo.png" alt="Matt Life Tech"></a>
+        
+        <a class="site-title" href="/">
+          Matt Life Tech
+          <span class="site-subtitle">where journey starts</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/"
+                
+                
+              >Home</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/about/"
+                
+                
+              >About</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/categories/"
+                
+                
+              >Categories</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/tags/"
+                
+                
+              >Tags</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/year-archive/"
+                
+                
+              >Archive</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style=" background-image: url('/assets/images/filler.webp');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          VBA vs Python for Excel: Which One Should You Use?
+
+        
+      </h1>
+      
+        <p class="page__lead">A detailed comparison of VBA and Python for Excel automation, covering use cases, platform availability, and usage methods.
+</p>
+      
+      
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+      
+    </div>
+  
+  
+</div>
+
+
+
+
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/" itemprop="item"><span itemprop="name">Home</span></a>
+
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#excel-automation" itemprop="item"><span itemprop="name">Excel automation</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#python" itemprop="item"><span itemprop="name">Python</span></a>
+          <meta itemprop="position" content="3" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#vba" itemprop="item"><span itemprop="name">Vba</span></a>
+          <meta itemprop="position" content="4" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        <li class="current">VBA vs Python for Excel: Which One Should You Use?</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="https://mattlifetech.github.io/">
+        <img src="/assets/images/MattLifeTech.png" alt="Matthew Choo" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="https://mattlifetech.github.io/" itemprop="url">Matthew Choo</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>With 20 years in market research across Telco and Media, I’ve decoded consumer behavior, optimized research, and driven data-led strategies. Now, I’m diving into coding, automation, and tech solutions—where data meets efficiency. This blog is my space to share insights, from Python scripts to research optimizations and life hacks. Join me in exploring smarter ways to work and live!</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Asia</span>
+        </li>
+      
+
+      
+        
+          
+        
+          
+        
+          
+            <li><a href="https://x.com/mattlifetech" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+        
+          
+            <li><a href="https://github.com/mattlifetech" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://www.instagram.com/mattlifetech/" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i><span class="label">Instagram</span></a></li>
+          
+        
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:mattckw@gmail.com" rel="me" class="u-email">
+            <meta itemprop="email" content="mattckw@gmail.com" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span>
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="VBA vs Python for Excel: Which One Should You Use?">
+    <meta itemprop="description" content="A detailed comparison of VBA and Python for Excel automation, covering use cases, platform availability, and usage methods.">
+    <meta itemprop="datePublished" content="2025-02-27T00:00:00+08:00">
+    
+
+    <div class="page__inner-wrap">
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p><img src="https://raw.githubusercontent.com/mattchoo2/mattchoo2.github.io/main/assets/images/vba-vs-python.webp" alt="VBA vs Python" /></p>
+
+<h2 id="vba-vs-python-for-excel-which-one-should-you-use">VBA vs Python for Excel: Which One Should You Use?</h2>
+
+<p>When working with <strong>Excel automation</strong>, the two most popular tools are <strong>VBA (Visual Basic for Applications)</strong> and <strong>Python</strong>. Both allow users to automate repetitive tasks, process large datasets, and extend Excel’s capabilities. But which one should you choose?</p>
+
+<hr />
+
+<h2 id="️-vba-vs-python-key-differences">🛠️ <strong>VBA vs Python: Key Differences</strong></h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th><strong>VBA</strong> 🏆 (Excel-Native)</th>
+      <th><strong>Python</strong> 🏆 (More Powerful)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Best for</strong></td>
+      <td>Automating Excel macros</td>
+      <td>Advanced data analysis, AI, &amp; external automation</td>
+    </tr>
+    <tr>
+      <td><strong>Ease of Use</strong></td>
+      <td>Easy for Excel users ✅</td>
+      <td>Requires installation &amp; setup ❌</td>
+    </tr>
+    <tr>
+      <td><strong>Speed</strong></td>
+      <td>Slower for large datasets ❌</td>
+      <td>Faster processing ✅</td>
+    </tr>
+    <tr>
+      <td><strong>Integration</strong></td>
+      <td>Limited to Excel ❌</td>
+      <td>Works with databases, APIs, and more ✅</td>
+    </tr>
+    <tr>
+      <td><strong>Cross-Platform</strong></td>
+      <td>Windows-only (Limited Mac support) ❌</td>
+      <td>Fully cross-platform (Mac, Windows, Linux) ✅</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="-when-to-use-vba"><strong>📌 When to Use VBA</strong></h3>
+<p>✅ <strong>Best for Excel users</strong> who want quick, built-in automation.<br />
+✅ <strong>If you need simple macros</strong> like formatting, calculations, or form controls.<br />
+✅ <strong>Works well for small data sets</strong> and single-file automation.</p>
+
+<h3 id="-when-to-use-python"><strong>📌 When to Use Python</strong></h3>
+<p>✅ <strong>If you need high-speed processing</strong> for large datasets.<br />
+✅ <strong>For complex tasks</strong> like web scraping, machine learning, and external APIs.<br />
+✅ <strong>If you need cross-platform compatibility</strong> (Mac, Windows, Linux).</p>
+
+<hr />
+
+<h2 id="️-platform-availability-mac-vs-windows">🖥️ <strong>Platform Availability: Mac vs Windows</strong></h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Platform</th>
+      <th><strong>VBA</strong></th>
+      <th><strong>Python</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Windows</strong></td>
+      <td>✅ Fully supported</td>
+      <td>✅ Fully supported</td>
+    </tr>
+    <tr>
+      <td><strong>Mac</strong></td>
+      <td>❌ Limited support (no ActiveX, COM)</td>
+      <td>✅ Fully supported</td>
+    </tr>
+    <tr>
+      <td><strong>Linux</strong></td>
+      <td>❌ Not supported</td>
+      <td>✅ Fully supported</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="using-vba-on-mac"><strong>Using VBA on Mac</strong></h3>
+<ul>
+  <li><strong>Mac VBA is limited</strong> compared to Windows (no ActiveX, COM objects).</li>
+  <li><strong>Cannot directly call external scripts</strong> like Python.</li>
+  <li><strong>Workaround</strong>: Use AppleScript or Automator for additional automation.</li>
+</ul>
+
+<h3 id="using-python-for-excel-on-mac--windows"><strong>Using Python for Excel on Mac &amp; Windows</strong></h3>
+<ul>
+  <li>Works <strong>natively on both platforms</strong> using libraries like <code class="language-plaintext highlighter-rouge">pandas</code>, <code class="language-plaintext highlighter-rouge">openpyxl</code>, and <code class="language-plaintext highlighter-rouge">xlwings</code>.</li>
+  <li>No VBA limitations—can integrate with APIs, databases, and web scraping tools.</li>
+</ul>
+
+<hr />
+
+<h2 id="-how-to-use-vba-and-python-in-excel">🚀 <strong>How to Use VBA and Python in Excel</strong></h2>
+<h3 id="-running-vba-in-excel"><strong>✅ Running VBA in Excel</strong></h3>
+<ol>
+  <li>Open <strong>Excel → Developer Tab → Visual Basic</strong> (Enable macros if needed).</li>
+  <li>Write a simple VBA script:
+    <pre><code class="language-vba">Sub HelloWorld()
+    MsgBox "Hello, VBA!"
+End Sub
+</code></pre>
+  </li>
+  <li>Run the macro from <strong>Excel → Macros</strong>.</li>
+</ol>
+
+<h3 id="-running-python-in-excel"><strong>✅ Running Python in Excel</strong></h3>
+<ul>
+  <li><strong>Option 1 (Using Pandas)</strong>:
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s">"data.xlsx"</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s">"New Column"</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s">"Old Column"</span><span class="p">]</span> <span class="o">*</span> <span class="mi">2</span>
+<span class="n">df</span><span class="p">.</span><span class="n">to_excel</span><span class="p">(</span><span class="s">"updated.xlsx"</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Option 2 (Using <code class="language-plaintext highlighter-rouge">xlwings</code> for live interaction with Excel)</strong>:
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">xlwings</span> <span class="k">as</span> <span class="n">xw</span>
+<span class="n">wb</span> <span class="o">=</span> <span class="n">xw</span><span class="p">.</span><span class="n">Book</span><span class="p">(</span><span class="s">"data.xlsx"</span><span class="p">)</span>
+<span class="n">sheet</span> <span class="o">=</span> <span class="n">wb</span><span class="p">.</span><span class="n">sheets</span><span class="p">[</span><span class="s">"Sheet1"</span><span class="p">]</span>
+<span class="n">sheet</span><span class="p">.</span><span class="nb">range</span><span class="p">(</span><span class="s">"A1"</span><span class="p">).</span><span class="n">value</span> <span class="o">=</span> <span class="s">"Hello, Python!"</span>
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Option 3 (New Python in Excel feature - Windows only)</strong>:
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">=</span><span class="n">PY</span><span class="p">(</span><span class="s">"sum([1,2,3,4,5])"</span><span class="p">)</span>
+</code></pre></div>    </div>
+    <p>(<em>Currently in preview for Microsoft 365 on Windows</em>)</p>
+  </li>
+</ul>
+
+<hr />
+
+<h2 id="-conclusion-vba-or-python">🔍 Conclusion: VBA or Python?</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>If You Need…</strong></th>
+      <th><strong>Use VBA</strong> ✅</th>
+      <th><strong>Use Python</strong> ✅</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Basic Excel Macros</td>
+      <td>✅</td>
+      <td>❌</td>
+    </tr>
+    <tr>
+      <td>Fast Large Data Processing</td>
+      <td>❌</td>
+      <td>✅</td>
+    </tr>
+    <tr>
+      <td>Machine Learning / AI</td>
+      <td>❌</td>
+      <td>✅</td>
+    </tr>
+    <tr>
+      <td>Web Scraping</td>
+      <td>❌</td>
+      <td>✅</td>
+    </tr>
+    <tr>
+      <td>Full Mac Support</td>
+      <td>❌</td>
+      <td>✅</td>
+    </tr>
+    <tr>
+      <td>API &amp; Database Integration</td>
+      <td>❌</td>
+      <td>✅</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>🚀 Final Takeaway:</strong><br />
+If you’re an <strong>Excel power user</strong> who needs <strong>simple automation</strong>, <strong>VBA</strong> is great.<br />
+If you need <strong>advanced data processing, AI, or cross-platform support</strong>, <strong>Python</strong> is the way to go.</p>
+
+<p>Want to learn more? Comment below! 🚀<br />
+```</p>
+
+<hr />
+
+<h3 id="-key-improvements-over-the-original-summary"><strong>🔥 Key Improvements Over the Original Summary</strong></h3>
+<p>✅ <strong>No file counting discussion—focuses only on VBA vs Python.</strong><br />
+✅ <strong>Structured comparison of features, use cases, and platforms.</strong><br />
+✅ <strong>Explains how to use VBA and Python in Excel on both Mac and Windows.</strong><br />
+✅ <strong>Easy-to-read tables and code snippets.</strong></p>
+
+<p>Would you like <strong>any additional edits</strong> or refinements? 🚀😊</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#automation" class="page__taxonomy-item p-category" rel="tag">Automation</a><span class="sep">, </span>
+    
+      <a href="/tags/#data-processing" class="page__taxonomy-item p-category" rel="tag">Data Processing</a><span class="sep">, </span>
+    
+      <a href="/tags/#excel" class="page__taxonomy-item p-category" rel="tag">Excel</a><span class="sep">, </span>
+    
+      <a href="/tags/#python" class="page__taxonomy-item p-category" rel="tag">Python</a><span class="sep">, </span>
+    
+      <a href="/tags/#vba" class="page__taxonomy-item p-category" rel="tag">VBA</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#excel-automation" class="page__taxonomy-item p-category" rel="tag">Excel Automation</a><span class="sep">, </span>
+    
+      <a href="/categories/#python" class="page__taxonomy-item p-category" rel="tag">Python</a><span class="sep">, </span>
+    
+      <a href="/categories/#vba" class="page__taxonomy-item p-category" rel="tag">VBA</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2025-02-27T00:00:00+08:00">February 27, 2025</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  <h4 class="page__share-title">Share on</h4>
+
+  <a href="https://twitter.com/intent/tweet?text=VBA+vs+Python+for+Excel%3A+Which+One+Should+You+Use%3F%20https%3A%2F%2Fmattlifetech.github.io%2Fexcel%2520automation%2Fpython%2Fvba%2Fautomateexcel%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmattlifetech.github.io%2Fexcel%2520automation%2Fpython%2Fvba%2Fautomateexcel%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://mattlifetech.github.io/excel%20automation/python/vba/automateexcel/" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/web%20development/jekyll/websiteongithub/" class="pagination--pager" title="Minimal Mistakes Jekyll Theme: Hosting on GitHub &amp; Using Liquid Archive Method">Previous</a>
+    
+    
+      <a href="/file%20management/python/countfiletype/" class="pagination--pager" title="Counting Files by Type in Folders and Subfolders">Next</a>
+    
+  </nav>
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    
+<div class="page__related">
+  
+  <h2 class="page__related-title">You may also enjoy</h2>
+  <div class="grid__wrapper">
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+
+    <div class="archive__item-container">
+      
+        <div class="archive__item-teaser">
+          <a href="/tech/smart%20home/xiaomi/home%20screen+/xiaomihomescreen/">
+            <img src="/assets/images/interconnectivity.png" alt="How Exactly Xiaomi Interconnectivity Home Screen+ Works?
+">
+          </a>
+        </div>
+      
+
+      <div class="archive__item-content">
+        <h2 class="archive__item-title no_toc" itemprop="headline">
+          
+            <a href="/tech/smart%20home/xiaomi/home%20screen+/xiaomihomescreen/" rel="permalink">How Exactly Xiaomi Interconnectivity Home Screen+ Works?
+</a>
+          
+        </h2>
+        
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+        
+          <p class="archive__item-excerpt" itemprop="description">
+            A deep dive into Xiaomi’s Home Screen+ feature, showcasing its seamless device integration.
+
+          </p>
+        
+      </div>
+    </div>
+
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+
+    <div class="archive__item-container">
+      
+        <div class="archive__item-teaser">
+          <a href="/python/image%20processing/exe/transparentapp/">
+            <img src="/assets/images/transparent_app.webp" alt="Make Image Background Transparent - EXE App
+">
+          </a>
+        </div>
+      
+
+      <div class="archive__item-content">
+        <h2 class="archive__item-title no_toc" itemprop="headline">
+          
+            <a href="/python/image%20processing/exe/transparentapp/" rel="permalink">Make Image Background Transparent - EXE App
+</a>
+          
+        </h2>
+        
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+        
+          <p class="archive__item-excerpt" itemprop="description">
+            Learn how to create a simple Python app to remove image backgrounds and convert it into an EXE file for easy use.
+
+          </p>
+        
+      </div>
+    </div>
+
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+
+    <div class="archive__item-container">
+      
+        <div class="archive__item-teaser">
+          <a href="/tech/coding/image%20processing/transparentpic/">
+            <img src="/assets/images/transparent.webp" alt="Make Image Background Transparent Without Any App
+">
+          </a>
+        </div>
+      
+
+      <div class="archive__item-content">
+        <h2 class="archive__item-title no_toc" itemprop="headline">
+          
+            <a href="/tech/coding/image%20processing/transparentpic/" rel="permalink">Make Image Background Transparent Without Any App
+</a>
+          
+        </h2>
+        
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+        
+          <p class="archive__item-excerpt" itemprop="description">
+            A simple Python script to remove image backgrounds without using any third-party apps or online tools.
+
+          </p>
+        
+      </div>
+    </div>
+
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+
+    <div class="archive__item-container">
+      
+        <div class="archive__item-teaser">
+          <a href="/image%20processing/ocr/python/image2txt/">
+            <img src="/assets/images/text-extraction.webp" alt="Chinese Text Extraction from Images Using Python and Tesseract OCR
+">
+          </a>
+        </div>
+      
+
+      <div class="archive__item-content">
+        <h2 class="archive__item-title no_toc" itemprop="headline">
+          
+            <a href="/image%20processing/ocr/python/image2txt/" rel="permalink">Chinese Text Extraction from Images Using Python and Tesseract OCR
+</a>
+          
+        </h2>
+        
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+        
+          <p class="archive__item-excerpt" itemprop="description">
+            A step-by-step guide on extracting Chinese text from images using Python and Tesseract OCR.
+
+          </p>
+        
+      </div>
+    </div>
+
+  </article>
+</div>
+
+    
+  </div>
+</div>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://paypal.me/mattchoo2" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-heart" aria-hidden="true"></i> Donate</a></li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2025 <a href="https://mattlifetech.github.io">MattLifeTech</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+  </body>
+</html>

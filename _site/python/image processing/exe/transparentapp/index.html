@@ -1,0 +1,983 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.26.2 by Michael Rose
+  Copyright 2013-2024 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en-US" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Make Image Background Transparent - EXE App - MattLifeTech</title>
+<meta name="description" content="Learn how to create a simple Python app to remove image backgrounds and convert it into an EXE file for easy use.">
+
+
+  <meta name="author" content="Matthew Choo">
+  
+  <meta property="article:author" content="Matthew Choo">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="MattLifeTech">
+<meta property="og:title" content="Make Image Background Transparent - EXE App">
+<meta property="og:url" content="https://mattlifetech.github.io/python/image%20processing/exe/transparentapp/">
+
+
+  <meta property="og:description" content="Learn how to create a simple Python app to remove image backgrounds and convert it into an EXE file for easy use.">
+
+
+
+  <meta property="og:image" content="https://mattlifetech.github.io/assets/images/filler.webp">
+
+
+
+
+
+  <meta property="article:published_time" content="2025-03-04T00:00:00+08:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://mattlifetech.github.io/python/image%20processing/exe/transparentapp/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="MattLifeTech Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Add this section for the favicon -->
+<link rel="icon" type="image/png" href="/assets/images/favicon.png">
+<link rel="shortcut icon" href="/assets/images/favicon.ico">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single wide" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/Mattlogo.png" alt="Matt Life Tech"></a>
+        
+        <a class="site-title" href="/">
+          Matt Life Tech
+          <span class="site-subtitle">where journey starts</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/"
+                
+                
+              >Home</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/about/"
+                
+                
+              >About</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/categories/"
+                
+                
+              >Categories</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/tags/"
+                
+                
+              >Tags</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/year-archive/"
+                
+                
+              >Archive</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style=" background-image: url('/assets/images/filler.webp');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          Make Image Background Transparent - EXE App
+
+        
+      </h1>
+      
+        <p class="page__lead">Learn how to create a simple Python app to remove image backgrounds and convert it into an EXE file for easy use.
+</p>
+      
+      
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+      
+    </div>
+  
+  
+</div>
+
+
+
+
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/" itemprop="item"><span itemprop="name">Home</span></a>
+
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#python" itemprop="item"><span itemprop="name">Python</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#image-processing" itemprop="item"><span itemprop="name">Image processing</span></a>
+          <meta itemprop="position" content="3" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#exe" itemprop="item"><span itemprop="name">Exe</span></a>
+          <meta itemprop="position" content="4" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        <li class="current">Make Image Background Transparent - EXE App</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="https://mattlifetech.github.io/">
+        <img src="/assets/images/MattLifeTech.png" alt="Matthew Choo" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="https://mattlifetech.github.io/" itemprop="url">Matthew Choo</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>With 20 years in market research across Telco and Media, I’ve decoded consumer behavior, optimized research, and driven data-led strategies. Now, I’m diving into coding, automation, and tech solutions—where data meets efficiency. This blog is my space to share insights, from Python scripts to research optimizations and life hacks. Join me in exploring smarter ways to work and live!</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Asia</span>
+        </li>
+      
+
+      
+        
+          
+        
+          
+        
+          
+            <li><a href="https://x.com/mattlifetech" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+        
+          
+            <li><a href="https://github.com/mattlifetech" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://www.instagram.com/mattlifetech/" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i><span class="label">Instagram</span></a></li>
+          
+        
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:mattckw@gmail.com" rel="me" class="u-email">
+            <meta itemprop="email" content="mattckw@gmail.com" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span>
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Make Image Background Transparent - EXE App">
+    <meta itemprop="description" content="Learn how to create a simple Python app to remove image backgrounds and convert it into an EXE file for easy use.">
+    <meta itemprop="datePublished" content="2025-03-04T00:00:00+08:00">
+    
+
+    <div class="page__inner-wrap">
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p><img src="https://raw.githubusercontent.com/mattchoo2/mattchoo2.github.io/main/assets/images/transparent_app.webp" alt="tptapp" /></p>
+
+<h1 id="make-image-background-transparent---exe-app">Make Image Background Transparent - EXE App</h1>
+
+<p>Removing image backgrounds can be useful for various design and editing tasks. In this guide, we’ll walk through how to create a simple <strong>Python application</strong> that allows users to select an image, click on the background color to remove it, and save it as a <strong>transparent PNG</strong>. Finally, we’ll show how to convert this script into an <strong>EXE application</strong> so it can run on any Windows computer without needing Python installed.</p>
+
+<h2 id="what-the-python-script-does">What the Python Script Does</h2>
+
+<p>Our Python script provides a <strong>graphical interface (GUI)</strong> for users to:</p>
+
+<ol>
+  <li><strong>Select an image</strong> to process.</li>
+  <li><strong>Click on the background color</strong> in the image to remove it.</li>
+  <li><strong>Save the processed image</strong> as a new transparent PNG file.</li>
+</ol>
+
+<p>It uses:</p>
+<ul>
+  <li><strong>Pillow</strong> (PIL) for image processing</li>
+  <li><strong>Tkinter</strong> for the user interface</li>
+</ul>
+
+<h3 id="key-features">Key Features</h3>
+<p>✅ <strong>Click-based background color selection</strong> (no manual RGB input needed).<br />
+✅ <strong>No external dependencies</strong> required after conversion to EXE.<br />
+✅ <strong>Simple and lightweight</strong> GUI.</p>
+
+<h2 id="python-code-to-create-the-app">Python Code to Create the App</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">tkinter</span> <span class="k">as</span> <span class="n">tk</span>
+<span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="n">filedialog</span>
+<span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span><span class="p">,</span> <span class="n">ImageTk</span>
+
+<span class="k">def</span> <span class="nf">select_image</span><span class="p">():</span>
+    <span class="n">file_path</span> <span class="o">=</span> <span class="n">filedialog</span><span class="p">.</span><span class="n">askopenfilename</span><span class="p">(</span><span class="n">filetypes</span><span class="o">=</span><span class="p">[(</span><span class="s">"Image Files"</span><span class="p">,</span> <span class="s">"*.png;*.jpg;*.jpeg"</span><span class="p">)])</span>
+    <span class="k">if</span> <span class="n">file_path</span><span class="p">:</span>
+        <span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="p">.</span><span class="nb">open</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span>
+        <span class="n">img</span><span class="p">.</span><span class="n">thumbnail</span><span class="p">((</span><span class="mi">300</span><span class="p">,</span> <span class="mi">300</span><span class="p">))</span>  <span class="c1"># Resize for preview
+</span>        <span class="n">img_tk</span> <span class="o">=</span> <span class="n">ImageTk</span><span class="p">.</span><span class="n">PhotoImage</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
+        
+        <span class="n">label_image</span><span class="p">.</span><span class="n">config</span><span class="p">(</span><span class="n">image</span><span class="o">=</span><span class="n">img_tk</span><span class="p">)</span>
+        <span class="n">label_image</span><span class="p">.</span><span class="n">image</span> <span class="o">=</span> <span class="n">img_tk</span>
+        <span class="n">label_image</span><span class="p">.</span><span class="n">file_path</span> <span class="o">=</span> <span class="n">file_path</span>  <span class="c1"># Store path for processing
+</span>        <span class="n">label_image</span><span class="p">.</span><span class="n">img</span> <span class="o">=</span> <span class="n">img</span>  <span class="c1"># Store original image for pixel selection
+</span>
+<span class="k">def</span> <span class="nf">pick_color</span><span class="p">(</span><span class="n">event</span><span class="p">):</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">label_image</span><span class="p">,</span> <span class="s">"img"</span><span class="p">):</span>
+        <span class="k">return</span>
+    
+    <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">event</span><span class="p">.</span><span class="n">x</span><span class="p">,</span> <span class="n">event</span><span class="p">.</span><span class="n">y</span>
+    <span class="n">img_resized</span> <span class="o">=</span> <span class="n">label_image</span><span class="p">.</span><span class="n">img</span><span class="p">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="n">img_resized</span><span class="p">.</span><span class="n">thumbnail</span><span class="p">((</span><span class="mi">300</span><span class="p">,</span> <span class="mi">300</span><span class="p">))</span>  <span class="c1"># Match displayed image size
+</span>
+    <span class="n">x_ratio</span> <span class="o">=</span> <span class="n">label_image</span><span class="p">.</span><span class="n">img</span><span class="p">.</span><span class="n">width</span> <span class="o">/</span> <span class="n">img_resized</span><span class="p">.</span><span class="n">width</span>
+    <span class="n">y_ratio</span> <span class="o">=</span> <span class="n">label_image</span><span class="p">.</span><span class="n">img</span><span class="p">.</span><span class="n">height</span> <span class="o">/</span> <span class="n">img_resized</span><span class="p">.</span><span class="n">height</span>
+    <span class="n">orig_x</span><span class="p">,</span> <span class="n">orig_y</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">x</span> <span class="o">*</span> <span class="n">x_ratio</span><span class="p">),</span> <span class="nb">int</span><span class="p">(</span><span class="n">y</span> <span class="o">*</span> <span class="n">y_ratio</span><span class="p">)</span>
+
+    <span class="n">selected_color</span> <span class="o">=</span> <span class="n">label_image</span><span class="p">.</span><span class="n">img</span><span class="p">.</span><span class="n">convert</span><span class="p">(</span><span class="s">"RGB"</span><span class="p">).</span><span class="n">getpixel</span><span class="p">((</span><span class="n">orig_x</span><span class="p">,</span> <span class="n">orig_y</span><span class="p">))</span>
+    <span class="n">label_color</span><span class="p">.</span><span class="n">config</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="sa">f</span><span class="s">"Selected Color: </span><span class="si">{</span><span class="n">selected_color</span><span class="si">}</span><span class="s">"</span><span class="p">,</span> <span class="n">fg</span><span class="o">=</span><span class="s">"black"</span><span class="p">)</span>
+    <span class="n">label_color</span><span class="p">.</span><span class="n">color</span> <span class="o">=</span> <span class="n">selected_color</span>  <span class="c1"># Store selected color
+</span>
+<span class="k">def</span> <span class="nf">make_transparent</span><span class="p">():</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">label_image</span><span class="p">,</span> <span class="s">"file_path"</span><span class="p">):</span>
+        <span class="n">result_label</span><span class="p">.</span><span class="n">config</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="s">"Please select an image first."</span><span class="p">)</span>
+        <span class="k">return</span>
+
+    <span class="n">image</span> <span class="o">=</span> <span class="n">Image</span><span class="p">.</span><span class="nb">open</span><span class="p">(</span><span class="n">label_image</span><span class="p">.</span><span class="n">file_path</span><span class="p">).</span><span class="n">convert</span><span class="p">(</span><span class="s">"RGBA"</span><span class="p">)</span>
+    <span class="n">datas</span> <span class="o">=</span> <span class="n">image</span><span class="p">.</span><span class="n">getdata</span><span class="p">()</span>
+
+    <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">label_color</span><span class="p">,</span> <span class="s">"color"</span><span class="p">):</span>
+        <span class="n">r_bg</span><span class="p">,</span> <span class="n">g_bg</span><span class="p">,</span> <span class="n">b_bg</span> <span class="o">=</span> <span class="n">label_color</span><span class="p">.</span><span class="n">color</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">result_label</span><span class="p">.</span><span class="n">config</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="s">"Please select a background color first."</span><span class="p">)</span>
+        <span class="k">return</span>
+
+    <span class="n">new_data</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="k">if</span> <span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">r</span> <span class="o">-</span> <span class="n">r_bg</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">50</span> <span class="ow">and</span> <span class="nb">abs</span><span class="p">(</span><span class="n">g</span> <span class="o">-</span> <span class="n">g_bg</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">50</span> <span class="ow">and</span> <span class="nb">abs</span><span class="p">(</span><span class="n">b</span> <span class="o">-</span> <span class="n">b_bg</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">50</span><span class="p">)</span> <span class="k">else</span> <span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+        <span class="k">for</span> <span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span> <span class="ow">in</span> <span class="n">datas</span>
+    <span class="p">]</span>
+
+    <span class="n">image</span><span class="p">.</span><span class="n">putdata</span><span class="p">(</span><span class="n">new_data</span><span class="p">)</span>
+    
+    <span class="n">save_path</span> <span class="o">=</span> <span class="n">filedialog</span><span class="p">.</span><span class="n">asksaveasfilename</span><span class="p">(</span><span class="n">defaultextension</span><span class="o">=</span><span class="s">".png"</span><span class="p">,</span> <span class="n">filetypes</span><span class="o">=</span><span class="p">[(</span><span class="s">"PNG Files"</span><span class="p">,</span> <span class="s">"*.png"</span><span class="p">)])</span>
+    <span class="k">if</span> <span class="n">save_path</span><span class="p">:</span>
+        <span class="n">image</span><span class="p">.</span><span class="n">save</span><span class="p">(</span><span class="n">save_path</span><span class="p">)</span>
+        <span class="n">result_label</span><span class="p">.</span><span class="n">config</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="sa">f</span><span class="s">"Saved to: </span><span class="si">{</span><span class="n">save_path</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+
+<span class="c1"># GUI Setup
+</span><span class="n">root</span> <span class="o">=</span> <span class="n">tk</span><span class="p">.</span><span class="n">Tk</span><span class="p">()</span>
+<span class="n">root</span><span class="p">.</span><span class="n">title</span><span class="p">(</span><span class="s">"Transparent PNG Maker"</span><span class="p">)</span>
+
+<span class="n">label_instructions</span> <span class="o">=</span> <span class="n">tk</span><span class="p">.</span><span class="n">Label</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s">"""Steps:</span><span class="se">\n</span><span class="s">1. Click </span><span class="se">\"</span><span class="s">Select Image</span><span class="se">\"</span><span class="s"> to choose an image.</span><span class="se">\n</span><span class="s">2. Click on the background color you wish to remove.</span><span class="se">\n</span><span class="s">3. Click </span><span class="se">\"</span><span class="s">Make Transparent &amp; Save</span><span class="se">\"</span><span class="s"> to save the result."""</span><span class="p">,</span> <span class="n">justify</span><span class="o">=</span><span class="s">"left"</span><span class="p">,</span> <span class="n">padx</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">pady</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">label_instructions</span><span class="p">.</span><span class="n">pack</span><span class="p">()</span>
+
+<span class="n">btn_select</span> <span class="o">=</span> <span class="n">tk</span><span class="p">.</span><span class="n">Button</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s">"Select Image"</span><span class="p">,</span> <span class="n">command</span><span class="o">=</span><span class="n">select_image</span><span class="p">)</span>
+<span class="n">btn_select</span><span class="p">.</span><span class="n">pack</span><span class="p">()</span>
+
+<span class="n">label_image</span> <span class="o">=</span> <span class="n">tk</span><span class="p">.</span><span class="n">Label</span><span class="p">(</span><span class="n">root</span><span class="p">)</span>
+<span class="n">label_image</span><span class="p">.</span><span class="n">pack</span><span class="p">()</span>
+<span class="n">label_image</span><span class="p">.</span><span class="n">bind</span><span class="p">(</span><span class="s">"&lt;Button-1&gt;"</span><span class="p">,</span> <span class="n">pick_color</span><span class="p">)</span>
+
+<span class="n">label_color</span> <span class="o">=</span> <span class="n">tk</span><span class="p">.</span><span class="n">Label</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s">"Click image to select background color"</span><span class="p">)</span>
+<span class="n">label_color</span><span class="p">.</span><span class="n">pack</span><span class="p">()</span>
+
+<span class="n">btn_process</span> <span class="o">=</span> <span class="n">tk</span><span class="p">.</span><span class="n">Button</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s">"Make Transparent &amp; Save"</span><span class="p">,</span> <span class="n">command</span><span class="o">=</span><span class="n">make_transparent</span><span class="p">)</span>
+<span class="n">btn_process</span><span class="p">.</span><span class="n">pack</span><span class="p">()</span>
+
+<span class="n">result_label</span> <span class="o">=</span> <span class="n">tk</span><span class="p">.</span><span class="n">Label</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s">""</span><span class="p">,</span> <span class="n">fg</span><span class="o">=</span><span class="s">"blue"</span><span class="p">)</span>
+<span class="n">result_label</span><span class="p">.</span><span class="n">pack</span><span class="p">()</span>
+
+<span class="n">root</span><span class="p">.</span><span class="n">mainloop</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h2 id="convert-python-script-to-exe">Convert Python Script to EXE</h2>
+<p>To allow non-Python users to run the app, we can <strong>convert it into an EXE file</strong> using <strong>PyInstaller</strong>.</p>
+
+<h3 id="steps">Steps:</h3>
+<ol>
+  <li>Install PyInstaller:
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>pyinstaller
+</code></pre></div>    </div>
+  </li>
+  <li>Convert script to EXE:
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pyinstaller <span class="nt">--onefile</span> <span class="nt">--windowed</span> transparent_app.py
+</code></pre></div>    </div>
+  </li>
+  <li>The <code class="language-plaintext highlighter-rouge">dist/transparent_app.exe</code> file is now ready for distribution!</li>
+</ol>
+
+<h3 id="optional-add-an-icon">Optional: Add an Icon</h3>
+<p>To add an app icon:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pyinstaller <span class="nt">--onefile</span> <span class="nt">--windowed</span> <span class="nt">--icon</span><span class="o">=</span>app_icon.ico transparent_app.py
+</code></pre></div></div>
+
+<h2 id="troubleshooting-tips">Troubleshooting Tips</h2>
+<p>✅ <strong>If the EXE file is missing dependencies</strong>, try adding:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   pyinstaller <span class="nt">--onefile</span> <span class="nt">--windowed</span> <span class="nt">--hidden-import</span><span class="o">=</span>PIL <span class="nt">--hidden-import</span><span class="o">=</span>tkinter transparent_app.py
+</code></pre></div></div>
+<p>✅ <strong>EXE file too large?</strong> PyInstaller packs everything—use <code class="language-plaintext highlighter-rouge">UPX</code> compression.
+✅ <strong>Some users report missing DLLs?</strong> Ensure a clean environment before packaging.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+<p>This guide showed how to build a <strong>simple GUI app to remove image backgrounds</strong>, convert it into a <strong>Windows EXE</strong>, and package it for easy distribution. 🚀</p>
+
+<h2 id="-download-the-app">📥 Download the App</h2>
+
+<p>You can download the <strong>Offline Background Transparent App</strong> as an <code class="language-plaintext highlighter-rouge">.exe</code> from GitHub:</p>
+
+<p><a href="https://github.com/mattchoo2/offlinebackgroundtransparent/releases/tag/v1.0.0">➡ Download v1.0.0</a></p>
+
+<h2 id="support-me-">Support Me 💖</h2>
+<p><a href="https://paypal.me/mattchoo2"><img src="https://img.shields.io/badge/Donate-PayPal-blue.svg" alt="Donate" /></a></p>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#image-editing" class="page__taxonomy-item p-category" rel="tag">Image Editing</a><span class="sep">, </span>
+    
+      <a href="/tags/#pillow" class="page__taxonomy-item p-category" rel="tag">Pillow</a><span class="sep">, </span>
+    
+      <a href="/tags/#pyinstaller" class="page__taxonomy-item p-category" rel="tag">PyInstaller</a><span class="sep">, </span>
+    
+      <a href="/tags/#python" class="page__taxonomy-item p-category" rel="tag">Python</a><span class="sep">, </span>
+    
+      <a href="/tags/#tkinter" class="page__taxonomy-item p-category" rel="tag">Tkinter</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#exe" class="page__taxonomy-item p-category" rel="tag">EXE</a><span class="sep">, </span>
+    
+      <a href="/categories/#image-processing" class="page__taxonomy-item p-category" rel="tag">Image Processing</a><span class="sep">, </span>
+    
+      <a href="/categories/#python" class="page__taxonomy-item p-category" rel="tag">Python</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2025-03-04T00:00:00+08:00">March 4, 2025</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  <h4 class="page__share-title">Share on</h4>
+
+  <a href="https://twitter.com/intent/tweet?text=Make+Image+Background+Transparent+-+EXE+App%20https%3A%2F%2Fmattlifetech.github.io%2Fpython%2Fimage%2520processing%2Fexe%2Ftransparentapp%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmattlifetech.github.io%2Fpython%2Fimage%2520processing%2Fexe%2Ftransparentapp%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://mattlifetech.github.io/python/image%20processing/exe/transparentapp/" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/tech/coding/image%20processing/transparentpic/" class="pagination--pager" title="Make Image Background Transparent Without Any App">Previous</a>
+    
+    
+      <a href="/tech/smart%20home/xiaomi/home%20screen+/xiaomihomescreen/" class="pagination--pager" title="How Exactly Xiaomi Interconnectivity Home Screen+ Works?">Next</a>
+    
+  </nav>
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    
+<div class="page__related">
+  
+  <h2 class="page__related-title">You may also enjoy</h2>
+  <div class="grid__wrapper">
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+
+    <div class="archive__item-container">
+      
+        <div class="archive__item-teaser">
+          <a href="/tech/smart%20home/xiaomi/home%20screen+/xiaomihomescreen/">
+            <img src="/assets/images/interconnectivity.png" alt="How Exactly Xiaomi Interconnectivity Home Screen+ Works?
+">
+          </a>
+        </div>
+      
+
+      <div class="archive__item-content">
+        <h2 class="archive__item-title no_toc" itemprop="headline">
+          
+            <a href="/tech/smart%20home/xiaomi/home%20screen+/xiaomihomescreen/" rel="permalink">How Exactly Xiaomi Interconnectivity Home Screen+ Works?
+</a>
+          
+        </h2>
+        
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+        
+          <p class="archive__item-excerpt" itemprop="description">
+            A deep dive into Xiaomi’s Home Screen+ feature, showcasing its seamless device integration.
+
+          </p>
+        
+      </div>
+    </div>
+
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+
+    <div class="archive__item-container">
+      
+        <div class="archive__item-teaser">
+          <a href="/tech/coding/image%20processing/transparentpic/">
+            <img src="/assets/images/transparent.webp" alt="Make Image Background Transparent Without Any App
+">
+          </a>
+        </div>
+      
+
+      <div class="archive__item-content">
+        <h2 class="archive__item-title no_toc" itemprop="headline">
+          
+            <a href="/tech/coding/image%20processing/transparentpic/" rel="permalink">Make Image Background Transparent Without Any App
+</a>
+          
+        </h2>
+        
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+        
+          <p class="archive__item-excerpt" itemprop="description">
+            A simple Python script to remove image backgrounds without using any third-party apps or online tools.
+
+          </p>
+        
+      </div>
+    </div>
+
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+
+    <div class="archive__item-container">
+      
+        <div class="archive__item-teaser">
+          <a href="/image%20processing/ocr/python/image2txt/">
+            <img src="/assets/images/text-extraction.webp" alt="Chinese Text Extraction from Images Using Python and Tesseract OCR
+">
+          </a>
+        </div>
+      
+
+      <div class="archive__item-content">
+        <h2 class="archive__item-title no_toc" itemprop="headline">
+          
+            <a href="/image%20processing/ocr/python/image2txt/" rel="permalink">Chinese Text Extraction from Images Using Python and Tesseract OCR
+</a>
+          
+        </h2>
+        
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+        
+          <p class="archive__item-excerpt" itemprop="description">
+            A step-by-step guide on extracting Chinese text from images using Python and Tesseract OCR.
+
+          </p>
+        
+      </div>
+    </div>
+
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+
+    <div class="archive__item-container">
+      
+        <div class="archive__item-teaser">
+          <a href="/jekyll/blogging/blogspot2jekyll/">
+            <img src="/assets/images/blogger_teaser.webp" alt="Migrate Blogspot Posts to Your Own Jekyll Website
+">
+          </a>
+        </div>
+      
+
+      <div class="archive__item-content">
+        <h2 class="archive__item-title no_toc" itemprop="headline">
+          
+            <a href="/jekyll/blogging/blogspot2jekyll/" rel="permalink">Migrate Blogspot Posts to Your Own Jekyll Website
+</a>
+          
+        </h2>
+        
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+        
+          <p class="archive__item-excerpt" itemprop="description">
+            Step-by-step guide to exporting your Blogger posts and converting them to Jekyll format.
+
+          </p>
+        
+      </div>
+    </div>
+
+  </article>
+</div>
+
+    
+  </div>
+</div>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://paypal.me/mattchoo2" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-heart" aria-hidden="true"></i> Donate</a></li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2025 <a href="https://mattlifetech.github.io">MattLifeTech</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+  </body>
+</html>
