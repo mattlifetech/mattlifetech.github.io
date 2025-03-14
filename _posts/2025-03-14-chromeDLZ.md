@@ -80,6 +80,8 @@ Instead of manually saving images **one by one**, use DLZ to automate the proces
 **Happy downloading!** 🚀
 
 
+## GitHub repo
+https://github.com/mattlifetech/chromeimagedlz/tree/v1.0
 
 ## Support Me 💖
 [![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://paypal.me/mattchoo2)
