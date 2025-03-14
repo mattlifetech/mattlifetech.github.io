@@ -4,8 +4,8 @@ layout: single
 excerpt: "Learn how to start a WhatsApp chat from a right-click menu in Chrome."
 date: 2025-03-14
 header:
-  overlay_image: /assets/images/whatsapp_chat.webp
-  teaser: /assets/images/whatsapp_chat_teaser.webp
+  overlay_image: /assets/images/filler.webp
+  teaser: /assets/images/whatsapp_chat.webp
 categories: [Chrome Extension, WhatsApp]
 tags: [Chrome, Extensions, WhatsApp, Automation]
 ---
@@ -36,6 +36,10 @@ If a phone number **does not include a country code** (e.g., `0183826991`), What
 5. Click **Save**.
 
 Now, the extension will automatically prepend the correct country code to local numbers.
+
+## Installation & Source Code
+You can download the extension or view the source code on GitHub:
+[GitHub Repository: mattlifetech/chromenewwhatsappchat](https://github.com/mattlifetech/chromenewwhatsappchat)
 
 ## Conclusion
 This Chrome extension makes it **quick and easy** to start WhatsApp chats directly from any webpage. By setting your country prefix, you ensure all phone numbers are formatted correctly for WhatsApp Web.
