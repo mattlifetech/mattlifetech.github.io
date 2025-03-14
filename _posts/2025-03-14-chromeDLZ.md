@@ -4,7 +4,7 @@ layout: single
 excerpt: "Learn how to use the DLZ Chrome extension to batch download images, auto-sort them, and rename files into organized folders."
 date: 2025-03-14
 header:
-  overlay_image: /assets/filler.webp
+  overlay_image: /assets/images/filler.webp
   teaser: /assets/images/DLZ.png
 categories: [Chrome Extensions, Automation, Productivity]
 tags: [Chrome, Downloads, Image Management, Automation]
