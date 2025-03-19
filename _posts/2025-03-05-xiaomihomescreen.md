@@ -3,6 +3,7 @@ title: "How Exactly Xiaomi Interconnectivity Home Screen+ Works?"
 layout: single
 excerpt: "A deep dive into Xiaomi's Home Screen+ feature, showcasing its seamless device integration."
 date: 2025-03-05
+published: false
 header:
   overlay_image: /assets/images/filler.webp
   teaser: /assets/images/interconnectivity.png
