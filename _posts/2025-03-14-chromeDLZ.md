@@ -73,7 +73,7 @@ Instead of manually saving images **one by one**, use DLZ to automate the proces
 - Research & reference materials
 
 ## 🎯 Get Started Today!
-✅ **Install DLZ from the Chrome Web Store**  
+✅ **Download DLZ from the GitHub Release**  
 ✅ **Click the extension icon on any webpage**  
 ✅ **Filter, rename, and download in one click!**  
 
