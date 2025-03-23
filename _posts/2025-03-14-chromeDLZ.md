@@ -73,9 +73,13 @@ Instead of manually saving images **one by one**, use DLZ to automate the proces
 - Research & reference materials
 
 ## 🎯 Get Started Today!
-✅ **Download DLZ from the GitHub Release**  
-✅ **Click the extension icon on any webpage**  
-✅ **Filter, rename, and download in one click!**  
+1. Download DLZ from the GitHub Release
+2. Open Google Chrome.
+3. Go to chrome://extensions/.
+4. Enable Developer Mode (toggle in the top-right corner).
+5. Click "Load unpacked".
+6. Select the downloaded DLZ extension folder
+
 
 **Happy downloading!** 🚀
 
