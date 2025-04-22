@@ -1,6 +1,10 @@
 main:
   - title: "Home"
     url: /
+  - title: "Products"
+    children:
+      - title: "MLT Stock Idea Assistant"
+        url: /products/mlt-stock-idea-assistant/
   - title: "About"
     url: /about/
   - title: "Categories"

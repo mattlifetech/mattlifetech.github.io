@@ -258,6 +258,10 @@ whitelist:
   - jekyll-feed
   - jekyll-include-cache
 
+collections:
+  products:
+    output: true
+    permalink: /products/:name/
 
 # Archives
 #  Type
