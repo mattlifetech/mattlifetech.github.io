@@ -2,7 +2,8 @@
 title: "MLT Stock Idea Assistant"
 layout: single
 excerpt: "A one-click stock image idea machine for AI creators."
-permalink: /products/mlt-stock-idea-assistant/
+permalink: /products/
+collection: products
 categories: [products]
 tags: [AI, automation, stock-image]
 ---
