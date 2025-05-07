@@ -4,6 +4,7 @@ title: "Our Products"
 permalink: /products/
 author_profile: false
 classes: wide
+entries_layout: grid
 ---
 
 
