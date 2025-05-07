@@ -10,6 +10,9 @@ categories:
 tags: [language-learning, chinese, no-code, ocr, ai, pinyin, translation]
 ---
 
+[![DS Teaser](/assets/images/products/ds.png)
+
+
 **DualScribe** is a desktop app designed for learners and language enthusiasts who want to deeply engage with Chinese text. Whether you're studying Mandarin, preparing lessons, or simply curious about Chinese literature, **DualScribe** helps you effortlessly transform raw Chinese content into aligned, learner-friendly formats.
 
 ## 🚀 What is DualScribe?
