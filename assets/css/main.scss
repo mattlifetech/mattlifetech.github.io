@@ -24,15 +24,8 @@
   border-radius: 8px;
 }
 
-.archive {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-}
-
+/* Constrain teaser image height without overriding the theme grid */
 .archive__item-teaser img {
-  width: 100%;
-  height: auto;
   max-height: 150px;
   object-fit: cover;
   border-radius: 8px;
