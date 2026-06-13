@@ -1,3 +1,13 @@
+---
+# Only the main Sass/SCSS file needs front matter, the others are loaded automatically.
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+/* ── Post styles ── */
 .post-description {
   font-size: 1.2rem;
   color: #666;
@@ -5,7 +15,6 @@
   margin-top: -10px;
   margin-bottom: 20px;
 }
-
 
 .post-thumbnail {
   width: 100%;
@@ -41,20 +50,24 @@
   background: #fafafa;
   align-items: flex-start;
 }
+
 .aff-card__img {
   flex: 0 0 110px;
-  img {
-    width: 110px;
-    height: 110px;
-    object-fit: cover;
-    border-radius: 6px;
-    display: block;
-  }
 }
+
+.aff-card__img img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+}
+
 .aff-card__body {
   flex: 1;
   min-width: 0;
 }
+
 .aff-card__title {
   font-size: 1rem;
   font-weight: 700;
@@ -62,17 +75,20 @@
   margin-bottom: 4px;
   line-height: 1.3;
 }
+
 .aff-card__tagline {
   font-size: 0.82rem;
   color: #666;
   margin-bottom: 12px;
 }
+
 .aff-card__buttons {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 8px;
 }
+
 .aff-btn {
   display: inline-block;
   padding: 7px 16px;
@@ -80,15 +96,20 @@
   font-size: 0.82rem;
   font-weight: 700;
   text-decoration: none !important;
-  color: #fff !important;
   letter-spacing: 0.02em;
-  &:hover { opacity: 0.85; text-decoration: none !important; }
-  &--shopee    { background: #ee4d2d; }
-  &--lazada    { background: #0f1060; }
-  &--amazon    { background: #ff9900; color: #111 !important; }
-  &--aliexpress{ background: #e62e04; }
-  &--official  { background: #444; }
 }
+
+.aff-btn:hover {
+  opacity: 0.85;
+  text-decoration: none !important;
+}
+
+.aff-btn--shopee     { background: #ee4d2d; color: #fff !important; }
+.aff-btn--lazada     { background: #0f1060; color: #fff !important; }
+.aff-btn--amazon     { background: #ff9900; color: #111 !important; }
+.aff-btn--aliexpress { background: #e62e04; color: #fff !important; }
+.aff-btn--official   { background: #444;    color: #fff !important; }
+
 .aff-card__note {
   font-size: 0.76rem;
   color: #999;
@@ -96,13 +117,15 @@
   margin-top: 4px;
 }
 
-/* Mobile: stack image above body */
 @media (max-width: 480px) {
   .aff-card {
     flex-direction: column;
   }
   .aff-card__img {
     flex: none;
-    img { width: 100%; height: 160px; }
+  }
+  .aff-card__img img {
+    width: 100%;
+    height: 160px;
   }
 }
