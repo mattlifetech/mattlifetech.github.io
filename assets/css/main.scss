@@ -28,3 +28,57 @@
   object-fit: cover;
   border-radius: 8px;
 }
+
+/* Affiliate card */
+.affiliate-card {
+  border: 1px solid #e0e0e0;
+  border-left: 4px solid #f0821e;
+  border-radius: 6px;
+  padding: 14px 18px;
+  margin: 24px 0;
+  background: #fafafa;
+}
+.affiliate-label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #888;
+  margin-bottom: 10px;
+}
+.affiliate-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.affiliate-btn {
+  display: inline-block;
+  padding: 7px 16px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #fff !important;
+  text-decoration: none !important;
+  &:hover { opacity: 0.85; }
+  &.shopee    { background: #ee4d2d; }
+  &.lazada    { background: #0f1060; }
+  &.amazon    { background: #ff9900; color: #111 !important; }
+  &.aliexpress{ background: #e62e04; }
+  &.official  { background: #444; }
+}
+.affiliate-note {
+  font-size: 0.78rem;
+  color: #999;
+  margin: 8px 0 0;
+  font-style: italic;
+}
+
+/* Affiliate disclosure */
+.affiliate-disclosure {
+  font-size: 0.78rem;
+  color: #aaa;
+  border-top: 1px solid #eee;
+  margin-top: 32px;
+  padding-top: 10px;
+}

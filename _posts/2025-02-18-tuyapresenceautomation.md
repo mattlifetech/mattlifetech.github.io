@@ -90,5 +90,7 @@ This is a guide on my experience with a few Tuya Presence sensor variants & Auto
 [![Shop on AliExpress](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Aliexpress_logo.svg/220px-Aliexpress_logo.svg.png)](https://s.click.aliexpress.com/e/_onpaCmW)
 
 
+{% include affiliate-card.html product="tuya_presence_sensor" %}
+
 ## Support Me 💖
 [![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://paypal.me/mattchoo2)

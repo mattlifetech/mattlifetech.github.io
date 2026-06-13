@@ -1,0 +1,44 @@
+# Affiliate product links
+# Usage in posts: {% include affiliate-card.html product="logitech_g502" %}
+# Add your actual affiliate tracking links below (replace # placeholders)
+
+logitech_g502:
+  shopee: "https://shope.ee/logitech-g502"
+  lazada: "https://www.lazada.com.my/products/logitech-g502"
+  note: "Prices vary — check both platforms for best deal."
+
+xiaomi_pad7:
+  shopee: "https://shopee.com.my/product/698003580/27826446251"
+  lazada: "https://s.lazada.com.my/s.LhBRN"
+  official: "https://www.mi.com/my/product/xiaomi-pad-7"
+  note: "Buy 256GB from Mi official site to qualify for free keyboard & pen bundle."
+
+unic_uc50_projector:
+  shopee: "https://shopee.com.my/search?keyword=unic+uc50+projector"
+  aliexpress: "https://www.aliexpress.com/wholesale?SearchText=unic+uc50+projector"
+
+nissan_serena_battery:
+  shopee: "https://shopee.com.my/search?keyword=nissan+serena+hybrid+12v+battery"
+  note: "Search for GS Yuasa or Panasonic 12V auxiliary battery compatible with Nissan Serena C26/C27 hybrid."
+
+tuya_presence_sensor:
+  shopee: "https://shopee.com.my/search?keyword=tuya+mmwave+presence+sensor"
+  aliexpress: "https://www.aliexpress.com/wholesale?SearchText=tuya+mmwave+presence+sensor"
+  note: "Look for 24GHz mmWave models for best accuracy."
+
+smart_home_hub:
+  shopee: "https://shopee.com.my/search?keyword=tuya+smart+home+hub+zigbee"
+  aliexpress: "https://www.aliexpress.com/wholesale?SearchText=tuya+zigbee+hub"
+
+logitech_g502_x:
+  shopee: "https://shopee.com.my/search?keyword=logitech+g502+x+plus"
+  lazada: "https://www.lazada.com.my/catalog/?q=logitech+g502+x"
+  amazon: "https://www.amazon.com/s?k=logitech+g502+x"
+
+pi_hole:
+  shopee: "https://shopee.com.my/search?keyword=raspberry+pi+zero+2w"
+  aliexpress: "https://www.aliexpress.com/wholesale?SearchText=raspberry+pi+zero+2w"
+  note: "You need a Raspberry Pi Zero 2W (or any Pi) to run Pi-hole."
+
+toyota_corolla_cross:
+  shopee: "https://shopee.com.my/search?keyword=toyota+corolla+cross+accessories"

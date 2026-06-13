@@ -112,3 +112,5 @@ Note: At the end I do get few helpful staffs helped me settle my problem. A grea
   
 
 
+
+{% include affiliate-card.html product="nissan_serena_battery" %}

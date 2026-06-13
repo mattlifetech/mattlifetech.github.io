@@ -1,0 +1,15 @@
+{% assign product = include.product %}
+{% assign links = site.data.affiliate_links[product] %}
+{% if links %}
+<div class="affiliate-card">
+  <span class="affiliate-label">Where to buy</span>
+  <div class="affiliate-buttons">
+    {% if links.shopee %}<a href="{{ links.shopee }}" class="affiliate-btn shopee" target="_blank" rel="nofollow noopener">Shopee</a>{% endif %}
+    {% if links.lazada %}<a href="{{ links.lazada }}" class="affiliate-btn lazada" target="_blank" rel="nofollow noopener">Lazada</a>{% endif %}
+    {% if links.amazon %}<a href="{{ links.amazon }}" class="affiliate-btn amazon" target="_blank" rel="nofollow noopener">Amazon</a>{% endif %}
+    {% if links.aliexpress %}<a href="{{ links.aliexpress }}" class="affiliate-btn aliexpress" target="_blank" rel="nofollow noopener">AliExpress</a>{% endif %}
+    {% if links.official %}<a href="{{ links.official }}" class="affiliate-btn official" target="_blank" rel="nofollow noopener">Official</a>{% endif %}
+  </div>
+  {% if links.note %}<p class="affiliate-note">{{ links.note }}</p>{% endif %}
+</div>
+{% endif %}
