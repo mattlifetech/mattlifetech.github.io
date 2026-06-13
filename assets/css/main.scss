@@ -29,56 +29,80 @@
   border-radius: 8px;
 }
 
-/* Affiliate card */
-.affiliate-card {
+/* ── Affiliate product card ── */
+.aff-card {
+  display: flex;
+  gap: 16px;
   border: 1px solid #e0e0e0;
-  border-left: 4px solid #f0821e;
-  border-radius: 6px;
-  padding: 14px 18px;
-  margin: 24px 0;
+  border-left: 4px solid #ee4d2d;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 28px 0;
   background: #fafafa;
+  align-items: flex-start;
 }
-.affiliate-label {
-  display: block;
-  font-size: 0.75rem;
+.aff-card__img {
+  flex: 0 0 110px;
+  img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+  }
+}
+.aff-card__body {
+  flex: 1;
+  min-width: 0;
+}
+.aff-card__title {
+  font-size: 1rem;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: #888;
-  margin-bottom: 10px;
+  color: #222;
+  margin-bottom: 4px;
+  line-height: 1.3;
 }
-.affiliate-buttons {
+.aff-card__tagline {
+  font-size: 0.82rem;
+  color: #666;
+  margin-bottom: 12px;
+}
+.aff-card__buttons {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  margin-bottom: 8px;
 }
-.affiliate-btn {
+.aff-btn {
   display: inline-block;
   padding: 7px 16px;
   border-radius: 4px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: #fff !important;
+  font-size: 0.82rem;
+  font-weight: 700;
   text-decoration: none !important;
-  &:hover { opacity: 0.85; }
-  &.shopee    { background: #ee4d2d; }
-  &.lazada    { background: #0f1060; }
-  &.amazon    { background: #ff9900; color: #111 !important; }
-  &.aliexpress{ background: #e62e04; }
-  &.official  { background: #444; }
+  color: #fff !important;
+  letter-spacing: 0.02em;
+  &:hover { opacity: 0.85; text-decoration: none !important; }
+  &--shopee    { background: #ee4d2d; }
+  &--lazada    { background: #0f1060; }
+  &--amazon    { background: #ff9900; color: #111 !important; }
+  &--aliexpress{ background: #e62e04; }
+  &--official  { background: #444; }
 }
-.affiliate-note {
-  font-size: 0.78rem;
+.aff-card__note {
+  font-size: 0.76rem;
   color: #999;
-  margin: 8px 0 0;
   font-style: italic;
+  margin-top: 4px;
 }
 
-/* Affiliate disclosure */
-.affiliate-disclosure {
-  font-size: 0.78rem;
-  color: #aaa;
-  border-top: 1px solid #eee;
-  margin-top: 32px;
-  padding-top: 10px;
+/* Mobile: stack image above body */
+@media (max-width: 480px) {
+  .aff-card {
+    flex-direction: column;
+  }
+  .aff-card__img {
+    flex: none;
+    img { width: 100%; height: 160px; }
+  }
 }

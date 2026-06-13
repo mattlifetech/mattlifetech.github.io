@@ -1,15 +1,23 @@
 {% assign product = include.product %}
-{% assign links = site.data.affiliate_links[product] %}
-{% if links %}
-<div class="affiliate-card">
-  <span class="affiliate-label">Where to buy</span>
-  <div class="affiliate-buttons">
-    {% if links.shopee %}<a href="{{ links.shopee }}" class="affiliate-btn shopee" target="_blank" rel="nofollow noopener">Shopee</a>{% endif %}
-    {% if links.lazada %}<a href="{{ links.lazada }}" class="affiliate-btn lazada" target="_blank" rel="nofollow noopener">Lazada</a>{% endif %}
-    {% if links.amazon %}<a href="{{ links.amazon }}" class="affiliate-btn amazon" target="_blank" rel="nofollow noopener">Amazon</a>{% endif %}
-    {% if links.aliexpress %}<a href="{{ links.aliexpress }}" class="affiliate-btn aliexpress" target="_blank" rel="nofollow noopener">AliExpress</a>{% endif %}
-    {% if links.official %}<a href="{{ links.official }}" class="affiliate-btn official" target="_blank" rel="nofollow noopener">Official</a>{% endif %}
+{% assign p = site.data.affiliate_links[product] %}
+{% if p %}
+<div class="aff-card">
+  {% if p.image %}
+  <div class="aff-card__img">
+    <img src="{{ p.image }}" alt="{{ p.title }}" loading="lazy">
   </div>
-  {% if links.note %}<p class="affiliate-note">{{ links.note }}</p>{% endif %}
+  {% endif %}
+  <div class="aff-card__body">
+    {% if p.title %}<div class="aff-card__title">{{ p.title }}</div>{% endif %}
+    {% if p.tagline %}<div class="aff-card__tagline">{{ p.tagline }}</div>{% endif %}
+    <div class="aff-card__buttons">
+      {% if p.shopee %}<a href="{{ p.shopee }}" class="aff-btn aff-btn--shopee" target="_blank" rel="nofollow noopener">Shopee</a>{% endif %}
+      {% if p.lazada %}<a href="{{ p.lazada }}" class="aff-btn aff-btn--lazada" target="_blank" rel="nofollow noopener">Lazada</a>{% endif %}
+      {% if p.amazon %}<a href="{{ p.amazon }}" class="aff-btn aff-btn--amazon" target="_blank" rel="nofollow noopener">Amazon</a>{% endif %}
+      {% if p.aliexpress %}<a href="{{ p.aliexpress }}" class="aff-btn aff-btn--aliexpress" target="_blank" rel="nofollow noopener">AliExpress</a>{% endif %}
+      {% if p.official %}<a href="{{ p.official }}" class="aff-btn aff-btn--official" target="_blank" rel="nofollow noopener">Official Site</a>{% endif %}
+    </div>
+    {% if p.note %}<div class="aff-card__note">{{ p.note }}</div>{% endif %}
+  </div>
 </div>
 {% endif %}

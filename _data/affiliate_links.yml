@@ -1,41 +1,61 @@
-# Affiliate product links — Shopee links are live tracking links (sub_id: blog)
+# Affiliate product links
 # Usage in posts: {% include affiliate-card.html product="logitech_g502" %}
-# Add Lazada affiliate links once Lazada affiliate is approved
+# Fields: title, tagline, image (path from site root), shopee, lazada, amazon, aliexpress, official, note
 
 logitech_g502:
+  title: "Logitech G502 Gaming Mouse"
+  tagline: "The most customisable gaming mouse for Genshin Impact & ZZZ"
+  image: "/assets/images/zzz502.png"
   shopee: "https://s.shopee.com.my/9Kfdt3IUEb"
   note: "Check both G502 Hero and G502 X — pricing varies."
 
 xiaomi_pad7:
+  title: "Xiaomi Pad 7"
+  tagline: "Best value Android tablet with optional free keyboard & pen"
+  image: "/assets/images/ecompad7.png"
   shopee: "https://s.shopee.com.my/9Uz45MHqtc"
   official: "https://www.mi.com/my/product/xiaomi-pad-7"
   note: "Buy 256GB from Mi official site to qualify for free keyboard & pen bundle."
 
 unic_uc50_projector:
+  title: "Unic UC50 Pico Projector"
+  tagline: "Budget portable projector — tested and reviewed"
+  image: "/assets/images/filler.webp"
   shopee: "https://s.shopee.com.my/8ATgUw5pNf"
   aliexpress: "https://www.aliexpress.com/wholesale?SearchText=unic+uc50+projector"
 
 nissan_serena_battery:
+  title: "Nissan Serena Hybrid 12V Battery"
+  tagline: "Fix the yellow key icon — replace the auxiliary battery"
+  image: "/assets/images/filler.webp"
   shopee: "https://s.shopee.com.my/9fIUHfHDYh"
-  note: "Search for GS Yuasa or Panasonic 12V auxiliary battery compatible with Nissan Serena C26/C27 hybrid."
+  note: "Look for GS Yuasa or Panasonic 12V compatible with Serena C26/C27 hybrid."
 
 tuya_presence_sensor:
+  title: "Tuya mmWave Presence Sensor"
+  tagline: "24GHz radar sensor for accurate smart home automation"
+  image: "/assets/images/filler.webp"
   shopee: "https://s.shopee.com.my/9pbuTyGaDi"
   aliexpress: "https://www.aliexpress.com/wholesale?SearchText=tuya+mmwave+presence+sensor"
   note: "Look for 24GHz mmWave models for best accuracy."
 
 smart_home_hub:
+  title: "Tuya Zigbee Smart Home Hub"
+  tagline: "Central hub for all your Tuya smart home devices"
+  image: "/assets/images/filler.webp"
   shopee: "https://s.shopee.com.my/8V6WtY4Yhh"
   aliexpress: "https://www.aliexpress.com/wholesale?SearchText=tuya+zigbee+hub"
 
-logitech_g502_x:
-  shopee: "https://s.shopee.com.my/9Kfdt3IUEb"
-  amazon: "https://www.amazon.com/s?k=logitech+g502+x"
-
 pi_hole:
+  title: "Raspberry Pi Zero 2W"
+  tagline: "Run Pi-hole and block ads on your entire network"
+  image: "/assets/images/filler.webp"
   shopee: "https://s.shopee.com.my/AAEksaFJXo"
   aliexpress: "https://www.aliexpress.com/wholesale?SearchText=raspberry+pi+zero+2w"
-  note: "You need a Raspberry Pi Zero 2W (or any Pi) to run Pi-hole."
+  note: "Any Raspberry Pi model works — Zero 2W is the most affordable option."
 
 toyota_corolla_cross:
+  title: "Toyota Corolla Cross Accessories"
+  tagline: "Practical add-ons and mods for your Corolla Cross"
+  image: "/assets/images/filler.webp"
   shopee: "https://s.shopee.com.my/80AGId6Sic"
