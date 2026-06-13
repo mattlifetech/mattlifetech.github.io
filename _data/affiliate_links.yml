@@ -1,44 +1,41 @@
-# Affiliate product links
+# Affiliate product links — Shopee links are live tracking links (sub_id: blog)
 # Usage in posts: {% include affiliate-card.html product="logitech_g502" %}
-# Add your actual affiliate tracking links below (replace # placeholders)
+# Add Lazada affiliate links once Lazada affiliate is approved
 
 logitech_g502:
-  shopee: "https://shope.ee/logitech-g502"
-  lazada: "https://www.lazada.com.my/products/logitech-g502"
-  note: "Prices vary — check both platforms for best deal."
+  shopee: "https://s.shopee.com.my/9Kfdt3IUEb"
+  note: "Check both G502 Hero and G502 X — pricing varies."
 
 xiaomi_pad7:
-  shopee: "https://shopee.com.my/product/698003580/27826446251"
-  lazada: "https://s.lazada.com.my/s.LhBRN"
+  shopee: "https://s.shopee.com.my/9Uz45MHqtc"
   official: "https://www.mi.com/my/product/xiaomi-pad-7"
   note: "Buy 256GB from Mi official site to qualify for free keyboard & pen bundle."
 
 unic_uc50_projector:
-  shopee: "https://shopee.com.my/search?keyword=unic+uc50+projector"
+  shopee: "https://s.shopee.com.my/8ATgUw5pNf"
   aliexpress: "https://www.aliexpress.com/wholesale?SearchText=unic+uc50+projector"
 
 nissan_serena_battery:
-  shopee: "https://shopee.com.my/search?keyword=nissan+serena+hybrid+12v+battery"
+  shopee: "https://s.shopee.com.my/9fIUHfHDYh"
   note: "Search for GS Yuasa or Panasonic 12V auxiliary battery compatible with Nissan Serena C26/C27 hybrid."
 
 tuya_presence_sensor:
-  shopee: "https://shopee.com.my/search?keyword=tuya+mmwave+presence+sensor"
+  shopee: "https://s.shopee.com.my/9pbuTyGaDi"
   aliexpress: "https://www.aliexpress.com/wholesale?SearchText=tuya+mmwave+presence+sensor"
   note: "Look for 24GHz mmWave models for best accuracy."
 
 smart_home_hub:
-  shopee: "https://shopee.com.my/search?keyword=tuya+smart+home+hub+zigbee"
+  shopee: "https://s.shopee.com.my/8V6WtY4Yhh"
   aliexpress: "https://www.aliexpress.com/wholesale?SearchText=tuya+zigbee+hub"
 
 logitech_g502_x:
-  shopee: "https://shopee.com.my/search?keyword=logitech+g502+x+plus"
-  lazada: "https://www.lazada.com.my/catalog/?q=logitech+g502+x"
+  shopee: "https://s.shopee.com.my/9Kfdt3IUEb"
   amazon: "https://www.amazon.com/s?k=logitech+g502+x"
 
 pi_hole:
-  shopee: "https://shopee.com.my/search?keyword=raspberry+pi+zero+2w"
+  shopee: "https://s.shopee.com.my/AAEksaFJXo"
   aliexpress: "https://www.aliexpress.com/wholesale?SearchText=raspberry+pi+zero+2w"
   note: "You need a Raspberry Pi Zero 2W (or any Pi) to run Pi-hole."
 
 toyota_corolla_cross:
-  shopee: "https://shopee.com.my/search?keyword=toyota+corolla+cross+accessories"
+  shopee: "https://s.shopee.com.my/80AGId6Sic"

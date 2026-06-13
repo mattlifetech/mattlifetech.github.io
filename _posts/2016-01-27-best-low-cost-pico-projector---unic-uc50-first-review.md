@@ -142,3 +142,5 @@ OTHER PIC FROM OFFICIAL SITE
 
 
 
+
+{% include affiliate-card.html product="unic_uc50_projector" %}

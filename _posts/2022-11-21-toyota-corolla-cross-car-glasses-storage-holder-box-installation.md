@@ -40,3 +40,4 @@ As there is a handle on top of the driver's seat, this can be replaced with Sung
 
 
   
+{% include affiliate-card.html product="toyota_corolla_cross" %}

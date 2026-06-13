@@ -45,3 +45,5 @@ WEBPASSWORD
 Blacklist  
 
 <https://raw.githubusercontent.com/chadmayfield/pihole-blocklists/master/lists/pi_blocklist_porn_top1m.list><https://raw.githubusercontent.com/ZeroDot1/CoinBlockerLists/master/hosts> <https://github.com/chadmayfield/pihole-blocklists/raw/master/lists/pi_blocklist_porn_all.list>
+
+{% include affiliate-card.html product="pi_hole" %}

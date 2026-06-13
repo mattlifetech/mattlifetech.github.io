@@ -15,3 +15,4 @@ tags: [Smart Home, IoT, Automation]
 
 
 https://medium.com/@mattlifetech/smart-homes-the-dream-that-stalled-why-people-are-losing-interest-fbb097793987
+{% include affiliate-card.html product="smart_home_hub" %}
