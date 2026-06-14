@@ -1,94 +1,115 @@
 ---
-title: "2025-04-15_Why-Using-a-TV-as-a-PC-Monitor-Is-a-Bad-Idea--And-How-to-Make-It-Work-If-You-Must--d1ef0e904743"
+title: "TV as PC Monitor: Why It Doesn't Work Well (And How to Make It Tolerable)"
 layout: single
 date: 2025-04-15
-excerpt: "As screen sizes continue to increase and TV prices drop, many PC users have wondered: can a TV replace a traditional computer monitor? The…"
+excerpt: "A 55-inch 4K TV has 80 PPI. A 27-inch 4K monitor has 160 PPI. At desk distance, text looks fuzzy and input lag is noticeable. Here's what actually works if you must use a TV."
 header:
   teaser: /assets/images/medium/why-using-a-tv-as-a-pc-monitor-is-a-bad-idea-and--0.png
 categories:
   - Gadgets
 tags:
-  - monitor
-  - tv
-  - gadgets
+  - Monitor
+  - TV
+  - PC Setup
+  - Display
+  - Gadgets
 author_profile: true
 read_time: true
 share: true
 related: true
+faq:
+  - q: "Can I use a TV as a PC monitor?"
+    a: "Technically yes, but there are real trade-offs. TVs have lower pixel density (80 PPI for a 55-inch 4K vs 160 PPI for a 27-inch 4K), which makes text look soft at desk distance. Input lag from TV image processing makes mouse and keyboard interaction feel sluggish. Most TVs also use 4:2:0 or 4:2:2 chroma subsampling that blurs text edges. For occasional use or video content at distance, it's fine. For daily work — it's a noticeable compromise."
+  - q: "What settings should I change on my TV to use it as a PC monitor?"
+    a: "Enable 'Game Mode' or 'PC Mode' in the TV settings — this reduces input lag and often enables 4:4:4 chroma (full colour for sharp text). Disable 'Motion Smoothing' / 'Auto Motion Plus'. Enable 'Just Scan' or '1:1 Pixel Mapping' to disable overscan, which zooms in and cuts off screen edges. Check your HDMI cable — 4K at 60Hz requires HDMI 2.0."
+  - q: "Which TV models work best as PC monitors?"
+    a: "LG OLED C2/C3 (42 inch), Samsung QN90 series (43 inch), and Sony X85K/X90K are commonly recommended. They support 4:4:4 chroma, have low input lag in Game Mode, and include proper PC mode settings. Size is important — 43 inches or smaller is generally usable at desk distance; 55 inches and up becomes uncomfortable for text work."
+  - q: "What is chroma subsampling and why does it matter for PC use?"
+    a: "TVs compress colour information using 4:2:0 or 4:2:2 subsampling — designed for video where this compression is invisible. For PC text (fine edges, small fonts), this blurs character edges noticeably. Monitors output full 4:4:4 chroma where every pixel has full colour data. Enabling PC Mode on supported TVs unlocks 4:4:4, which is why this setting is so important for text clarity."
 ---
 
-As screen sizes continue to increase and TV prices drop, many PC users have wondered: can a TV replace a traditional computer monitor? The…
+A TV and a PC monitor solve different problems. TVs are optimised for video content watched from a couch. Monitors are optimised for close-up use where pixel sharpness, input responsiveness, and colour accuracy for text matter. Using one as the other involves real compromises.
+
+Here's exactly what those compromises are — and the specific settings that make a TV usable as a monitor if you're committed to the idea.
+
+## Why Most TVs Are Poor at Desktop Distance
+
+### 1. Pixel Density: Why Text Looks Soft
+
+| Display | Size | Resolution | PPI |
+|---|---|---|---|
+| 55-inch 4K TV | 55" | 3840×2160 | ~80 PPI |
+| 43-inch 4K TV | 43" | 3840×2160 | ~102 PPI |
+| 27-inch 4K monitor | 27" | 3840×2160 | ~160 PPI |
+| 24-inch 1080p monitor | 24" | 1920×1080 | ~91 PPI |
+
+At desk distance (60–90cm), human vision resolves individual pixels at densities below ~110 PPI. A 55-inch 4K TV at 80 PPI is visibly pixelated for text. A 43-inch 4K TV at 102 PPI is marginal. A dedicated monitor at 160 PPI is clearly sharper.
+
+### 2. Input Lag: Why Mouse Movement Feels Sticky
+
+TVs process video frames to improve motion smoothness and upscale content — this adds 30–80ms of latency by default. Monitors are designed with minimal processing, typically under 5ms.
+
+**30ms of input lag is noticeable** when dragging windows, scrolling through code, or moving the mouse. It doesn't ruin the experience but creates a subtle "floating" feeling that fatigues you over hours.
+
+**Fix:** Enable Game Mode. This bypasses most TV processing and gets input lag under 15ms on good TVs, and under 5ms on premium models.
+
+### 3. Chroma Subsampling: Why Text Edges Are Blurry
+
+TVs use 4:2:0 or 4:2:2 chroma — they sample colour information less frequently than luminance, which is invisible in video but blurs the edges of small text characters.
+
+Monitors use 4:4:4 full chroma — every pixel has complete colour data, giving sharp character edges.
+
+**Fix:** Enable PC Mode or Game Mode (on supported TVs). This unlocks 4:4:4 output. Without this, text looks noticeably less crisp than on a monitor, even at the same resolution.
+
+### 4. Overscan: Why Screen Edges Are Cut Off
+
+TVs historically zoomed in slightly to hide encoding artefacts at picture edges. Connected to a PC, this crops your desktop — taskbar elements or application controls near screen edges may be partially cut off.
+
+**Fix:** Enable "Just Scan", "Full Pixel", or "1:1 Pixel Mapping" in the TV's picture settings. Not all TVs have this option.
+
+## When a TV Actually Works as a Monitor
+
+These conditions make TV-as-monitor tolerable:
+
+- **43 inches or smaller** — at desk distance, 55 inches forces head movement to reach corners, causing neck strain
+- **Low input lag in Game Mode** — under 15ms
+- **4:4:4 chroma support** — required for sharp text
+- **"Just Scan" option available** — for full-screen use without cropping
+
+**TVs that work for PC use:**
+- **LG OLED C2/C3 (42")** — under 1ms input lag in Game Mode, full 4:4:4, excellent
+- **Samsung QN90 series (43")** — good contrast, low lag, supports full chroma
+- **Sony X85K / X90K** — solid 4K60 in PC mode
+
+Even with these models, they're better for **leaning-back content consumption** (media, gaming from 1m+) than close-up text work. At desk distance (60–90cm), a dedicated monitor remains sharper.
+
+## Settings Checklist When Using a TV as a Monitor
+
+```
+[ ] Enable Game Mode or PC Mode
+[ ] Disable Motion Smoothing / Auto Motion Plus / TruMotion
+[ ] Enable Just Scan / Full Pixel / 1:1 Pixel Mapping
+[ ] Verify 4:4:4 chroma is active (Google your TV model + "PC mode 444")
+[ ] Use HDMI 2.0 cable minimum for 4K@60Hz
+[ ] Set Windows scaling to 150% if text is uncomfortably small at 4K
+```
+
+<!-- affiliate card: wire up with Shopee monitor/TV link -->
+
+## Frequently Asked Questions
+
+**Can I use a TV as a PC monitor?**
+Yes, with trade-offs: lower pixel density means softer text, input lag from TV processing makes interaction feel sluggish, and chroma subsampling blurs text edges. For desk use, these matter. For couch gaming or video content, less so.
+
+**What settings should I change?**
+Enable Game Mode (reduces input lag, often enables 4:4:4 chroma). Disable Motion Smoothing. Enable Just Scan / 1:1 Pixel Mapping. Use HDMI 2.0 cable for 4K@60Hz.
+
+**Which TV models work best as monitors?**
+LG OLED C2/C3 (42"), Samsung QN90 (43"), Sony X85K/X90K. Under 43" is important for desk use.
+
+**What is chroma subsampling?**
+TVs compress colour info (4:2:0 or 4:2:2) for video — it blurs text edges on a desktop. PC Mode unlocks full 4:4:4 chroma for sharp text. Required for comfortable text work.
 
 ---
 
-### Why Using a TV as a PC Monitor Is a Bad Idea (And How to Make It Work If You Must)
-
-![image](/assets/images/medium/why-using-a-tv-as-a-pc-monitor-is-a-bad-idea-and--0.png)
-
-
-As screen sizes continue to increase and TV prices drop, many PC users have wondered: can a TV replace a traditional computer monitor? The appeal is clear. Big displays, affordable prices, and the convenience of repurposing an existing TV seem like a smart move. But when it comes to **using a TV as a PC monitor at close range**, there are several technical and ergonomic issues that make most TVs a poor fit.
-
-This article explores the key differences between TVs and monitors, why most TVs struggle with desktop use, and when — with the right model and setup — a TV can actually serve as a decent monitor alternative.
-#### 1. Pixel Density (PPI: Pixels Per Inch)
-
-The most immediate problem when sitting close to a TV is **pixel density**. Pixel density determines how sharp the image looks at a given distance. While a 55-inch 4K TV and a 27-inch 4K monitor both display 3840x2160 pixels, the pixels on the TV are spread over a much larger area, resulting in significantly lower PPI.
-
-- **55-inch 4K TV**: ~80 PPI
-- **27-inch 4K monitor**: ~160 PPI
-
-**What this means**: At desk distance, text and UI elements on a TV appear fuzzy or oversized, whereas on a monitor they are crisp and readable.
-#### 2. Input Lag and Response Time
-
-TVs are optimized for video playback, not interactivity. They use image processing techniques like motion smoothing and upscaling, which introduce **input lag** — the delay between your input (mouse, keyboard) and what appears on screen.
-
-Monitors, especially those built for gaming or productivity, are designed with **low response times and minimal input lag**, often under 5 milliseconds.
-
-**What this means**: Navigating the desktop, dragging windows, or gaming can feel sluggish on a TV.
-#### 3. Chroma Subsampling: Why Text Looks Blurry
-
-Most TVs use **chroma subsampling** to compress color information, usually in 4:2:2 or 4:2:0 format. This works fine for video but **blurs the edges of fine text**. In contrast, monitors display in full 4:4:4 chroma, ensuring every pixel has full color data.
-
-Some high-end TVs **do support 4:4:4 chroma**, but only at specific resolutions, frame rates, and HDMI inputs. Enabling “PC mode” or “Game mode” is often required to unlock full chroma.
-#### 4. Refresh Rate and Variable Sync
-
-Most TVs refresh at **60Hz**, and while newer models claim 120Hz support, that rate isn’t always accessible via HDMI from a PC.
-
-**Monitors can go from 60Hz up to 240Hz** and support technologies like G-Sync and FreeSync for smoother gaming.
-
-**What this means**: On a TV, fast movements can feel choppy or less fluid compared to a proper monitor, especially in gaming.
-#### 5. Overscan and Scaling Woes
-
-TVs often enable **overscan** by default — zooming into the picture and cutting off the screen’s edges. This is problematic for desktop use where you need pixel-perfect accuracy.
-
-The fix? Dive into the TV settings and enable “Just Scan,” “Full Pixel,” or “1:1 Pixel Mapping.” But not all TVs offer these options.
-#### 6. Ergonomics and Eye Strain
-
-A 55-inch TV may look great across the living room, but at a desk, it can be **physically overwhelming**. You’ll need to move your head to see UI elements in the corners, and prolonged use may lead to neck strain or eye fatigue.
-
-Monitors are designed with **ergonomics in mind** — right-sized for 1–3 feet viewing distance, with adjustable stands and proper viewing angles.
-### When a TV Can Work as a Monitor
-
-Not all TVs are terrible for monitor use. Here’s when it works:
-
-- **43" or smaller 4K TVs** with:
-- Low input lag (under 15ms)
-- Support for 4:4:4 chroma
-- Game Mode or PC Mode
-- Adjustable sharpness and overscan controls
-
-Some popular models praised by users for PC use include:
-
-- **LG OLED C2 / C3 (42")** — Excellent clarity, low input lag, full 4:4:4 support
-- **Samsung QN90 series (43")** — Great contrast and color handling
-- **Sony X85K / X90K** — Good for 4K60 with accurate PC mode
-
-Even then, these TVs are best used **from a distance** (around 3–4 feet) for media consumption, light browsing, or gaming — not for text-heavy work like programming or writing.
-### Final Comparison: TV vs Monitor
-
-![image](/assets/images/medium/why-using-a-tv-as-a-pc-monitor-is-a-bad-idea-and--1.png)
-
-### Bottom Line
-
-A TV can **technically** function as a monitor — but unless it’s specifically tuned for PC use, it’s going to compromise on clarity, input responsiveness, and overall user experience. For productivity, content creation, or any close-up work, **a proper monitor is still unmatched**.
-
-If you’re after a big screen experience with the flexibility of a monitor, **look for a 42–43" 4K TV with PC mode support, 4:4:4 chroma, and low input lag**. But even then, know that it’s a compromise, not a replacement.
+For more monitor and display guides, see the [Gadgets](/gadgets/) section.

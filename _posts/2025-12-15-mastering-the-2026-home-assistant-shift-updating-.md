@@ -1,137 +1,156 @@
 ---
-title: "2025-12-15_Mastering-the-2026-Home-Assistant-Shift--Updating-Malaysia-TNB-Energy-Sensors-ab7eb9379e2a"
+title: "Fix Home Assistant Legacy Template Deprecation + Update Malaysia TNB Energy Sensor for 2025 Tariff"
 layout: single
 date: 2025-12-15
-excerpt: "How to migrate your legacy templates to the modern format while tackling the complex new 2025 TNB tariff structure."
+excerpt: "Home Assistant 2026.6 removes the old 'platform: template' syntax. Here's the drop-in YAML replacement plus the correct formula for Malaysia's new Base Rate + AFA + Rebate tariff structure."
 header:
   teaser: /assets/images/medium/mastering-the-2026-home-assistant-shift-updating--0.png
 categories:
   - Smart Home
 tags:
-  - smart-home
-  - home-assistant
-  - malaysia
+  - Home Assistant
+  - TNB
+  - Malaysia
+  - Energy
+  - YAML
 author_profile: true
 read_time: true
 share: true
 related: true
+faq:
+  - q: "What is the Home Assistant legacy template deprecation warning?"
+    a: "Home Assistant is removing the old 'sensor: - platform: template' YAML syntax in version 2026.6. If you see the yellow 'Legacy sensor template deprecation' banner in your dashboard, your existing template sensors will stop working in 2026.6 unless you migrate to the new 'template:' domain syntax. The fix is a YAML structure change — the logic stays the same."
+  - q: "What is Malaysia's new TNB tariff structure as of July 2025?"
+    a: "TNB switched from a simple tiered block rate (0.218, 0.334, 0.516 sen/kWh) to a Base Rate + AFA + Rebate system. Everyone pays a flat base rate (~44.43 sen/kWh), adjusted by an AFA (Fuel Adjustment factor, currently -6.42 sen). Instead of 'cheap first blocks', you now receive Energy Efficiency Incentive (EEI) rebates — discounts applied based on your total monthly usage. The net effect is similar but the calculation is inverted."
+  - q: "How do I update my Home Assistant TNB energy cost sensor for the 2025 tariff?"
+    a: "Replace your old 'sensor: - platform: template' block in configuration.yaml with the new 'template:' domain syntax. Update the base_rate to 0.4443 and afa_rate to -0.0642 (update this quarterly when TNB announces changes). The rebate calculation replaces the old tier logic — see the full YAML in this article for a drop-in replacement."
+  - q: "Why should I not use the monthly tariff formula for daily energy cost calculation?"
+    a: "The tiered/rebate system is based on cumulative monthly kWh. Applying the same formula to a single day's consumption (e.g., 15kWh) always calculates it at the cheapest tier, which is mathematically wrong. For daily tracking, use a flat average rate (e.g., 40 sen/kWh) as an approximation, or calculate the difference between today's and yesterday's monthly accumulation estimate."
 ---
 
-How to migrate your legacy templates to the modern format while tackling the complex new 2025 TNB tariff structure.
+If you see a yellow **"Legacy sensor template deprecation"** banner in Home Assistant, your energy cost sensors will break in version 2026.6. At the same time, if you're still calculating your TNB bill using the old tiered block rates (0.218, 0.334 sen), **your dashboard cost is wrong** — TNB changed to a Base Rate + Rebate system in July 2025.
 
----
+Here's how to fix both problems with one YAML update.
 
-### Mastering the 2026 Home Assistant Shift: Updating Malaysia TNB Energy Sensors
-#### How to migrate your legacy templates to the modern format while tackling the complex new 2025 TNB tariff structure.
+## The Two Problems
 
-![image](/assets/images/medium/mastering-the-2026-home-assistant-shift-updating--0.png)
+### 1. YAML Syntax Change (affects all template sensors)
 
-*created via Gemini*
+The old format is deprecated:
 
-
-If you are a Home Assistant user in Malaysia, you might have recently logged in to see a scary yellow warning banner: **“Legacy sensor template deprecation.”**
-
-It warns that the old `platform: template` syntax is stopping in version 2026.6. To make matters more complicated, Tenaga Nasional Berhad (TNB) introduced a new, significantly more complex tariff structure in July 2025.
-
-If you’re still calculating your bill using the old 5-tier block system (0.218, 0.334, etc.), **your dashboard costs are wrong.**
-
-Here is a guide to killing two birds with one stone: migrating your YAML configuration to the modern standard and updating your math for the new “Base Rate + Rebate” system.
-
----
-
-### The Challenge: Double Trouble
-#### 1. The YAML Change
-
-For years, we defined template sensors under the `sensor:` domain.
-
-```grafgrafpregrafafterpgrafprev2
-# OLD (Deprecated)  
-sensor:  
-  - platform: template  
-    sensors:  
-      my_sensor:  
+```yaml
+# OLD — deprecated, stops working in HA 2026.6
+sensor:
+  - platform: template
+    sensors:
+      my_energy_sensor:
         ...
 ```
 
+The new format uses the top-level `template:` domain:
 
-Home Assistant now requires the top-level `template:` domain, which supports cleaner triggers and variables.
-#### 2. The TNB 2025 Tariff Change
+```yaml
+# NEW — required from HA 2026.6
+template:
+  - sensor:
+      - name: "My Energy Sensor"
+        ...
+```
 
-The old system was simple: “First 200kWh is cheap, next 100kWh is slightly more.” The new system (effective July 2025) is an inverted logic:
+All your existing template sensor logic works the same — only the wrapping structure changes.
 
-- **Base Rate:** Everyone pays a flat ~44.43 sen/kWh.
-- **AFA (Fuel Adjustment):** A floating rate that changes regularly (e.g., -6.42 sen).
-- **Rebates:** Instead of “cheap blocks,” you now get “Energy Efficiency Incentive” (EEI) rebates based on usage tiers.
+### 2. TNB 2025 Tariff Change (affects Malaysian energy cost calculations)
 
----
+**Old system (before July 2025):**
+- First 200kWh at 0.218 sen/kWh
+- Next 100kWh at 0.334 sen/kWh
+- Beyond 300kWh at 0.516 sen/kWh
 
-### The Solution
+**New system (from July 2025):**
+- Everyone pays a flat **Base Rate: 44.43 sen/kWh**
+- Adjusted by **AFA (Fuel Adjustment Factor): -6.42 sen/kWh** (changes quarterly)
+- **EEI Rebates** applied based on usage tiers — instead of "cheap first blocks", you get discounts for lower consumption
 
-Here is the complete, drop-in replacement code. This uses the modern `template:` syntax and handles the complex logic of the new tariff.
+Net bill: `(kWh × (base_rate + afa_rate)) - rebate`
 
-**Key Feature:** I’ve added the AFA (Fuel Adjustment) as a variable at the top. When TNB announces a new fuel rate adjustment, you only need to change that one number.
+## The Complete Drop-In Fix
 
-Open your `configuration.yaml` and replace your old energy sensor blocks with this:
+Replace your old energy sensor block in `configuration.yaml` with this:
 
-YAML
-
-```grafgrafpregrafafterpgraftrailinggrafprev2
-template:  
-  - sensor:  
-      - name: "Malaysia Energy Cost"  
-        unique_id: malaysia_energy_cost_sensor  
-        unit_of_measurement: "RM"  
-        state: >  
-          {% set kwh = states('sensor.tuya_power') | float(0) %}  
-            
-          {# --- CONSTANTS (July 2025 Rates) --- #}  
-          {% set base_rate = 0.4443 %}  
-          {% set afa_rate = -0.0642 %} {# Update this monthly/quarterly as needed #}  
-            
-          {# --- REBATE CALCULATION --- #}  
-          {# The new system calculates a discount (Rebate) rather than tiered pricing #}  
-          {% set rebate = 0 %}  
-          {% if kwh <= 200 %}  
-            {% set rebate = kwh * 0.250 %}  
-          {% elif kwh <= 250 %}  
-            {% set rebate = (200 * 0.250) + ((kwh - 200) * 0.245) %}  
-          {% elif kwh <= 300 %}  
-            {% set rebate = (200 * 0.250) + (50 * 0.245) + ((kwh - 250) * 0.225) %}  
-          {% elif kwh <= 600 %}  
-             {# Simplified grouping for mid-tiers #}  
-            {% set rebate = 82.25 + ((kwh - 400) * 0.120) %}  
-          {% else %}  
-             {# > 600 rebate diminishes #}  
-            {% set rebate = 106.25 + ((kwh - 600) * 0.075) %}  
-          {% endif %}  
-  
-{# --- FINAL CALCULATION --- #}  
-          {% set energy_cost = (kwh * (base_rate + afa_rate)) - rebate %}  
-          {% set total = energy_cost + (10.00 if kwh > 600 else 0) %}  
-            
-          {# Service Tax 8% only applies on usage > 600kWh #}  
-          {% if kwh > 600 %}  
-            {% set total = total * 1.08 %}  
-          {% endif %}  
-            
+```yaml
+template:
+  - sensor:
+      - name: "Malaysia Energy Cost"
+        unique_id: malaysia_energy_cost_sensor
+        unit_of_measurement: "RM"
+        state: >
+          {% set kwh = states('sensor.tuya_power') | float(0) %}
+          
+          {# July 2025 Rates — update AFA when TNB announces changes #}
+          {% set base_rate = 0.4443 %}
+          {% set afa_rate = -0.0642 %}
+          
+          {# EEI Rebate calculation (replaces old tiered blocks) #}
+          {% set rebate = 0 %}
+          {% if kwh <= 200 %}
+            {% set rebate = kwh * 0.250 %}
+          {% elif kwh <= 250 %}
+            {% set rebate = (200 * 0.250) + ((kwh - 200) * 0.245) %}
+          {% elif kwh <= 300 %}
+            {% set rebate = (200 * 0.250) + (50 * 0.245) + ((kwh - 250) * 0.225) %}
+          {% elif kwh <= 600 %}
+            {% set rebate = 82.25 + ((kwh - 400) * 0.120) %}
+          {% else %}
+            {% set rebate = 106.25 + ((kwh - 600) * 0.075) %}
+          {% endif %}
+          
+          {# Final calculation #}
+          {% set energy_cost = (kwh * (base_rate + afa_rate)) - rebate %}
+          {% set total = energy_cost + (10.00 if kwh > 600 else 0) %}
+          
+          {# 8% Service Tax applies only on usage > 600kWh #}
+          {% if kwh > 600 %}
+            {% set total = total * 1.08 %}
+          {% endif %}
+          
           {{ total | round(2) }}
 ```
 
+**Replace `sensor.tuya_power`** with whatever entity tracks your cumulative monthly kWh usage.
+
+**When TNB announces a new AFA rate:** change only the `afa_rate` line. Current rate is -0.0642 (as of July 2025); this changes quarterly.
+
+## Why You Shouldn't Apply This Formula to Daily Cost
+
+The rebate and tier logic is based on **cumulative monthly kWh**. If you apply this formula to a single day's consumption (e.g., 15kWh), it always calculates at the first (cheapest) tier — which understates the real cost for high-usage households.
+
+**Better approach for daily cost tracking:**
+- Use a flat average rate sensor (e.g., 40 sen/kWh) for an approximate "at-a-glance" daily number
+- For accuracy: calculate `(today's monthly estimate) - (yesterday's monthly estimate)` to derive daily marginal cost
+
+## After Migration
+
+1. Restart Home Assistant after updating `configuration.yaml`
+2. The yellow legacy warning banner should disappear
+3. Check the sensor state in Developer Tools → States → search for "Malaysia Energy Cost"
+4. Verify the calculated value looks reasonable against your last TNB bill
+
+<!-- affiliate card: smart plug with power monitoring to feed sensor.tuya_power -->
+
+## Frequently Asked Questions
+
+**What is the Home Assistant legacy template deprecation warning?**
+The old `platform: template` syntax under the `sensor:` domain is being removed in HA 2026.6. Migrate to the `template:` top-level domain now to avoid sensors breaking.
+
+**What is Malaysia's new TNB tariff structure (July 2025)?**
+Base Rate (44.43 sen/kWh) + AFA adjustment (-6.42 sen, changes quarterly) + EEI Rebates based on usage. Net bill = (kWh × net rate) - rebate. More complex than the old tier system but similar effective rates for most users.
+
+**How do I update the AFA rate when TNB changes it?**
+Change only the `afa_rate` value in the YAML. Everything else stays the same.
+
+**Why shouldn't I use the monthly formula for daily cost?**
+Daily usage (15kWh) always calculates at Tier 1/max rebate — mathematically wrong for cumulative monthly rebate logic. Use a flat average rate for daily approximation.
 
 ---
 
-### A Note on Daily Costs
-
-You might be tempted to use this same complex formula for your “Daily Energy Cost” sensor. **Don’t.**
-
-Applying a tiered monthly tariff to a daily total (e.g., 15kWh) is mathematically flawed. It will always calculate that 15kWh at the cheapest “Tier 1” rate. The most accurate way to track daily cost is to calculate the difference between *yesterday’s* monthly bill estimation and *today’s*.
-
-For a simple daily estimator, stick to a flat average rate (e.g., 21.8 sen or 40 sen) to give you a rough “at a glance” number.
-
----
-
-### Conclusion
-
-Migration is never fun, but this one is necessary. By moving to the `template:` domain now, you avoid the 2026 breaking change and gain a much more accurate representation of your TNB bill.
-
-Happy automating!
+For more Home Assistant guides and smart home automation for Malaysia, see the [Smart Home](/smart-home/) section.
