@@ -62,7 +62,7 @@ Auto-adjusts voltage to match the device. Minimum is 5V × 4.5A = 22.5W. Maximum
 
 Two chargers from the same brand can output different wattages to the same phone. The phone's maximum accepted wattage and the charger's supported protocol must both align — the slower side limits the result.
 
-![Charger output comparison](assets/images/medium/ditch-the-drawer-of-dongles-799e4a14dfd8-3.png)
+![Charger output comparison](/assets/images/medium/ditch-the-drawer-of-dongles-799e4a14dfd8-3.png)
 
 ## What USB-C Cable Should You Buy?
 

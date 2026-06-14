@@ -58,10 +58,7 @@ We welcome contributions, issue reports, and ideas for new features.
 
 ## 📸 See It In Action
 
-<div class="gallery">
-  <img src="/assets/images/gallery7/dualscribe-sample1.jpg" alt="DualScribe interface showing aligned Chinese text" />
-  <img src="/assets/images/gallery7/dualscribe-sample2.jpg" alt="HTML output with Chinese, pinyin, and English" />
-</div>
+![DualScribe interface](/assets/images/products/ds.png)
 
 ## ✅ Why DualScribe?
 

@@ -32,7 +32,7 @@ For all-day background listening — podcast on while cooking, music while worki
 
 I wear a single earbud most of the day to stay aware of surroundings while consuming media. Over several months I've tested four designs across different scenarios: bone conduction (Polvcdg-X10), open-ear hook (Sanag Z50s), and two in-ear models (Samsung Galaxy Buds 2, CMF Buds Pro 2). This isn't an audiophile sound comparison — it's a practical wearability guide.
 
-![Earbuds comparison](assets/images/medium/choosing-the-right-bluetooth-earbuds-for-backgrou-0.png)
+![Earbuds comparison](/assets/images/medium/choosing-the-right-bluetooth-earbuds-for-backgrou-0.png)
 
 ## Which Earbuds Are Best for Long Wear Comfort?
 

@@ -32,7 +32,7 @@ The **TTLock smart deadbolt** (RM 150–220 on Shopee) is the right budget smart
 
 I've been running TTLock units for over 8 months across two entry points in my home. Here's the honest breakdown.
 
-![TTLock Smart Deadbolt](assets/images/medium/ttlock-smart-deadbolt-a-budget-versatile-guardian-0.png)
+![TTLock Smart Deadbolt](/assets/images/medium/ttlock-smart-deadbolt-a-budget-versatile-guardian-0.png)
 
 ## Is the TTLock Smart Deadbolt Worth Buying in Malaysia?
 
