@@ -6,7 +6,8 @@ date: 2025-03-04
 header:
   overlay_image: /assets/images/filler.webp
   teaser: /assets/images/transparent_app.webp
-categories: [Python, Image Processing, EXE]
+categories:
+  - How-To
 tags: [Python, Tkinter, Pillow, PyInstaller, Image Editing]
 ---
 

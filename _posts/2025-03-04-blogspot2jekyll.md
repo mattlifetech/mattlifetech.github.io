@@ -6,7 +6,8 @@ date: 2025-03-04
 header:
   overlay_image: /assets/images/filler.webp
   teaser: /assets/images/blogger_teaser.webp
-categories: [Jekyll, Blogging]
+categories:
+  - How-To
 tags: [Blogger, Jekyll, Website Migration]
 ---
 

@@ -6,7 +6,8 @@ date: 2014-06-29
 header:
   overlay_image: /assets/images/filler.webp
   teaser: /assets/images/plex-media-manager.webp
-categories: [Media, Streaming]
+categories:
+  - Gadgets
 tags: [Plex, Media Server, Streaming, Home Entertainment]
 ---
 

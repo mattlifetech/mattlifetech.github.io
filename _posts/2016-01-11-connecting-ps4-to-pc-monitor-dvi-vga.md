@@ -6,7 +6,8 @@ date: 2016-01-11
 header:
   overlay_image: /assets/images/filler.webp
   teaser: /assets/images/ps4-pc-monitor.webp
-categories: [Gaming, Hardware]
+categories:
+  - Gaming
 tags: [PS4, PC Monitor, HDMI, DVI, VGA, Troubleshooting]
 ---
 **Connecting PS4 to PC Monitor (DVI/ VGA) - blank screen problem & audio**  

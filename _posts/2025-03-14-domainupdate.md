@@ -6,7 +6,8 @@ date: 2025-03-14
 header:
   overlay_image: /assets/images/filler.webp
   teaser: /assets/images/domainupdate.webp
-categories: [Jekyll, GitHub]
+categories:
+  - How-To
 tags: [Jekyll, GitHub, Automation, Python]
 ---
 

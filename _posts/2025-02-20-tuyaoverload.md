@@ -6,7 +6,8 @@ date: 2025-02-20
 header:
   overlay_image: /assets/images/filler.webp
   teaser: /assets/images/tuya-power-overload.webp
-categories: [Smart Home, Troubleshooting]
+categories:
+  - Smart Home
 tags: [Tuya, Power Meter, Smart Home, Overload Protection, Energy Monitoring]
 ---
 

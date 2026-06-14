@@ -6,7 +6,8 @@ date: 2016-05-17
 header:
   overlay_image: /assets/images/filler.webp
   teaser: /assets/images/smartwatch-selection.webp
-categories: [Wearables, Tech]
+categories:
+  - Gadgets
 tags: [Smartwatch, Apple Watch, Pebble, Ticwatch, Huawei, Wear OS]
 ---
 

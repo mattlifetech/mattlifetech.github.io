@@ -6,7 +6,8 @@ date: 2025-03-04
 header:
   overlay_image: /assets/images/filler.webp
   teaser: /assets/images/transparent.webp
-categories: [Tech, Coding, Image Processing]
+categories:
+  - How-To
 tags: [Python, Automation, Image Editing]
 ---
 

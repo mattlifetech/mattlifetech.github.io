@@ -6,7 +6,8 @@ date: 2020-05-22
 header:
   overlay_image: /assets/images/filler.webp
   teaser: /assets/images/ad-blocking-strategies.webp
-categories: [Privacy, Ad-Blocking]
+categories:
+  - Smart Home
 tags: [Ads, Ad-Blocker, Pi-hole, VPN, YouTube, Facebook]
 ---
 

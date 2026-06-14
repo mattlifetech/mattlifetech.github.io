@@ -6,7 +6,8 @@ date: 2014-06-30
 header:
   overlay_image: /assets/images/filler.webp
   teaser: /assets/images/car-remote-alarm.webp
-categories: [Security, Cars]
+categories:
+  - Automotive
 tags: [Car Security, Anti-Theft, Alarm System, Safety Tips]
 ---
 

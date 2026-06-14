@@ -6,7 +6,8 @@ date: 2022-11-21
 header:
   overlay_image: /assets/images/filler.webp
   teaser: /assets/images/toyota-glasses-holder.webp
-categories: [Automotive, DIY]
+categories:
+  - Automotive
 tags: [Toyota Corolla Cross, Car Accessories, DIY Installation, Storage, Car Modifications]
 ---
 

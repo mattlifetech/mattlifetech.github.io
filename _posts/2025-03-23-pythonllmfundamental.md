@@ -6,7 +6,8 @@ date: 2025-03-23
 header:
   overlay_image: /assets/images/filler.webp
   teaser: /assets/images/funda.webp
-categories: [Tech, Coding, Python, LLM]
+categories:
+  - How-To
 tags: [Python, LLM, Terminal, Virtual Environment, AI, Beginners]
 ---
 

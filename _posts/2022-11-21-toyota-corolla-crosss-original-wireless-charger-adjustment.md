@@ -6,7 +6,8 @@ date: 2022-11-21
 header:
   overlay_image: /assets/images/filler.webp
   teaser: /assets/images/toyota-wireless-charger.webp
-categories: [Automotive, DIY]
+categories:
+  - Automotive
 tags: [Toyota Corolla Cross, Wireless Charger, Car Accessories, DIY, Smartphone Charging]
 ---
 

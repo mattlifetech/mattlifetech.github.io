@@ -1,13 +1,15 @@
 main:
   - title: "Home"
     url: /
-  - title: "Products"
-    url: /products/
+  - title: "Smart Home"
+    url: /smart-home/
+  - title: "Gadgets"
+    url: /gadgets/
+  - title: "Gaming"
+    url: /gaming/
+  - title: "How-To"
+    url: /how-to/
+  - title: "Automotive"
+    url: /automotive/
   - title: "About"
     url: /about/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
-  - title: "Archive"
-    url: /year-archive/

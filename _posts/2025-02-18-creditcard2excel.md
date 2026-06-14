@@ -12,8 +12,7 @@ tags:
   - Automation
   - Data Processing
 categories:
-  - Projects
-  - Finance Tools
+  - Blog
 description: "A Python tool to extract and organize credit card statement data into an Excel file."
 permalink: /projects/creditcard2excel/
 ---

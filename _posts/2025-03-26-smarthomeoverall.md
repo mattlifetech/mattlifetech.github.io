@@ -6,7 +6,8 @@ excerpt: "After years of innovation, smart homes haven't taken over as expected.
 header:
   overlay_image: /assets/images/filler.webp
   teaser: /assets/images/smarthomewhy.webp
-categories: [Smart Home, Technology]
+categories:
+  - Smart Home
 tags: [Smart Home, IoT, Automation]
 ---
 

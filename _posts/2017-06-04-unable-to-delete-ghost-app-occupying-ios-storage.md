@@ -6,7 +6,8 @@ date: 2017-06-04
 header:
   overlay_image: /assets/images/filler.webp
   teaser: /assets/images/ios-ghost-app.webp
-categories: [iOS, Troubleshooting]
+categories:
+  - How-To
 tags: [iOS, App Deletion, Ghost Apps, Storage Issue, Fix]
 ---
 

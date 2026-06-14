@@ -7,7 +7,8 @@ published: false
 header:
   overlay_image: /assets/images/filler.webp
   teaser: /assets/images/interconnectivity.png
-categories: [Tech, Smart Home, Xiaomi, home screen+]
+categories:
+  - Smart Home
 tags: [Xiaomi, Smart Home, Interconnectivity, Screen Mirroring, home screen+]
 ---
 

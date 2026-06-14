@@ -6,7 +6,8 @@ date: 2014-06-27
 header:
   overlay_image: /assets/images/filler.webp
   teaser: /assets/images/online-shopping.webp
-categories: [E-Commerce, Shopping]
+categories:
+  - Gadgets
 tags: [Online Shopping, eBay, AliExpress, Lelong, Doublewoot]
 ---
 

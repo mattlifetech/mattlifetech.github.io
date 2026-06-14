@@ -6,7 +6,8 @@ date: 2019-08-02
 header:
   overlay_image: /assets/images/filler.webp
   teaser: /assets/images/pi-hole-adblocker.webp
-categories: [Networking, Privacy]
+categories:
+  - Smart Home
 tags: [Pi-hole, Ad-Blocker, VPN, Cloud Computing, Privacy]
 ---
 

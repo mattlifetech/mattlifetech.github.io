@@ -6,7 +6,8 @@ date: 2015-01-18
 header:
   overlay_image: /assets/images/filler.webp
   teaser: /assets/images/home-theatre-setup.webp
-categories: [Home Entertainment, Tech]
+categories:
+  - Gadgets
 tags: [Home Theatre, Xiaomi MiTV, PS4, Mac Mini, Streaming]
 ---
 

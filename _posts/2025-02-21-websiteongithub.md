@@ -6,7 +6,8 @@ date: 2025-02-21
 header:
   overlay_image: /assets/images/filler.webp
   teaser: /assets/images/minimal-mistakes-setup.webp
-categories: [Web Development, Jekyll]
+categories:
+  - How-To
 tags: [Jekyll, Minimal Mistakes, GitHub Pages, Liquid Archive]
 ---
 

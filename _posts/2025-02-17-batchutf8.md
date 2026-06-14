@@ -6,7 +6,8 @@ date: 2014-06-27
 header:
   overlay_image: /assets/images/filler.webp
   teaser: /assets/images/bookmark-pocket.webp
-categories: [Apps, Productivity]
+categories:
+  - How-To
 tags: [Bookmarking, Pocket, Read Later, Productivity]
 ---
 

@@ -6,7 +6,8 @@ date: 2017-07-13
 header:
   overlay_image: /assets/images/filler.webp
   teaser: /assets/images/iphone-budget-strategy.webp
-categories: [Apple, Budget Tech]
+categories:
+  - Gadgets
 tags: [iPhone, Budget, Apple, iCloud, Cost-Saving]
 ---
 

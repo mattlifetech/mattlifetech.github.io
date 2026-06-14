@@ -6,7 +6,8 @@ date: 2020-04-15
 header:
   overlay_image: /assets/images/filler.webp
   teaser: /assets/images/windows10-chinese-input-fix.webp
-categories: [Windows, Troubleshooting]
+categories:
+  - How-To
 tags: [Windows 10, Chinese Input, Simplified Chinese, Language Settings, Fix]
 ---
 

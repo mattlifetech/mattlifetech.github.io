@@ -6,7 +6,8 @@ date: 2020-05-18
 header:
   overlay_image: /assets/images/filler.webp
   teaser: /assets/images/amazon-fire-nav-bar.webp
-categories: [Amazon Fire, Troubleshooting]
+categories:
+  - How-To
 tags: [Amazon Fire Tablet, Navigation Bar, Home Button, Fix, Tablet Settings]
 ---
 

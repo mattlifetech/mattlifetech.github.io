@@ -12,8 +12,7 @@ tags:
   - Home Automation
   - IoT
 categories:
-  - Projects
-  - Home Automation
+  - Smart Home
 description: "Automate presence detection using Tuya sensors for seamless smart home integration."
 permalink: /projects/tuya-presence-automation/
 ---

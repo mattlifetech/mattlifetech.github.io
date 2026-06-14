@@ -6,7 +6,8 @@ date: 2016-01-13
 header:
   overlay_image: /assets/images/filler.webp
   teaser: /assets/images/ps4-us-apps.webp
-categories: [Gaming, Streaming]
+categories:
+  - Gaming
 tags: [PS4, US Apps, Netflix, Hulu, VPN, Streaming]
 ---
 

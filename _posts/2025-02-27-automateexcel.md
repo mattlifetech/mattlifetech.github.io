@@ -6,7 +6,8 @@ date: 2025-02-27
 header:
   overlay_image: /assets/images/filler.webp
   teaser: /assets/images/vba-vs-python.webp
-categories: [Excel Automation, Python, VBA]
+categories:
+  - How-To
 tags: [Excel, VBA, Python, Automation, Data Processing]
 ---
 

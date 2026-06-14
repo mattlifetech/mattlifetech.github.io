@@ -6,7 +6,8 @@ date: 2016-01-27
 header:
   overlay_image: /assets/images/filler.webp
   teaser: /assets/images/unic-uc50-projector.webp
-categories: [Gadgets, Reviews]
+categories:
+  - Gadgets
 tags: [Projector, Pico Projector, UNIC UC50, Home Entertainment, Tech Review]
 ---
 

@@ -6,7 +6,8 @@ date: 2025-02-28
 header:
   overlay_image: /assets/images/filler.webp
   teaser: /assets/images/moon-reader.webp
-categories: [E-Readers, Chinese Stories, Android]
+categories:
+  - Gadgets
 tags: [Moon+ Reader, Chinese, Android, TOC]
 ---
 

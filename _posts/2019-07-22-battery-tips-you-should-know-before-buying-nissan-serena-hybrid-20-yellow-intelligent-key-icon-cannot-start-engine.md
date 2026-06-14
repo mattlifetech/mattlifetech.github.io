@@ -6,7 +6,8 @@ date: 2019-07-22
 header:
   overlay_image: /assets/images/filler.webp
   teaser: /assets/images/nissan-serena-battery-tips.webp
-categories: [Automotive, Troubleshooting]
+categories:
+  - Automotive
 tags: [Nissan Serena, Hybrid Battery, Car Troubleshooting, Intelligent Key, Malaysia]
 ---
 Don't get me wrong, I love this car.  Just Nissan should educate or prepared for new Hybrid car owner better.  

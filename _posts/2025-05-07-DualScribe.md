@@ -6,7 +6,7 @@ excerpt: "DualScribe is a powerful no-code desktop app that aligns Chinese text 
 header:
   teaser: /assets/images/products/dualscribe.png
 categories:
-  - products
+  - Blog
 tags: [language-learning, chinese, no-code, ocr, ai, pinyin, translation]
 ---
 

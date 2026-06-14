@@ -6,7 +6,8 @@ date: 2025-02-20
 header:
   overlay_image: /assets/images/filler.webp
   teaser: /assets/images/python-beginner-powershell.webp
-categories: [Python, Beginner]
+categories:
+  - How-To
 tags: [Python, PowerShell, Setup, Virtual Environment, Git]
 ---
 

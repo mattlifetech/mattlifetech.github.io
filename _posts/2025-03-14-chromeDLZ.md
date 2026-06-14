@@ -6,7 +6,8 @@ date: 2025-03-14
 header:
   overlay_image: /assets/images/filler.webp
   teaser: /assets/images/DLZ.png
-categories: [Chrome Extensions, Automation, Productivity]
+categories:
+  - How-To
 tags: [Chrome, Downloads, Image Management, Automation]
 ---
 

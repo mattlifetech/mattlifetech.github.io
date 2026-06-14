@@ -6,7 +6,8 @@ date: 2015-01-18
 header:
   overlay_image: /assets/images/filler.webp
   teaser: /assets/images/ip-camera-wide-angle.webp
-categories: [Home Security, DIY]
+categories:
+  - Smart Home
 tags: [IP Camera, CCTV, Wide Angle, Home Security, DIY]
 ---
 

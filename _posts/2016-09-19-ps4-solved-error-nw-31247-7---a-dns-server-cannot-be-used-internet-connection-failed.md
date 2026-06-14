@@ -6,7 +6,8 @@ date: 2016-09-19
 header:
   overlay_image: /assets/images/filler.webp
   teaser: /assets/images/ps4-dns-error.webp
-categories: [Gaming, Troubleshooting]
+categories:
+  - Gaming
 tags: [PS4, Error NW-31247-7, DNS, Internet Connection, Networking]
 ---
 

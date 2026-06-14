@@ -6,7 +6,8 @@ date: 2025-03-14
 header:
   overlay_image: /assets/images/filler.webp
   teaser: /assets/images/whatsapp_chat.webp
-categories: [Chrome Extension, WhatsApp]
+categories:
+  - How-To
 tags: [Chrome, Extensions, WhatsApp, Automation]
 ---
 

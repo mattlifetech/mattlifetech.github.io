@@ -6,7 +6,8 @@ date: 2021-12-02
 header:
   overlay_image: /assets/images/filler.webp
   teaser: /assets/images/android-wifi-no-internet.webp
-categories: [Android, Troubleshooting]
+categories:
+  - How-To
 tags: [WiFi, Android, No Internet, MAC Address, Router Settings]
 ---
 

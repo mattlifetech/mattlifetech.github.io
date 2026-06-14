@@ -6,7 +6,8 @@ date: 2015-01-25
 header:
   overlay_image: /assets/images/filler.webp
   teaser: /assets/images/ps4-disc-eject-error.webp
-categories: [Gaming, Troubleshooting]
+categories:
+  - Gaming
 tags: [PS4, PlayStation, Hardware Fix, Gaming Issues, Troubleshooting]
 ---
 

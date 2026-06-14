@@ -12,8 +12,7 @@ tags:
   - Automation
   - Productivity
 categories:
-  - Projects
-  - Tools
+  - Blog
 description: "A simple way to run Python scripts from the Windows context menu with a right-click."
 permalink: /projects/rightclick-run-python/
 ---

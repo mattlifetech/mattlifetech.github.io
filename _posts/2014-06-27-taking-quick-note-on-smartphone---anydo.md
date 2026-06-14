@@ -6,7 +6,8 @@ date: 2014-06-27
 header:
   overlay_image: /assets/images/filler.webp
   teaser: /assets/images/anydo-notes.webp
-categories: [Apps, Productivity]
+categories:
+  - How-To
 tags: [Note-Taking, Any.DO, Productivity, Quick Notes]
 ---
 

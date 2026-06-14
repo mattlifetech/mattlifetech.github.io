@@ -6,7 +6,8 @@ date: 2015-01-26
 header:
   overlay_image: /assets/images/filler.webp
   teaser: /assets/images/mitv-3d-content.webp
-categories: [Home Entertainment, Tech]
+categories:
+  - Gadgets
 tags: [MiTV2, 3D TV, Smart TV, Home Theatre, Streaming]
 ---
 

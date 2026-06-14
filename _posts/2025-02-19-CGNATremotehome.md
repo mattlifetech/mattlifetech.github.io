@@ -6,7 +6,8 @@ date: 2025-02-19
 header:
   overlay_image: /assets/images/filler.webp
   teaser: /assets/images/cgnat-remote-access.webp
-categories: [Networking, Remote Access]
+categories:
+  - Smart Home
 tags: [CGNAT, Remote Access, Tailscale, Cloudflare Tunnel, VPN, Malaysia]
 ---
 

@@ -6,7 +6,8 @@ date: 2025-02-27
 header:
   overlay_image: /assets/images/filler.webp
   teaser: /assets/images/folder-cleaning-thumb.webp
-categories: [Automation, Python]
+categories:
+  - How-To
 tags: [Python, File Management, Automation]
 ---
 

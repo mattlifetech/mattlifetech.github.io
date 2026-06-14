@@ -6,7 +6,8 @@ date: 2018-11-23
 header:
   overlay_image: /assets/images/filler.webp
   teaser: /assets/images/nissan-serena-battery.webp
-categories: [Automotive, Troubleshooting]
+categories:
+  - Automotive
 tags: [Nissan Serena, Car Battery, Hybrid, Jump Start, Malaysia]
 ---
 

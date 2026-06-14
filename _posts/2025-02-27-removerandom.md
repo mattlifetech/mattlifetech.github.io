@@ -6,7 +6,8 @@ date: 2025-02-27
 header:
   overlay_image: /assets/images/filler.webp
   teaser: /assets/images/text-cleaning.webp
-categories: [Text Processing, Python]
+categories:
+  - How-To
 tags: [Python, Text Cleaning, Automation, Regex]
 ---
 

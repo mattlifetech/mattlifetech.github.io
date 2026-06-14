@@ -6,7 +6,8 @@ date: 2014-06-29
 header:
   overlay_image: /assets/images/filler.webp
   teaser: /assets/images/mac-f1-f12.webp
-categories: [Mac, Gaming]
+categories:
+  - Gaming
 tags: [Mac OS X, Keyboard, Gaming, Function Keys]
 ---
 
