@@ -11,7 +11,7 @@ entries_layout: grid
 Welcome to our product showcase! Below are the tools and solutions we've built to simplify your journey.
 
 <div class="entries-grid">
-  {% assign product_posts = site.categories.products | sort: "date" | reverse %}
+  {% assign product_posts = site.posts | where_exp: "post", "post.categories contains 'products'" | sort: "date" | reverse %}
   {% for post in product_posts %}
     <div>
       <a href="{{ post.url | relative_url }}">
