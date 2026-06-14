@@ -1,5 +1,5 @@
 ---
-title: "2025-12-20_Troubleshooting-Syncthing--Fixing--Out-of-Sync--and--Conflict--Errors-Like-a-Pro-04a114e501ca"
+title: "Troubleshooting Syncthing: Fixing Out-of-Sync and Conflict Errors Like a Pro"
 layout: single
 date: 2025-12-20
 excerpt: "The Ultimate Guide to Resolving Metadata Drift and Sync Deadlocks on Your Cross-Platform Home Lab"

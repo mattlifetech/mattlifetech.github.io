@@ -1,5 +1,5 @@
 ---
-title: "2025-08-11_The-Labubu-Effect-eb934b58c2dc"
+title: "The Labubu Effect: Why a Tiny Toy is a Big Red Flag for Youth Finances"
 layout: single
 date: 2025-08-11
 excerpt: "Why a Tiny Toy is a Big Red Flag for Youth Finances"

@@ -1,5 +1,5 @@
 ---
-title: "2025-03-27_Challenges-of-VR---AR-Glasses-for-Users-Over-40-2a41e04c09be"
+title: "Challenges of VR and AR Glasses for Users Over 40"
 layout: single
 date: 2025-03-27
 excerpt: "In today’s fast-paced world, multitasking has become second nature. We juggle emails during meetings, catch up on news while commuting, and…"

@@ -1,5 +1,5 @@
 ---
-title: "2025-12-29_How-to-Share-Your-Google-Photos-With-Family-Without-Maxing-Out-Their-Storage-a7d56e93cb50"
+title: "How to Share Your Google Photos With Family Without Maxing Out Their Storage"
 layout: single
 date: 2025-12-29
 excerpt: "The ultimate guide to sharing thousands of memories without triggering those dreaded “Storage Full” notifications for your loved ones."

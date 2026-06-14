@@ -1,5 +1,5 @@
 ---
-title: "2025-04-11_Reimagining-Typing--Morse-Code--Clear-Flow--and-the-T9-Keyboard-Revival-eee4a187dd7a"
+title: "Reimagining Typing: Morse Code, Clear Flow, and the T9 Keyboard Revival"
 layout: single
 date: 2025-04-11
 excerpt: "​In the evolving landscape of digital communication, innovative keyboard designs have emerged to enhance accessibility, efficiency, and…"

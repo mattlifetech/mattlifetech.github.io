@@ -1,5 +1,5 @@
 ---
-title: "2025-03-28_A-Must-Have-Printer-You-Didn-t-Realize-in-Today-s-Paperless-Society-cdb7b673dfb9"
+title: "A Must-Have Printer You Didn't Realize in Today's Paperless Society"
 layout: single
 date: 2025-03-28
 excerpt: "Introduction"

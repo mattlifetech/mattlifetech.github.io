@@ -1,5 +1,5 @@
 ---
-title: "2025-05-11_The-Best-Way-to-Improve-Remote-Desktop-Experience-from-a-Tablet--Use-PowerToys-to-Map-Two-Essential--7df0f9b94a17"
+title: "The Best Way to Improve Remote Desktop Experience from a Tablet: Use PowerToys to Map Two Essential Keys"
 layout: single
 date: 2025-05-11
 excerpt: "Remote desktop access from a tablet can be a game changer for mobile professionals, digital nomads, or anyone who wants the flexibility to…"

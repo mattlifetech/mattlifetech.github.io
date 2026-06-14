@@ -1,5 +1,5 @@
 ---
-title: "2025-04-16_Why-Couch-Co-op-Games-Are-Disappearing---And-Why-We-Need-Them-Back-8509e27cae66"
+title: "Why Couch Co-op Games Are Disappearing — And Why We Need Them Back"
 layout: single
 date: 2025-04-16
 excerpt: "🛋️ “Whatever Happened to Couch Co-op?”"

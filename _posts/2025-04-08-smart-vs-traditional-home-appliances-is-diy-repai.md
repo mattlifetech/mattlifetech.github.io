@@ -1,5 +1,5 @@
 ---
-title: "2025-04-08_Smart-vs--Traditional-Home-Appliances--Is-DIY-Repair-the-Key-to-Saving-Money-and-the-Planet--f1407c4fb9ed"
+title: "Smart vs. Traditional Home Appliances: Is DIY Repair the Key to Saving Money and the Planet?"
 layout: single
 date: 2025-04-08
 excerpt: "Should You Buy Smart or Traditional Appliances?"

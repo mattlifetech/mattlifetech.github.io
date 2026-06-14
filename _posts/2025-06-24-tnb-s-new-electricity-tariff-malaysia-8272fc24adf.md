@@ -1,5 +1,5 @@
 ---
-title: "2025-06-24_TNB-s-New-Electricity-Tariff---Malaysia-8272fc24adf6"
+title: "TNB's New Electricity Tariff Malaysia: Decoding Your Bill and What It Means for Your Future"
 layout: single
 date: 2025-06-24
 excerpt: "Decoding Your Bill and What it Means for Your Future"

@@ -1,5 +1,5 @@
 ---
-title: "2025-12-16_China-Travel-2025--A-Malaysian-s-Guide-to-Surviving-the-Cashless-Great-Wall-1015675d9074"
+title: "China Travel 2025: A Malaysian's Guide to Surviving the Cashless Great Wall"
 layout: single
 date: 2025-12-16
 excerpt: "Heading to China soon? Leave the thick stack of RMB notes at home. Here is exactly how to pay for your dim sum, Didi rides, and shopping…"

@@ -1,5 +1,5 @@
 ---
-title: "2025-04-05_Cost-Effective-Gaming-Upgrades--Leveraging-LSFG-for-Better-Performance-2cea5156404e"
+title: "Cost-Effective Gaming Upgrades: Leveraging LSFG for Better Performance"
 layout: single
 date: 2025-04-05
 excerpt: "Do you know Lossless Scaling Frame Generation (LSFG)?"

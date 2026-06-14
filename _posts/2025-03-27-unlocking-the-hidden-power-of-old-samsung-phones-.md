@@ -1,5 +1,5 @@
 ---
-title: "2025-03-27_Unlocking-the-Hidden-Power-of-Old-Samsung-Phones--The-Magic-of-the-ROUTINE-App-e920ba9447eb"
+title: "Unlocking the Hidden Power of Old Samsung Phones: The Magic of the ROUTINE App"
 layout: single
 date: 2025-03-27
 excerpt: "The Unsung Hero of Smart Automation"

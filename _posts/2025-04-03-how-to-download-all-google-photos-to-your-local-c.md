@@ -1,5 +1,5 @@
 ---
-title: "2025-04-03_How-to-Download-All-Google-Photos-to-Your-Local-Computer-1cbcc63aacd0"
+title: "How to Download All Google Photos to Your Local Computer"
 layout: single
 date: 2025-04-03
 excerpt: "Google Photos is a great cloud storage service, but having a local backup of your photos and videos is always a good idea. Whether you’re…"
