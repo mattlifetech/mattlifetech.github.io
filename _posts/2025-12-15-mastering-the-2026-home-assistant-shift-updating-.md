@@ -38,6 +38,7 @@ Here's how to fix both problems with one YAML update.
 
 The old format is deprecated:
 
+{% raw %}
 ```yaml
 # OLD — deprecated, stops working in HA 2026.6
 sensor:
@@ -56,6 +57,7 @@ template:
       - name: "My Energy Sensor"
         ...
 ```
+{% endraw %}
 
 All your existing template sensor logic works the same — only the wrapping structure changes.
 
@@ -77,6 +79,7 @@ Net bill: `(kWh × (base_rate + afa_rate)) - rebate`
 
 Replace your old energy sensor block in `configuration.yaml` with this:
 
+{% raw %}
 ```yaml
 template:
   - sensor:
@@ -115,6 +118,7 @@ template:
           
           {{ total | round(2) }}
 ```
+{% endraw %}
 
 **Replace `sensor.tuya_power`** with whatever entity tracks your cumulative monthly kWh usage.
 
