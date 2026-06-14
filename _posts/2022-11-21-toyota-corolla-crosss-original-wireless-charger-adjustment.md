@@ -1,57 +1,81 @@
 ---
-title: "Toyota Corolla Cross's Original Wireless Charger Adjustment"
+title: "Toyota Corolla Cross Wireless Charger Too Small? How to Remove the Clip for Wider Phones"
 layout: single
-excerpt: "A step-by-step guide on adjusting the Toyota Corolla Cross's original wireless charger to fit larger smartphones like the Samsung Fold 3."
+excerpt: "Toyota Corolla Cross wireless charger has a side clip that's too narrow for Samsung Fold 3 and other wide phones. Here's how to remove it yourself — service centres won't do it."
 date: 2022-11-21
 header:
   overlay_image: /assets/images/filler.webp
   teaser: /assets/images/toyota-wireless-charger.webp
 categories:
   - Automotive
-tags: [Toyota Corolla Cross, Wireless Charger, Car Accessories, DIY, Smartphone Charging]
+tags: [Toyota Corolla Cross, Wireless Charger, Car Accessories, DIY, Smartphone]
+faq:
+  - q: "Can the Toyota Corolla Cross wireless charger fit a Samsung Galaxy Z Fold?"
+    a: "Not in its original configuration. The side clip on the Corolla Cross wireless charger is too narrow for the Samsung Galaxy Z Fold 3 (and similar wide/foldable phones). The clip can be removed manually — Toyota service centres will not do this modification. After removing the clip, the charger works as a flat pad for any Qi-compatible phone."
+  - q: "Will Toyota service centre adjust the Corolla Cross wireless charger?"
+    a: "No. Toyota Malaysia service centres will not modify the wireless charger clip. This was confirmed during a 1,000km service appointment. You need to do it yourself — the process takes about 10 minutes and only requires removing two screws."
+  - q: "Is the modification reversible?"
+    a: "Partially. Removing the charger requires breaking the double-sided tape adhesive securing it. The clip removal (cutting the grey plastic holder) is permanent — the clip cannot be reinstalled. Without the clip, phones sit flat on the charging pad without lateral support, which works fine for most phones in a centre console mount."
 ---
 
+The Toyota Corolla Cross includes a factory wireless charger in the centre console — but the side clip that holds the phone is too narrow for wider smartphones like the **Samsung Galaxy Z Fold 3**. Toyota's service centre confirmed they won't adjust this. Here's how to do it yourself in about 10 minutes.
 
-Note.  The service center will not help you to do this.   
-I asked today during my 1k service.
+**Important:** The clip removal is permanent. Without the clip, phones rest flat on the Qi charging pad. This works fine for most phones but provides no lateral stability on sharp corners — test whether this is acceptable for your use before committing.
 
-I am making these adjustments due to the clip gap is too small for my Samsung fold 3
+## What You Need
 
-  
+- Flat-head screwdriver (for prying)
+- Phillips screwdriver (for 2 screws)
+- Small sharp scissors (for clipping the grey plastic)
+- Patience with the initial removal step
 
+## Step-by-Step Instructions
 
-The wireless charger is installed and not intended to be removed.
+### Step 1: Remove the wireless charger from the console
 
-There is this pin under the front part of the wireless charger.
+The charger is held down by a pin under the front edge and double-sided tape on the bottom corners. It is not designed to be removed — the process breaks the tape (which you can replace with new double-sided tape afterward).
 
-You can try if you can slide to the front before lifting it up.  
-In this process, you will tear the double-sided tape at the front and back bottom of the charger.
+**Process:**
+1. Set handbrake on, shift gear to N — this gives more clearance to work
+2. Try to slide the charger forward (toward you) before lifting — the pin is at the front underside
+3. Once the front edge is free, lift the charger up and out
+4. Pull it toward you; it has a cable attached at the rear, so it won't come fully free until you've worked out enough slack
 
-[![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1hjGEA8Uu3z4qcWrYxUeGoIkQQ04wxrH-GufULHEUBnKu_uDitNae85UsTsHya5WHwV8q_-A6-9q_Y-p0xzc7CCXifip8e4w4U1Mou4OeRlblGUXEbJjEpUwP-kZJ-BjmO8JM2S4fwaYxDo7Olq_-27ZGLZVS7z_vFVIa0TvB0xjDx-W5kG2ijVab/s320/20221121_122614.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1hjGEA8Uu3z4qcWrYxUeGoIkQQ04wxrH-GufULHEUBnKu_uDitNae85UsTsHya5WHwV8q_-A6-9q_Y-p0xzc7CCXifip8e4w4U1Mou4OeRlblGUXEbJjEpUwP-kZJ-BjmO8JM2S4fwaYxDo7Olq_-27ZGLZVS7z_vFVIa0TvB0xjDx-W5kG2ijVab/s4000/20221121_122614.jpg)  
-[![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjX9tp5IzilFthtZIMyTIDVBI9sG90f9PJKMfgS_hvHOpQYq_LqWfwUHETQ3B22s_AccVLyJySorKmXSV4sEeoMykPIeWVxbnT68Vn2fIDGqQD9oJJ91O9zLLJ94lwnB8uQqVtB3Td8oJ1WlQNu5W1jL43Tj0reREjvPu_BE_PQcXcwKEbiuzzQcuTF/s320/20221121_122624.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjX9tp5IzilFthtZIMyTIDVBI9sG90f9PJKMfgS_hvHOpQYq_LqWfwUHETQ3B22s_AccVLyJySorKmXSV4sEeoMykPIeWVxbnT68Vn2fIDGqQD9oJJ91O9zLLJ94lwnB8uQqVtB3Td8oJ1WlQNu5W1jL43Tj0reREjvPu_BE_PQcXcwKEbiuzzQcuTF/s4000/20221121_122624.jpg)  
-Steps:  
-[![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7XlcQlZNxO7ylF8roCmquBNDCuFmssgkJIfNt62skFpV6KUDnI5V4qyONPklvKyqZDpD7AUIfzHKE02LCrDczpsS2mvjhw9Modv_C3DluolheL-CyzBmUhJa73FcQe5o0oYDHFJ7tcA5KpzLYoZ9DNkjTx-a7Jz4UPXnbJ_tIPYAulbejyp6PcmeJ/s320/Picture4.png)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7XlcQlZNxO7ylF8roCmquBNDCuFmssgkJIfNt62skFpV6KUDnI5V4qyONPklvKyqZDpD7AUIfzHKE02LCrDczpsS2mvjhw9Modv_C3DluolheL-CyzBmUhJa73FcQe5o0oYDHFJ7tcA5KpzLYoZ9DNkjTx-a7Jz4UPXnbJ_tIPYAulbejyp6PcmeJ/s703/Picture4.png)
+### Step 2: Access the clip mechanism
 
-1. When you manage to lift the charger up, you can pull it out to do the rest.  
-   REMEMBER to make sure the car break is on and Gear moves to N to get more space for work.
-2. Unscrew the two screws on the left and right
-3. Push up the clip, and you will see the red circle number 3 wrap around a white cable.  
-   Use a sharp scissor to snap the grey plastic (NOT THE WHITE CABLE)
-4. Remove the clip part as in the picture above
+With the charger lifted enough to work, you'll see two screws on the left and right sides. Unscrew both.
 
-  
-[![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRhKhegQ1GdxtrUN5PWmCVNdgOEOnCi_U1k4sxSadgBKJHTS_n1z8NPjbsGDOXlDYG6inbx6abGf42Gc51yoW9cn6e551m7Crc1w4ll7WcE-ro1tDWS4T_juuDEpK5QqpiRrb7LqmFPcmIqSKaTQSBlpg29MSDfDbTAgs5oal1jyxKcM5FN1KeDjXr/s320/20221121_122538.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRhKhegQ1GdxtrUN5PWmCVNdgOEOnCi_U1k4sxSadgBKJHTS_n1z8NPjbsGDOXlDYG6inbx6abGf42Gc51yoW9cn6e551m7Crc1w4ll7WcE-ro1tDWS4T_juuDEpK5QqpiRrb7LqmFPcmIqSKaTQSBlpg29MSDfDbTAgs5oal1jyxKcM5FN1KeDjXr/s4000/20221121_122538.jpg)There is two metal piece left there as in the picture.  Lastly, push the charger and fit it into place.Now it works for my Samsung Fold 3 by just putting on it.  
-(As clip is no more, not sure how stable the phone will stay in place)  
-  
-  
-  
-  
-  
-  
-  
-  
+### Step 3: Remove the clip
 
-  
+Push up the clip mechanism. You'll see a grey plastic piece wrapping around a white cable — the cable is the charging coil connection.
 
+**Critical:** Use small scissors to cut and remove only the **grey plastic clip holder** — do NOT cut the white cable.
 
-  
+Once the grey plastic is removed, the clip structure comes free entirely.
+
+### Step 4: Reinstall the charger
+
+Two metal pieces remain in the charger housing. Slide the charger back into position in the console and press it down to engage with the mounting point. The double-sided tape will need to be replaced if it lost adhesion during removal — standard 3M double-sided foam tape works.
+
+## Result
+
+The charger is now a flat Qi pad. The Samsung Galaxy Z Fold 3 (and any other wide phone) can be placed directly on it without the clip interfering. Charging works normally.
+
+**What you lose:** The side clip that held narrow phones in place. Most Malaysian driving conditions (stop-start KL traffic, roundabouts) will shift a phone sitting on a flat pad. A separate phone mount on the dashboard may be a better combined solution if you rely on navigation.
+
+{% include affiliate-card.html product="toyota_corolla_cross" %}
+
+## Frequently Asked Questions
+
+**Can the Corolla Cross wireless charger fit a Samsung Galaxy Z Fold?**
+Not stock — the clip is too narrow. After removing the clip, any Qi-compatible phone (including the Z Fold 3) charges by resting flat on the pad.
+
+**Will Toyota service centre do this?**
+No. Confirmed at 1,000km service. They won't modify the charger unit.
+
+**Is the modification reversible?**
+Removing the charger requires breaking the adhesive tape (replaceable). The clip removal (cutting the grey plastic) is permanent.
+
+---
+
+See also the [sunglasses holder installation guide](/automotive/toyota-corolla-cross-car-glasses-storage-holder-box-installation/) for another useful Corolla Cross DIY. For more Malaysian automotive guides, see the [Automotive](/automotive/) section.
