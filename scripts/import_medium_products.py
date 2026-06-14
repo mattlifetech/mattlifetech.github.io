@@ -94,6 +94,29 @@ IMPORT_LIST = [
     # China travel (travel accessories)
     ("2025-12-16_China-Travel-2025--A-Malaysian-s-Guide-to-Surviving-the-Cashless-Great-Wall-1015675d9074.html",
      ["travel", "china", "malaysia", "cashless"], "Blog"),
+    # Keyboards & input — physical product
+    ("2025-04-11_Reimagining-Typing--Morse-Code--Clear-Flow--and-the-T9-Keyboard-Revival-eee4a187dd7a.html",
+     ["keyboard", "typing", "gadgets"], "Gadgets"),
+    # Smartphone evolution — gadgets overview
+    ("2025-03-28_Navigating-the-Future--The-Next-Chapter-in-Smartphone-Evolution-0a615158bb47.html",
+     ["smartphone", "mobile", "gadgets"], "Gadgets"),
+    # Malaysia energy / smart home
+    ("2025-06-24_TNB-s-New-Electricity-Tariff---Malaysia-8272fc24adf6.html",
+     ["energy", "malaysia", "smart-home", "tnb"], "Smart Home"),
+    # How-To: storage & cloud
+    ("2025-04-03_How-to-Download-All-Google-Photos-to-Your-Local-Computer-1cbcc63aacd0.html",
+     ["google-photos", "storage", "backup"], "How-To"),
+    ("2025-04-03_Why-Your-Google-Drive-is-Always-Full--Understanding-Hidden-Storage-Usage---How-to-Free-Up-Space-74b08d4452b5.html",
+     ["google-drive", "storage", "cloud"], "How-To"),
+    ("2025-04-04_-Ensuring-Seamless-Photo-and-Video-Backup-After-Cloning-Your-Phone--Key-Considerations-a7b47eb03294.html",
+     ["backup", "phone", "storage"], "How-To"),
+    ("2025-12-20_Troubleshooting-Syncthing--Fixing--Out-of-Sync--and--Conflict--Errors-Like-a-Pro-04a114e501ca.html",
+     ["syncthing", "sync", "storage", "nas"], "How-To"),
+    ("2025-12-29_How-to-Share-Your-Google-Photos-With-Family-Without-Maxing-Out-Their-Storage-a7d56e93cb50.html",
+     ["google-photos", "storage", "family"], "How-To"),
+    # Security / passkeys
+    ("2025-04-02_Passkey-Methods---Authenticators--Summary---Cross-Platform-Compatibility-2d5588e1d6d3.html",
+     ["passkey", "security", "authentication"], "How-To"),
 ]
 
 
