@@ -18,7 +18,7 @@ unic_uc50_projector:
   tagline: Budget portable projector — tested and reviewed
   image: /assets/images/filler.webp
   shopee: https://s.shopee.com.my/8ATgUw5pNf
-  aliexpress: https://www.aliexpress.com/wholesale?SearchText=unic+uc50+projector
+  aliexpress: https://s.click.aliexpress.com/e/_c3TDX9Vb
   source_url: https://www.aliexpress.com/wholesale?SearchText=unic+uc50+projector
 nissan_serena_battery:
   title: Nissan Serena Hybrid 12V Battery
@@ -32,7 +32,7 @@ tuya_presence_sensor:
   tagline: 24GHz radar sensor for accurate smart home automation
   image: /assets/images/filler.webp
   shopee: https://s.shopee.com.my/9pbuTyGaDi
-  aliexpress: https://www.aliexpress.com/wholesale?SearchText=tuya+mmwave+presence+sensor
+  aliexpress: https://s.click.aliexpress.com/e/_c4LcJ2tX
   source_url: https://www.aliexpress.com/wholesale?SearchText=tuya+mmwave+presence+sensor
   note: Look for 24GHz mmWave models for best accuracy.
 smart_home_hub:
@@ -40,14 +40,14 @@ smart_home_hub:
   tagline: Central hub for all your Tuya smart home devices
   image: /assets/images/filler.webp
   shopee: https://s.shopee.com.my/8V6WtY4Yhh
-  aliexpress: https://www.aliexpress.com/wholesale?SearchText=tuya+zigbee+hub
+  aliexpress: https://s.click.aliexpress.com/e/_c45mddt7
   source_url: https://www.aliexpress.com/wholesale?SearchText=tuya+zigbee+hub
 pi_hole:
   title: Raspberry Pi Zero 2W
   tagline: Run Pi-hole and block ads on your entire network
   image: /assets/images/filler.webp
   shopee: https://s.shopee.com.my/AAEksaFJXo
-  aliexpress: https://www.aliexpress.com/wholesale?SearchText=raspberry+pi+zero+2w
+  aliexpress: https://s.click.aliexpress.com/e/_c3Q3SOMV
   source_url: https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/
   note: Any Raspberry Pi model works — Zero 2W is the most affordable option.
 toyota_corolla_cross:
@@ -61,47 +61,47 @@ bluetooth_earbuds:
   tagline: Switch between phone, laptop and tablet without re-pairing
   image: /assets/images/filler.webp
   shopee: https://s.shopee.com.my/60PMoCVces
-  aliexpress: https://www.aliexpress.com/wholesale?SearchText=multipoint+bluetooth+earbuds+tws
+  aliexpress: https://s.click.aliexpress.com/e/_c3TuipC1
   note: Look for earbuds with multipoint connection to pair two devices simultaneously.
 portable_monitor:
   title: Portable USB-C Monitor
   tagline: Extend your screen anywhere — plug and play via USB-C
   image: /assets/images/filler.webp
   shopee: https://s.shopee.com.my/6Ain0VUzJv
-  aliexpress: https://www.aliexpress.com/wholesale?SearchText=portable+usb+c+monitor+15+inch
+  aliexpress: https://s.click.aliexpress.com/e/_c3oQh8lJ
   note: Look for 15–16" with USB-C PD passthrough and built-in kickstand.
 usbc_hub:
   title: USB-C Hub / Docking Station
   tagline: One cable to rule them all — expand laptop ports instantly
   image: /assets/images/filler.webp
   shopee: https://s.shopee.com.my/70Hu02Rod6
-  aliexpress: https://www.aliexpress.com/wholesale?SearchText=usb+c+hub+docking+station+hdmi+multiport
+  aliexpress: https://s.click.aliexpress.com/e/_c4CnObtF
   note: Look for models with HDMI 4K, USB-A ports, SD card slot, and PD charging passthrough.
 yubikey_usb:
   title: USB Security Key (FIDO2 / YubiKey compatible)
   tagline: Hardware 2FA — phishing-proof login for accounts and code signing
   image: /assets/images/filler.webp
   shopee: https://s.shopee.com.my/7AbKCLRBI9
-  aliexpress: https://www.aliexpress.com/wholesale?SearchText=fido2+usb+security+key+hardware+token
+  aliexpress: https://s.click.aliexpress.com/e/_c3dBkWL3
   note: YubiKey 5 NFC is the gold standard. Budget alternative — check FEITIAN ePass FIDO.
 graphics_card:
   title: GPU for AI / Local Image Generation
   tagline: Run Stable Diffusion locally — minimum 8GB VRAM recommended
   image: /assets/images/filler.webp
   shopee: https://s.shopee.com.my/6ff3bQT5J4
-  aliexpress: https://www.aliexpress.com/wholesale?SearchText=nvidia+rtx+4060+graphics+card+8gb+vram
+  aliexpress: https://s.click.aliexpress.com/e/_c4kviMrT
   note: RTX 4060 (8GB) is the sweet spot for local AI image generation at current prices.
 mechanical_keyboard:
   title: Mechanical Keyboard
   tagline: Satisfying to type on — worth it if you spend hours at the keyboard
   image: /assets/images/filler.webp
   shopee: https://s.shopee.com.my/3Vi1phKm1Q
-  aliexpress: https://www.aliexpress.com/wholesale?SearchText=mechanical+keyboard+wireless+hot+swap+75+percent
+  aliexpress: https://s.click.aliexpress.com/e/_c3MdGNFr
   note: Hot-swap sockets let you swap switches without soldering. TKL or 75% size is most practical.
 ttlock_smart_lock:
   title: TTLock Smart Deadbolt
   tagline: App-controlled door lock with PIN, card, and remote access
   image: /assets/images/filler.webp
   shopee: https://s.shopee.com.my/3LObdOLPMP
-  aliexpress: https://www.aliexpress.com/wholesale?SearchText=ttlock+smart+deadbolt+fingerprint+door+lock
+  aliexpress: https://s.click.aliexpress.com/e/_c4Ulw9cv
   note: Ensure you get the TTLock-branded version — third-party locks use a different app.
