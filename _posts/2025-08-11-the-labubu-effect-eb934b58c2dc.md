@@ -73,7 +73,7 @@ Ultimately, the goal is to create an environment where “small luxuries” are 
 
 ## Where to Buy
 
-{% include affiliate-card.html product=”labubu_collectibles” %}
+{% include affiliate-card.html product="labubu_collectibles" %}
 
 
 ## Support Me
