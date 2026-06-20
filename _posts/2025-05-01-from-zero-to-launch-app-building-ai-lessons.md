@@ -178,6 +178,11 @@ The project is open source, actively maintained, and designed with creative inde
 
 This is just the beginning. With the right tools and a learning mindset, you can build your own assistant too.
 
+**Also on this blog:**
+- [The Brutal Reality of Going Indie](/app-development/brutal-reality-of-going-indie-ios-android-web-windows/) — what happens after launch: the real friction of shipping to iOS, Android, Web, and Windows
+- [App Creation with Gemini 2.5](/ai-&-productivity/app-creation-with-gemini-2-5-noob-perspective/) — using Gemini instead of ChatGPT for building apps: a comparison
+- [AI Agent Writes Code at 1,200 WPM](/ai-&-productivity/ai-agent-write-code-1200-wpm-vibe-coding/) — the vibe coding workflow that takes AI-assisted development even further
+
 ---
 
 ## Where to Buy

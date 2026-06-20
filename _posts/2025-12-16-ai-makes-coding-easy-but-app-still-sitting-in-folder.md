@@ -125,6 +125,11 @@ If you are wondering why your hard drive is full of “almost done” AI project
 - **Coding the app:** 2 Days.
 - **Packaging, Legal, Admin, and Store Graphics:** 2 Weeks.
 
+**Also on this blog:**
+- [AI Agent Writes Code at 1,200 WPM](/ai-&-productivity/ai-agent-write-code-1200-wpm-vibe-coding/) — the vibe coding workflow that makes the "easy coding" part even faster
+- [The Brutal Reality of Going Indie](/app-development/brutal-reality-of-going-indie-ios-android-web-windows/) — the 2-week admin gauntlet in detail: iOS, Android, Web, and Windows in 90 days
+- [From Zero to Launch: App Building AI Lessons](/app-development/from-zero-to-launch-app-building-ai-lessons/) — lessons from actually shipping an AI-built app
+
 The coding is the fun part. The rest is just grit. But the feeling of seeing your app on the store — and sending that link to a friend? It’s worth the headache.
 
 ---

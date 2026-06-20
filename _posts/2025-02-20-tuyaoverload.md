@@ -8,7 +8,14 @@ header:
   teaser: /assets/images/tuya-power-overload.webp
 categories:
   - Smart Home
-tags: [Tuya, Power Meter, Smart Home, Overload Protection, Energy Monitoring]
+tags:
+  - Tuya
+  - Power Meter
+  - Smart Home
+  - Overload Protection
+  - Energy Monitoring
+  - Home Automation
+  - Malaysia
 ---
 
 ## Tuya Power Meter Overload Alarm Notification
@@ -67,3 +74,7 @@ Below is a comparison table from my earlier analysis, summarizing the possibilit
 If you’re using a Tuya power meter and see an overload alarm, there’s no need to worry about a complete power outage—your main supply remains active, and only the connected device is turned off at software level and restart quite fast. 
 
 Let me know if you’ve experienced similar issues in your smart home setup!
+
+**Also on this blog:**
+- [Tuya Presence Automation with Home Assistant](/smart-home/tuyapresenceautomation/) — how to set up mmWave presence detection that actually works reliably
+- [Why Smart Homes Have Stalled](/smart-home/smart-homes-the-dream-that-stalled-why-people-are/) — the honest case for and against smart home investment in Malaysia

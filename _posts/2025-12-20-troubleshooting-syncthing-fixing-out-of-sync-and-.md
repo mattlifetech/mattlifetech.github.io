@@ -12,6 +12,9 @@ tags:
   - sync
   - storage
   - nas
+  - Backup
+  - Windows
+  - Data Protection
 author_profile: true
 read_time: true
 share: true
@@ -109,6 +112,10 @@ The `(?d)` prefix is crucial—it tells Syncthing that if it needs to delete a d
 ### Conclusion
 
 Syncthing is powerful precisely because it is transparent. While “Out of Sync” errors can look intimidating, they are usually just a sign that the metadata index needs a nudge. By using the **Remove/Re-add** method and keeping an eye on hidden system files, you can keep your sync engine humming without the downtime of a full database rebuild.
+
+**Also on this blog:**
+- [NVMe SSD or C: Drive Failure Recovery Plan](/how-to/protecting-yourself-from-nvme-or-c-drive-failure-/) — Syncthing works well alongside a NAS; here's the complete backup strategy
+- [How to Download All Google Photos](/how-to/how-to-download-all-google-photos-to-your-local-c/) — getting offline copies of cloud photos you can then sync locally with Syncthing
 
 ## Where to Buy
 

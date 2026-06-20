@@ -13,6 +13,9 @@ tags:
   - Malaysia
   - Energy
   - YAML
+  - Smart Home
+  - Tuya
+  - Home Automation
 author_profile: true
 read_time: true
 share: true
@@ -154,6 +157,11 @@ Change only the `afa_rate` value in the YAML. Everything else stays the same.
 
 **Why shouldn't I use the monthly formula for daily cost?**
 Daily usage (15kWh) always calculates at Tier 1/max rebate — mathematically wrong for cumulative monthly rebate logic. Use a flat average rate for daily approximation.
+
+**Also on this blog:**
+- [Why Smart Homes Have Stalled](/smart-home/smart-homes-the-dream-that-stalled-why-people-are/) — the broader picture of what works and what doesn't in a Malaysian smart home
+- [Tuya Presence Automation with Home Assistant](/smart-home/tuyapresenceautomation/) — integrating presence sensors for smarter automations
+- [TTLock Smart Deadbolt Review](/smart-home/ttlock-smart-deadbolt-a-budget-versatile-guardian/) — smart lock that can be integrated into Home Assistant locally
 
 ---
 

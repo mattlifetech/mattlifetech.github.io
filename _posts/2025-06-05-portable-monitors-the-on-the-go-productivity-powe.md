@@ -13,6 +13,10 @@ tags:
   - Work From Anywhere
   - Gadgets
   - Malaysia
+  - Monitor
+  - Display
+  - MacBook
+  - USB-C
 author_profile: true
 read_time: true
 share: true
@@ -105,5 +109,10 @@ No battery for most laptop users — simpler and lighter. Battery version only i
 {% include affiliate-card.html product="usbc_hub" %}
 
 ---
+
+**Also on this blog:**
+- [MacBook Air M1 in 2025: Still Worth Buying?](/gadgets/why-the-macbook-air-m1-is-still-the-best-budget-m/) — the MacBook that pairs best with a portable monitor on a budget
+- [USB-C to Monitor Not Working?](/gadgets/why-your-usb-c-cable-won-t-connect-to-a-monitor-e/) — active vs passive cables explained for connecting a portable monitor to MacBook
+- [TV as PC Monitor: Why It Doesn't Work Well](/gadgets/why-using-a-tv-as-a-pc-monitor-is-a-bad-idea-and-/) — why a portable monitor wins for actual desk work
 
 For more honest productivity gadget reviews, see the [Gadgets](/gadgets/) section.

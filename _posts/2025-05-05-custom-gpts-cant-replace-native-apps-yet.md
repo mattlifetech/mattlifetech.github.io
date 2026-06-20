@@ -76,6 +76,11 @@ OpenAI has acknowledged the limitations of Custom GPTs concerning persistent mem
 
 Custom GPTs offer remarkable capabilities, emulating various application functionalities through conversational interfaces. However, their current limitations, particularly in memory and data persistence, highlight the continued importance of dedicated applications for tasks requiring long-term data retention. By integrating Custom GPTs into these applications, developers can create robust systems that combine the best of AI-driven interactions and reliable data management.
 
+**Also on this blog:**
+- [ChatGPT Custom GPTs vs Project Instructions](/ai-&-productivity/chatgpt-custom-gpts-vs-project-instructions/) — when to use a custom GPT versus project memory for automation
+- [From Zero to Launch: App Building AI Lessons](/app-development/from-zero-to-launch-app-building-ai-lessons/) — building the native app that custom GPTs couldn't replace
+- [The Brutal Reality of Going Indie](/app-development/brutal-reality-of-going-indie-ios-android-web-windows/) — what building and shipping a real native app actually looks like
+
 ---
 
 ## Where to Buy

@@ -11,6 +11,9 @@ tags:
   - passkey
   - security
   - authentication
+  - YubiKey
+  - Code Signing
+  - Developer
 author_profile: true
 read_time: true
 share: true
@@ -97,6 +100,9 @@ Ensuring the security of your Google Account while maintaining accessible recove
 
 - **Sync is turned on:** Keep more than one device logged into your Google Account & sync is turned on
 - **Password and SMS Recovery:** Ensure you have a strong, memorable password and an associated phone number for SMS-based recovery. This setup allows account access even if authenticator apps or passkeys are inaccessible.
+
+**Also on this blog:**
+- [Navigating SSL.com Code Signing with eSigner & YubiKey](/app-development/navigating-ssl-com-code-signing-esigner-yubikey/) — hardware security keys like YubiKey go beyond authentication into app signing for developers
 
 ## Where to Buy
 

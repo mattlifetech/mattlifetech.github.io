@@ -88,6 +88,11 @@ Use the Canvas window to test and configure everything. Ensure that the real API
 
 Happy Coding and hope this helps…
 
+**Also on this blog:**
+- [From Zero to Launch: App Building AI Lessons](/app-development/from-zero-to-launch-app-building-ai-lessons/) — the broader AI-assisted app building journey
+- [AI Agent Writes Code at 1,200 WPM](/ai-&-productivity/ai-agent-write-code-1200-wpm-vibe-coding/) — taking vibe coding even further with autonomous AI agents
+- [The Brutal Reality of Going Indie](/app-development/brutal-reality-of-going-indie-ios-android-web-windows/) — what building for real users across four platforms actually looks like
+
 ---
 
 ## Where to Buy

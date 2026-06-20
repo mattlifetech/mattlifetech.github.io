@@ -13,6 +13,10 @@ tags:
   - Laptop
   - MacBook Air M1
   - Malaysia
+  - Monitor
+  - Display
+  - USB-C
+  - Portable Monitor
 author_profile: true
 read_time: true
 share: true
@@ -92,6 +96,11 @@ Yes, through macOS Sequoia (2024) and likely at least one more major version. Ap
 
 **Can it run local AI models?**
 Yes, lightweight models (up to ~7B parameters with 8GB RAM). TinyLLaMA, Whisper, and Llama 3.2 3B run on M1. Not competitive with M3 Pro for larger models.
+
+**Also on this blog:**
+- [USB-C to Monitor Not Working? Active vs Passive Cables Explained](/gadgets/why-your-usb-c-cable-won-t-connect-to-a-monitor-e/) — why the M1's USB-C to DisplayPort cable often fails (and what to use instead)
+- [Portable Monitors: The On-the-Go Productivity Powerhouse](/gadgets/portable-monitors-the-on-the-go-productivity-powe/) — the best second screen option when travelling with an M1
+- [TV as PC Monitor: Why It Doesn't Work Well](/gadgets/why-using-a-tv-as-a-pc-monitor-is-a-bad-idea-and-/) — why a dedicated monitor beats connecting the M1 to a TV
 
 ---
 

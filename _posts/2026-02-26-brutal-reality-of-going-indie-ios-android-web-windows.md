@@ -131,6 +131,11 @@ Building indie products is rarely about who writes the most elegant algorithms. 
 
 *If you found this dive into the indie dev reality helpful, leave some claps and follow me for more unfiltered breakdowns on building products that actually ship.*
 
+**Also on this blog:**
+- [AI Agent Writes Code at 1,200 WPM](/ai-&-productivity/ai-agent-write-code-1200-wpm-vibe-coding/) — the vibe coding workflow that made building the four platforms faster
+- [From Zero to Launch: App Building AI Lessons](/app-development/from-zero-to-launch-app-building-ai-lessons/) — the AI-assisted build process before the indie reality hit
+- [AI Makes Coding Easy, But the App is Still Sitting in a Folder](/app-development/ai-makes-coding-easy-but-app-still-sitting-in-folder/) — the gap between building and actually shipping
+
 ---
 
 ## Where to Buy

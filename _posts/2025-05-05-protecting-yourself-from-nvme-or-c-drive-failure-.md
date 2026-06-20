@@ -127,6 +127,11 @@ Yes, for x86 Synology NAS units. No license fee for personal/home use.
 **How fast is recovery after a C: drive failure?**
 With a pre-cloned spare: under 5 minutes (just swap the drive). With NAS restore: 30–90 minutes.
 
+**Also on this blog:**
+- [How to Check NVMe SSD Health](/how-to/why-monitor-your-nvme-ssd-s-health-7c11ca348fe4/) — spot early warning signs before failure using free tools like CrystalDiskInfo
+- [Windows Drive Partitions Explained](/how-to/you-don-t-realize-your-storage-drive-has-so-many-/) — understand the recovery and EFI partitions you'll be working around
+- [Troubleshooting Syncthing](/how-to/troubleshooting-syncthing-fixing-out-of-sync-and-/) — if you use Syncthing alongside your NAS, here's how to keep it reliable
+
 ---
 
 For more practical PC setup and maintenance guides, see the [How-To](/how-to/) section.

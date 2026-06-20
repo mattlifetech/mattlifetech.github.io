@@ -71,3 +71,7 @@ If your family is constantly hitting their limits regardless of sharing, it migh
 ### Final Advice
 
 To keep your own storage lean while sharing, make sure your upload settings are set to **“Storage Saver”** rather than “Original Quality.” This compresses the files slightly — usually unnoticeable to the naked eye — allowing you to fit thousands more memories into your account before you ever have to worry about the bill.
+
+**Also on this blog:**
+- [How to Download All Google Photos to Your Local Computer](/how-to/how-to-download-all-google-photos-to-your-local-c/) — download a full offline backup of your entire Google Photos library
+- [Why Your Google Drive is Always Full](/how-to/why-your-google-drive-is-always-full-understandin/) — understand what's eating your storage quota across Google's ecosystem

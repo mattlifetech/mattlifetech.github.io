@@ -13,6 +13,8 @@ tags:
   - Storage
   - PC Maintenance
   - Windows
+  - Backup
+  - Data Protection
 author_profile: true
 read_time: true
 share: true
@@ -105,6 +107,10 @@ Idle 30–40°C, under load 50–70°C. Above 70°C sustained = add an M.2 heats
 
 **What does TBW mean?**
 Terabytes Written — the total data you can write over the drive's rated lifetime. Compare against your drive's spec sheet rating using CrystalDiskInfo's "Total Host Writes" value.
+
+**Also on this blog:**
+- [NVMe SSD or C: Drive Failure Recovery Plan](/how-to/protecting-yourself-from-nvme-or-c-drive-failure-/) — what to do when the drive actually fails: clone + NAS backup strategy
+- [Windows Drive Partitions Explained](/how-to/you-don-t-realize-your-storage-drive-has-so-many-/) — what all those small mystery partitions on your SSD actually do
 
 ---
 

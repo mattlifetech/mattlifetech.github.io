@@ -13,6 +13,9 @@ tags:
   - PC Setup
   - Display
   - Gadgets
+  - Portable Monitor
+  - HDR
+  - MacBook
 author_profile: true
 read_time: true
 share: true
@@ -108,6 +111,11 @@ LG OLED C2/C3 (42"), Samsung QN90 (43"), Sony X85K/X90K. Under 43" is important 
 
 **What is chroma subsampling?**
 TVs compress colour info (4:2:0 or 4:2:2) for video — it blurs text edges on a desktop. PC Mode unlocks full 4:4:4 chroma for sharp text. Required for comfortable text work.
+
+**Also on this blog:**
+- [Portable Monitors: The On-the-Go Productivity Powerhouse](/gadgets/portable-monitors-the-on-the-go-productivity-powe/) — a dedicated monitor that actually works at desk distance
+- [HDR Monitor: Why Screenshots Look Washed Out](/gadgets/hdr-monitors-why-your-screenshots-look-washed-out/) — display technology that matters for PC desktop use
+- [MacBook Air M1 in 2025: Still Worth Buying?](/gadgets/why-the-macbook-air-m1-is-still-the-best-budget-m/) — MacBook + dedicated monitor is a better combo than MacBook + TV
 
 ---
 
