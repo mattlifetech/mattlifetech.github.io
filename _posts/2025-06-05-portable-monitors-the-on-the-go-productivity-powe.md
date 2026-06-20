@@ -96,4 +96,15 @@ No battery for most laptop users — simpler and lighter. Battery version only i
 
 ---
 
+
+---
+
+## Where to Buy
+
+{% include affiliate-card.html product="portable_monitor" %}
+
+{% include affiliate-card.html product="usbc_hub" %}
+
+---
+
 For more honest productivity gadget reviews, see the [Gadgets](/gadgets/) section.

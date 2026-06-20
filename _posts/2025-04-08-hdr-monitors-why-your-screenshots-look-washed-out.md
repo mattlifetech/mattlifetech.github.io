@@ -92,4 +92,13 @@ Minor GPU overhead. Real benefit only in games with explicit HDR support — non
 
 ---
 
+
+---
+
+## Where to Buy
+
+{% include affiliate-card.html product="portable_monitor" %}
+
+---
+
 For more display guides and monitor reviews, see the [Gadgets](/gadgets/) section.

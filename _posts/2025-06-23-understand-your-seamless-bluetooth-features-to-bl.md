@@ -94,4 +94,13 @@ The headset's pairing memory is full. Remove unused pairings or manually reconne
 
 ---
 
+
+---
+
+## Where to Buy
+
+{% include affiliate-card.html product="bluetooth_earbuds" %}
+
+---
+
 For more practical gadget guides, see the [Gadgets](/gadgets/) section.

@@ -110,4 +110,15 @@ No. All features including guest access, time-limited codes, and access logs are
 
 ---
 
+
+---
+
+## Where to Buy
+
+{% include affiliate-card.html product="ttlock_smart_lock" %}
+
+{% include affiliate-card.html product="smart_home_hub" %}
+
+---
+
 For more smart home security guides for Malaysia, see the [Smart Home](/smart-home/) section.

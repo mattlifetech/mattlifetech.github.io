@@ -112,4 +112,13 @@ Gaming devices need specific PD voltage profiles. A higher-watt charger that doe
 
 ---
 
+
+---
+
+## Where to Buy
+
+{% include affiliate-card.html product="usbc_hub" %}
+
+---
+
 For more practical USB and gadget guides, see the [Gadgets](/gadgets/) section.

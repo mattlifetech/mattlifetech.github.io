@@ -119,4 +119,13 @@ Not ideal — ambient noise competes with audio in loud environments. In-ear wit
 
 ---
 
+
+---
+
+## Where to Buy
+
+{% include affiliate-card.html product="bluetooth_earbuds" %}
+
+---
+
 For more honest gadget reviews, see the [Gadgets](/gadgets/) section.

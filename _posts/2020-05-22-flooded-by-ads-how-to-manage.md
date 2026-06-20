@@ -90,16 +90,12 @@ tags: [Ads, Ad-Blocker, Pi-hole, VPN, YouTube, Facebook]
 
 5. Tried VPN block list app i.e. Blokada.. doesnt feel effective from quick test and seems to be pay tier.
 
-  
+---
 
-  
+## Where to Buy
 
-  
+{% include affiliate-card.html product="pi_hole" %}
 
-  
+## Support Me
 
-  
-
-  
-
-
+If this helped, consider buying through the link above — it costs you nothing extra and keeps this blog going.
