@@ -78,7 +78,6 @@ Apple charges around RM 700–800 for battery replacement at an Apple Authorised
 
 **Buy the M2 or M3 if:** You have the budget, need 1080p webcam, dual displays, or plan to keep the laptop 4–5 years and want longer software support runway.
 
-<!-- affiliate card: wire up with Carousell/Shopee second-hand MacBook link -->
 
 ## Frequently Asked Questions
 

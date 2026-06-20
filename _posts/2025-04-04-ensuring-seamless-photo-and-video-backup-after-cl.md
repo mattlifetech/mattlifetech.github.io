@@ -89,3 +89,12 @@ When managing backups, especially for individuals who frequently capture photos 
 - **WhatsApp’s Native Backup**: WhatsApp offers its own backup feature that saves chats and media to cloud services like Google Drive or iCloud. However, this backup is primarily for restoring WhatsApp data and may not provide the same accessibility or organization as dedicated photo backup services.​
 
 By implementing these practices, you can ensure a more efficient and organized backup process, safeguarding your valuable media without unnecessary duplication or storage consumption.
+
+## Where to Buy
+
+{% include affiliate-card.html product="nas_device" %}
+
+
+## Support Me
+
+If this helped, consider buying through the links above — it costs you nothing extra and keeps this blog going.

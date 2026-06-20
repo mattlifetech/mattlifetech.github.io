@@ -78,7 +78,6 @@ My current setup: **MacBook + Xiaomi tablet as second screen** (via Sidecar/wire
 
 If you're committed to a portable monitor: buy from a reputable brand (Asus ZenScreen, AOC, LG), avoid the cheapest units, and don't use it as a permanent desk monitor — that's what kills them fastest.
 
-<!-- affiliate card: wire up with Shopee portable monitor link -->
 
 ## Frequently Asked Questions
 

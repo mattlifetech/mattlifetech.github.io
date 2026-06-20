@@ -105,3 +105,12 @@ Following are details each would functions:
 
   
 
+
+## Where to Buy
+
+{% include affiliate-card.html product="unic_uc50_projector" %}
+
+
+## Support Me
+
+If this helped, consider buying through the links above — it costs you nothing extra and keeps this blog going.

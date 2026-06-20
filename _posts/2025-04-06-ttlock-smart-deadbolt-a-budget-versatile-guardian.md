@@ -92,7 +92,6 @@ If you're building a larger Tuya smart home, the Zigbee variant in Smart Life ma
 
 **Tuya Zigbee:** Best Home Assistant integration (if you already have a Zigbee hub). Requires a Zigbee hub investment but no extra gateway purchase.
 
-<!-- affiliate card: wire up once TTLock Shopee link confirmed -->
 
 ## Frequently Asked Questions
 

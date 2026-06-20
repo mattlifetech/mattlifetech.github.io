@@ -91,7 +91,6 @@ QLC drives (often found in high-capacity budget SSDs) have lower endurance — r
 - **Update firmware** — manufacturer tools (Samsung Magician, etc.) show firmware version and update availability
 - **Back up before it becomes urgent** — if Health drops to Caution, don't wait to set up a backup
 
-<!-- affiliate card: wire up with Shopee NVMe SSD link -->
 
 ## Frequently Asked Questions
 

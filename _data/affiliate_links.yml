@@ -119,3 +119,17 @@ nas_device:
   shopee: https://s.shopee.com.my/4AxigShouM
   aliexpress: https://s.click.aliexpress.com/e/_c3IGQgfj
   note: Synology 2-bay (DS223, DS224+) works with free Active Backup for Business — no subscription needed.
+thermal_printer:
+  title: Portable Thermal Label Printer
+  tagline: No ink, no mess — print labels, receipts, and documents on demand
+  image: /assets/images/filler.webp
+  shopee: https://s.shopee.com.my/qhGjVEAPi
+  aliexpress: https://s.click.aliexpress.com/e/_c2Is61aH
+  note: Look for Bluetooth models compatible with iOS and Android. Phomemo and MUNBYN are reliable brands.
+labubu_collectibles:
+  title: Labubu & Pop Mart Collectible Figures
+  tagline: The blind box craze — hunt for your favourite character
+  image: /assets/images/filler.webp
+  shopee: https://s.shopee.com.my/gNqXCEnkh
+  aliexpress: https://s.click.aliexpress.com/e/_c3695g85
+  note: Buy from verified Shopee Mall sellers to avoid fakes. Check seller ratings carefully.

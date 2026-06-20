@@ -74,7 +74,6 @@ If you use a portable monitor alongside a main display, and one has HDR enabled 
 
 Match HDR settings across your monitors to keep screenshots consistent.
 
-<!-- affiliate card: wire up with Shopee monitor link -->
 
 ## Frequently Asked Questions
 

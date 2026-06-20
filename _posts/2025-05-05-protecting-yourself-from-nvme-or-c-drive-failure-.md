@@ -112,7 +112,6 @@ Time to recovery: **30–90 minutes** (depends on system image size and network 
 
 **Minimum viable setup:** Layer 1 alone (clone) covers the most common failure scenario — single drive death — at minimal cost and setup time. Layer 2 adds ransomware and multi-failure protection.
 
-<!-- affiliate card: wire up with Shopee NVMe SSD / external drive enclosure link -->
 
 ## Frequently Asked Questions
 

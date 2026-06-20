@@ -94,7 +94,6 @@ Even with these models, they're better for **leaning-back content consumption** 
 [ ] Set Windows scaling to 150% if text is uncomfortably small at 4K
 ```
 
-<!-- affiliate card: wire up with Shopee monitor/TV link -->
 
 ## Frequently Asked Questions
 

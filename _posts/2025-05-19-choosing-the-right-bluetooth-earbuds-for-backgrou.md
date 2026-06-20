@@ -101,7 +101,6 @@ Both bone conduction and open-ear designs excel in quieter environments. In a no
 
 **In-ear (CMF Buds Pro 2):** Best value in-ear with long battery and multipoint support. Fit varies — test the bud size carefully.
 
-<!-- affiliate card: wire up with Shopee links once confirmed -->
 
 ## Frequently Asked Questions
 

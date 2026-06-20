@@ -94,7 +94,6 @@ Use your official phone charger and cable. No third-party charger matches propri
 **If you have Xiaomi/OPPO/Samsung fast charge and want near-speed matching:**
 Some third-party chargers (Baseus, Anker) support specific proprietary protocols. Check the model specifically supports your phone's protocol — not just "compatible with Xiaomi" but specifically "supports HyperCharge 67W" or similar.
 
-<!-- affiliate card: wire up with Shopee USB-C charger link once confirmed -->
 
 ## Frequently Asked Questions
 

@@ -76,7 +76,6 @@ These are two separate features that do similar things at different layers:
 2. Manually tap the headset in your phone's Bluetooth settings to reconnect (it will re-pair if you haven't exceeded the list)
 3. On Samsung phones, mark the headset as a Favourite — this prioritises it for auto-connection
 
-<!-- affiliate card: wire up with relevant earbuds/Bluetooth device Shopee link -->
 
 ## Frequently Asked Questions
 

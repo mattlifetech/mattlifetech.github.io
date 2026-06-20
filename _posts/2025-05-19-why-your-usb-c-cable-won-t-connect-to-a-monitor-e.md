@@ -89,7 +89,6 @@ Switch between inputs on monitor to switch devices
 
 **Shopee buying tip:** Search "USB-C to HDMI active" — some listings specify active, most don't. Read Q&A sections and look for mentions of MacBook compatibility. A seller who responds to "does this work with MacBook M1" is more reliable than one who doesn't respond.
 
-<!-- affiliate card: wire up with Shopee USB-C to HDMI cable link -->
 
 ## Frequently Asked Questions
 
@@ -108,3 +107,12 @@ Universal OS support for HDMI, and the active conversion chip in USB-C to HDMI a
 ---
 
 For more USB-C and monitor connection guides, see the [Gadgets](/gadgets/) section.
+
+## Where to Buy
+
+{% include affiliate-card.html product="usbc_hub" %}
+
+
+## Support Me
+
+If this helped, consider buying through the links above — it costs you nothing extra and keeps this blog going.

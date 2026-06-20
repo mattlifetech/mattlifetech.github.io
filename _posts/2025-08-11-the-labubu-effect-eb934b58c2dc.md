@@ -70,3 +70,12 @@ Addressing this complex challenge requires a multi-pronged approach:
 - **Mental Well-being Support:** Recognizing and addressing the mental health impacts of financial stress through integrated counseling services.
 
 Ultimately, the goal is to create an environment where “small luxuries” are a genuine choice for joy and expression, not a psychological substitute for the fundamental aspirations of a stable, secure, and prosperous future.
+
+## Where to Buy
+
+{% include affiliate-card.html product=”labubu_collectibles” %}
+
+
+## Support Me
+
+If this helped, consider buying through the links above — it costs you nothing extra and keeps this blog going.

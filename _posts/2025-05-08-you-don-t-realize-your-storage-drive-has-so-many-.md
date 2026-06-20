@@ -89,3 +89,12 @@ Partitions take ~800MB–1.5GB combined. Normal — the rest is your C: drive.
 ---
 
 For more Windows troubleshooting and PC guides, see the [How-To](/how-to/) section.
+
+## Where to Buy
+
+{% include affiliate-card.html product="nvme_ssd" %}
+
+
+## Support Me
+
+If this helped, consider buying through the links above — it costs you nothing extra and keeps this blog going.
