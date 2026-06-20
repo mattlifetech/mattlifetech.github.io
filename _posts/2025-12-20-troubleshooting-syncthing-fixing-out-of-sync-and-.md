@@ -119,7 +119,7 @@ Syncthing is powerful precisely because it is transparent. While “Out of Sync�
 
 ## Where to Buy
 
-{% include affiliate-card.html product=”nas_device” %}
+{% include affiliate-card.html product="nas_device" %}
 
 
 ## Support Me
