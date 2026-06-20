@@ -1,6 +1,8 @@
 ---
 title: "Beginner’s Guide to Image Generation Automation: Lessons from My Python Coding Journey"
 layout: single
+header:
+  teaser: /assets/images/medium/image-generation-automation-python-lessons-0.png
 date: 2025-04-18
 excerpt: "Built an automated AI image generation pipeline in Python for stock photo submission — here's what I learned the hard way."
 categories:

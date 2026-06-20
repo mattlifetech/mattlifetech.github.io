@@ -1,6 +1,8 @@
 ---
 title: "Don’t Let Your Automation Kill Your Revenue"
 layout: single
+header:
+  teaser: /assets/images/medium/dont-let-automation-kill-your-revenue-0.png
 date: 2025-08-06
 excerpt: "Automation should reduce friction, not replace the human warmth that keeps customers. The hidden cost of cold customer service."
 categories:

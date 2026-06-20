@@ -1,6 +1,8 @@
 ---
 title: "The Clipboard Conundrum: Navigating Cross-Device Synchronization Challenges"
 layout: single
+header:
+  teaser: /assets/images/medium/clipboard-conundrum-cross-device-sync-challenges-0.png
 date: 2025-03-29
 excerpt: "Cross-device clipboard sync is still unsolved in 2025. Here's why it's harder than it looks and what actually works."
 categories:

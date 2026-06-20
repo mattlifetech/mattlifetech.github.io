@@ -1,6 +1,8 @@
 ---
 title: "From Zero to Launch: What Building an App Taught Me About AI and Human Responsibility"
 layout: single
+header:
+  teaser: /assets/images/medium/from-zero-to-launch-app-building-ai-lessons-0.png
 date: 2025-05-01
 excerpt: "What building an app from scratch taught me about AI as a co-developer, human responsibility, and what you absolutely cannot skip."
 categories:

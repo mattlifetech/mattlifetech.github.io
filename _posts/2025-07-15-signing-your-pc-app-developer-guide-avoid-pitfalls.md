@@ -1,6 +1,8 @@
 ---
 title: "Signing Your PC App: A New Developer’s Guide to Avoiding Costly Pitfalls"
 layout: single
+header:
+  teaser: /assets/images/medium/signing-your-pc-app-developer-guide-avoid-pitfalls-0.png
 date: 2025-07-15
 excerpt: "A new developer's guide to PC app code signing — avoid the eSigner trap and save money before you commit to a certificate."
 categories:

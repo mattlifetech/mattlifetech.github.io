@@ -1,6 +1,8 @@
 ---
 title: "Why Custom GPTs Like DualScribe Can’t Fully Replace Native Apps — Yet"
 layout: single
+header:
+  teaser: /assets/images/medium/custom-gpts-cant-replace-native-apps-yet-0.png
 date: 2025-05-05
 excerpt: "DualScribe vs a Custom GPT doing the same job — why native apps still win on reliability, speed, and offline use."
 categories:

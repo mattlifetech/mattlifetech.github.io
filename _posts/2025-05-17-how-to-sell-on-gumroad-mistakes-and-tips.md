@@ -1,6 +1,8 @@
 ---
 title: "How to Sell on Gumroad (Without Wasting Time): Mistakes to Avoid and Tips That Work"
 layout: single
+header:
+  teaser: /assets/images/medium/how-to-sell-on-gumroad-mistakes-and-tips-0.png
 date: 2025-05-17
 excerpt: "How to actually sell on Gumroad — the mistakes that waste your time and what works, including what ChatGPT got wrong."
 categories:

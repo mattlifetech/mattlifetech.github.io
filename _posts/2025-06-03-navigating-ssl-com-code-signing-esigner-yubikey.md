@@ -1,6 +1,8 @@
 ---
 title: "Navigating SSL.com: Code Signing, eSigner, and YubiKey for New Developers"
 layout: single
+header:
+  teaser: /assets/images/medium/navigating-ssl-com-code-signing-esigner-yubikey-0.png
 date: 2025-06-03
 excerpt: "SSL.com, eSigner, and YubiKey explained for first-time PC app developers — don't fall into the expensive traps I did."
 categories:

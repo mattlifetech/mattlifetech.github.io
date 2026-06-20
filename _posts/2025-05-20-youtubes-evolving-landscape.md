@@ -1,6 +1,8 @@
 ---
 title: "YouTube’s Evolving Landscape"
 layout: single
+header:
+  teaser: /assets/images/medium/youtubes-evolving-landscape-0.png
 date: 2025-05-20
 excerpt: "YouTube is quietly shifting its mobile experience — and creators are caught in the middle of a platform identity crisis."
 categories:

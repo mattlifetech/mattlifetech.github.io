@@ -1,6 +1,8 @@
 ---
 title: "The Internet’s Hidden Lifeline: Why We Owe Everything to Time Sync"
 layout: single
+header:
+  teaser: /assets/images/medium/internets-hidden-lifeline-why-time-sync-matters-0.png
 date: 2025-05-26
 excerpt: "Time synchronisation is the invisible backbone of the internet. Without NTP, SSL breaks, payments fail, and logs become useless."
 categories:

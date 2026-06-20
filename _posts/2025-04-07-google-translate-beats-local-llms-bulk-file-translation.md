@@ -1,6 +1,8 @@
 ---
 title: "Why Google Translate Beats Local LLMs for Bulk File Translation"
 layout: single
+header:
+  teaser: /assets/images/medium/google-translate-beats-local-llms-bulk-file-translation-0.png
 date: 2025-04-07
 excerpt: "Tested local LLMs for bulk file translation — Google Translate still wins on speed, accuracy, and free tier access."
 categories:

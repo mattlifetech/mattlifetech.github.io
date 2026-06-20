@@ -1,6 +1,8 @@
 ---
 title: "Why Every Brand Wants a Loyalty App (But Most Shouldn’t Build One)"
 layout: single
+header:
+  teaser: /assets/images/medium/why-brands-want-loyalty-apps-but-shouldnt-build-one-0.png
 date: 2025-05-13
 excerpt: "Every brand wants a loyalty app but most shouldn't build one. The real ROI math most startups never run."
 categories:

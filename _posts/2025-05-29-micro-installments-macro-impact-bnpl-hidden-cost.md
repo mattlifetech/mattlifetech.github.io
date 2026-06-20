@@ -1,6 +1,8 @@
 ---
 title: "Micro-Installments, Macro Impact: The Hidden Cost of the BNPL Economy"
 layout: single
+header:
+  teaser: /assets/images/medium/micro-installments-macro-impact-bnpl-hidden-cost-0.png
 date: 2025-05-29
 excerpt: "BNPL and micro-installments feel free but carry a hidden cost — here's the rent-for-life economy you're opting into."
 categories:

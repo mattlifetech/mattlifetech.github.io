@@ -1,6 +1,8 @@
 ---
 title: "What I Learned About Selling Stock Images: Platform Reviews, Earnings, and Creative Demand"
 layout: single
+header:
+  teaser: /assets/images/medium/what-i-learned-selling-stock-images-platform-reviews-0.png
 date: 2025-04-13
 excerpt: "Honest review of stock image platforms after submitting as a new contributor — earnings, approval rates, and what actually sells."
 categories:

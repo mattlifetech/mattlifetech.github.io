@@ -1,6 +1,8 @@
 ---
 title: "From Active Play to Passive Screens: The Cognitive Cost of Modern Entertainment"
 layout: single
+header:
+  teaser: /assets/images/medium/active-play-to-passive-screens-cognitive-cost-0.png
 date: 2025-05-08
 excerpt: "What the research says about screen time replacing physical play — and the cognitive toll on kids that's harder to reverse than you think."
 categories:

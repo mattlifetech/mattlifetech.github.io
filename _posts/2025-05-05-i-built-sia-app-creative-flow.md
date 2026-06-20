@@ -1,6 +1,8 @@
 ---
 title: "🎨 I Built SIA App So You Don’t Have to Code Your Way into Creative Flow"
 layout: single
+header:
+  teaser: /assets/images/medium/i-built-sia-app-creative-flow-0.png
 date: 2025-05-05
 excerpt: "Built SIA App to solve my own creative bottleneck — here's why I made it and what it does that other tools don't."
 categories:

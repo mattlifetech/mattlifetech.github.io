@@ -1,6 +1,8 @@
 ---
 title: "The Brutal Reality of Going Indie: iOS, Android, Web, and Windows in 90 Days"
 layout: single
+header:
+  teaser: /assets/images/medium/brutal-reality-of-going-indie-ios-android-web-windows-0.png
 date: 2026-02-26
 excerpt: "What I learned building for iOS, Android, Web, and Windows in 90 days — the real cost, hidden friction, and what actually ships."
 categories:

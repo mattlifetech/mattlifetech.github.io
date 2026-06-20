@@ -1,6 +1,8 @@
 ---
 title: "I Watched an AI Agent Write Code at 1,200 WPM. Then I Threw Up."
 layout: single
+header:
+  teaser: /assets/images/medium/ai-agent-write-code-1200-wpm-vibe-coding-0.png
 date: 2026-02-27
 excerpt: "Watched an AI agent write code at 1,200 WPM and felt physically ill. A guide to surviving vibe coding without losing your mind."
 categories:

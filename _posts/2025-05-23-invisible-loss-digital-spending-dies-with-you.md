@@ -1,6 +1,8 @@
 ---
 title: "The Invisible Loss: When Digital Spending Dies With You"
 layout: single
+header:
+  teaser: /assets/images/medium/invisible-loss-digital-spending-dies-with-you-0.png
 date: 2025-05-23
 excerpt: "Your digital purchases — subscriptions, smart home devices, media libraries — disappear when you do. Nobody's planning for this."
 categories:

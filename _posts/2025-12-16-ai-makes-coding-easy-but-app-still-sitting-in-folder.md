@@ -1,6 +1,8 @@
 ---
 title: "AI Makes Coding Easy. So Why Is Your App Still Sitting in a Folder?"
 layout: single
+header:
+  teaser: /assets/images/medium/ai-makes-coding-easy-but-app-still-sitting-in-folder-0.png
 date: 2025-12-16
 excerpt: "AI made coding easy — publishing is the actual marathon. The last mile of software development nobody talks about."
 categories:

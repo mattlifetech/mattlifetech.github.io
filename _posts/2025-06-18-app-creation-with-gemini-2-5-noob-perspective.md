@@ -1,6 +1,8 @@
 ---
 title: "App Creation with Gemini 2.5: A Significant Upgrade from ChatGPT (Noob's Take)"
 layout: single
+header:
+  teaser: /assets/images/medium/app-creation-with-gemini-2-5-noob-perspective-0.png
 date: 2025-06-18
 excerpt: "Gemini 2.5 is a meaningful step up for app creation — here's what surprised me coming from ChatGPT 4.0 as a non-coder."
 categories:

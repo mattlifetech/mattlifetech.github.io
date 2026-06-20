@@ -1,6 +1,8 @@
 ---
 title: "Local AI Image Generation Models Are Powerful — but Out of Reach for Most Users"
 layout: single
+header:
+  teaser: /assets/images/medium/local-ai-image-generation-powerful-but-out-of-reach-0.png
 date: 2025-05-09
 excerpt: "Local AI image generation is genuinely impressive — but the hardware requirements lock out most users. Here's what it actually takes."
 categories:

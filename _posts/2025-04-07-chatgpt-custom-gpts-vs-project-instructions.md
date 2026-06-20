@@ -1,6 +1,8 @@
 ---
 title: "Unlocking the Power of ChatGPT: Custom GPTs vs Project Instructions (with Automation Example)"
 layout: single
+header:
+  teaser: /assets/images/medium/chatgpt-custom-gpts-vs-project-instructions-0.png
 date: 2025-04-07
 excerpt: "Custom GPTs vs Project Instructions — what each one does, when to use which, and a real automation example."
 categories:

@@ -1,6 +1,8 @@
 ---
 title: "I Didn’t Know AI Killed An Article Writing Style"
 layout: single
+header:
+  teaser: /assets/images/medium/ai-killed-article-writing-style-how-to-avoid-0.png
 date: 2025-06-18
 excerpt: "AI has homogenised a particular article writing style — here's how to spot it and avoid getting flagged as AI-generated."
 categories:
