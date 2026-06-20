@@ -127,3 +127,12 @@ This method can effectively reduce the load on the dGPU, leading to improved per
 LSFG is primarily designed to enhance gaming experiences by generating additional frames for smoother visuals. Its applicability is mainly within the gaming domain and does not extend to video editing, LLMs, or Stable Diffusion tasks. ​
 
 Incorporating a second GPU can offer performance benefits in specific scenarios, particularly where software is optimized for multi-GPU utilization. However, these advantages are highly dependent on the application’s design and the nature of the tasks. It’s crucial to assess whether the software you are using can effectively leverage multiple GPUs before investing in additional hardware.
+
+## Where to Buy
+
+{% include affiliate-card.html product="graphics_card" %}
+
+
+## Support Me
+
+If this helped, consider buying through the links above — it costs you nothing extra and keeps this blog going.

@@ -113,3 +113,12 @@ TVs compress colour info (4:2:0 or 4:2:2) for video — it blurs text edges on a
 ---
 
 For more monitor and display guides, see the [Gadgets](/gadgets/) section.
+
+## Where to Buy
+
+{% include affiliate-card.html product="portable_monitor" %}
+
+
+## Support Me
+
+If this helped, consider buying through the links above — it costs you nothing extra and keeps this blog going.

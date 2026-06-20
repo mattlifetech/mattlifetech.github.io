@@ -158,3 +158,14 @@ Daily usage (15kWh) always calculates at Tier 1/max rebate — mathematically wr
 ---
 
 For more Home Assistant guides and smart home automation for Malaysia, see the [Smart Home](/smart-home/) section.
+
+## Where to Buy
+
+{% include affiliate-card.html product="pi_hole" %}
+
+{% include affiliate-card.html product="smart_home_hub" %}
+
+
+## Support Me
+
+If this helped, consider buying through the links above — it costs you nothing extra and keeps this blog going.

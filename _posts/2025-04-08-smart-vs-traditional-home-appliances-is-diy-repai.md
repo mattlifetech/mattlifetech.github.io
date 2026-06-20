@@ -95,3 +95,14 @@ The next time something breaks, ask yourself:
 - Or can I extend its life, save money, and reduce my environmental footprint?
 
 Going green isn’t just about solar panels and recycling — it starts with our mindset around consumption.
+
+## Where to Buy
+
+{% include affiliate-card.html product="smart_home_hub" %}
+
+{% include affiliate-card.html product="tuya_presence_sensor" %}
+
+
+## Support Me
+
+If this helped, consider buying through the links above — it costs you nothing extra and keeps this blog going.

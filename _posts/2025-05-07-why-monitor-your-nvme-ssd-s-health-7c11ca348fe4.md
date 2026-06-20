@@ -110,3 +110,12 @@ Terabytes Written — the total data you can write over the drive's rated lifeti
 ---
 
 For more practical PC maintenance and How-To guides, see the [How-To](/how-to/) section.
+
+## Where to Buy
+
+{% include affiliate-card.html product="nvme_ssd" %}
+
+
+## Support Me
+
+If this helped, consider buying through the links above — it costs you nothing extra and keeps this blog going.

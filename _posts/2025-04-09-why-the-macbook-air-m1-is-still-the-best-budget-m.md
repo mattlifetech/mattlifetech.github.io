@@ -97,3 +97,14 @@ Yes, lightweight models (up to ~7B parameters with 8GB RAM). TinyLLaMA, Whisper,
 ---
 
 For more honest laptop and gadget reviews tested in Asia, see the [Gadgets](/gadgets/) section.
+
+## Where to Buy
+
+{% include affiliate-card.html product="portable_monitor" %}
+
+{% include affiliate-card.html product="usbc_hub" %}
+
+
+## Support Me
+
+If this helped, consider buying through the links above — it costs you nothing extra and keeps this blog going.

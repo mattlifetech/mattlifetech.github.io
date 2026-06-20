@@ -131,3 +131,14 @@ With a pre-cloned spare: under 5 minutes (just swap the drive). With NAS restore
 ---
 
 For more practical PC setup and maintenance guides, see the [How-To](/how-to/) section.
+
+## Where to Buy
+
+{% include affiliate-card.html product="nvme_ssd" %}
+
+{% include affiliate-card.html product="nas_device" %}
+
+
+## Support Me
+
+If this helped, consider buying through the links above — it costs you nothing extra and keeps this blog going.

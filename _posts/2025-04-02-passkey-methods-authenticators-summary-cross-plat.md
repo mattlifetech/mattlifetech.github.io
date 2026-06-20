@@ -97,3 +97,12 @@ Ensuring the security of your Google Account while maintaining accessible recove
 
 - **Sync is turned on:** Keep more than one device logged into your Google Account & sync is turned on
 - **Password and SMS Recovery:** Ensure you have a strong, memorable password and an associated phone number for SMS-based recovery. This setup allows account access even if authenticator apps or passkeys are inaccessible.
+
+## Where to Buy
+
+{% include affiliate-card.html product="yubikey_usb" %}
+
+
+## Support Me
+
+If this helped, consider buying through the links above — it costs you nothing extra and keeps this blog going.

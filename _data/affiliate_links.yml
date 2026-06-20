@@ -105,3 +105,17 @@ ttlock_smart_lock:
   shopee: https://s.shopee.com.my/3LObdOLPMP
   aliexpress: https://s.click.aliexpress.com/e/_c4Ulw9cv
   note: Ensure you get the TTLock-branded version — third-party locks use a different app.
+nvme_ssd:
+  title: NVMe SSD (1TB M.2 Gen4)
+  tagline: Fast, silent storage upgrade — check your SSD health before it's too late
+  image: /assets/images/filler.webp
+  shopee: https://s.shopee.com.my/4LH8slhBZN
+  aliexpress: https://s.click.aliexpress.com/e/_c3GDef4h
+  note: Look for Gen4 NVMe for modern motherboards. Samsung 980 Pro, WD Black SN850X are reliable picks.
+nas_device:
+  title: NAS (Network Attached Storage)
+  tagline: Your own private cloud — backup all PCs automatically with versioned recovery
+  image: /assets/images/filler.webp
+  shopee: https://s.shopee.com.my/4AxigShouM
+  aliexpress: https://s.click.aliexpress.com/e/_c3IGQgfj
+  note: Synology 2-bay (DS223, DS224+) works with free Active Backup for Business — no subscription needed.

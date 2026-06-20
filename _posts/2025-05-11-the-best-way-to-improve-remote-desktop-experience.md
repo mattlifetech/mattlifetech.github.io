@@ -114,3 +114,12 @@ With these two remappings, you’ll instantly:
 - Work from your tablet as if you’re on a full PC
 
 This fix is especially helpful when using **Moonlight + Sunshine**, **Chrome Remote Desktop**, or **Microsoft Remote Desktop**, where key pass-through can be inconsistent.
+
+## Where to Buy
+
+{% include affiliate-card.html product="xiaomi_pad7" %}
+
+
+## Support Me
+
+If this helped, consider buying through the links above — it costs you nothing extra and keeps this blog going.
