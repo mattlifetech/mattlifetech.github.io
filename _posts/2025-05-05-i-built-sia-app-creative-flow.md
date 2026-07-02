@@ -154,9 +154,9 @@ You don’t need to know how to code. You just need an idea.
 🙏 Thanks for checking it out. I built this to help myself and now I hope it helps you too.
 
 **Also on this blog:**
-- [From Zero to Launch: App Building AI Lessons](/app-development/from-zero-to-launch-app-building-ai-lessons/) — the full AI-assisted app building process and lessons learned
-- [The Brutal Reality of Going Indie](/app-development/brutal-reality-of-going-indie-ios-android-web-windows/) — what happens when your creative app meets the real world of app stores
-- [App Creation with Gemini 2.5](/ai-&-productivity/app-creation-with-gemini-2-5-noob-perspective/) — comparing AI tools for the next build
+- [From Zero to Launch: App Building AI Lessons](/from-zero-to-launch-app-building-ai-lessons/) — the full AI-assisted app building process and lessons learned
+- [The Brutal Reality of Going Indie](/brutal-reality-of-going-indie-ios-android-web-windows/) — what happens when your creative app meets the real world of app stores
+- [App Creation with Gemini 2.5](/app-creation-with-gemini-2-5-noob-perspective/) — comparing AI tools for the next build
 
 If you’re building something creative — I’d love to hear about it.
 

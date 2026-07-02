@@ -114,9 +114,9 @@ Single ecosystem (Tuya), single app (Smart Life). Zigbee hub + Zigbee switches a
 Yes for 15+ device setups and technical users who want local control. No if you want maintenance-free operation.
 
 **Also on this blog:**
-- [TTLock Smart Deadbolt Review](/smart-home/ttlock-smart-deadbolt-a-budget-versatile-guardian/) — one of the smart home devices that genuinely earns its keep
-- [Tuya Presence Automation with Home Assistant](/smart-home/tuyapresenceautomation/) — presence sensing that works reliably for light automations
-- [Mastering the 2026 Home Assistant Shift](/smart-home/mastering-the-2026-home-assistant-shift-updating-/) — local control for those ready to take the next step beyond Tuya cloud
+- [TTLock Smart Deadbolt Review](/ttlock-smart-deadbolt-a-budget-versatile-guardian/) — one of the smart home devices that genuinely earns its keep
+- [Tuya Presence Automation with Home Assistant](/tuyapresenceautomation/) — presence sensing that works reliably for light automations
+- [Mastering the 2026 Home Assistant Shift](/mastering-the-2026-home-assistant-shift-updating-/) — local control for those ready to take the next step beyond Tuya cloud
 
 ---
 

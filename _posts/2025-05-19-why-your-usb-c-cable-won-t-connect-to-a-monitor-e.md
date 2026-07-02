@@ -108,8 +108,8 @@ Yes, with active USB-C to DisplayPort cables specifically. These are hard to fin
 Universal OS support for HDMI, and the active conversion chip in USB-C to HDMI adapters handles the DP Alt Mode → HDMI translation automatically for all major operating systems.
 
 **Also on this blog:**
-- [MacBook Air M1 in 2025: Still Worth Buying?](/gadgets/why-the-macbook-air-m1-is-still-the-best-budget-m/) — the MacBook model most commonly affected by this USB-C cable issue
-- [Portable Monitors: The On-the-Go Productivity Powerhouse](/gadgets/portable-monitors-the-on-the-go-productivity-powe/) — portable monitors that connect reliably via USB-C
+- [MacBook Air M1 in 2025: Still Worth Buying?](/why-the-macbook-air-m1-is-still-the-best-budget-m/) — the MacBook model most commonly affected by this USB-C cable issue
+- [Portable Monitors: The On-the-Go Productivity Powerhouse](/portable-monitors-the-on-the-go-productivity-powe/) — portable monitors that connect reliably via USB-C
 
 ---
 

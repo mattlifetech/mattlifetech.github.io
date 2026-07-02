@@ -103,7 +103,7 @@ Minor GPU overhead. Real benefit only in games with explicit HDR support — non
 ---
 
 **Also on this blog:**
-- [TV as PC Monitor: Why It Doesn't Work Well](/gadgets/why-using-a-tv-as-a-pc-monitor-is-a-bad-idea-and-/) — TVs and HDR together at desk distance: the real trade-offs
-- [Portable Monitors: The On-the-Go Productivity Powerhouse](/gadgets/portable-monitors-the-on-the-go-productivity-powe/) — monitors that handle HDR correctly for a better desktop experience
+- [TV as PC Monitor: Why It Doesn't Work Well](/why-using-a-tv-as-a-pc-monitor-is-a-bad-idea-and-/) — TVs and HDR together at desk distance: the real trade-offs
+- [Portable Monitors: The On-the-Go Productivity Powerhouse](/portable-monitors-the-on-the-go-productivity-powe/) — monitors that handle HDR correctly for a better desktop experience
 
 For more display guides and monitor reviews, see the [Gadgets](/gadgets/) section.

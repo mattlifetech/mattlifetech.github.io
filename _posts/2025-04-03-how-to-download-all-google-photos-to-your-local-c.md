@@ -99,5 +99,5 @@ If you frequently back up your photos, you can use Google Takeout with a cloud s
 By following these steps, you can successfully download and safeguard your Google Photos on your local computer. Happy backing up!
 
 **Also on this blog:**
-- [Why Your Google Drive is Always Full](/how-to/why-your-google-drive-is-always-full-understandin/) — understand the hidden storage hogs across Gmail, Drive, and Photos — and how to reclaim space
-- [How to Share Google Photos With Family Without Maxing Out Their Storage](/how-to/how-to-share-your-google-photos-with-family-witho/) — share albums without copying everything into their quota
+- [Why Your Google Drive is Always Full](/why-your-google-drive-is-always-full-understandin/) — understand the hidden storage hogs across Gmail, Drive, and Photos — and how to reclaim space
+- [How to Share Google Photos With Family Without Maxing Out Their Storage](/how-to-share-your-google-photos-with-family-witho/) — share albums without copying everything into their quota

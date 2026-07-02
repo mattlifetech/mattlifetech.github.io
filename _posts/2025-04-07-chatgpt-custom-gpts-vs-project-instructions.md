@@ -210,9 +210,9 @@ You can actually **build this Custom GPT** inside ChatGPT by:
 4. Click **Publish (Unlisted)** or **Use for Yourself**
 
 **Also on this blog:**
-- [Why Custom GPTs Can't Replace Native Apps Yet](/ai-&-productivity/custom-gpts-cant-replace-native-apps-yet/) — the memory and persistence limitations that still hold custom GPTs back
-- [App Creation with Gemini 2.5: A Noob's Take](/ai-&-productivity/app-creation-with-gemini-2-5-noob-perspective/) — moving beyond GPT-based automation to building actual apps
-- [From Zero to Launch: App Building AI Lessons](/app-development/from-zero-to-launch-app-building-ai-lessons/) — what building a real AI-assisted app taught me
+- [Why Custom GPTs Can't Replace Native Apps Yet](/custom-gpts-cant-replace-native-apps-yet/) — the memory and persistence limitations that still hold custom GPTs back
+- [App Creation with Gemini 2.5: A Noob's Take](/app-creation-with-gemini-2-5-noob-perspective/) — moving beyond GPT-based automation to building actual apps
+- [From Zero to Launch: App Building AI Lessons](/from-zero-to-launch-app-building-ai-lessons/) — what building a real AI-assisted app taught me
 
 ---
 

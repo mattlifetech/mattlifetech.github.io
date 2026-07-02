@@ -109,8 +109,8 @@ Idle 30–40°C, under load 50–70°C. Above 70°C sustained = add an M.2 heats
 Terabytes Written — the total data you can write over the drive's rated lifetime. Compare against your drive's spec sheet rating using CrystalDiskInfo's "Total Host Writes" value.
 
 **Also on this blog:**
-- [NVMe SSD or C: Drive Failure Recovery Plan](/how-to/protecting-yourself-from-nvme-or-c-drive-failure-/) — what to do when the drive actually fails: clone + NAS backup strategy
-- [Windows Drive Partitions Explained](/how-to/you-don-t-realize-your-storage-drive-has-so-many-/) — what all those small mystery partitions on your SSD actually do
+- [NVMe SSD or C: Drive Failure Recovery Plan](/protecting-yourself-from-nvme-or-c-drive-failure-/) — what to do when the drive actually fails: clone + NAS backup strategy
+- [Windows Drive Partitions Explained](/you-don-t-realize-your-storage-drive-has-so-many-/) — what all those small mystery partitions on your SSD actually do
 
 ---
 

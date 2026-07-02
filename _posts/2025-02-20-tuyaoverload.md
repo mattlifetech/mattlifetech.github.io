@@ -76,5 +76,5 @@ If you’re using a Tuya power meter and see an overload alarm, there’s no nee
 Let me know if you’ve experienced similar issues in your smart home setup!
 
 **Also on this blog:**
-- [Tuya Presence Automation with Home Assistant](/smart-home/tuyapresenceautomation/) — how to set up mmWave presence detection that actually works reliably
-- [Why Smart Homes Have Stalled](/smart-home/smart-homes-the-dream-that-stalled-why-people-are/) — the honest case for and against smart home investment in Malaysia
+- [Tuya Presence Automation with Home Assistant](/tuyapresenceautomation/) — how to set up mmWave presence detection that actually works reliably
+- [Why Smart Homes Have Stalled](/smart-homes-the-dream-that-stalled-why-people-are/) — the honest case for and against smart home investment in Malaysia

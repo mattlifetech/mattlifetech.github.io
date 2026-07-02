@@ -107,8 +107,8 @@ Chat with an agent using the chat button in the bottom right corner. Generally, 
 Hope this helps anyone starting on the same journey. Let me know if it did!
 
 **Also on this blog:**
-- [Signing Your PC App: A New Developer's Guide](/app-development/signing-your-pc-app-developer-guide-avoid-pitfalls/) — the full developer perspective on code signing pitfalls and the cheapest path forward
-- [Understanding Passkeys & Authenticators](/how-to/passkey-methods-authenticators-summary-cross-plat/) — YubiKey as a hardware authenticator beyond just code signing
+- [Signing Your PC App: A New Developer's Guide](/signing-your-pc-app-developer-guide-avoid-pitfalls/) — the full developer perspective on code signing pitfalls and the cheapest path forward
+- [Understanding Passkeys & Authenticators](/passkey-methods-authenticators-summary-cross-plat/) — YubiKey as a hardware authenticator beyond just code signing
 
 ---
 

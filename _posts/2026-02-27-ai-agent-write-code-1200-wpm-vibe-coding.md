@@ -121,9 +121,9 @@ Throttle your agents. Ground yourself in physical reality. Code safely.
 **What about you?** Have you experienced that weird, hollow nausea while watching AI tools generate massive amounts of text or code? Did you figure out a specific IDE theme or setting that fixed it for you?
 
 **Also on this blog:**
-- [The Brutal Reality of Going Indie](/app-development/brutal-reality-of-going-indie-ios-android-web-windows/) — what happens when the vibe-coded app meets real users and app store reviewers
-- [From Zero to Launch: App Building AI Lessons](/app-development/from-zero-to-launch-app-building-ai-lessons/) — lessons from shipping the first AI-assisted app
-- [AI Makes Coding Easy, But the App is Still Sitting in a Folder](/app-development/ai-makes-coding-easy-but-app-still-sitting-in-folder/) — the bottleneck isn't the code, it's everything after
+- [The Brutal Reality of Going Indie](/brutal-reality-of-going-indie-ios-android-web-windows/) — what happens when the vibe-coded app meets real users and app store reviewers
+- [From Zero to Launch: App Building AI Lessons](/from-zero-to-launch-app-building-ai-lessons/) — lessons from shipping the first AI-assisted app
+- [AI Makes Coding Easy, But the App is Still Sitting in a Folder](/ai-makes-coding-easy-but-app-still-sitting-in-folder/) — the bottleneck isn't the code, it's everything after
 
 ---
 

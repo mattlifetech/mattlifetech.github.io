@@ -75,8 +75,8 @@ Don’t panic if, when you’re first using YubiKey Manager, it asks for a “ma
 In conclusion, for new PC app developers aiming for a cost-effective and less troublesome app signing process, bypassing the eSigner’s “free” month and opting directly for a YubiKey bundle with your signing certificate is the most straightforward and economical path. Save yourself the future headaches and potential recurring costs!
 
 **Also on this blog:**
-- [Navigating SSL.com: Code Signing, eSigner, and YubiKey](/app-development/navigating-ssl-com-code-signing-esigner-yubikey/) — the step-by-step experience of setting up SSL.com eSigner from scratch
-- [Understanding Passkeys & Authenticators](/how-to/passkey-methods-authenticators-summary-cross-plat/) — YubiKey as a hardware security key beyond just code signing
+- [Navigating SSL.com: Code Signing, eSigner, and YubiKey](/navigating-ssl-com-code-signing-esigner-yubikey/) — the step-by-step experience of setting up SSL.com eSigner from scratch
+- [Understanding Passkeys & Authenticators](/passkey-methods-authenticators-summary-cross-plat/) — YubiKey as a hardware security key beyond just code signing
 
 ---
 

@@ -68,4 +68,4 @@ An L-shaped screwdriver to reach the locking hole in the handle cover. The glass
 
 ---
 
-See also the [wireless charger adjustment guide](/automotive/toyota-corolla-crosss-original-wireless-charger-adjustment/) for another useful Corolla Cross DIY fix. For more Corolla Cross and Malaysian automotive guides, see the [Automotive](/automotive/) section.
+See also the [wireless charger adjustment guide](/toyota-corolla-crosss-original-wireless-charger-adjustment/) for another useful Corolla Cross DIY fix. For more Corolla Cross and Malaysian automotive guides, see the [Automotive](/automotive/) section.

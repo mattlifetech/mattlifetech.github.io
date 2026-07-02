@@ -11,7 +11,7 @@ Every gadget on this site has been bought with my own money or tested long enoug
 
 The question I'm always answering: **should you actually buy this, or is there something better for the price you're paying on Shopee or Lazada?**
 
-Popular picks: [Xiaomi Pad 7](/gadgets/mipad7/) · [Bluetooth Earbuds Guide](/gadgets/choosing-the-right-bluetooth-earbuds-for-backgrou/) · [Ditch the Dongles](/gadgets/ditch-the-drawer-of-dongles-799e4a14dfd8/)
+Popular picks: [Xiaomi Pad 7](/mipad7/) · [Bluetooth Earbuds Guide](/choosing-the-right-bluetooth-earbuds-for-backgrou/) · [Ditch the Dongles](/ditch-the-drawer-of-dongles-799e4a14dfd8/)
 
 {% assign category_posts = site.posts | where_exp: "post", "post.categories contains 'Gadgets'" | where_exp: "post", "post.published != false" %}
 {% assign posts_count = category_posts | size %}

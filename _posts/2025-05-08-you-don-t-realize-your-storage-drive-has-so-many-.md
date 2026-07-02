@@ -90,8 +90,8 @@ Holds the UEFI bootloader. Deleting it makes the PC unbootable. Never delete it.
 Partitions take ~800MB–1.5GB combined. Normal — the rest is your C: drive.
 
 **Also on this blog:**
-- [How to Check NVMe SSD Health](/how-to/why-monitor-your-nvme-ssd-s-health-7c11ca348fe4/) — check how much write life is left in your drive
-- [NVMe SSD or C: Drive Failure Recovery Plan](/how-to/protecting-yourself-from-nvme-or-c-drive-failure-/) — two-layer backup strategy to recover in minutes when the drive fails
+- [How to Check NVMe SSD Health](/why-monitor-your-nvme-ssd-s-health-7c11ca348fe4/) — check how much write life is left in your drive
+- [NVMe SSD or C: Drive Failure Recovery Plan](/protecting-yourself-from-nvme-or-c-drive-failure-/) — two-layer backup strategy to recover in minutes when the drive fails
 
 ---
 

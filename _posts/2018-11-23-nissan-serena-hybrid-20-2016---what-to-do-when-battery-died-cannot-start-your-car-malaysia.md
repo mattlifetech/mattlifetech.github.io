@@ -35,7 +35,7 @@ I learned this the hard way after returning from overseas to find my Serena dead
 | Brake pedal stiff | ✓ Very stiff | ✓ Somewhat stiff |
 | Dashboard lights | ✗ Nothing | ✓ Yellow key icon |
 
-If your wireless key, lights, and horn are completely dead — it's the main 12V battery. See the [second article](/automotive/battery-tips-you-should-know-before-buying-nissan-serena-hybrid-20-yellow-intelligent-key-icon-cannot-start-engine/) for the yellow key icon scenario.
+If your wireless key, lights, and horn are completely dead — it's the main 12V battery. See the [second article](/battery-tips-you-should-know-before-buying-nissan-serena-hybrid-20-yellow-intelligent-key-icon-cannot-start-engine/) for the yellow key icon scenario.
 
 ## Where Is the Battery on a Nissan Serena Hybrid?
 
@@ -103,4 +103,4 @@ Based on personal experience: limited. They can't always dispatch technicians to
 
 ---
 
-See also: [Yellow intelligent key icon — when it's the hybrid battery instead](/automotive/battery-tips-you-should-know-before-buying-nissan-serena-hybrid-20-yellow-intelligent-key-icon-cannot-start-engine/). For more Malaysia automotive guides, see the [Automotive](/automotive/) section.
+See also: [Yellow intelligent key icon — when it's the hybrid battery instead](/battery-tips-you-should-know-before-buying-nissan-serena-hybrid-20-yellow-intelligent-key-icon-cannot-start-engine/). For more Malaysia automotive guides, see the [Automotive](/automotive/) section.

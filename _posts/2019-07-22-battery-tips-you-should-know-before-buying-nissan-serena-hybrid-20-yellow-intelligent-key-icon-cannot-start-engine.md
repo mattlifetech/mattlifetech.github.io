@@ -37,7 +37,7 @@ I went through this twice with my Serena C26. Here's what the manual doesn't tel
 | Dashboard | ✓ Yellow key icon lights up | ✗ Nothing |
 | Brake pedal | Stiff (system not registering brake press) | Very stiff |
 
-If your wireless key works and the dashboard shows the yellow key icon — it's the hybrid battery. If nothing works at all, see the [main battery article](/automotive/nissan-serena-hybrid-20-2016-what-to-do-when-battery-died-cannot-start-your-car-malaysia/) instead.
+If your wireless key works and the dashboard shows the yellow key icon — it's the hybrid battery. If nothing works at all, see the [main battery article](/nissan-serena-hybrid-20-2016---what-to-do-when-battery-died-cannot-start-your-car-malaysia/) instead.
 
 ## What the Yellow Key Icon Actually Means
 
@@ -96,4 +96,4 @@ No. Both the main 12V battery and the hybrid auxiliary battery need sufficient c
 
 ---
 
-See also: [Main battery completely dead (no lights, wireless key not working)](/automotive/nissan-serena-hybrid-20-2016-what-to-do-when-battery-died-cannot-start-your-car-malaysia/). For more Malaysia automotive guides, see the [Automotive](/automotive/) section.
+See also: [Main battery completely dead (no lights, wireless key not working)](/nissan-serena-hybrid-20-2016---what-to-do-when-battery-died-cannot-start-your-car-malaysia/). For more Malaysia automotive guides, see the [Automotive](/automotive/) section.

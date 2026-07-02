@@ -78,4 +78,4 @@ Removing the charger requires breaking the adhesive tape (replaceable). The clip
 
 ---
 
-See also the [sunglasses holder installation guide](/automotive/toyota-corolla-cross-car-glasses-storage-holder-box-installation/) for another useful Corolla Cross DIY. For more Malaysian automotive guides, see the [Automotive](/automotive/) section.
+See also the [sunglasses holder installation guide](/toyota-corolla-cross-car-glasses-storage-holder-box-installation/) for another useful Corolla Cross DIY. For more Malaysian automotive guides, see the [Automotive](/automotive/) section.
