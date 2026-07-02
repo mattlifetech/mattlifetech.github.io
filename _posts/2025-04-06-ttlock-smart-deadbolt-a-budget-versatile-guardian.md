@@ -122,7 +122,7 @@ No. All features including guest access, time-limited codes, and access logs are
 
 **Also on this blog:**
 - [Why Smart Homes Have Stalled](/smart-homes-the-dream-that-stalled-why-people-are/) — the honest case for and against smart home investment; the smart lock is one that earns its keep
-- [Tuya Presence Automation](/tuyapresenceautomation/) — add occupancy detection to complement your smart lock, so the house knows when you're home
-- [Mastering the 2026 Home Assistant Shift](/mastering-the-2026-home-assistant-shift-updating-/) — take your TTLock setup to full local control
+- [Tuya Presence Automation](/projects/tuya-presence-automation/) — add occupancy detection to complement your smart lock, so the house knows when you're home
+- [Mastering the 2026 Home Assistant Shift](/mastering-the-2026-home-assistant-shift-updating/) — take your TTLock setup to full local control
 
 For more smart home security guides for Malaysia, see the [Smart Home](/smart-home/) section.

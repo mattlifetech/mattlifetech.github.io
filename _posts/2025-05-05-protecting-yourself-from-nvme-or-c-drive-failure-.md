@@ -129,8 +129,8 @@ With a pre-cloned spare: under 5 minutes (just swap the drive). With NAS restore
 
 **Also on this blog:**
 - [How to Check NVMe SSD Health](/why-monitor-your-nvme-ssd-s-health-7c11ca348fe4/) — spot early warning signs before failure using free tools like CrystalDiskInfo
-- [Windows Drive Partitions Explained](/you-don-t-realize-your-storage-drive-has-so-many-/) — understand the recovery and EFI partitions you'll be working around
-- [Troubleshooting Syncthing](/troubleshooting-syncthing-fixing-out-of-sync-and-/) — if you use Syncthing alongside your NAS, here's how to keep it reliable
+- [Windows Drive Partitions Explained](/you-don-t-realize-your-storage-drive-has-so-many/) — understand the recovery and EFI partitions you'll be working around
+- [Troubleshooting Syncthing](/troubleshooting-syncthing-fixing-out-of-sync-and/) — if you use Syncthing alongside your NAS, here's how to keep it reliable
 
 ---
 

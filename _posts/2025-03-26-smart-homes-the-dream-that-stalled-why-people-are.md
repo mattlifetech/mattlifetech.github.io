@@ -115,8 +115,8 @@ Yes for 15+ device setups and technical users who want local control. No if you 
 
 **Also on this blog:**
 - [TTLock Smart Deadbolt Review](/ttlock-smart-deadbolt-a-budget-versatile-guardian/) — one of the smart home devices that genuinely earns its keep
-- [Tuya Presence Automation with Home Assistant](/tuyapresenceautomation/) — presence sensing that works reliably for light automations
-- [Mastering the 2026 Home Assistant Shift](/mastering-the-2026-home-assistant-shift-updating-/) — local control for those ready to take the next step beyond Tuya cloud
+- [Tuya Presence Automation with Home Assistant](/projects/tuya-presence-automation/) — presence sensing that works reliably for light automations
+- [Mastering the 2026 Home Assistant Shift](/mastering-the-2026-home-assistant-shift-updating/) — local control for those ready to take the next step beyond Tuya cloud
 
 ---
 

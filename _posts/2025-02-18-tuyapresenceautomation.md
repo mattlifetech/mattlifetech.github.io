@@ -129,7 +129,7 @@ The 5.8GHz Zigbee version can work locally via Zigbee2MQTT or ZHA — no Tuya cl
 - [TTLock Smart Deadbolt Review](/ttlock-smart-deadbolt-a-budget-versatile-guardian/) — smart lock that pairs well with presence-based automations
 - [Tuya Power Meter Overload Alarm](/tuyaoverload/) — another real-world Tuya device experience with unexpected behaviour
 - [Why Smart Homes Have Stalled](/smart-homes-the-dream-that-stalled-why-people-are/) — the broader picture of what actually works in a smart home
-- [Mastering the 2026 Home Assistant Shift](/mastering-the-2026-home-assistant-shift-updating-/) — move beyond Tuya cloud to full local control
+- [Mastering the 2026 Home Assistant Shift](/mastering-the-2026-home-assistant-shift-updating/) — move beyond Tuya cloud to full local control
 
 ---
 

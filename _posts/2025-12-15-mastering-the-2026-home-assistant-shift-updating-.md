@@ -160,7 +160,7 @@ Daily usage (15kWh) always calculates at Tier 1/max rebate — mathematically wr
 
 **Also on this blog:**
 - [Why Smart Homes Have Stalled](/smart-homes-the-dream-that-stalled-why-people-are/) — the broader picture of what works and what doesn't in a Malaysian smart home
-- [Tuya Presence Automation with Home Assistant](/tuyapresenceautomation/) — integrating presence sensors for smarter automations
+- [Tuya Presence Automation with Home Assistant](/projects/tuya-presence-automation/) — integrating presence sensors for smarter automations
 - [TTLock Smart Deadbolt Review](/ttlock-smart-deadbolt-a-budget-versatile-guardian/) — smart lock that can be integrated into Home Assistant locally
 
 ---
